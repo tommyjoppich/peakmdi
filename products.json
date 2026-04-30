@@ -66,17 +66,6 @@
     "featured": false
   },
   {
-    "id": "918420",
-    "title": "Test-Product",
-    "sku": "1234567890",
-    "category": "New-Category",
-    "subcategory": "New-Sub-Category",
-    "unitOfSale": "4",
-    "categoryThree": "excrviboyuindf sdfbsfb",
-    "image": "Screenshot 2025-02-19 111235.png",
-    "featured": false
-  },
-  {
     "id": "642405",
     "title": "test1",
     "sku": "1",
@@ -96,6 +85,17 @@
     "unitOfSale": "2",
     "categoryThree": "24g",
     "image": "Screenshot 2025-02-19 105403.png",
+    "featured": false
+  },
+  {
+    "id": "772061",
+    "title": "ThisIsATest",
+    "sku": "45",
+    "category": "ANewOne",
+    "subcategory": "SubCat",
+    "unitOfSale": "5",
+    "categoryThree": "more description",
+    "image": "Screenshot 2025-02-19 111201.png",
     "featured": false
   }
 ]
