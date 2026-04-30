@@ -1,0 +1,101 @@
+[
+  {
+    "id": "001",
+    "title": "PEAK Premium Scissor's",
+    "sku": "97345793589",
+    "category": "Scissors",
+    "subcategory": "Micro Scissors",
+    "unitOfSale": "1 per package",
+    "categoryThree": "Stainless Steel, Reusable, Autoclavable",
+    "image": "product1-scissors.png",
+    "featured": true
+  },
+  {
+    "id": "002",
+    "title": "Coronary Ostia Perfusion Kit",
+    "sku": "97345793590",
+    "category": "Retractors",
+    "subcategory": "Cardiac / Thoracic Retractors",
+    "unitOfSale": "1 per package",
+    "categoryThree": "Single Use, Sterile, Latex-Free",
+    "image": "product2-perfusion.png",
+    "featured": true
+  },
+  {
+    "id": "003",
+    "title": "Medical Grade Spoons",
+    "sku": "97345793591",
+    "category": "Tools",
+    "subcategory": "Hand Tools",
+    "unitOfSale": "3 per package",
+    "categoryThree": "Stainless Steel, Reusable, Autoclavable",
+    "image": "product3-spoons.png",
+    "featured": true
+  },
+  {
+    "id": "004",
+    "title": "Digital Blood Pressure Monitor",
+    "sku": "97345793592",
+    "category": "Monitoring",
+    "subcategory": "Vital Signs",
+    "unitOfSale": "1 per package",
+    "categoryThree": "Electronic, Reusable, Battery Operated",
+    "image": "product4-monitor.png",
+    "featured": true
+  },
+  {
+    "id": "005",
+    "title": "Hand Held Retractor Type A",
+    "sku": "97345793593",
+    "category": "Retractors",
+    "subcategory": "Hand Held Retractors",
+    "unitOfSale": "1 per package",
+    "categoryThree": "Stainless Steel, Reusable, Autoclavable",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "006",
+    "title": "MIS Valve Retractor",
+    "sku": "97345793594",
+    "category": "Retractors",
+    "subcategory": "MIS Valve Retractors",
+    "unitOfSale": "1 per package",
+    "categoryThree": "Stainless Steel, Reusable, Autoclavable",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "918420",
+    "title": "Test-Product",
+    "sku": "1234567890",
+    "category": "New-Category",
+    "subcategory": "New-Sub-Category",
+    "unitOfSale": "4",
+    "categoryThree": "excrviboyuindf sdfbsfb",
+    "image": "Screenshot 2025-02-19 111235.png",
+    "featured": false
+  },
+  {
+    "id": "642405",
+    "title": "test1",
+    "sku": "1",
+    "category": "test1",
+    "subcategory": "test2",
+    "unitOfSale": "1",
+    "categoryThree": "132",
+    "image": "Screenshot 2025-02-19 105313.png",
+    "featured": false
+  },
+  {
+    "id": "665261",
+    "title": "test2",
+    "sku": "1234",
+    "category": "test1",
+    "subcategory": "test3",
+    "unitOfSale": "2",
+    "categoryThree": "24g",
+    "image": "Screenshot 2025-02-19 105403.png",
+    "featured": false
+  }
+]
