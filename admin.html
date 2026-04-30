@@ -428,7 +428,7 @@
             <input type="file" id="field-image-file" accept="image/*" onchange="handleImageUpload(event)" />
           </div>
           <img id="img-preview" class="img-preview" alt="Preview" />
-          <input type="text" id="field-image" placeholder="Filename e.g. product1-scissors.png" style="margin-top:8px" />
+          <input type="text" id="field-image" placeholder="Filename e.g. Product_Pictures/product1-scissors.png" style="margin-top:8px" />
         </div>
 
         <div class="field-group">
@@ -470,6 +470,13 @@
     }
 
     // ── Render table ───────────────────────────────────────────
+
+    // Helper: always load product images from Product_Pictures/ folder
+    function imgSrc(filename) {
+      if (!filename) return '';
+      if (filename.startsWith('Product_Pictures/') || filename.startsWith('http')) return filename;
+      return 'Product_Pictures/' + filename;
+    }
     function renderTable() {
       const query = (document.getElementById('table-search').value || '').toLowerCase();
       const filtered = products.filter(p =>
@@ -490,7 +497,7 @@
             <div class="product-name-cell">
               <div class="product-thumb">
                 ${p.image
-                  ? `<img src="${p.image}" alt="${p.title}" />`
+                  ? `<img src="${imgSrc(p.image)}" alt="${p.title}" />`
                   : `<div class="no-thumb">No img</div>`}
               </div>
               <div>
@@ -600,6 +607,10 @@
         return;
       }
 
+      // Store only the bare filename — imgSrc() adds the folder at render time
+      const rawImage = document.getElementById('field-image').value.trim();
+      const imageVal = rawImage.replace('Product_Pictures/', ''); // strip prefix if accidentally included
+
       const data = {
         id: editingId || generateId(),
         title,
@@ -608,7 +619,7 @@
         subcategory: document.getElementById('field-subcategory').value.trim(),
         unitOfSale:  document.getElementById('field-unitOfSale').value.trim(),
         categoryThree: document.getElementById('field-categoryThree').value.trim(),
-        image: document.getElementById('field-image').value.trim(),
+        image: imageVal,
         featured: document.getElementById('field-featured').checked,
       };
 
