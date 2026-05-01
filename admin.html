@@ -347,7 +347,7 @@
                 <th>Product</th>
                 <th>Category</th>
                 <th>Sub-Category</th>
-                <th>SKU</th>
+                <th>Product Number</th>
                 <th>Featured</th>
                 <th>Actions</th>
               </tr>
@@ -406,7 +406,7 @@
 
         <div class="field-row">
           <div class="field-group">
-            <label>SKU *</label>
+            <label>Product Number *</label>
             <input type="text" id="field-sku" placeholder="e.g. 97345793589" />
           </div>
           <div class="field-group">
@@ -416,8 +416,8 @@
         </div>
 
         <div class="field-group">
-          <label>Category Three</label>
-          <textarea id="field-categoryThree" placeholder="e.g. Stainless Steel, Reusable, Autoclavable"></textarea>
+          <label>Description</label>
+          <textarea id="field-categoryThree" placeholder="e.g. Stainless Steel, Reusable, Autoclavable — shown as Description on product page"></textarea>
         </div>
 
         <div class="field-group">
@@ -502,7 +502,7 @@
               </div>
               <div>
                 <div class="product-name-text">${p.title}</div>
-                <div class="product-sku-text">SKU: ${p.sku}</div>
+                <div class="product-sku-text">Product No: ${p.sku}</div>
               </div>
             </div>
           </td>
@@ -603,7 +603,7 @@
       const cat   = document.getElementById('field-category').value.trim();
 
       if (!title || !sku || !cat) {
-        showToast('Please fill in Title, Category, and SKU.', 'error');
+        showToast('Please fill in Title, Category, and Product Number.', 'error');
         return;
       }
 
