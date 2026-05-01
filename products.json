@@ -97,5 +97,49 @@
     "categoryThree": "more description",
     "image": "Screenshot 2025-02-19 111201.png",
     "featured": false
+  },
+  {
+    "id": "422054",
+    "title": "PEAK PremiumCut Mayo Scissor",
+    "sku": "CD3-5117",
+    "category": "Scissors",
+    "subcategory": "PremiumCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CD3-5117: PEAK PremiumCut Mayo Scissor, Curved, 6.75\" (17cm), Stainless steel.",
+    "image": "CD3-5117; Mayo PremiumCut Scissor 6.75\" (17cm), curved.png",
+    "featured": true
+  },
+  {
+    "id": "781322",
+    "title": "PEAK PremiumCut Metzenbaum Scissor",
+    "sku": "CD4-3318",
+    "category": "Scissors",
+    "subcategory": "PremiumCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CD4-3318: PEAK PremiumCut Scissor, Metzenbaum, 7\" (18cm), Curved, Stainless Steel",
+    "image": "CD4-3318 PremiumCut Metzenbaum Scissor, Curved, 7 inches (18cm), Stainless Steel.png",
+    "featured": true
+  },
+  {
+    "id": "093957",
+    "title": "PEAK PremiumCut Kelly Scissor",
+    "sku": "CD4-5416",
+    "category": "Scissors",
+    "subcategory": "PremiumCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "PEAK PremiumCut Kelly Scissor, 6.3 inches (16cm) curved, stainless steel",
+    "image": "CD4-5516 PremiumCut Kelly.png",
+    "featured": true
+  },
+  {
+    "id": "505637",
+    "title": "PEAK PremiumCut Reynolds Scissor",
+    "sku": "CD4-6714",
+    "category": "Scissors",
+    "subcategory": "PremiumCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CD4-6714 PremiumCut Reynolds scissor, 5.5 inches (14cm), curved, stainless steel.",
+    "image": "CD4-6714 PremiumCut Reynolds .png",
+    "featured": true
   }
 ]
