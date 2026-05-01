@@ -175,7 +175,7 @@
           </div>
           <div class="nav-dropdown" id="dd-resources-desktop">
             <a href="#" onclick="toggleDropdown(event,'dd-resources-desktop')">Resources <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
-            <div class="dropdown-menu"><a href="#">Video Archive</a><a href="#">PDF Catalogs</a><a href="#">Articles &amp; Readings</a></div>
+            <div class="dropdown-menu"><a href="#">Video Archive</a><a href="#">PDF Catalogs</a><a href="#">Articles &amp; Readings</a><a href="#">Product IFUs</a></div>
           </div>
           <a href="#">Contact Us</a>
         </div>
@@ -189,7 +189,7 @@
           </div>
           <div class="nav-dropdown" id="dd-resources-tablet">
             <a href="#" onclick="toggleDropdown(event,'dd-resources-tablet')">Resources <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
-            <div class="dropdown-menu"><a href="#">Video Archive</a><a href="#">PDF Catalogs</a><a href="#">Articles &amp; Readings</a></div>
+            <div class="dropdown-menu"><a href="#">Video Archive</a><a href="#">PDF Catalogs</a><a href="#">Articles &amp; Readings</a><a href="#">Product IFUs</a></div>
           </div>
           <a href="#">Contact Us</a>
         </div>
@@ -214,7 +214,7 @@
       <button class="mobile-nav-toggle" id="mob-toggle-products" onclick="toggleMobileSubmenu('mob-products','mob-toggle-products')">Products <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
       <div class="mobile-submenu" id="mob-products"></div>
       <button class="mobile-nav-toggle" id="mob-toggle-resources" onclick="toggleMobileSubmenu('mob-resources','mob-toggle-resources')">Resources <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="mobile-submenu" id="mob-resources"><a href="#">Video Archive</a><a href="#">PDF Catalogs</a><a href="#">Articles &amp; Readings</a></div>
+      <div class="mobile-submenu" id="mob-resources"><a href="#">Video Archive</a><a href="#">PDF Catalogs</a><a href="#">Articles &amp; Readings</a><a href="#">Product IFUs</a></div>
       <a href="#">Contact Us</a>
     </nav>
   </div>
@@ -288,13 +288,13 @@
           <div class="detail-image">
             ${p.image
               ? `<img src="${imgSrc(p.image)}" alt="${p.title}" />`
-              : `<span class="no-img">No image available</span>`}
+              : `<span class="no-img">Image Coming Soon!</span>`}
           </div>
           <div class="detail-info">
             <h1 class="detail-info__title">${p.title}</h1>
             <table class="detail-specs">
               <tr>
-                <td>SKU:</td>
+                <td>Product Number:</td>
                 <td>${p.sku}</td>
               </tr>
               <tr>
@@ -305,12 +305,12 @@
                 <td>Sub-Category:</td>
                 <td>${p.subcategory || '—'}</td>
               </tr>
-              <tr>
+              ${p.unitOfSale ? `<tr>
                 <td>Unit of Sale:</td>
-                <td>${p.unitOfSale || '—'}</td>
-              </tr>
+                <td>${p.unitOfSale}</td>
+              </tr>` : ''}
               <tr>
-                <td>Category Three:</td>
+                <td>Description:</td>
                 <td>${p.categoryThree || '—'}</td>
               </tr>
             </table>
