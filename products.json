@@ -8,7 +8,7 @@
     "unitOfSale": "1 per package",
     "categoryThree": "Stainless Steel, Reusable, Autoclavable",
     "image": "product1-scissors.png",
-    "featured": true
+    "featured": false
   },
   {
     "id": "002",
@@ -19,7 +19,7 @@
     "unitOfSale": "1 per package",
     "categoryThree": "Single Use, Sterile, Latex-Free",
     "image": "product2-perfusion.png",
-    "featured": true
+    "featured": false
   },
   {
     "id": "003",
@@ -30,7 +30,7 @@
     "unitOfSale": "",
     "categoryThree": "Stainless Steel, Reusable, Autoclavable",
     "image": "product3-spoons.png",
-    "featured": true
+    "featured": false
   },
   {
     "id": "004",
@@ -41,7 +41,7 @@
     "unitOfSale": "1 per package",
     "categoryThree": "Electronic, Reusable, Battery Operated",
     "image": "product4-monitor.png",
-    "featured": true
+    "featured": false
   },
   {
     "id": "005",
