@@ -229,5 +229,49 @@
     "categoryThree": "AD5-114: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 5.5\" (14.0 Cm)",
     "image": "AD5-114.png",
     "featured": false
+  },
+  {
+    "id": "194654",
+    "title": "PEAK SuperCut Potts-Smith Scissor, 7.5\", Angle 60°",
+    "sku": "CF5-1546",
+    "category": "Scissors",
+    "subcategory": "SuperCut",
+    "unitOfSale": "",
+    "categoryThree": "CF5-1546: PEAK Potts Smith Vascular Scissors, SuperCut, 7.5\" (19cm) Angle 60°",
+    "image": "CF5-1546.png",
+    "featured": false
+  },
+  {
+    "id": "334005",
+    "title": "PEAK SuperCut Potts-Smith Scissor, 7.5\",  Angle 45°",
+    "sku": "CF5-1544",
+    "category": "Scissors",
+    "subcategory": "SuperCut",
+    "unitOfSale": "",
+    "categoryThree": "CF5-1544: PEAK Potts-Smith Vascular Scissors, Stainless Steel, SuperCut, 7.5\" (19cm) Angle 45°",
+    "image": "CF5-1544.png",
+    "featured": false
+  },
+  {
+    "id": "530708",
+    "title": "PEAK SuperCut Hagemann-Diethrich Scissor, 7 1/8\", Angle 45°",
+    "sku": "CF5-1534",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CF5-1534: PEAK Hagemann-Diethrich Vascular Scissor, Supercut, Stainless Steel, Very Delicate Pattern, 7 1/8\" (18.0 Cm), Angle 45°",
+    "image": "CF5-1534.png",
+    "featured": false
+  },
+  {
+    "id": "723977",
+    "title": "PEAK Micro-Vascular Scissors, Ceramic,  7\", 45°, Flat",
+    "sku": "CC5-1945",
+    "category": "Scissors",
+    "subcategory": "Ceramic Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CC5-1945: PEAK Micro-Vascular Scissors, Ceramic Coated,  7\" (18cm) Angle Blade 45°, Flat Handle",
+    "image": "",
+    "featured": false
   }
 ]
