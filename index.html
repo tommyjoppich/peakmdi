@@ -1056,56 +1056,12 @@
   ══════════════════════════════════════════════════════════ -->
   <div class="section">
     <h2 class="section__title">Featured Products</h2>
-    <div class="products-grid">
-
-      <!-- Card 1: Scissors (warm beige bg) -->
-      <div class="product-card" style="cursor:pointer" onclick="window.location.href='products.html'">
-        <div class="product-card__img" style="background:#f0ede6;">
-          <img src="Product_Pictures/product1-scissors.png" alt="PEAK Premium Scissors" />
-        </div>
-        <div class="product-card__body">
-          <div class="product-card__name">PEAK Premium Scissor's</div>
-          <div class="product-card__sku">Product No: 97345793589</div>
-        </div>
-      </div>
-
-      <!-- Card 2: Perfusion Kit -->
-      <div class="product-card" style="cursor:pointer" onclick="window.location.href='products.html'">
-        <div class="product-card__img" style="background:#f5f5f5;">
-          <img src="Product_Pictures/product2-perfusion.png" alt="Coronary Ostia Perfusion Kit" />
-        </div>
-        <div class="product-card__body">
-          <div class="product-card__name">Coronary Ostia Perfusion Kit</div>
-          <div class="product-card__sku">Product No: 97345793589</div>
-        </div>
-      </div>
-
-      <!-- Card 3: Spoons -->
-      <div class="product-card" style="cursor:pointer" onclick="window.location.href='products.html'">
-        <div class="product-card__img" style="background:#f5f5f5;">
-          <img src="Product_Pictures/product3-spoons.png" alt="Medical Grade Spoons" />
-        </div>
-        <div class="product-card__body">
-          <div class="product-card__name">Medical Grade Spoons</div>
-          <div class="product-card__sku">Product No: 97345793589</div>
-        </div>
-      </div>
-
-      <!-- Card 4: Placeholder checkerboard -->
-      <div class="product-card" style="cursor:pointer" onclick="window.location.href='products.html'">
-        <div class="product-card__img" style="background:#f5f5f5;">
-          <img src="Product_Pictures/product4-monitor.png" alt="Product Name Including Size" />
-        </div>
-        <div class="product-card__body">
-          <div class="product-card__name">Product Name Including Size</div>
-          <div class="product-card__sku">Product No: 97345793589</div>
-        </div>
-      </div>
-
+    <div class="products-grid" id="featured-products-grid">
+      <!-- Populated dynamically from products.json -->
     </div>
   </div>
 
-  <hr class="section-divider" />
+    <hr class="section-divider" />
 
   <!-- ══════════════════════════════════════════════════════════
        OTHER RESOURCES
@@ -1269,6 +1225,45 @@
     }
 
     populateNavDropdowns();
+    loadFeaturedProducts();
+
+    /* ── Featured Products — loaded from products.json ── */
+    async function loadFeaturedProducts() {
+      const grid = document.getElementById('featured-products-grid');
+      if (!grid) return;
+
+      let products = [];
+      try {
+        const r = await fetch('products.json');
+        products = await r.json();
+      } catch(e) {
+        grid.innerHTML = '<p style="color:#aaa;text-align:center">Could not load products.</p>';
+        return;
+      }
+
+      // Filter to featured=true, take first 4
+      const featured = products.filter(p => p.featured === true).slice(0, 4);
+
+      if (!featured.length) {
+        grid.innerHTML = '<p style="color:#aaa;text-align:center">No featured products found.</p>';
+        return;
+      }
+
+      grid.innerHTML = featured.map(p => `
+        <div class="product-card" style="cursor:pointer" onclick="window.location.href='product-detail.html?id=${p.id}'">
+          <div class="product-card__img" style="background:#f5f5f5;">
+            ${p.image
+              ? `<img src="Product_Pictures/${p.image.replace('Product_Pictures/', '')}" alt="${p.title}" style="width:100%;height:100%;object-fit:contain;" />`
+              : `<div style="width:65%;height:65%;background:rgba(0,0,0,0.07);border-radius:8px;"></div>`
+            }
+          </div>
+          <div class="product-card__body">
+            <div class="product-card__name">${p.title}</div>
+            <div class="product-card__sku">Product No: ${p.sku}</div>
+          </div>
+        </div>
+      `).join('');
+    }
 
     /* ── Mobile overlay ── */
     function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow = 'hidden'; }
