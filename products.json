@@ -328,5 +328,49 @@
     "categoryThree": "CC2-2061: PEAK Iris Scissors, Ceramic Coated, Straight 4.5\" (11.5cm), Sharp/Sharp Tip",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "071632",
+    "title": "PEAK SuperCut Joseph Scissor, Curved, 5.19\"",
+    "sku": "CB2-5115",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CB2-5115: PEAK Joseph Scissors, Black Ring SuperCut, curve, 5.19\" (15cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "147469",
+    "title": "PEAK SuperCut Joseph Scissors, Straight,  5.19\"",
+    "sku": "CB2-5015",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CB2-5015: PEAK Joseph Scissors, Black Ring SuperCut, Straight, 5.19\" (15cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "332557",
+    "title": "PEAK SuperCut Stevens Scissor, Curved, 4.5\", Bl",
+    "sku": "CB2-5013",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CB2-5013: PEAK Stevens Scissors, Black Ring, SuperCut, Curved, 4.5\" (11.5cm), Blunt tip",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "431982",
+    "title": "PEAK SuperCut Stevens Scissor, 4.5\", Bl",
+    "sku": "CB2-5012",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CB2-5012: PEAK Stevens Scissors, Black Ring, SuperCut Straight, 4.5\" (11.5cm), Blunt tip",
+    "image": "",
+    "featured": false
   }
 ]
