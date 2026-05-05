@@ -132,9 +132,9 @@
       border: 1.5px solid var(--border);
       border-radius: 10px;
       box-shadow: 0 8px 28px rgba(0,0,0,0.12);
-      min-width: 170px;
+      width: 220px;
       padding: 6px;
-      z-index: 300;
+      z-index: 9999;
       flex-direction: column;
       gap: 2px;
     }
@@ -695,6 +695,170 @@
     }
     /* Keep open class too for compatibility */
     .nav-dropdown.open > a .chevron { transform: rotate(180deg); }
+
+    /* ── Hero search wrap ── */
+    .search-bar-wrap {
+      position: relative;
+      max-width: 560px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Suggestions dropdown */
+    .search-suggestions {
+      display: none;
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0; right: 0;
+      background: #fff;
+      border-radius: 14px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      overflow: hidden;
+      z-index: 150;
+    }
+    /* Hero must also be high enough to not clip the suggestions */
+    .hero { overflow: visible !important; }
+    .hero__content { position: relative; z-index: 1; }
+    .search-suggestions.visible { display: block; }
+
+    .suggestion-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 20px;
+      cursor: pointer;
+      transition: background 0.12s;
+      border-bottom: 1px solid #f0f0f0;
+      text-align: left;
+    }
+    .suggestion-item:last-child { border-bottom: none; }
+    .suggestion-item:hover { background: #f4f7fb; }
+
+    .suggestion-item svg {
+      flex-shrink: 0;
+      color: #aaa;
+    }
+
+    .suggestion-item__text {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .suggestion-item__name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+    .suggestion-item__name em {
+      color: #2e6da4;
+      font-style: normal;
+    }
+    .suggestion-item__meta {
+      font-size: 12px;
+      color: #999;
+      font-weight: 400;
+    }
+
+    /* "See all results" row */
+    .suggestion-all {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 11px 20px;
+      cursor: pointer;
+      background: #f8f9fc;
+      font-size: 13px;
+      font-weight: 700;
+      color: #2e6da4;
+      transition: background 0.12s;
+    }
+    .suggestion-all:hover { background: #edf2fa; }
+
+    
+    
+    
+    /* ── Nested Products dropdown ── */
+    .dd-cat-row {
+      display: flex;
+      align-items: stretch;
+      border-radius: 6px;
+      position: relative;
+    }
+    .dd-cat-row:hover .dd-cat-link,
+    .dd-cat-row:hover .dd-cat-chevron { background: #f0f0f0; }
+
+    .dd-cat-link {
+      flex: 1;
+      padding: 10px 6px 10px 14px;
+      font-size: 14px; font-weight: 600;
+      color: var(--text); display: flex; align-items: center;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+      transition: background 0.15s;
+      border-radius: 6px 0 0 6px;
+      max-width: 180px;
+    }
+    .dd-cat-link:hover { background: #f0f0f0; color: var(--blue); }
+
+    .dd-cat-chevron {
+      background: none; border: none;
+      padding: 0 12px; cursor: pointer;
+      display: flex; align-items: center; justify-content: center;
+      border-radius: 0 6px 6px 0;
+      transition: background 0.15s; flex-shrink: 0;
+      align-self: stretch;
+    }
+    .dd-cat-chevron:hover { background: #f0f0f0; }
+    .dd-cat-chevron svg {
+      width: 12px; height: 12px; stroke: var(--text); fill: none;
+      stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round;
+      transition: transform 0.2s;
+    }
+    .dd-cat-chevron.open svg { transform: rotate(180deg); }
+    /* Active state — row is open */
+    .dd-cat-chevron.open { background: #e4edf6; }
+    .dd-cat-chevron.open + * { /* sibling trick doesn't work here — use JS class on row */ }
+    .dd-cat-row.open .dd-cat-link { background: #e4edf6; color: var(--blue); }
+    .dd-cat-row.open .dd-cat-chevron { background: #e4edf6; }
+    .dd-cat-row.open .dd-cat-chevron svg { stroke: var(--blue); }
+
+    /* Sub-list flies out to the RIGHT of the main dropdown panel.
+       position:absolute relative to the .dropdown-menu container.
+       top is set per-row by JS so it aligns with the clicked row. */
+    .dd-sub-list {
+      display: none;
+      position: absolute;
+      left: calc(100% + 2px);
+      top: 0; /* overridden by JS */
+      min-width: 200px;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+      padding: 6px;
+      z-index: 10000;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .dd-sub-list.open { display: flex; }
+
+    .dd-sub-link {
+      display: block;
+      padding: 10px 14px;
+      font-size: 13px; font-weight: 500;
+      color: var(--muted); border-radius: 6px;
+      white-space: normal; word-break: break-word;
+      transition: background 0.15s, color 0.15s;
+    }
+    .dd-sub-link:hover { background: #f0f0f0; color: var(--blue); }
+    /* Transparent bridge fills the gap so mouse doesn't leave hover zone */
+    .dd-sub-list::before {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      left: -8px;
+      width: 8px;
+    }
+
   </style>
 </head>
 <body>
@@ -729,15 +893,15 @@
           </div>
 
           <div class="nav-dropdown" id="dd-resources-desktop">
-            <a href="#">
+            <a href="resources.html">
               Resources
               <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
             <div class="dropdown-menu">
-              <a href="#">Video Archive</a>
-              <a href="#">PDF Catalogs</a>
-              <a href="#">Articles &amp; Readings</a>
-              <a href="#">Product IFUs</a>
+              <a href="resources.html#video">Video Archive</a>
+              <a href="resources.html#pdf">PDF Catalogs</a>
+              <a href="resources.html#articles">Articles &amp; Readings</a>
+              <a href="resources.html#ifus">Product IFUs</a>
             </div>
           </div>
 
@@ -762,15 +926,15 @@
           </div>
 
           <div class="nav-dropdown" id="dd-resources-tablet">
-            <a href="#">
+            <a href="resources.html">
               Resources
               <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
             <div class="dropdown-menu">
-              <a href="#">Video Archive</a>
-              <a href="#">PDF Catalogs</a>
-              <a href="#">Articles &amp; Readings</a>
-              <a href="#">Product IFUs</a>
+              <a href="resources.html#video">Video Archive</a>
+              <a href="resources.html#pdf">PDF Catalogs</a>
+              <a href="resources.html#articles">Articles &amp; Readings</a>
+              <a href="resources.html#ifus">Product IFUs</a>
             </div>
           </div>
 
@@ -850,10 +1014,10 @@
         <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
       <div class="mobile-submenu" id="mob-resources">
-        <a href="#">Video Archive</a>
-        <a href="#">PDF Catalogs</a>
-        <a href="#">Articles &amp; Readings</a>
-        <a href="#">Product IFUs</a>
+        <a href="resources.html#video">Video Archive</a>
+        <a href="resources.html#pdf">PDF Catalogs</a>
+        <a href="resources.html#articles">Articles &amp; Readings</a>
+        <a href="resources.html#ifus">Product IFUs</a>
       </div>
 
       <a href="contact.html">Contact Us</a>
@@ -867,11 +1031,22 @@
     <div class="hero__bg"></div>
     <div class="hero__content">
       <h1 class="hero__title">Built for the Surgeon.</h1>
-      <div class="search-bar">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
-        </svg>
-        <input type="text" placeholder="Search Products by Name, Description, or SKU" readonly />
+      <div class="search-bar-wrap">
+        <div class="search-bar" id="hero-search-bar">
+          <svg id="hero-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="cursor:pointer;flex-shrink:0;" onclick="doSearch()">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+          <input
+            type="text"
+            id="hero-search-input"
+            placeholder="Search Products by Name, Description, or SKU"
+            autocomplete="off"
+            oninput="onSearchInput()"
+            onkeydown="onSearchKey(event)"
+            onfocus="onSearchInput()"
+          />
+        </div>
+        <div class="search-suggestions" id="search-suggestions"></div>
       </div>
     </div>
   </section>
@@ -1003,9 +1178,9 @@
       <!-- Col 3: Resources -->
       <div class="footer__col">
         <span class="footer__col-title">Resources</span>
-        <a href="#">Video Archive</a>
-        <a href="#">PDF Catalogs</a>
-        <a href="#">Articles &amp; Readings</a>
+        <a href="resources.html#video">Video Archive</a>
+        <a href="resources.html#pdf">PDF Catalogs</a>
+        <a href="resources.html#articles">Articles &amp; Readings</a>
       </div>
 
       <!-- Col 4: Contact Us -->
@@ -1045,12 +1220,26 @@
       function buildDropdownHTML(tree) {
         return Object.entries(tree).map(([cat, subs]) => {
           const catURL = `products.html?cat=${encodeURIComponent(cat)}`;
-          let html = `<a href="${catURL}">${cat}</a>`;
-          subs.forEach(sub => {
-            const subURL = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}`;
-            html += `<a href="${subURL}" style="padding-left:22px;font-size:13px;color:var(--muted)">${sub}</a>`;
-          });
-          return html;
+          const catId  = 'navdd-' + cat.replace(/\s+/g, '_');
+          const hasSubs = subs.size > 0;
+
+          // Category row: link on left, chevron on right (if has subs)
+          let h = `<div class="dd-cat-row">
+            <a class="dd-cat-link" href="${catURL}">${cat}</a>
+            ${hasSubs ? `<button class="dd-cat-chevron" onclick="toggleNavSub(event,'${catId}')">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>` : ''}
+          </div>`;
+
+          if (hasSubs) {
+            h += `<div class="dd-sub-list" id="${catId}">`;
+            subs.forEach(sub => {
+              const subURL = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}`;
+              h += `<a class="dd-sub-link" href="${subURL}">${sub}</a>`;
+            });
+            h += `</div>`;
+          }
+          return h;
         }).join('');
       }
 
@@ -1090,12 +1279,9 @@
 
     /* ── Desktop / Tablet dropdown toggle ── */
     function toggleDropdown(e, id) {
-      e.preventDefault();
+      // Allow href to navigate; dropdowns open on hover
       const el = document.getElementById(id);
-      const isOpen = el.classList.contains('open');
-      // Close all dropdowns first
-      document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
-      if (!isOpen) el.classList.add('open');
+      if (el) document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
     }
 
     /* Close dropdowns when clicking outside */
@@ -1113,6 +1299,154 @@
       submenu.classList.toggle('open', !isOpen);
       toggle.classList.toggle('open', !isOpen);
     }
+
+    /* ══════════════════════════════════════════════════════════
+       HERO SEARCH — autocomplete + navigation
+    ══════════════════════════════════════════════════════════ */
+    let _searchProducts = [];
+    let _suggestionIndex = -1;
+
+    // Load products.json once for autocomplete
+    (async () => {
+      try {
+        const r = await fetch('products.json');
+        _searchProducts = await r.json();
+      } catch(e) { _searchProducts = []; }
+    })();
+
+    function onSearchInput() {
+      const query = document.getElementById('hero-search-input').value.trim().toLowerCase();
+      const box   = document.getElementById('search-suggestions');
+      _suggestionIndex = -1;
+
+      if (!query || query.length < 1) {
+        box.innerHTML = '';
+        box.classList.remove('visible');
+        return;
+      }
+
+      // Match against title, category, subcategory, sku
+      const matches = _searchProducts.filter(p =>
+        p.title.toLowerCase().includes(query) ||
+        (p.category    || '').toLowerCase().includes(query) ||
+        (p.subcategory || '').toLowerCase().includes(query) ||
+        (p.sku         || '').toLowerCase().includes(query)
+      ).slice(0, 5);
+
+      if (!matches.length) {
+        box.innerHTML = '';
+        box.classList.remove('visible');
+        return;
+      }
+
+      // Highlight matching portion in title
+      function highlight(text, q) {
+        const i = text.toLowerCase().indexOf(q);
+        if (i === -1) return text;
+        return text.slice(0, i) + '<em>' + text.slice(i, i + q.length) + '</em>' + text.slice(i + q.length);
+      }
+
+      const searchIcon = `<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>`;
+
+      const itemsHTML = matches.map(p => `
+        <div class="suggestion-item" onclick="goToSearch('${p.id}')">
+          ${searchIcon}
+          <div class="suggestion-item__text">
+            <span class="suggestion-item__name">${highlight(p.title, query)}</span>
+            <span class="suggestion-item__meta">${p.category}${p.subcategory ? ' › ' + p.subcategory : ''}</span>
+          </div>
+        </div>
+      `).join('');
+
+      const allHTML = `
+        <div class="suggestion-all" onclick="doSearch()">
+          ${searchIcon}
+          See all results for "<strong>${document.getElementById('hero-search-input').value.trim()}</strong>"
+        </div>
+      `;
+
+      box.innerHTML = itemsHTML + allHTML;
+      box.classList.add('visible');
+    }
+
+    function onSearchKey(e) {
+      const box   = document.getElementById('search-suggestions');
+      const items = box.querySelectorAll('.suggestion-item, .suggestion-all');
+
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        _suggestionIndex = Math.min(_suggestionIndex + 1, items.length - 1);
+        items.forEach((el, i) => el.style.background = i === _suggestionIndex ? '#f4f7fb' : '');
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        _suggestionIndex = Math.max(_suggestionIndex - 1, -1);
+        items.forEach((el, i) => el.style.background = i === _suggestionIndex ? '#f4f7fb' : '');
+      } else if (e.key === 'Enter') {
+        e.preventDefault();
+        if (_suggestionIndex >= 0 && items[_suggestionIndex]) {
+          items[_suggestionIndex].click();
+        } else {
+          doSearch();
+        }
+      } else if (e.key === 'Escape') {
+        closeSuggestions();
+      }
+    }
+
+    function doSearch() {
+      const query = document.getElementById('hero-search-input').value.trim();
+      if (!query) return;
+      window.location.href = 'products.html?search=' + encodeURIComponent(query);
+    }
+
+    function goToSearch(productId) {
+      window.location.href = 'product-detail.html?id=' + productId;
+    }
+
+    function closeSuggestions() {
+      const box = document.getElementById('search-suggestions');
+      box.innerHTML = '';
+      box.classList.remove('visible');
+    }
+
+    /* ── Toggle nested nav submenu — positioned alongside the triggering row ── */
+        function toggleNavSub(e, id) {
+      e.preventDefault();
+      e.stopPropagation();
+      const sub = document.getElementById(id);
+      const btn = e.currentTarget;
+      if (!sub) return;
+
+      const isOpen = sub.classList.contains('open');
+
+      // Close all open sub-lists first
+      document.querySelectorAll('.dd-sub-list').forEach(el => {
+        el.classList.remove('open');
+        el.style.top = '0';
+      });
+      document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+
+      if (!isOpen) {
+        const row = btn.closest('.dd-cat-row');
+        const menu = btn.closest('.dropdown-menu');
+        let offsetTop = 0;
+        let el = row;
+        while (el && el !== menu) {
+          offsetTop += el.offsetTop;
+          el = el.offsetParent;
+        }
+        sub.style.top = offsetTop + 'px';
+        sub.classList.add('open');
+        btn.classList.add('open');
+        row.classList.add('open');
+      }
+    }
+
+    // Close suggestions when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!e.target.closest('.search-bar-wrap')) closeSuggestions();
+    });
   </script>
 
 </body>
