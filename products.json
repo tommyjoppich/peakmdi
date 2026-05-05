@@ -147,7 +147,7 @@
     "title": "PEAK Operating Scissor, Bl/Bl",
     "sku": "AD0-214",
     "category": "Scissors",
-    "subcategory": "Operating Scissors",
+    "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-214: PEAK Operating Scissor, Bl/Bl, Straight, Stainless Steel, 5 3/4\" (14.6 Cm)",
     "image": "AD0-214 Operating Scissor Blunt Blunt Tips.png",
@@ -158,7 +158,7 @@
     "title": "PEAK Operating Scissor, Sh/Bl",
     "sku": "AD0-614",
     "category": "Scissors",
-    "subcategory": "Operating Scissors",
+    "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-614: PEAK Operating Scissor, Sh/Bl, Straight, Stainless Steel, 5.75\" (14.6 Cm)",
     "image": "AD0-614 Operating Scissor Sharp Blunt Tips.png",
@@ -169,10 +169,43 @@
     "title": "PEAK Deaver Scissor",
     "sku": "AD0-814",
     "category": "Scissors",
-    "subcategory": "Operating Scissor",
+    "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-814: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Straight, Stainless Steel, Sh/Bl",
     "image": "AD0-814.png",
+    "featured": false
+  },
+  {
+    "id": "612708",
+    "title": "PEAK SuperCut Metzenbaum Scissor",
+    "sku": "CA4-3318",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA4-3318: PEAK Metz Scissor, Supercut, Stainless Steel, Curved, 7\" (17.8 Cm)",
+    "image": "CA4-3318.png",
+    "featured": false
+  },
+  {
+    "id": "939410",
+    "title": "PEAK SuperCut Plus Kelly Scissor",
+    "sku": "CA4-5566",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA4-5566: PEAK Kelly Scissor, Supercut Plus, Curved 6.3\" (16cm), Sh/Sh Tip",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "215131",
+    "title": "PEAK Metzenbaum Dissecting Scissors",
+    "sku": "AE3-318",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-318: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Stainless Steel, Curved, 7\" (17.8 Cm)",
+    "image": "AE3-318.png",
     "featured": false
   }
 ]
