@@ -207,5 +207,27 @@
     "categoryThree": "AE3-318: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Stainless Steel, Curved, 7\" (17.8 Cm)",
     "image": "AE3-318.png",
     "featured": false
+  },
+  {
+    "id": "449987",
+    "title": "PEAK Mayo Scissor, Beveled Blades, Curved, 6.75\"",
+    "sku": "AD5-117",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-117: PEAK Mayo Scissor, Standard Beveled Blade, Stainless Steel, Curved, 6.75\" (17.1 Cm).",
+    "image": "AD5-117.png",
+    "featured": false
+  },
+  {
+    "id": "579579",
+    "title": "PEAK Mayo Scissor, Beveled Blades, Curved, 5.5\"",
+    "sku": "AD5-114",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-114: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 5.5\" (14.0 Cm)",
+    "image": "AD5-114.png",
+    "featured": false
   }
 ]
