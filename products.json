@@ -141,5 +141,38 @@
     "categoryThree": "CD4-6714 PremiumCut Reynolds scissor, 5.5 inches (14cm), curved, stainless steel.",
     "image": "CD4-6714 PremiumCut Reynolds .png",
     "featured": true
+  },
+  {
+    "id": "720192",
+    "title": "PEAK Operating Scissor, Bl/Bl",
+    "sku": "AD0-214",
+    "category": "Scissors",
+    "subcategory": "Operating Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-214: PEAK Operating Scissor, Bl/Bl, Straight, Stainless Steel, 5 3/4\" (14.6 Cm)",
+    "image": "AD0-214 Operating Scissor Blunt Blunt Tips.png",
+    "featured": false
+  },
+  {
+    "id": "856809",
+    "title": "PEAK Operating Scissor, Sh/Bl",
+    "sku": "AD0-614",
+    "category": "Scissors",
+    "subcategory": "Operating Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-614: PEAK Operating Scissor, Sh/Bl, Straight, Stainless Steel, 5.75\" (14.6 Cm)",
+    "image": "AD0-614 Operating Scissor Sharp Blunt Tips.png",
+    "featured": false
+  },
+  {
+    "id": "027787",
+    "title": "PEAK Deaver Scissor",
+    "sku": "AD0-814",
+    "category": "Scissors",
+    "subcategory": "Operating Scissor",
+    "unitOfSale": "",
+    "categoryThree": "AD0-814: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Straight, Stainless Steel, Sh/Bl",
+    "image": "AD0-814.png",
+    "featured": false
   }
 ]
