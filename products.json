@@ -614,5 +614,38 @@
     "categoryThree": "TC03-5765: PEAK Mayo Operating Scissors, Tungsten Carbide Blades, Curved, 6\" (15cm), Blunt/Blunt Tips",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "301543",
+    "title": "PEAK Tungsten Carbide Mayo Stille Scissor, Curved, 6.7\", Bl/Bl",
+    "sku": "TC03-5767",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TC03-5767: PEAK Mayo Stille Operating scissor, Tungsten Carbide Blades, Curved 6.7\" (17cm), Blunt/Blunt Tips",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "394363",
+    "title": "PEAK Tungsten Carbide Metzenbaum Scissor, Curved, 7\", Bl/Bl",
+    "sku": "TC04-3368",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TC04-3368: PEAK Metzenbaum Scissor, Tungsten Carbide Blades, Curved, 7\" (18cm), Blunt/Blunt Tips",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "474967",
+    "title": "PEAK Tungsten Carbide Nelson Metzenbaum Scissor, Curved, 9\", Bl/Bl",
+    "sku": "TC04-3373",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TC04-3373: PEAK Nelson Metzenbaum Scissor, Tungsten Carbide Blades, Curved, 9\" (23cm), Blunt/Blunt Tips",
+    "image": "",
+    "featured": false
   }
 ]
