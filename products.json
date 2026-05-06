@@ -482,5 +482,49 @@
     "categoryThree": "CA4-3370: PEAK Metzenbaum Scissor, Curved, Supercut Plus,  7.8\" (20cm), Blunt/Blunt Tip",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "813593",
+    "title": "PEAK SuperCut Plus Metzenbaum Scissor, 7\", Bl/Bl",
+    "sku": "CA4-3368",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA4-3368: PEAK Metzenbaum Scissor, Curved, Supercut Plus  7\" (18cm), Blunt/Blunt Tip",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "954597",
+    "title": "PEAK SuperCut Plus Ragnell (Kilner) Scissors, 7\", Bl/Bl",
+    "sku": "CA4-1368",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA4-1368: PEAK Ragnell (Kilner) SuperCut Plus Scissors, 7\" (18cm), Blunt/Blunt Tip",
+    "image": "CA4-1368.png",
+    "featured": false
+  },
+  {
+    "id": "082038",
+    "title": "PEAK SuperCut Plus Mayo-Stille Scissor, Curved, 6.7\", Bl/Bl",
+    "sku": "CA3-5767",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA3-5767: PEAK Mayo-Stille Supercut Plus Operating Scissors, Curved,  6.7\" (17.0cm), Blunt Round/Blunt Round Tip",
+    "image": "CA3-5767.png",
+    "featured": false
+  },
+  {
+    "id": "218718",
+    "title": "PEAK SuperCut Plus Mayo Scissor, Curved, 6.7\", Bl/Bl",
+    "sku": "CA3-5167",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA3-5167: PEAK Mayo SuperCut Plus Operating Scissors, Curved, 17.0cm, Blunt/Blunt Tip",
+    "image": "CA3-5167.png",
+    "featured": false
   }
 ]
