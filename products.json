@@ -427,5 +427,16 @@
     "categoryThree": "CA4-6718: PEAK Reynolds (Jameson) Scissor, SuperCut, Curved, 7\" (18cm)",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "824490",
+    "title": "PEAK SuperCut Jameson Scissors, Curved, 5.19\"",
+    "sku": "CA4-6717",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA4-6717: PEAK Jameson Scissors, SuperCut, Curved, 5.19\" (15cm)",
+    "image": "CA4-6717.png",
+    "featured": false
   }
 ]
