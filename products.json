@@ -526,5 +526,49 @@
     "categoryThree": "CA3-5167: PEAK Mayo SuperCut Plus Operating Scissors, Curved, 17.0cm, Blunt/Blunt Tip",
     "image": "CA3-5167.png",
     "featured": false
+  },
+  {
+    "id": "566476",
+    "title": "PEAK SuperCut Plus Mayo Scissor, Straight, 6.7\", Bl/Bl",
+    "sku": "CA3-5067",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA3-5067: PEAK Mayo Supercut Plus Operating Scissors Straight,  6.7\" (17.0cm), Blunt Round/Blunt Round Tip",
+    "image": "CA3-5067.png",
+    "featured": false
+  },
+  {
+    "id": "724968",
+    "title": "PEAK SuperCut Plus Sims Scissor, Curved, 7.8\", Bl Rnd/Bl Rnd",
+    "sku": "CA3-3170",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA3-3170: PEAK Sims Supercut Plus Operating Scissors, Curved, 7.8\" (20cm), Blunt Round/Blunt Round Tip",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "874407",
+    "title": "PEAK SuperCut Operating Scissor, Curved,  6.5\", Bl/Bl",
+    "sku": "CA3-0316",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA3-0316: PEAK SuperCut Operating Scissor, Curved, 6.5\" (16.5cm), blunt/blunt tips",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "019626",
+    "title": "PEAK SuperCut Stevens Tenotomy Scissor, Curved, 4 1/2\", Bl",
+    "sku": "CA2-5013",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA2-5013: PEAK Stevens Tenotomy Scissor, SuperCut, Curved, 4 1/2\" (11.4 Cm) Blunt",
+    "image": "CA2-5013.png",
+    "featured": false
   }
 ]
