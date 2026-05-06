@@ -438,5 +438,49 @@
     "categoryThree": "CA4-6717: PEAK Jameson Scissors, SuperCut, Curved, 5.19\" (15cm)",
     "image": "CA4-6717.png",
     "featured": false
+  },
+  {
+    "id": "320062",
+    "title": "PEAK SuperCut Plus Toennis Adson Scissor, Curved, 7\", Bl/Bl",
+    "sku": "CA4-6368",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA4-6368: PEAK Toennis Adson, Supercut Plus Scissor, curved, 7\" (18cm), Blunt/Blunt Tip",
+    "image": "CA4-6368.png",
+    "featured": false
+  },
+  {
+    "id": "824705",
+    "title": "PEAK SuperCut Plus Metzenbaum Slim Scissor, Curved, 7.75\", Bl/Bl",
+    "sku": "CA4-3570",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA4-3570: PEAK Metzenbaum Slim, Supercut Plus Scissor, Curved, 7.75\" (20cm), Blunt/Blunt Tip",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "977815",
+    "title": "PEAK SuperCut Metzenbaum Scissor, Delicate, Curved, Nelson, 9\"",
+    "sku": "CA4-3523",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA4-3523: PEAK Slim Metzenbaum Scissor, SuperCut, Delicate Tips, Curved, Nelson, 9\" (23.0 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "303759",
+    "title": "PEAK SuperCut Plus Metzenbaum Scissor, Curved, 7.8\", Bl/Bl",
+    "sku": "CA4-3370",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA4-3370: PEAK Metzenbaum Scissor, Curved, Supercut Plus,  7.8\" (20cm), Blunt/Blunt Tip",
+    "image": "",
+    "featured": false
   }
 ]
