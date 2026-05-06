@@ -372,5 +372,60 @@
     "categoryThree": "CB2-5012: PEAK Stevens Scissors, Black Ring, SuperCut Straight, 4.5\" (11.5cm), Blunt tip",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "891360",
+    "title": "PEAK SuperCut Iris Scissor,  Curved, Large Ring, 4.5\"",
+    "sku": "CB2-2711",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CB2-2711: PEAK Iris Scissors, Black Ring, SuperCut, Curved 4.5\" (11.5cm), Large Ring",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "976893",
+    "title": "PEAK SuperCut Iris Scissor, Curved, 4.13\"",
+    "sku": "CB2-2110",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CB2-2110: PEAK Iris Scissors, Black Ring, SuperCut, Curved 4.13\" (10.5cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "074839",
+    "title": "PEAK SuperCut Iris Scissor, Straight, 4.13\"",
+    "sku": "CB2-2010",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CB2-2010: PEAK Iris Scissors, Black Ring, SuperCut, Straight 4.13\" (10.5cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "196811",
+    "title": "PEAK SuperCut Gorney Freeman Scissor, Curved, 6.7\"",
+    "sku": "CA4-7517",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA4-7517: PEAK Gorney Freeman Scissor, SuperCut, Curved  6.7\" (17cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "304939",
+    "title": "PEAK SuperCut Reynolds (Jameson) Scissor, Curved, 7\"",
+    "sku": "CA4-6718",
+    "category": "Scissors",
+    "subcategory": "SuperCut Scissors",
+    "unitOfSale": "",
+    "categoryThree": "CA4-6718: PEAK Reynolds (Jameson) Scissor, SuperCut, Curved, 7\" (18cm)",
+    "image": "",
+    "featured": false
   }
 ]
