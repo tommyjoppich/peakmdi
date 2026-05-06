@@ -381,7 +381,7 @@
     "subcategory": "SuperCut Scissors",
     "unitOfSale": "",
     "categoryThree": "CB2-2711: PEAK Iris Scissors, Black Ring, SuperCut, Curved 4.5\" (11.5cm), Large Ring",
-    "image": "",
+    "image": "CB2-2711.png",
     "featured": false
   },
   {
@@ -392,7 +392,7 @@
     "subcategory": "SuperCut Scissors",
     "unitOfSale": "",
     "categoryThree": "CB2-2110: PEAK Iris Scissors, Black Ring, SuperCut, Curved 4.13\" (10.5cm)",
-    "image": "",
+    "image": "CB2-2110.png",
     "featured": false
   },
   {
@@ -569,6 +569,50 @@
     "unitOfSale": "",
     "categoryThree": "CA2-5013: PEAK Stevens Tenotomy Scissor, SuperCut, Curved, 4 1/2\" (11.4 Cm) Blunt",
     "image": "CA2-5013.png",
+    "featured": false
+  },
+  {
+    "id": "733934",
+    "title": "PEAK Tungsten Carbide Mayo Scissor, Straight, 6.7\", Bl/Bl",
+    "sku": "TC03-5067",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TC03-5067: PEAK Mayo Operating scissors, Tungsten Carbide Blades, Straight, 6.7\" (17.0cm), Blunt/Blunt Tips",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "820185",
+    "title": "PEAK Tungsten Carbide Mayo Scissor, Curved, 6.7\", Bl/Bl",
+    "sku": "TC03-5167",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TC03-5167: PEAK Mayo Operating scissors, Tungsten Carbide Blades, Curved, 6.7\" (17.0cm), Blunt/Blunt Tips",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "933894",
+    "title": "PEAK Tungsten Carbide Mayo Scissor, Curved, 9\", Bl/Bl",
+    "sku": "TC03-5173",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TC03-5173: PEAK Mayo Operating Scissor, Tungsten Carbide Blades, Curved, 9\" (23cm), Blunt/Blunt Tips",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "041129",
+    "title": "PEAK Tungsten Carbide Mayo Scissor, Curved, 6\", Bl/Bl",
+    "sku": "TC03-5765",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TC03-5765: PEAK Mayo Operating Scissors, Tungsten Carbide Blades, Curved, 6\" (15cm), Blunt/Blunt Tips",
+    "image": "",
     "featured": false
   }
 ]
