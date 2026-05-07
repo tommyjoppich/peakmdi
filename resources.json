@@ -1,0 +1,66 @@
+[
+  {
+    "id": "r001",
+    "type": "video",
+    "title": "Sample Surgical Technique Video",
+    "description": "A demonstration of proper surgical technique using PEAK instruments.",
+    "thumbnail": "",
+    "resource": "https://www.youtube.com/embed/dQw4w9WgXcQ"
+  },
+  {
+    "id": "r002",
+    "type": "pdf",
+    "title": "PEAK Product Catalog 2024",
+    "description": "Browse our full catalog of surgical instruments including specifications, images, and pricing.",
+    "thumbnail": "",
+    "resource": ""
+  },
+  {
+    "id": "r003",
+    "type": "article",
+    "title": "Understanding Cardiac Retractors",
+    "description": "An in-depth reading on the history and proper use of cardiac retractors in modern surgery.",
+    "thumbnail": "",
+    "resource": "https://example.com/article"
+  },
+  {
+    "id": "r004",
+    "type": "ifu",
+    "title": "PEAK Premium Scissors IFU",
+    "description": "Instructions for Use documentation for the PEAK Premium Scissors product line.",
+    "thumbnail": "",
+    "resource": ""
+  },
+  {
+    "id": "r731143",
+    "type": "video",
+    "title": "Test_Video",
+    "description": "sdhjkc ds adfivhy qwqsa wiu. yuiahs",
+    "thumbnail": "Resource_Thumbnails/thumbnail_test.jpg",
+    "resource": "https://www.youtube.com/watch?v=_2H0gwg1pA8"
+  },
+  {
+    "id": "r842296",
+    "type": "pdf",
+    "title": "TestPDF_Catalog",
+    "description": "dsvyhib asdvuih a asui cnkla",
+    "thumbnail": "Resource_Thumbnails/thumnail_test2.jpg",
+    "resource": "Resource_PDFs/Catalogs/TestDoc - Google Docs.pdf"
+  },
+  {
+    "id": "r891289",
+    "type": "article",
+    "title": "Test_EducationMaterial",
+    "description": "sdvhk akuvc as jdvhk sdvkhjb akshcv asdbcasd xzizx aox zxocwq qisdc zxvvsz asck qawo osxcv really long name test",
+    "thumbnail": "Resource_Thumbnails/thumbnail_test3.jpg",
+    "resource": "https://www.webpagetest.org/"
+  },
+  {
+    "id": "r926305",
+    "type": "ifu",
+    "title": "Test_ProductIFU",
+    "description": "short description test",
+    "thumbnail": "Resource_Thumbnails/thumbnail_test4.jpg",
+    "resource": "Resource_PDFs/IFUs/TestDoc2.pdf"
+  }
+]
