@@ -241,10 +241,10 @@
               <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
             <div class="dropdown-menu">
-              <a href="resources.html#video">Video Archive</a>
-              <a href="resources.html#pdf">PDF Catalogs</a>
-              <a href="resources.html#articles">Articles &amp; Readings</a>
-              <a href="resources.html#ifus">Product IFUs</a>
+              <a href="video-archive.html">Video Archive</a>
+              <a href="pdf-catalogs.html">PDF Catalogs</a>
+              <a href="education-materials.html">Education Materials</a>
+              <a href="product-ifus.html">Product IFUs</a>
             </div>
           </div>
           <a href="contact.html">Contact Us</a>
@@ -267,10 +267,10 @@
               <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
             <div class="dropdown-menu">
-              <a href="resources.html#video">Video Archive</a>
-              <a href="resources.html#pdf">PDF Catalogs</a>
-              <a href="resources.html#articles">Articles &amp; Readings</a>
-              <a href="resources.html#ifus">Product IFUs</a>
+              <a href="video-archive.html">Video Archive</a>
+              <a href="pdf-catalogs.html">PDF Catalogs</a>
+              <a href="education-materials.html">Education Materials</a>
+              <a href="product-ifus.html">Product IFUs</a>
             </div>
           </div>
           <a href="contact.html">Contact Us</a>
@@ -314,10 +314,10 @@
         <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
       <div class="mobile-submenu" id="mob-resources">
-        <a href="resources.html#video">Video Archive</a>
-        <a href="resources.html#pdf">PDF Catalogs</a>
-        <a href="resources.html#articles">Articles &amp; Readings</a>
-        <a href="resources.html#ifus">Product IFUs</a>
+        <a href="video-archive.html">Video Archive</a>
+        <a href="pdf-catalogs.html">PDF Catalogs</a>
+        <a href="education-materials.html">Education Materials</a>
+        <a href="product-ifus.html">Product IFUs</a>
       </div>
       <a href="contact.html">Contact Us</a>
     </nav>
@@ -346,7 +346,7 @@
     <div class="resources-grid">
 
       <!-- Video Resources -->
-      <a href="resources.html#video" id="video" class="resource-card">
+      <a href="video-archive.html" id="video" class="resource-card">
         <div class="resource-card__img" style="background: linear-gradient(135deg, #2a5080, #4a80b0);">
           <!-- <img src="images/video-resources.jpg" alt="Video Resources" /> -->
         </div>
@@ -357,7 +357,7 @@
       </a>
 
       <!-- PDF Catalogs -->
-      <a href="resources.html#pdf" id="pdf" class="resource-card">
+      <a href="pdf-catalogs.html" id="pdf" class="resource-card">
         <div class="resource-card__img" style="background: linear-gradient(135deg, #c8b89a, #a89070);">
           <!-- <img src="images/pdf-catalogs.jpg" alt="PDF Catalogs" /> -->
         </div>
@@ -367,8 +367,8 @@
         </div>
       </a>
 
-      <!-- Education & Tools (Articles and Readings) -->
-      <a href="resources.html#articles" id="articles" class="resource-card">
+      <!-- Education & Tools (Education Materials) -->
+      <a href="education-materials.html" id="articles" class="resource-card">
         <div class="resource-card__img" style="background: linear-gradient(135deg, #8aadaa, #5a8580);">
           <!-- <img src="images/articles.jpg" alt="Education and Tools" /> -->
         </div>
@@ -379,7 +379,7 @@
       </a>
 
       <!-- Product IFUs -->
-      <a href="resources.html#ifus" id="ifus" class="resource-card">
+      <a href="product-ifus.html" id="ifus" class="resource-card">
         <div class="resource-card__img" style="background: linear-gradient(135deg, #3a6090, #5a8aaa);">
           <!-- <img src="images/ifus.jpg" alt="Product IFUs" /> -->
         </div>
@@ -397,32 +397,42 @@
   ══════════════════════════════════════════════════════════ -->
   <footer>
     <div class="footer__inner">
+
+      <!-- Col 1: Primary nav links -->
       <div class="footer__col">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="resources.html">Resources</a>
         <a href="contact.html">Contact Us</a>
       </div>
+
+      <!-- Col 2: Products categories — populated dynamically from products.json -->
       <div class="footer__col">
         <span class="footer__col-title">Products</span>
-        <a href="#">Sub Category...</a>
-        <a href="#">Sub Category...</a>
-        <a href="#">Sub Category...</a>
-        <a href="#">Sub Category...</a>
-        <a href="#">Sub Category...</a>
+        <div id="footer-products-col" style="display:contents;"></div>
       </div>
+
+      <!-- Col 3: Resources -->
       <div class="footer__col">
         <span class="footer__col-title">Resources</span>
-        <a href="resources.html#video">Video Archive</a>
-        <a href="resources.html#pdf">PDF Catalogs</a>
-        <a href="resources.html#articles">Articles &amp; Readings</a>
+        <a href="video-archive.html">Video Archive</a>
+        <a href="pdf-catalogs.html">PDF Catalogs</a>
+        <a href="education-materials.html">Education Materials</a>
+        <a href="product-ifus.html">Product IFUs</a>
       </div>
+
+      <!-- Col 4: Contact -->
       <div class="footer__col">
         <a href="contact.html">Contact Us</a>
       </div>
+
+      <!-- Copyright -->
       <div class="footer__copyright">
         <span>Copyright statement, address information</span>
-        <span>Phone: 743 - 7493 - 4789 &nbsp; Fax: 473 - 3478 - 3472</span>
+        <span>Phone: 630 - 520 - 5023 &nbsp; Fax: 866 - 557 - 8437</span>
       </div>
+
     </div>
   </footer>
 
@@ -514,5 +524,30 @@
     }
   </script>
 
+  <script>
+
+    /* ── Populate footer Products column from products.json ── */
+    async function populateFooter() {
+      let products = [];
+      try {
+        const r = await fetch('products.json');
+        products = await r.json();
+      } catch(e) { return; }
+
+      // Get unique categories
+      const categories = [...new Set(products.map(p => p.category).filter(Boolean))];
+      const col = document.getElementById('footer-products-col');
+      if (!col) return;
+
+      col.innerHTML = categories.map(cat =>
+        `<a href="products.html?cat=${encodeURIComponent(cat)}" style="color:rgba(255,255,255,0.6);font-size:12px;font-weight:400;display:block;transition:color 0.15s;"
+           onmouseover="this.style.color='rgba(255,255,255,0.9)'"
+           onmouseout="this.style.color='rgba(255,255,255,0.6)'">${cat}</a>`
+      ).join('');
+    }
+    populateFooter();
+
+  </script>
+  <script src="cart.js"></script>
 </body>
 </html>
