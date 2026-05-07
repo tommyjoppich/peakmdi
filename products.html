@@ -404,6 +404,9 @@
       transition: background 0.15s, color 0.15s;
     }
     .dd-sub-link:hover { background: #f0f0f0; color: var(--blue); }
+    .dd-sub-link.active { background: #e4edf6; color: var(--blue); font-weight: 700; }
+    .dd-cat-link.active { color: var(--blue); }
+    .dd-cat-row:has(.dd-cat-link.active) .dd-cat-chevron { color: var(--blue); }
     /* Transparent bridge fills the gap so mouse doesn't leave hover zone */
     .dd-sub-list::before {
       content: '';
@@ -428,13 +431,15 @@
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <div class="nav-dropdown" id="dd-products-desktop">
-            <a href="products.html" class="active" onclick="toggleDropdown(event,'dd-products-desktop')">Products <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
+            <a href="products.html" class="active">Products
+              <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
             <div class="dropdown-menu" id="nav-dd-desktop-products"></div>
           </div>
           <div class="nav-dropdown" id="dd-resources-desktop">
             <a href="resources.html" onclick="toggleDropdown(event,'dd-resources-desktop')">Resources <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
             <div class="dropdown-menu">
-              <a href="resources.html#video">Video Archive</a><a href="resources.html#pdf">PDF Catalogs</a><a href="resources.html#articles">Articles &amp; Readings</a><a href="resources.html#ifus">Product IFUs</a>
+              <a href="video-archive.html">Video Archive</a><a href="pdf-catalogs.html">PDF Catalogs</a><a href="education-materials.html">Education Materials</a><a href="product-ifus.html">Product IFUs</a>
             </div>
           </div>
           <a href="contact.html">Contact Us</a>
@@ -445,12 +450,14 @@
           <a href="index.html">Home</a>
           <a href="about.html">About</a>
           <div class="nav-dropdown" id="dd-products-tablet">
-            <a href="products.html" class="active" onclick="toggleDropdown(event,'dd-products-tablet')">Products <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
+            <a href="products.html" class="active">Products
+              <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
             <div class="dropdown-menu" id="nav-dd-tablet-products"></div>
           </div>
           <div class="nav-dropdown" id="dd-resources-tablet">
             <a href="resources.html" onclick="toggleDropdown(event,'dd-resources-tablet')">Resources <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
-            <div class="dropdown-menu"><a href="resources.html#video">Video Archive</a><a href="resources.html#pdf">PDF Catalogs</a><a href="resources.html#articles">Articles &amp; Readings</a><a href="resources.html#ifus">Product IFUs</a></div>
+            <div class="dropdown-menu"><a href="video-archive.html">Video Archive</a><a href="pdf-catalogs.html">PDF Catalogs</a><a href="education-materials.html">Education Materials</a><a href="product-ifus.html">Product IFUs</a></div>
           </div>
           <a href="contact.html">Contact Us</a>
         </div>
@@ -475,7 +482,7 @@
       <button class="mobile-nav-toggle" id="mob-toggle-products" onclick="toggleMobileSubmenu('mob-products','mob-toggle-products')">Products <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
       <div class="mobile-submenu" id="mob-products"></div>
       <button class="mobile-nav-toggle" id="mob-toggle-resources" onclick="toggleMobileSubmenu('mob-resources','mob-toggle-resources')">Resources <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="mobile-submenu" id="mob-resources"><a href="resources.html#video">Video Archive</a><a href="resources.html#pdf">PDF Catalogs</a><a href="resources.html#articles">Articles &amp; Readings</a><a href="resources.html#ifus">Product IFUs</a></div>
+      <div class="mobile-submenu" id="mob-resources"><a href="video-archive.html">Video Archive</a><a href="pdf-catalogs.html">PDF Catalogs</a><a href="education-materials.html">Education Materials</a><a href="product-ifus.html">Product IFUs</a></div>
       <a href="contact.html">Contact Us</a>
     </nav>
   </div>
@@ -489,8 +496,12 @@
   <!-- ── BREADCRUMB ── -->
   <div class="breadcrumb" id="breadcrumb">
     <a href="index.html">Home</a><span>›</span>
-    <a href="products.html">Products</a><span>›</span>
-    <span id="breadcrumb-current">All Products</span>
+    <a href="products.html">Products</a>
+    <span id="bc-cat-sep" style="display:none">›</span>
+    <a href="#" id="bc-cat" style="color:var(--muted);display:none;"></a>
+    <span id="bc-sub-sep" style="display:none">›</span>
+    <span id="bc-sub" style="display:none;"></span>
+    <span id="bc-all" style="">All Products</span>
   </div>
 
   <!-- ── MAIN LAYOUT ── -->
@@ -522,11 +533,42 @@
   <!-- ── FOOTER ── -->
   <footer>
     <div class="footer__inner">
-      <div class="footer__col"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact Us</a></div>
-      <div class="footer__col"><span class="footer__col-title">Products</span><a href="#">Sub Category...</a><a href="#">Sub Category...</a><a href="#">Sub Category...</a><a href="#">Sub Category...</a><a href="#">Sub Category...</a></div>
-      <div class="footer__col"><span class="footer__col-title">Resources</span><a href="resources.html#video">Video Archive</a><a href="resources.html#pdf">PDF Catalogs</a><a href="resources.html#articles">Articles &amp; Readings</a><a href="resources.html#ifus">Product IFUs</a></div>
-      <div class="footer__col"><a href="contact.html">Contact Us</a></div>
-      <div class="footer__copyright"><span>Copyright statement, address information</span><span>Phone: 743 - 7493 - 4789 &nbsp; Fax: 473 - 3478 - 3472</span></div>
+
+      <!-- Col 1: Primary nav links -->
+      <div class="footer__col">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="resources.html">Resources</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <!-- Col 2: Products categories — populated dynamically from products.json -->
+      <div class="footer__col">
+        <span class="footer__col-title">Products</span>
+        <div id="footer-products-col" style="display:contents;"></div>
+      </div>
+
+      <!-- Col 3: Resources -->
+      <div class="footer__col">
+        <span class="footer__col-title">Resources</span>
+        <a href="video-archive.html">Video Archive</a>
+        <a href="pdf-catalogs.html">PDF Catalogs</a>
+        <a href="education-materials.html">Education Materials</a>
+        <a href="product-ifus.html">Product IFUs</a>
+      </div>
+
+      <!-- Col 4: Contact -->
+      <div class="footer__col">
+        <a href="contact.html">Contact Us</a>
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer__copyright">
+        <span>Copyright statement, address information</span>
+        <span>Phone: 630 - 520 - 5023 &nbsp; Fax: 866 - 557 - 8437</span>
+      </div>
+
     </div>
   </footer>
 
@@ -542,7 +584,7 @@
         const res = await fetch('products.json');
         allProducts = await res.json();
         buildCategoryTree();
-        populateNavDropdowns();
+        populateNavDropdowns(); // highlightNavDropdown() called inside after DOM is ready
         applyURLParams();   // apply ?cat= / ?sub= from URL before first render
         applyFilters();
       } catch (e) {
@@ -561,12 +603,23 @@
 
       function buildDropdownHTML(tree) {
         return Object.entries(tree).map(([cat, subs]) => {
-          const catURL = `products.html?cat=${encodeURIComponent(cat)}`;
-          let h = `<a href="${catURL}">${cat}</a>`;
-          subs.forEach(sub => {
-            const subURL = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}`;
-            h += `<a href="${subURL}" style="padding-left:22px;font-size:13px;color:var(--muted)">${sub}</a>`;
-          });
+          const catURL  = `products.html?cat=${encodeURIComponent(cat)}`;
+          const catId   = 'navdd-' + cat.replace(/\s+/g, '_');
+          const hasSubs = subs.size > 0;
+          let h = `<div class="dd-cat-row">
+            <a class="dd-cat-link" href="${catURL}">${cat}</a>
+            ${hasSubs ? `<button class="dd-cat-chevron" onclick="toggleNavSub(event,'${catId}')">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>` : ''}
+          </div>`;
+          if (hasSubs) {
+            h += `<div class="dd-sub-list" id="${catId}">`;
+            subs.forEach(sub => {
+              const subURL = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}`;
+              h += `<a class="dd-sub-link" href="${subURL}">${sub}</a>`;
+            });
+            h += `</div>`;
+          }
           return h;
         }).join('');
       }
@@ -591,6 +644,51 @@
       if (desktopDD) desktopDD.innerHTML = ddHTML;
       if (tabletDD)  tabletDD.innerHTML  = ddHTML;
       if (mobileDD)  mobileDD.innerHTML  = mobHTML;
+
+      // Now that dropdown DOM exists, apply active states from URL
+      highlightNavDropdown();
+    }
+
+    // ── Highlight active category/subcategory in nav dropdown ──
+    function highlightNavDropdown() {
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get('cat');
+      const sub = params.get('sub');
+      if (!cat) return;
+
+      // Mark all matching category links active across both desktop + tablet panels
+      document.querySelectorAll('.dd-cat-link').forEach(link => {
+        if (link.textContent.trim() === cat) {
+          link.classList.add('active');
+          const row     = link.closest('.dd-cat-row');
+          const chevron = row ? row.querySelector('.dd-cat-chevron') : null;
+          const menu    = row ? row.closest('.dropdown-menu') : null;
+
+          if (sub && row) {
+            row.classList.add('open');
+            if (chevron) chevron.classList.add('open');
+
+            // Find this panel's sub-list by matching href to avoid duplicate-ID issues
+            const subList = row.nextElementSibling;
+            if (subList && subList.classList.contains('dd-sub-list')) {
+              subList.classList.add('open');
+              // Position alongside the row
+              if (menu) {
+                let offsetTop = 0, el = row;
+                while (el && el !== menu) { offsetTop += el.offsetTop; el = el.offsetParent; }
+                subList.style.top = offsetTop + 'px';
+              }
+
+              // Mark the matching sub-link active within this panel
+              subList.querySelectorAll('.dd-sub-link').forEach(subLink => {
+                if (subLink.textContent.trim() === sub) {
+                  subLink.classList.add('active');
+                }
+              });
+            }
+          }
+        }
+      });
     }
 
     // ── Apply ?cat=, ?sub=, and ?search= URL params ──────────
@@ -768,10 +866,44 @@
         return matchCat && matchSub && matchSearch;
       });
 
-      // Update heading + breadcrumb
+      // Update heading
       const title = activeSubcategory || activeCategory || 'All Products';
       document.getElementById('section-title').textContent = title;
-      document.getElementById('breadcrumb-current').textContent = title;
+
+      // Update breadcrumb trail
+      const bcCat    = document.getElementById('bc-cat');
+      const bcCatSep = document.getElementById('bc-cat-sep');
+      const bcSub    = document.getElementById('bc-sub');
+      const bcSubSep = document.getElementById('bc-sub-sep');
+      const bcAll    = document.getElementById('bc-all');
+
+      if (activeCategory && activeSubcategory) {
+        // Home > Products > Category > Subcategory
+        bcAll.style.display    = 'none';
+        bcCat.textContent      = activeCategory;
+        bcCat.href             = `products.html?cat=${encodeURIComponent(activeCategory)}`;
+        bcCat.style.display    = 'inline';
+        bcCatSep.style.display = 'inline';
+        bcSub.textContent      = activeSubcategory;
+        bcSub.style.display    = 'inline';
+        bcSubSep.style.display = 'inline';
+      } else if (activeCategory) {
+        // Home > Products > Category
+        bcAll.style.display    = 'none';
+        bcCat.textContent      = activeCategory;
+        bcCat.href             = `products.html?cat=${encodeURIComponent(activeCategory)}`;
+        bcCat.style.display    = 'inline';
+        bcCatSep.style.display = 'inline';
+        bcSub.style.display    = 'none';
+        bcSubSep.style.display = 'none';
+      } else {
+        // Home > Products > All Products
+        bcAll.style.display    = 'inline';
+        bcCat.style.display    = 'none';
+        bcCatSep.style.display = 'none';
+        bcSub.style.display    = 'none';
+        bcSubSep.style.display = 'none';
+      }
       document.getElementById('product-count').textContent =
         `Showing ${filtered.length} of ${allProducts.length} results`;
 
@@ -870,5 +1002,30 @@
     }
 
   </script>
+  <script>
+
+    /* ── Populate footer Products column from products.json ── */
+    async function populateFooter() {
+      let products = [];
+      try {
+        const r = await fetch('products.json');
+        products = await r.json();
+      } catch(e) { return; }
+
+      // Get unique categories
+      const categories = [...new Set(products.map(p => p.category).filter(Boolean))];
+      const col = document.getElementById('footer-products-col');
+      if (!col) return;
+
+      col.innerHTML = categories.map(cat =>
+        `<a href="products.html?cat=${encodeURIComponent(cat)}" style="color:rgba(255,255,255,0.6);font-size:12px;font-weight:400;display:block;transition:color 0.15s;"
+           onmouseover="this.style.color='rgba(255,255,255,0.9)'"
+           onmouseout="this.style.color='rgba(255,255,255,0.6)'">${cat}</a>`
+      ).join('');
+    }
+    populateFooter();
+
+  </script>
+  <script src="cart.js"></script>
 </body>
 </html>
