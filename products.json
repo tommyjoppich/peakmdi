@@ -647,5 +647,49 @@
     "categoryThree": "TC04-3373: PEAK Nelson Metzenbaum Scissor, Tungsten Carbide Blades, Curved, 9\" (23cm), Blunt/Blunt Tips",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "994376",
+    "title": "PEAK Tungsten Carbide Gorney Freeman Scissor, Curved, 7.5\", Bl/Bl",
+    "sku": "TC04-7569",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TC04-7569: PEAK Gorney Freeman Scissors, Tungsten Carbide Blades, Curved, 7.5\" (19cm),  Blunt/Blunt, Flat Tips",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "080806",
+    "title": "PEAK  Tungsten Carbide Micro-Vascular Scissor, 7\", 45°",
+    "sku": "TC05-1945",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TC05-1945: PEAK Micro-Vascular Scissors, Tungsten Carbide Blades, Flat Handle, 7\" (18cm), Angle 45°",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "233559",
+    "title": "PEAK SuperCut Plus Ligature Scissors,  Curved, 5.7\"",
+    "sku": "TC14-0684",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TC14-0684: PEAK Ligature Scissors, Tungsten Carbide Blades, Micro Serration 5.7\" (14.5cm) Curved, Black/Gold Ring",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "312847",
+    "title": "PEAK SuperCut Plus Ligature Scissors, Curved, 7\"",
+    "sku": "TC14-0688",
+    "category": "Scissors",
+    "subcategory": "SuperCut Plus Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TC14-0688: PEAK Ligature Scissors, Tungsten Carbide blades, Micro Serration, 7\" (18cm), Curved, Black/Gold Ring",
+    "image": "",
+    "featured": false
   }
 ]
