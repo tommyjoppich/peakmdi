@@ -1265,7 +1265,7 @@
     "featured": false
   },
   {
-    "id": "002757",
+    "id": "597310",
     "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
     "sku": "33SS112MM40",
     "category": "Kerrison Rongeurs",
@@ -1276,7 +1276,7 @@
     "featured": false
   },
   {
-    "id": "121468",
+    "id": "676821",
     "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
     "sku": "33SS113MM40",
     "category": "Kerrison Rongeurs",
@@ -1287,13 +1287,24 @@
     "featured": false
   },
   {
-    "id": "178334",
+    "id": "733009",
     "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
     "sku": "33SS114MM40",
     "category": "Kerrison Rongeurs",
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33SS114MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (175mm), 4mm, 40° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "792940",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS115MM40",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS115MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (175mm), 5mm, 40° up, stainless steel",
     "image": "",
     "featured": false
   }
