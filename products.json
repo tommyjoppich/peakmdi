@@ -1208,5 +1208,60 @@
     "categoryThree": "33SS105MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (175mm), 5mm, 90° up, stainless steel",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "455011",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS103MM40",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS103MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (175mm), 3mm, 40° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "548190",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS106MM90",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS106MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (175mm), 6mm, 90° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "609693",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS104MM40",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS104MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (175mm), 4mm, 40° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "681956",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS105MM40",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS105MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (175mm), 5mm, 40° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "751702",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS106MM40",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS106MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (175mm), 6mm, 40° up, stainless steel",
+    "image": "",
+    "featured": false
   }
 ]
