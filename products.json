@@ -691,5 +691,60 @@
     "categoryThree": "TC14-0688: PEAK Ligature Scissors, Tungsten Carbide blades, Micro Serration, 7\" (18cm), Curved, Black/Gold Ring",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "596069",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS71MM90",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS71MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 7\" (175mm), 1mm, 90° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "994460",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS81MM90",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS81MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 8\" (175mm), 1mm, 90° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "100461",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS91MM90",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS91MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 9\" (175mm), 1mm, 90° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "182778",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS111MM90",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS111MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (175mm), 1mm, 90° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "335502",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS71MM40",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS71MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 7\" (175mm), 1mm, 40° up, stainless steel",
+    "image": "",
+    "featured": false
   }
 ]
