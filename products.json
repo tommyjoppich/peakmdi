@@ -2387,105 +2387,6 @@
     "featured": false
   },
   {
-    "id": "795717",
-    "title": "PEAK Desmarres Retractor, 10mm",
-    "sku": "1100123",
-    "category": "Retractors",
-    "subcategory": "Desmarres Retractors",
-    "unitOfSale": "",
-    "categoryThree": "1100123: PEAK Desmarres Retractor - 10mm Wide blade, Round Handle, Titanium handle/Stainless Steel shaft, 4.75\" (12cm)",
-    "image": "",
-    "featured": false
-  },
-  {
-    "id": "846660",
-    "title": "PEAK Desmarres Retractor , 7mm",
-    "sku": "1100683",
-    "category": "Retractors",
-    "subcategory": "Desmarres Retractors",
-    "unitOfSale": "",
-    "categoryThree": "1100683: PEAK Desmarres Retractor - 7mm Wide blade, Round Handle, Titanium Handle/Stainless Steel Shaft, 4.75\" (12cm)",
-    "image": "",
-    "featured": false
-  },
-  {
-    "id": "897261",
-    "title": "PEAK Desmarres Retractor, 9mm",
-    "sku": "1100693",
-    "category": "Retractors",
-    "subcategory": "Desmarres Retractors",
-    "unitOfSale": "",
-    "categoryThree": "1100693: Desmarres Retractor - 9mm Wide blade, Round Handle, Titanium Handle/Stainless Steel Shaft, 4.75\" (12cm)",
-    "image": "",
-    "featured": false
-  },
-  {
-    "id": "995676",
-    "title": "PEAK Desmarres Retractor, 11mm, Stainless Steel",
-    "sku": "1100701",
-    "category": "Retractors",
-    "subcategory": "Desmarres Retractors",
-    "unitOfSale": "",
-    "categoryThree": "1100701: Desmarres Retractor - 11mm Wide blade, Round Handle, Stainless Steel, 4.75\" (12cm)",
-    "image": "",
-    "featured": false
-  },
-  {
-    "id": "051552",
-    "title": "PEAK Desmarres Retractor, 11mm",
-    "sku": "1100703",
-    "category": "Retractors",
-    "subcategory": "Desmarres Retractors",
-    "unitOfSale": "",
-    "categoryThree": "1100703: Desmarres Retractor - 11mm Wide blade, Round Handle, Titanium Handle/Stainless Steel Shaft, 4.75\" (12cm)",
-    "image": "",
-    "featured": false
-  },
-  {
-    "id": "105751",
-    "title": "PEAK Desmarres Retractor, 13mm, Stainless Steel",
-    "sku": "1100711",
-    "category": "Retractors",
-    "subcategory": "Desmarres Retractors",
-    "unitOfSale": "",
-    "categoryThree": "1100711: PEAK Desmarres Retractor - 13mm Wide blade, Round Handle, Stainless Steel, 4.75\" (12cm)",
-    "image": "",
-    "featured": false
-  },
-  {
-    "id": "196452",
-    "title": "PEAK Desmarres Retractor, 13mm, Titanium/Stainless Steel",
-    "sku": "1100713",
-    "category": "Retractors",
-    "subcategory": "Desmarres Retractors",
-    "unitOfSale": "",
-    "categoryThree": "1100713: PEAK Desmarres Retractor - 13mm Wide blade, Round Handle, Titanium Handle/Stainless Steel Shaft, 4.75\" (12cm)",
-    "image": "",
-    "featured": false
-  },
-  {
-    "id": "253076",
-    "title": "PEAK Desmarres Retractor, 15mm, Stainless Steel",
-    "sku": "1100721",
-    "category": "Retractors",
-    "subcategory": "Desmarres Retractors",
-    "unitOfSale": "",
-    "categoryThree": "1100721: PEAK Desmarres Retractor - 15mm Wide blade, Round Handle, Stainless Steel, 4.75\" (12cm)",
-    "image": "",
-    "featured": false
-  },
-  {
-    "id": "329437",
-    "title": "PEAK Desmarres Retractors, 15mm, Titanium/Stainless Steel",
-    "sku": "1100723",
-    "category": "Retractors",
-    "subcategory": "Desmarres Retractors",
-    "unitOfSale": "",
-    "categoryThree": "1100723: PEAK Desmarres Retractor - 15mm Wide blade, Round Handle, Titanium Handle/Stainless Steel Shaft, 4.75\" (12cm)",
-    "image": "",
-    "featured": false
-  },
-  {
     "id": "936784",
     "title": "PEAK Iris Scissor, Str, 4\"",
     "sku": "AC0-602",
@@ -2835,6 +2736,116 @@
     "unitOfSale": "",
     "categoryThree": "AC4-112: PEAK Knapp Iris Scissor, 4.5\" (11.5CM), Curved, Sharp/Blunt",
     "image": "AC4-112 knapp iris scissors curved .png",
+    "featured": false
+  },
+  {
+    "id": "917906",
+    "title": "PEAK Stevens Tenotomy Scissor, Str, 4.5\", Sh",
+    "sku": "AC5-002",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC5-002: PEAK Stevens Tenotomy Scissor, Sharp Tips, 4.5\"; (11.4 Cm), Straight",
+    "image": "AC5-002 stevens tentotomy scissors straight sharp tip 4-1:2\".png",
+    "featured": false
+  },
+  {
+    "id": "043047",
+    "title": "PEAK Stevens Tenotomy Scissor, Cvd, 4.5\", Sh",
+    "sku": "AC5-003",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC5-003: PEAK Stevens Tentomy Scissor, Sharp Tips, 4.5\" (11.4 Cm), Curved",
+    "image": "AC5-003 stevens tentotomy scissors curved sharp tips 4-1:2\".png",
+    "featured": false
+  },
+  {
+    "id": "156283",
+    "title": "PEAK Stevens Tenotomy Scissor, Str, 4 1/8\", Bl",
+    "sku": "AC5-010",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC5-010: PEAK Stevens Tenotomy Scissor, Blunt Tips, Straight, 4 1/8\" (10.5 Cm)",
+    "image": "AC5-010 stevens tentotomy scissors straight 4-1:8\" and 4-1:2\".png",
+    "featured": false
+  },
+  {
+    "id": "300671",
+    "title": "PEAK Stevens Tenotomy Scissor, Cvd, 4 1/8\", Bl",
+    "sku": "AC5-011",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC5-011: PEAK Stevens Tenotomy Scissor, Blunt Tips, Curved,  4 1/8\" (10.5 Cm)",
+    "image": "AC5-011 stevens tentotomy scissors curved 4-1:8\" and 4-1:2\".png",
+    "featured": false
+  },
+  {
+    "id": "403003",
+    "title": "PEAK Stevens Tenotomy Scissor, Str, 4.5\", Bl",
+    "sku": "AC5-012",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC5-012: PEAK Stevens Tenotomy Scissor, Blunt Tips, Straight, 4.5\" (11.4 Cm)",
+    "image": "AC5-012 stevens tentotomy scissors straight 4-1:8\" and 4-1:2\" 2.png",
+    "featured": false
+  },
+  {
+    "id": "484525",
+    "title": "PEAK Stevens Tenotomy Scissor, Cvd, 4.5\", Bl",
+    "sku": "AC5-013",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC5-013: PEAK Stevens Tenotomy Scissor, Blunt Tips, Curved, 4.5\" (11.4 Cm)",
+    "image": "AC5-013 stevens tentotomy scissors curved 4-1:8\" and 4-1:2\" 2.png",
+    "featured": false
+  },
+  {
+    "id": "579199",
+    "title": "PEAK Stevens Tenotomy Scissor, Ribbon Style, Str, 4\", Sh",
+    "sku": "AC5-022",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC5-022: PEAK Stevens Tenotomy Scissor, Ribbon Style Ring Handle, 4\" (10.2 Cm), Straight, Sharp",
+    "image": "AC5-022 stevens tenot ribbon ring scissors straight blunt tips 4\" 2 copy.png",
+    "featured": false
+  },
+  {
+    "id": "670634",
+    "title": "PEAK PEAK Stevens Tenotomy Scissor, Ribbon Style, 4\", Cvd, Sh",
+    "sku": "AC5-023",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC5-023: PEAK Stevens Tenotomy Scissor, Ribbon Style Ring Handle, 4\" (10.2 Cm), Curved, Sharp",
+    "image": "AC5-023 stevens tenot scissors ribbon ring curved blunt tips 4\" copy.png",
+    "featured": false
+  },
+  {
+    "id": "762518",
+    "title": "PEAK Stevens Tenotomy Scissor, Ribbon Style, 4\", Str, Bl",
+    "sku": "AC5-032",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC5-032: PEAK Stevens Tenotomy Scissor, Ribbon Style Ring Handle, 4\" (10.2 Cm), Straight, Blunt",
+    "image": "AC5-032 stevens tenot ribbon ring scissors straight blunt tips 4\" 2.png",
+    "featured": false
+  },
+  {
+    "id": "850076",
+    "title": "PEAK Stevens Tenotomy Scissor, Ribbon Style, 4\", Cvd, Bl",
+    "sku": "AC5-033",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC5-033: PEAK Stevens Tenotomy Scissor, Ribbon Style Ring Handle, 4\" (10.2 Cm), Curved, Blunt",
+    "image": "AC5-033 stevens tenot scissors ribbon ring curved blunt tips 4\".png",
     "featured": false
   }
 ]
