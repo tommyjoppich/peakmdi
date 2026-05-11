@@ -1362,5 +1362,49 @@
     "categoryThree": "33SS115MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (175mm), 5mm, 90° up, stainless steel",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "630926",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS815MM40",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS815MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 8\" (175mm), 1.5mm, 40° up, Pin Ejector, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "701913",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS82MM40PIN",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS82MM40PIN: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 8\" (175mm), 2mm, 40° up, Pin Ejector, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "771302",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS825MM40PIN",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS825MM40PIN: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 8\" (175mm), 2.5mm, 40° up, Pin Ejector, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "846290",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS83MM40PIN",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS83MM40PIN: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 8\" (175mm), 4mm, 40° up, Pin Ejector, stainless steel",
+    "image": "",
+    "featured": false
   }
 ]
