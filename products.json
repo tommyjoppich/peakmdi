@@ -1307,5 +1307,60 @@
     "categoryThree": "33SS115MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (175mm), 5mm, 40° up, stainless steel",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "175031",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS116MM40",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS116MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (175mm), 6mm, 40° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "225346",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS112MM90",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS112MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (175mm), 2mm, 90° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "273662",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS113MM90",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS113MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (175mm), 3mm, 90° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "334219",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS114MM90",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS114MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (175mm), 4mm, 90° up, stainless steel",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "392111",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
+    "sku": "33SS115MM90",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Cannulated",
+    "unitOfSale": "",
+    "categoryThree": "33SS115MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (175mm), 5mm, 90° up, stainless steel",
+    "image": "",
+    "featured": false
   }
 ]
