@@ -2726,5 +2726,60 @@
     "categoryThree": "AC3-110: PEAK Iris Scissor, Ribbon Style Ring Handle, Curved, Standard Pattern, 4\" (10.2 Cm)",
     "image": "AC3-110 iris ribbon ring scissors curved(mini) 3-3:4\" copy.png",
     "featured": false
+  },
+  {
+    "id": "197336",
+    "title": "PEAK Knapp Iris Scissor, Str, 4\", Bl/Bl",
+    "sku": "AC4-010",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC4-010: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Straight, Blunt/Blunt",
+    "image": "Ac4-010.png",
+    "featured": false
+  },
+  {
+    "id": "305407",
+    "title": "PEAK Knapp Iris Scissor, Str, 4\", Sh/Bl",
+    "sku": "AC4-010SB",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC4-010SB: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Straight, Sharp/Blunt",
+    "image": "AC4-010SB, AC4-012 knapp iris scissors straight S:B 4\" and 4-1:2\".png",
+    "featured": false
+  },
+  {
+    "id": "399894",
+    "title": "PEAK Knapp Iris Scissor, Str, 4\", Sh/Sh",
+    "sku": "AC4-010SS",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC4-010SS: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Straight, Sharp/Sharp",
+    "image": "AC4-010SB, AC4-012 knapp iris scissors straight S:B 4\" and 4-1:2\" 2.png",
+    "featured": false
+  },
+  {
+    "id": "506667",
+    "title": "PEAK Knapp Strabismus Scissor, Str, Rnd Bld, 4\", Bl",
+    "sku": "AC4-011",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC4-011: PEAK Knapp Strabismus Scissor, Standard, Blunt Tips, Round Blade, 4\" (11.5 Cm), Straight",
+    "image": "AC4-011 knapp strabis scissor straight blunt tips, round blade 4-1:2\".png",
+    "featured": false
+  },
+  {
+    "id": "650937",
+    "title": "PEAK Knapp Iris Scissor, Str, 4.5\", Sh/Bl",
+    "sku": "AC4-012",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC4-012: PEAK Knapp Iris Scissor, 4.5\" (11.5CM), Straight, Sharp/Blunt",
+    "image": "AAC4-010SB, AC4-012 knapp iris scissors straight S:B 4\" and 4-1:2\" copy.png",
+    "featured": false
   }
 ]
