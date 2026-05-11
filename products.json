@@ -2594,5 +2594,93 @@
     "categoryThree": "AC0732: PEAK Iris Scissor, Standard Pattern, Curved, 4.5\" (11.4 cm)",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "141440",
+    "title": "PEAK Wagner Plastic Surgery Scissor, Cvd, 4.75\", Sh/Bl, Serr Bld",
+    "sku": "AC0733",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC0733: PEAK Wagner Plastic Surgery Scissor, Fine Pattern, 4.75\" (12.0 Cm), Curved, Sharp/Blunt Point, Serrated Blade",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "233594",
+    "title": "PEAK Iris Scissor, Del, Str, 3.5\"",
+    "sku": "AC2009",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC2009: PEAK Iris Scissor, Standard Pattern, Delicate, Straight, 3.5\" (8.9 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "295175",
+    "title": "PEAK Iris Scissor, Str, 4\"",
+    "sku": "AC2010",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC2010: PEAK Iris Scissor, Standard Pattern, Straight, 4\" (10.2 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "369256",
+    "title": "PEAK  Iris Scissor, Str, 4.5\"",
+    "sku": "AC2011",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC2011: PEAK Iris Scissor, Standard Pattern, Straight, 4.5\" (11.4 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "430253",
+    "title": "PEAK Iris Scissor, Str, 5\"",
+    "sku": "AC2012",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC2012: PEAK Iris Scissor, Standard Pattern, Straight, 5\" (12.5 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "506274",
+    "title": "PEAK Iris Scissor, Del, Cvd, 3.5\"",
+    "sku": "AC2109",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC2109: PEAK Iris Scissor, Standard Pattern, Delicate, Curved, 3.5\" (8.9 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "581811",
+    "title": "PEAK Iris Scissor, Cvd, 4\"",
+    "sku": "AC2110",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC2110: PEAK Iris Scissor, Standard Pattern, Curved, 4\" (10.2 cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "647115",
+    "title": "PEAK Iris Scissor, Cvd, 5\"",
+    "sku": "AC2112",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC2112: PEAK Iris Scissor, Standard Pattern, Curved, 5\" (12.5 Cm)",
+    "image": "",
+    "featured": false
   }
 ]
