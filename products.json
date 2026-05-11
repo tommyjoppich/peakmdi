@@ -722,7 +722,7 @@
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33SS91MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 9\" (225mm), 1mm, 90° up, stainless steel",
-    "image": "",
+    "image": "33SS91MM90.png",
     "featured": false
   },
   {
@@ -733,7 +733,7 @@
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33SS111MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (275mm), 1mm, 90° up, stainless steel",
-    "image": "",
+    "image": "33SS111MM90.png",
     "featured": false
   },
   {
@@ -744,7 +744,7 @@
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33SS71MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 7\" (175mm), 1mm, 40° up, stainless steel",
-    "image": "",
+    "image": "33SS71MM40.png",
     "featured": false
   },
   {
@@ -755,7 +755,7 @@
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33SS81MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 8\" (200mm), 1mm, 40° up, stainless steel",
-    "image": "",
+    "image": "33SS81MM40.png",
     "featured": false
   },
   {
@@ -766,7 +766,7 @@
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33SS91MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 9\" (225mm), 1mm, 40° up, stainless steel",
-    "image": "",
+    "image": "33SS91MM40.png",
     "featured": false
   },
   {
@@ -777,7 +777,7 @@
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33SS101MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (250mm), 1mm, 40° up, stainless steel",
-    "image": "",
+    "image": "33SS101MM40.png",
     "featured": false
   },
   {
@@ -788,7 +788,7 @@
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33SS101MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (250mm), 1mm, 90° up, stainless steel",
-    "image": "",
+    "image": "33SS101MM90.png",
     "featured": false
   },
   {
@@ -799,7 +799,7 @@
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33SS111MM40: PEAK PEAK Flushable Cannulated Kerrison Rongeur, Micro, 11\" (275mm), 1mm, 40° up, stainless steel",
-    "image": "",
+    "image": "33SS111MM40.png",
     "featured": false
   },
   {
@@ -2482,6 +2482,50 @@
     "subcategory": "Desmarres Retractors",
     "unitOfSale": "",
     "categoryThree": "1100723: PEAK Desmarres Retractor - 15mm Wide blade, Round Handle, Titanium Handle/Stainless Steel Shaft, 4.75\" (12cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "936784",
+    "title": "PEAK Iris Scissor, Str, 4\"",
+    "sku": "AC0602",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC0602: PEAK Iris Scissor, Standard Pattern, Straight, 4\" (10.2 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "019717",
+    "title": "PEAK Iris Scissor, Str, 4.5\"",
+    "sku": "AC0603",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC0603: PEAK Iris Scissor, Standard Pattern, Straight, 4.5\" (11.4 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "102547",
+    "title": "PEAK Iris Scissor, Str, 4.5\", Sh/Bl",
+    "sku": "AC0613",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC0613: PEAK Iris Scissor, Standard Pattern, Straight, Sharp/Blunt, 4.5\" (11.4 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "191870",
+    "title": "PEAK Iris Scissor, Str, 4.5\", Sh/Bl",
+    "sku": "AC0632",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC0632: PEAK Iris Scissor, Standard Pattern, Straight, Sharp/Blunt, 4.5\" (11.4 Cm)",
     "image": "",
     "featured": false
   }
