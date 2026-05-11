@@ -2781,5 +2781,60 @@
     "categoryThree": "AC4-012: PEAK Knapp Iris Scissor, 4.5\" (11.5CM), Straight, Sharp/Blunt",
     "image": "AAC4-010SB, AC4-012 knapp iris scissors straight S:B 4\" and 4-1:2\" copy.png",
     "featured": false
+  },
+  {
+    "id": "475001",
+    "title": "PEAK  Knapp Iris Scissor, Cvd, 4\", Bl/Bl",
+    "sku": "AC4-110",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC4-110: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Curved, Blunt/Blunt",
+    "image": "AC4-110.png",
+    "featured": false
+  },
+  {
+    "id": "567249",
+    "title": "PEAK Knapp Iris Scissor, Cvd, 4\", Sh/Bl",
+    "sku": "AC4-110SB",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC4-110SB: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Curved Sharp/Blunt",
+    "image": "AC4-110SB.png",
+    "featured": false
+  },
+  {
+    "id": "659441",
+    "title": "PEAK Knapp Iris Scissor, Cvd, 4\" , Sh/Sh",
+    "sku": "AC4-110SS",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC4-110SS: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Curved Sharp/Sharp",
+    "image": "AC4-110SS copy.png",
+    "featured": false
+  },
+  {
+    "id": "785835",
+    "title": "PEAK Knapp Strabismus Scissor, Cvd, Rnd Bld, 4\", Bl",
+    "sku": "AC4-111",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC4-111: PEAK Knapp Strabismus Scissor, Standard, Blunt Tips, Round Blade, 4\" (11.5 Cm), Curved",
+    "image": "AC4-111 knapp strabis curved blunt tips, round blade 4-1:2\".png",
+    "featured": false
+  },
+  {
+    "id": "952552",
+    "title": "PEAK Knapp Iris Scissor, Cvd, 4.5\", S/B",
+    "sku": "AC4-112",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AC4-112: PEAK Knapp Iris Scissor, 4.5\" (11.5CM), Curved, Sharp/Blunt",
+    "image": "AC4-112 knapp iris scissors curved .png",
+    "featured": false
   }
 ]
