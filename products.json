@@ -3023,5 +3023,71 @@
     "categoryThree": "AD0-383: PEAK Operating Scissor, Blunt/Blunt, Curved, Slim Pattern, 5 1/8\" (13.0 Cm)",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "814284",
+    "title": "PEAK Operating Scissor, Str, 4.5\", Sh/Sh",
+    "sku": "AD0-411",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-411: PEAK Operating Scissor, Sharp/Sharp, Str, 4.5\" (11.4 Cm)",
+    "image": "AD0-411 OR Scissors Sharp sharp copy.png",
+    "featured": false
+  },
+  {
+    "id": "906450",
+    "title": "PEAK Operating Scissor, Str, 5\", Sh/Sh",
+    "sku": "AD0-413",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-413: PEAK Operating Scissor, Sharp/Sharp, Straight, 5\" (12.7cm)",
+    "image": "AD0-413 OR Scissors Sharp sharp copy.png",
+    "featured": false
+  },
+  {
+    "id": "002117",
+    "title": "PEAK Operating Scissor, Str, 5.75\", Sh/Sh",
+    "sku": "AD0-414",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-414: PEAK Operating Scissor, Sharp/Sharp, Straight, 5.75\" (14.6 Cm)",
+    "image": "AD0-414 OR Scissors Sharp sharp copy.png",
+    "featured": false
+  },
+  {
+    "id": "089561",
+    "title": "PEAK Operating Scissor, Str, 6\", Sh/Sh",
+    "sku": "AD0-415",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0415: PEAK Operating Scissor, Sharp/Sharp, Straight, 6\" (15.2 Cm)",
+    "image": "AD0-415 OR Scissors Sharp sharp copy.png",
+    "featured": false
+  },
+  {
+    "id": "218888",
+    "title": "PEAK Operating Scissor, Str, 6.5\", Sh/Sh",
+    "sku": "AD0-416",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-416: PEAK Operating Scissor, Sharp/Sharp, Straight, 6.5\" (16.5 Cm)",
+    "image": "AD0-416 OR Scissors Sharp sharp copy.png",
+    "featured": false
+  },
+  {
+    "id": "297456",
+    "title": "PEAK Operating Scissor, Str, 7.25\", Sh/Sh",
+    "sku": "AD0-418",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-418: PEAK Operating Scissor, Sharp/Shrp, Straight, 7.25\" (18.5 Cm)",
+    "image": "AD0-418 OR Scissors Sharp sharp.png",
+    "featured": false
   }
 ]
