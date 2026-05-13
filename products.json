@@ -3342,5 +3342,93 @@
     "categoryThree": "AD0-984: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Curved, Blunt/Blunt Point",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "438167",
+    "title": "PEAK Sims Scissor, Str, 8\", Bl/Bl",
+    "sku": "AD3-020",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD3-020: PEAK Sims Scissor, 8\" (20.3 Cm), Straight, Blunt/Blunt Point",
+    "image": "AD3-020 sims scissors straight B:B points 8\".png",
+    "featured": false
+  },
+  {
+    "id": "539869",
+    "title": "PEAK Sims Scissor, 8\", Cvd, Bl/Bl",
+    "sku": "AD3-120",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD3-120: PEAK Sims Scissor, 8\" (20.3 Cm), Curved, Buntl/Blunt Point",
+    "image": "AD3-120 sims scissors curved B:B points 8\".png",
+    "featured": false
+  },
+  {
+    "id": "620556",
+    "title": "PEAK Sims Scissor, Str, 8\", Sh/Sh",
+    "sku": "AD3-220",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD3-220: PEAK Sims Scissor, 8\" (20.3 Cm), Straight, Sharp/Sharp Point",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "706501",
+    "title": "PEAK Sims Scissor, Cvd, 8\", Sh/Sh",
+    "sku": "AD3-320",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD3320: PEAK Sims Scissor, 8\" (20.3 Cm), Curved, Sharp/Sharp Point",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "792886",
+    "title": "PEAK Sims Scissor, 8\", Str, Sh/Bl",
+    "sku": "AD3-420",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD3-420: PEAK Sims Scissor, 8\" (20.3 Cm), Straight, Sharp/Blunt Point",
+    "image": "AD3-420 sims scissors straight S:B points 8\".png",
+    "featured": false
+  },
+  {
+    "id": "874172",
+    "title": "PEAK Sims Scissor, 8\", Cvd, Sh/Bl",
+    "sku": "AD3-520",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD3-520: PEAK Sims Scissor, 8\" (20.3 Cm), Curved, Sharp/Blunt Point",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "949489",
+    "title": "PEAK Doyen Abdominal Scissor, 7\", Str",
+    "sku": "AD3-818",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD3-818: PEAK Doyen Abdominal Scissor, 7\" (17.8 Cm), Straight",
+    "image": "AD3-818 doyen abdominal scissors straight 7\".png",
+    "featured": false
+  },
+  {
+    "id": "037472",
+    "title": "PEAK Doyen Abdominal Scissor, 7\", Cvd",
+    "sku": "AD3-918",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD3-918: PEAK Doyen Abdominal Scissor, 7\" (17.8 Cm), Curved",
+    "image": "",
+    "featured": false
   }
 ]
