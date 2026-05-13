@@ -3529,5 +3529,104 @@
     "categoryThree": "AD5-045: PEAK Mayo Scissor, Standard Beveled Blade, Straight, 18\" (45.5 Cm)",
     "image": "AD5-045 mayo scissors straight 9\", 10\", 11\" copy.png",
     "featured": false
+  },
+  {
+    "id": "585866",
+    "title": "PEAK Mayo Scissor, Cvd, 5.5\", Bev Bld",
+    "sku": "AD5-114",
+    "category": "Scissors",
+    "subcategory": "Standard scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-114: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 5.5\" (14.0 Cm)",
+    "image": "AD5-114 mayo scissors beveled curved 5-1:2\".png",
+    "featured": false
+  },
+  {
+    "id": "701790",
+    "title": "PEAK Mayo Scissor, Cvd, 6.75\", Bev Bld",
+    "sku": "AD5-117",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-117: PEAK Mayo Scissor, Standard Beveled Blades, Curved, 6.75\" (17.1 Cm)",
+    "image": "AD5-117 mayo scissors beveled curved 5-1:2\" copy.png",
+    "featured": false
+  },
+  {
+    "id": "866841",
+    "title": "PEAK Mayo Scissor, Cvd, 9\", Bev Bld",
+    "sku": "AD5-123",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-123: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 9\" (22.9 Cm)",
+    "image": "AD5-123, mayo scissors curved 9\", 10\",  11\".png",
+    "featured": false
+  },
+  {
+    "id": "976679",
+    "title": "PEAK Mayo Scissors, Cvd, 10\", Bev Bld",
+    "sku": "AD5-125",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-125: PEAK Mayo Scissors, Standard Beveled Blade, Curved, 10\" (25.0 Cm)",
+    "image": "AD5-125, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "featured": false
+  },
+  {
+    "id": "089740",
+    "title": "PEAK Mayo Scissor, Cvd, 11\", Bev Bld",
+    "sku": "AD5-128",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-128: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 11\" (28.0 Cm)",
+    "image": "AD5-128, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "featured": false
+  },
+  {
+    "id": "204610",
+    "title": "PEAK Mayo Scissor, Cvd, 12\", Bev Bld",
+    "sku": "AD5-130",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-130: PEAK Mayo Scissor, Standard Beveled Blades, Curved, 12\" (30.0 Cm)",
+    "image": "AD5-130, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "featured": false
+  },
+  {
+    "id": "340291",
+    "title": "PEAK Mayo Scissor, Cvd, 14\", Bev Bld",
+    "sku": "AD5-135",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-135: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 14\" (35.0 Cm)",
+    "image": "AD5-135, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "featured": false
+  },
+  {
+    "id": "474698",
+    "title": "PEAK Mayo Scissor, Cvd, 16\", Bev Bld",
+    "sku": "AD5-140",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-140: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 16\" (40.5 Cm)",
+    "image": "AD5-140, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "featured": false
+  },
+  {
+    "id": "672601",
+    "title": "PEAK Mayo Scissor, Cvd, 18\", Bev Bld",
+    "sku": "AD5-145",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-145: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 18\" (45.5 Cm)",
+    "image": "AD5-145, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "featured": false
   }
 ]
