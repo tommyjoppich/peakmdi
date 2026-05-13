@@ -213,76 +213,32 @@
     }
 
     /* ── Mobile menu overlay ── */
-    .mobile-menu {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: var(--white);
-      z-index: 999;
-      flex-direction: column;
-      padding: 24px;
-      overflow-y: auto;
-    }
-    .mobile-menu.open { display: flex; }
+    
+    
+    /* Left tap-to-close zone */
+    
+    /* Actual drawer panel */
+    
 
-    .mobile-menu__header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 24px;
-    }
-    .mobile-menu__header img { height: 48px; }
+    
+    
 
-    .mobile-menu__close {
-      background: none; border: none;
-      color: var(--navy);
-      display: flex; align-items: center;
-    }
+    
 
     /* Mobile menu items — top-level */
-    .mobile-menu nav a,
-    .mobile-menu nav .mobile-nav-toggle {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-weight: 600;
-      font-size: 18px;
-      padding: 16px 0;
-      border-bottom: 1px solid var(--border);
-      color: var(--text);
-      background: none;
-      border-left: none;
-      border-right: none;
-      border-top: none;
-      width: 100%;
-      text-align: left;
-      cursor: pointer;
-    }
-    .mobile-nav-toggle .chevron {
-      width: 16px; height: 16px;
-      stroke: var(--navy); fill: none;
-      stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round;
-      transition: transform 0.2s;
-      flex-shrink: 0;
-    }
-    .mobile-nav-toggle.open .chevron { transform: rotate(180deg); }
+    
+    /* Ensure panel nav fills full width */
+    
+    
+    
+    
+    
 
     /* Mobile sub-menu */
-    .mobile-submenu {
-      display: none;
-      flex-direction: column;
-      padding: 4px 0 4px 16px;
-      border-bottom: 1px solid var(--border);
-    }
-    .mobile-submenu.open { display: flex; }
-    .mobile-submenu a {
-      font-size: 15px;
-      font-weight: 500;
-      color: var(--muted);
-      padding: 12px 0;
-      border-bottom: 1px solid #f0f0f0;
-    }
-    .mobile-submenu a:last-child { border-bottom: none; }
+    
+    
+    
+    
 
     /* Responsive visibility */
     /* Desktop (>=1024px): show desktop nav + quote button, hide others */
@@ -479,8 +435,14 @@
     ══════════════════════════════════════════════════════════ */
     .resources-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
+    }
+    @media (max-width: 1023px) {
+      .resources-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .resources-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
     }
 
     .resource-card {
@@ -591,13 +553,7 @@
       .resources-grid {
         grid-template-columns: repeat(2, 1fr);
       }
-      /* 3rd resource card centered */
-      .resources-grid .resource-card:nth-child(3) {
-        grid-column: 1 / -1;
-        max-width: 380px;
-        margin: 0 auto;
-        width: 100%;
-      }
+      
       .footer__inner {
         grid-template-columns: 1fr 1fr;
         gap: 28px;
@@ -622,12 +578,6 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
       }
-      .resources-grid .resource-card:nth-child(3) {
-        grid-column: 1 / -1;
-        max-width: 280px;
-        margin: 0 auto;
-        width: 100%;
-      }
       .hero { padding: 48px 16px; min-height: 260px; }
       .section { padding: 40px 16px; }
       .section--bg .section__inner { padding: 40px 16px; }
@@ -646,9 +596,6 @@
 
     /* Very small mobile */
     @media (max-width: 400px) {
-      .resources-grid .resource-card:nth-child(3) {
-        max-width: 100%;
-      }
     }
 
     /* ── Divider between sections ── */
@@ -859,14 +806,91 @@
       width: 8px;
     }
 
+
+    /* ── Mobile menu ── */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      z-index: 999;
+      background: rgba(0,0,0,0.45);
+      flex-direction: row;
+      align-items: stretch;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu__backdrop {
+      flex: 0 0 18%;
+      min-width: 48px;
+      cursor: pointer;
+    }
+    .mobile-menu__panel {
+      flex: 1;
+      background: var(--white);
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+      overflow-y: auto;
+      max-width: 82vw;
+    }
+    .mobile-menu__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    .mobile-menu__header img { height: 48px; }
+    .mobile-menu__close {
+      background: none; border: none;
+      color: var(--navy); display: flex; align-items: center;
+    }
+    .mobile-menu__panel nav {
+      display: flex; flex-direction: column; width: 100%;
+    }
+    .mobile-menu__panel nav a,
+    .mobile-menu__panel nav .mobile-nav-toggle {
+      display: flex; justify-content: space-between; align-items: center;
+      font-weight: 600; font-size: 18px; padding: 16px 0;
+      border-bottom: 1px solid var(--border); color: var(--text);
+      background: none; border-left: none; border-right: none; border-top: none;
+      width: 100%; text-align: left; cursor: pointer; text-decoration: none;
+    }
+    .mobile-nav-row {
+      display: flex; align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-nav-link {
+      flex: 1; font-weight: 600; font-size: 18px;
+      padding: 16px 0; color: var(--text);
+      display: block; text-decoration: none;
+    }
+    .mobile-nav-chevron {
+      background: none; border: none; padding: 16px 8px;
+      cursor: pointer; display: flex; align-items: center; color: var(--navy);
+    }
+    .mobile-nav-chevron .chevron, .mobile-nav-toggle .chevron {
+      width: 16px; height: 16px; stroke: var(--navy); fill: none;
+      stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round;
+      transition: transform 0.2s;
+    }
+    .mobile-nav-chevron.open .chevron,
+    .mobile-nav-toggle.open .chevron { transform: rotate(180deg); }
+    .mobile-submenu {
+      display: none; flex-direction: column;
+      padding: 4px 0 4px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .mobile-submenu.open { display: flex; }
+    .mobile-submenu a {
+      font-size: 13px; font-weight: 500; color: var(--muted);
+      padding: 10px 0; border-bottom: 1px solid #f0f0f0;
+      text-decoration: none; display: block;
+    }
+    .mobile-submenu a:last-child { border-bottom: none; }
   </style>
 </head>
 <body>
 
-  <!-- ══════════════════════════════════════════════════════════
-       NAVBAR
-  ══════════════════════════════════════════════════════════ -->
-  <header class="navbar">
+<header class="navbar">
 
     <!-- Column 1: Logo (left) -->
     <a href="#" class="navbar__logo">
@@ -987,12 +1011,14 @@
 
   <!-- Mobile menu overlay -->
   <div class="mobile-menu" id="mobileMenu">
+    <!-- Left backdrop — tap to close -->
+    <div class="mobile-menu__backdrop" onclick="closeMenu()"></div>
+    <!-- Right panel -->
+    <div class="mobile-menu__panel">
     <div class="mobile-menu__header">
-      <img src="peak-logo.png" alt="PEAK" />
-      <button class="mobile-menu__close" onclick="closeMenu()" aria-label="Close menu">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
-        </svg>
+      <a href="index.html"><img src="peak-logo.png" alt="PEAK" /></a>
+      <button class="mobile-menu__close" onclick="closeMenu()">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
       </button>
     </div>
     <nav>
@@ -1000,19 +1026,23 @@
       <a href="about.html">About</a>
 
       <!-- Products expandable -->
-      <button class="mobile-nav-toggle" id="mob-toggle-products" onclick="toggleMobileSubmenu('mob-products','mob-toggle-products')">
-        <a href="products.html" onclick="event.stopPropagation()" style="flex:1;color:inherit;">Products</a>
-        <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
+      <div class="mobile-nav-row">
+        <a href="products.html" class="mobile-nav-link">Products</a>
+        <button class="mobile-nav-chevron" id="mob-toggle-products" onclick="toggleMobileSubmenu('mob-products','mob-toggle-products')">
+          <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
       <div class="mobile-submenu" id="mob-products">
         <span style="font-size:13px;color:#aaa;padding:8px 0;">Loading...</span>
       </div>
 
       <!-- Resources expandable -->
-      <button class="mobile-nav-toggle" id="mob-toggle-resources" onclick="toggleMobileSubmenu('mob-resources','mob-toggle-resources')">
-        Resources
-        <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-      </button>
+      <div class="mobile-nav-row">
+        <a href="resources.html" class="mobile-nav-link">Resources</a>
+        <button class="mobile-nav-chevron" id="mob-toggle-resources" onclick="toggleMobileSubmenu('mob-resources','mob-toggle-resources')">
+          <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+      </div>
       <div class="mobile-submenu" id="mob-resources">
         <a href="video-archive.html">Video Archive</a>
         <a href="pdf-catalogs.html">PDF Catalogs</a>
@@ -1022,6 +1052,8 @@
 
       <a href="contact.html">Contact Us</a>
     </nav>
+  </div>
+    </div>
   </div>
 
   <!-- ══════════════════════════════════════════════════════════
@@ -1072,37 +1104,46 @@
       <div class="resources-grid">
 
         <!-- Video Resources -->
-        <div class="resource-card">
+        <a href="video-archive.html" class="resource-card">
           <div class="resource-card__img">
-            <!-- <img src="images/video-resources.jpg" alt="Video Resources" /> -->
           </div>
           <div class="resource-card__body">
             <div class="resource-card__title">Video Resources</div>
             <div class="resource-card__desc">Check out our video resources on topics like (topic name), (topic name), and (topic name).</div>
           </div>
-        </div>
+        </a>
 
         <!-- PDF Catalogs -->
-        <div class="resource-card">
+        <a href="pdf-catalogs.html" class="resource-card">
           <div class="resource-card__img" style="background: linear-gradient(135deg, #c8b89a, #a89070);">
-            <!-- <img src="images/pdf-catalogs.jpg" alt="PDF Catalogs" /> -->
           </div>
           <div class="resource-card__body">
             <div class="resource-card__title">PDF Catalogs</div>
             <div class="resource-card__desc">Browse our downloadable PDF catalogs which contain all product information, pictures, and details.</div>
           </div>
-        </div>
+        </a>
 
         <!-- Education Materials -->
-        <div class="resource-card">
+        <a href="education-materials.html" class="resource-card">
           <div class="resource-card__img" style="background: linear-gradient(135deg, #8aadaa, #5a8580);">
-            <!-- <img src="images/articles.jpg" alt="Education Materials" /> -->
           </div>
           <div class="resource-card__body">
             <div class="resource-card__title">Education Materials</div>
             <div class="resource-card__desc">Read through our recommended articles and readings to learn more about PeakMDI's history and interests.</div>
           </div>
-        </div>
+        </a>
+
+        <!-- Product IFUs -->
+        <a href="product-ifus.html" class="resource-card">
+          <div class="resource-card__img" style="background: linear-gradient(135deg, #3a6090, #5a8aaa);">
+          </div>
+          <div class="resource-card__body">
+            <div class="resource-card__title">Product IFUs</div>
+            <div class="resource-card__desc">Access and navigate all of our product Instruction for Use documentation.</div>
+          </div>
+        </a>
+
+      </div>
 
       </div>
     </div>
@@ -1118,20 +1159,18 @@
       <div class="footer__col">
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
-        <a href="products.html">Products</a>
-        <a href="resources.html">Resources</a>
         <a href="contact.html">Contact Us</a>
       </div>
 
       <!-- Col 2: Products categories — populated dynamically from products.json -->
       <div class="footer__col">
-        <span class="footer__col-title">Products</span>
+        <a href="products.html" class="footer__col-title" style="color:rgba(255,255,255,0.9);font-weight:700;font-size:13px;display:block;margin-bottom:2px;">Products</a>
         <div id="footer-products-col" style="display:contents;"></div>
       </div>
 
       <!-- Col 3: Resources -->
       <div class="footer__col">
-        <span class="footer__col-title">Resources</span>
+        <a href="resources.html" class="footer__col-title" style="color:rgba(255,255,255,0.9);font-weight:700;font-size:13px;display:block;margin-bottom:2px;">Resources</a>
         <a href="video-archive.html">Video Archive</a>
         <a href="pdf-catalogs.html">PDF Catalogs</a>
         <a href="education-materials.html">Education Materials</a>
