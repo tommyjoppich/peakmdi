@@ -2880,5 +2880,71 @@
     "categoryThree": "AC5-065: PEAK Dissecting Scissor with Probe, 4 1/8\" (10.5 Cm), Angled",
     "image": "AC5-065 dissecting scissors with probe angled 4\" .png",
     "featured": false
+  },
+  {
+    "id": "596586",
+    "title": "PEAK Operating Scissor, Bl/Bl, Cvd, 4-1/2\"",
+    "sku": "AD0-311",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-311: PEAK Operating Scissor, Blunt/Bl,unt Curved, 4.5\"  (11.4 Cm)",
+    "image": "AD0-311.png",
+    "featured": false
+  },
+  {
+    "id": "679570",
+    "title": "PEAK Operating Scissor, Bl/Bl, Cvd, 5\"",
+    "sku": "AD0-313",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-313: PEAK Operating Scissor, Blunt/Blunt, Curved, 5\"",
+    "image": "AD0-313.png",
+    "featured": false
+  },
+  {
+    "id": "779421",
+    "title": "PEAK Operating Scissor, Cvd, 5.75\", Bl/Bl",
+    "sku": "AD0-314",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-314: PEAK Operating Scissor, Blunt/Blunt, Curved, 5.75\" (14.6 Cm)",
+    "image": "AD0-314.png",
+    "featured": false
+  },
+  {
+    "id": "871974",
+    "title": "PEAK Operating Scissor, Cvd, 6\", Bl/Bl",
+    "sku": "AD0-315",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-315: PEAK Operating Scissor, Blunt/Blunt, Curved, 6\" (15.2cm)",
+    "image": "AD0-315 operating scissors curved B:B points 4-1:2\", 5\", 5-3:4\", 6\", 6-1:2\", 7-1:4\" 2.png",
+    "featured": false
+  },
+  {
+    "id": "969883",
+    "title": "PEAK Operating Scissor, Cvd, 6.5\", Bl/Bl",
+    "sku": "AD0-316",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-316: PEAK Operating Scissor, Blunt/Blunt, Curved, 6.5\" (16.5cm)",
+    "image": "AD0-316.png",
+    "featured": false
+  },
+  {
+    "id": "083931",
+    "title": "PEAK Operating Scissor, Cvd, 7.25\", Bl/Bl",
+    "sku": "AD0-318",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-318: PEAK Operating Scissor, Blunt/Blunt, Curved, 7.25\" (18.5cm)",
+    "image": "AD0-318.png",
+    "featured": false
   }
 ]
