@@ -3628,5 +3628,82 @@
     "categoryThree": "AD5-145: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 18\" (45.5 Cm)",
     "image": "AD5-145, mayo scissors curved 9\", 10\",  11\" copy.png",
     "featured": false
+  },
+  {
+    "id": "536819",
+    "title": "PEAK Mayo-Harrington Dissecting Scissor, Str, Slim, 8\"",
+    "sku": "AD5-220",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-220: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Straight, 8\" (20.0 Cm)",
+    "image": "AD5-220 mayo harrington dissecting scissors slim straight 8\" and 9\".png",
+    "featured": false
+  },
+  {
+    "id": "639185",
+    "title": "PEAK Mayo-Harrington Dissecting Scissor, Str, Slim Pat, 9\"",
+    "sku": "AD5-223",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-223: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Straight, 9\" (23.0 Cm)",
+    "image": "AD5-223 mayo harrington dissecting scissors slim straight 8\" and 9\" copy.png",
+    "featured": false
+  },
+  {
+    "id": "749354",
+    "title": "PEAK Mayo-Harrington Dissecting Scissor, Str, Slim, 11\"",
+    "sku": "AD5-226",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-226: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Straight,  11\" (29.0 Cm)",
+    "image": "AD5-226 mayo harrington dissecting scissors straight 11-1:2\".png",
+    "featured": false
+  },
+  {
+    "id": "000336",
+    "title": "PEAK Mayo-Harrington Dissecting Scissor, Cvd, Slim, 8\"",
+    "sku": "AD5-320",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-320: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Curved, 8\" (20.0cm)",
+    "image": "AD5-320 mayo harrington scissors slim curved 8\" and 9\".png",
+    "featured": false
+  },
+  {
+    "id": "164753",
+    "title": "PEAK Mayo-Harrington Dissecting Scissor, Slim, Cvd, 9\"",
+    "sku": "AD5-323",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-323: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Curved, 9\" (23.0 Cm)",
+    "image": "AD5-323 mayo harrington scissors slim curved 8\" and 9\" copy.png",
+    "featured": false
+  },
+  {
+    "id": "269291",
+    "title": "PEAK Mayo-Harrington Dissecting Scissor, Slim Pat, Cvd, 11.5\"",
+    "sku": "AD5-326",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-326: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Curved, 11.5\"(29.0 Cm)",
+    "image": "AD5-226 mayo harrington dissecting scissors straight 11-1:2\".png",
+    "featured": false
+  },
+  {
+    "id": "453279",
+    "title": "PEAK Mayo-Harrington Dissecting Scissor, Slim, Cvd, 14\"",
+    "sku": "AD5-330",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-330: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Curved, 14\" (35.5 Cm)",
+    "image": "AD5-330 mayo harrington dissecting slim pattern curved 11-1:2\" copy.png",
+    "featured": false
   }
 ]
