@@ -138,7 +138,7 @@ function cartInjectModal() {
         <p style="font-size:13px;color:#555;font-weight:500;margin-bottom:12px;line-height:1.6;">
           Ready to get a quote? Contact us and reference the items above:
         </p>
-        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <div style="display:flex;gap:10px;flex-direction:column;">
           <a href="tel:6305205023" style="
             display:flex; align-items:center; gap:8px;
             background:#1a2f4a; color:#fff; border-radius:8px;
@@ -288,13 +288,21 @@ function cartRenderItems() {
   }
 
   container.innerHTML = `
+    <style>
+      @media (max-width: 520px) {
+        .cart-qty-header { display: none !important; }
+        .cart-qty-cell { display: block !important; width: 100% !important; padding: 4px 8px 12px !important; }
+        .cart-row-main td { vertical-align: top; }
+        .cart-sku-cell { white-space: normal !important; word-break: break-all; }
+      }
+    </style>
     <table style="width:100%;border-collapse:collapse;margin:8px 0;">
       <thead>
         <tr style="border-bottom:1.5px solid #e0e0e0;">
-          <th style="text-align:left;padding:12px 8px;font-size:11px;font-weight:700;color:#999;letter-spacing:0.08em;text-transform:uppercase;">Product</th>
-          <th style="text-align:left;padding:12px 8px;font-size:11px;font-weight:700;color:#999;letter-spacing:0.08em;text-transform:uppercase;">Product No.</th>
-          <th style="text-align:center;padding:12px 8px;font-size:11px;font-weight:700;color:#999;letter-spacing:0.08em;text-transform:uppercase;">Qty</th>
-          <th style="width:32px;"></th>
+          <th style="text-align:left;padding:10px 6px;font-size:11px;font-weight:700;color:#999;letter-spacing:0.08em;text-transform:uppercase;">Product</th>
+          <th style="text-align:left;padding:10px 6px;font-size:11px;font-weight:700;color:#999;letter-spacing:0.08em;text-transform:uppercase;">Product No.</th>
+          <th class="cart-qty-header" style="text-align:center;padding:10px 6px;font-size:11px;font-weight:700;color:#999;letter-spacing:0.08em;text-transform:uppercase;">Qty</th>
+          <th class="cart-qty-header" style="width:36px;"></th>
         </tr>
       </thead>
       <tbody>
@@ -303,7 +311,7 @@ function cartRenderItems() {
             ? 'Product_Pictures/' + item.image.replace('Product_Pictures/', '')
             : '';
           return `
-          <tr style="border-bottom:1px solid #f0f0f0;">
+          <tr class="cart-row-main" style="border-bottom:1px solid #f0f0f0;flex-wrap:wrap;">
             <td style="padding:12px 8px;">
               <div style="display:flex;align-items:center;gap:12px;">
                 <div style="
@@ -320,7 +328,7 @@ function cartRenderItems() {
                 <span style="font-size:14px;font-weight:600;color:#1a1a1a;line-height:1.3;">${item.title}</span>
               </div>
             </td>
-            <td style="padding:12px 8px;font-size:13px;color:#666;white-space:nowrap;">${item.sku}</td>
+            <td class="cart-sku-cell" style="padding:10px 6px;font-size:12px;color:#666;word-break:break-all;max-width:120px;">${item.sku}</td>
             <td style="padding:14px 8px;text-align:center;">
               <div style="display:flex;align-items:center;justify-content:center;gap:6px;">
                 <button onclick="cartSetQty('${item.id}', ${item.qty - 1})" style="
@@ -336,7 +344,7 @@ function cartRenderItems() {
                 ">+</button>
               </div>
             </td>
-            <td style="padding:14px 4px;text-align:center;">
+            <td class="cart-qty-cell" style="padding:10px 4px;text-align:center;width:36px;">
               <button onclick="cartRemove('${item.id}')" title="Remove" style="
                 background:none;border:none;cursor:pointer;color:#ccc;
                 display:flex;align-items:center;padding:4px;border-radius:4px;
