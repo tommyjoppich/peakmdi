@@ -3430,5 +3430,27 @@
     "categoryThree": "AD3-918: PEAK Doyen Abdominal Scissor, 7\" (17.8 Cm), Curved",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "912574",
+    "title": "PEAK Mayo Scissor, Str, 5.5\", Bev Bld",
+    "sku": "AD5-014",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-014: PEAK Mayo Scissor, Standard Beveled Blade, Straight, 5.5\" (14.0 Cm)",
+    "image": "AD5-014 mayo scissors straight beveled 5-1:2\".png",
+    "featured": false
+  },
+  {
+    "id": "042265",
+    "title": "PEAK Mayo Scissor, Str, 6.75\", Bev Bld,",
+    "sku": "AD5-017",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD5-017: PEAK Mayo Scissor, Standard Beveled Blade, Straight, 6.75\" (17.1 Cm)",
+    "image": "AD5-017 mayo scissors straight beveled 5-1:2\" copy.png",
+    "featured": false
   }
 ]
