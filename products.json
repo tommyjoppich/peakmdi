@@ -3089,5 +3089,115 @@
     "categoryThree": "AD0-418: PEAK Operating Scissor, Sharp/Shrp, Straight, 7.25\" (18.5 Cm)",
     "image": "AD0-418 OR Scissors Sharp sharp.png",
     "featured": false
+  },
+  {
+    "id": "966880",
+    "title": "PEAK Operating Scissor, Cvd, 4.5\", Sh/Sh",
+    "sku": "AD0-511",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-511: PEAK Operating Scissor, Sharp/Sharp, Curved, 4.5\"(11.4 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "047585",
+    "title": "PEAK Operating Scissor, Cvd, 5.75\", Sh/Sh",
+    "sku": "AD0-514",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-514: PEAK Operating Scissor, Sharp/Sharp, Curved, 5.75\" (14.6 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "114904",
+    "title": "PEAK Operating Scissor, Cvd, 6\", Sh/Sh",
+    "sku": "AD0-515",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-515: PEAK Operating Scissor, Sharp/Sharp, Curved, 6\" (15.2 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "184395",
+    "title": "PEAK Operating Scissor, Cvd, 6.5\", Sh/Sh",
+    "sku": "AD0-516",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-516: PEAK Operating Scissor, Sharp/Sharp, Curved, 6.5\" (16.5 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "255537",
+    "title": "PEAK Operating Scissor, Cvd, 7.25\", Sh/Sh",
+    "sku": "AD0-518",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-518: PEAK Operating Scissor, Sharp/Sharp, Curved, 7.25\" (18.5 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "372279",
+    "title": "PEAK Operating Scissor, Str, 4.5\", Sh/Bl",
+    "sku": "AD0-611",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-611: PEAK Operating Scissor, Sharp/Blunt, Straight, 4.5\" (11.4 Cm)",
+    "image": "AD0-611 Operating Scissor Sharp Blunt Tips copy.png",
+    "featured": false
+  },
+  {
+    "id": "721928",
+    "title": "PEAK Operating Scissor, Str, 5\", Sh/Bl",
+    "sku": "AD0-613",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-613: PEAK Operating Scissor, Sharp/Blunt, Straight, 5\" (12.7 Cm)",
+    "image": "AD0-613 Operating Scissor Sharp Blunt Tips copy.png",
+    "featured": false
+  },
+  {
+    "id": "882298",
+    "title": "PEAK Operating Scissor, Str, 6\", Sh/Bl",
+    "sku": "AD0-615",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-615: PEAK Operating Scissor, Sharp/Blunt, Straight, 6\" (15.2 Cm)",
+    "image": "AD0-615 Operating Scissor Sharp Blunt Tips copy.png",
+    "featured": false
+  },
+  {
+    "id": "969287",
+    "title": "PEAK Operating Scissor, Str, 6.5\", Sh/Bl",
+    "sku": "AD0-616",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-616: PEAK Operating Scissor, Sharp/Blunt, Straight, 6.5\" (16.5 Cm)",
+    "image": "AD0-616 Operating Scissor Sharp Blunt Tips copy.png",
+    "featured": false
+  },
+  {
+    "id": "051958",
+    "title": "PEAK Operating Scissor, Str, 7.25\", Sh/Bl",
+    "sku": "AD0-618",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-618: PEAK Operating Scissor, Sharp/Blunt, Straight, 7.25\" (18.5 Cm)",
+    "image": "AD0-618 Operating Scissor Sharp Blunt Tips copy.png",
+    "featured": false
   }
 ]
