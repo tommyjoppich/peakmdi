@@ -3287,5 +3287,60 @@
     "categoryThree": "AD0-719: PEAK Moleskin & Felt Scissor, Sharp/Blunt, 7\" (19.1 Cm), Curved, Bottom Blade Serrated",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "572787",
+    "title": "PEAK Deaver Scissor, Str, 5.5\", Sh/Sh",
+    "sku": "AD0-864",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-864: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Straight, Sharp/Sharp Point",
+    "image": "AD0-864 deaver scissors straight S:S point 5-1:2\" 2.png",
+    "featured": false
+  },
+  {
+    "id": "661107",
+    "title": "PEAK Deaver Scissor, Str, 5.5\", Bl/Bl",
+    "sku": "AD0-884",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-884: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Straight, Blunt/Blunt Point",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "746000",
+    "title": "PEAK Deaver Scissor, Cvd, 5.5\", Sh/Bl",
+    "sku": "AD0-914",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-914: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Curved, Sharp/Blunt Point",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "844175",
+    "title": "PEAK Deaver Scissor, Cvd, 5.5\", Sh/Sh",
+    "sku": "AD0-964",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-964: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Curved, Sharp/Sharp Point",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "946093",
+    "title": "PEAK Deaver Scissor, Cvd, 5.5\", Bl/Bl",
+    "sku": "AD0-984",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-984: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Curved, Blunt/Blunt Point",
+    "image": "",
+    "featured": false
   }
 ]
