@@ -3001,5 +3001,27 @@
     "categoryThree": "AD0-218: PEAK Operating Scissor, Blunt/Blunt, Straight, 7.25\" (18.5 Cm)",
     "image": "AD0-218 Operating Scissor Blunt Blunt Tips copy.png",
     "featured": false
+  },
+  {
+    "id": "288484",
+    "title": "PEAK Operating Scissor, Str, Slim Pat, 5 1/8\", Bl/Bl",
+    "sku": "AD0-283",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-283: PEAK Operating Scissor, Blunt/Blunt, Straight, Slim Pattern, 5 1/8\" (13.0 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "396845",
+    "title": "PEAK Operating Scissor, Cvd, Slim Pat, 5 1/8\", Bl/Bl",
+    "sku": "AD0-383",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-383: PEAK Operating Scissor, Blunt/Blunt, Curved, Slim Pattern, 5 1/8\" (13.0 Cm)",
+    "image": "",
+    "featured": false
   }
 ]
