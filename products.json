@@ -3199,5 +3199,93 @@
     "categoryThree": "AD0-618: PEAK Operating Scissor, Sharp/Blunt, Straight, 7.25\" (18.5 Cm)",
     "image": "AD0-618 Operating Scissor Sharp Blunt Tips copy.png",
     "featured": false
+  },
+  {
+    "id": "810782",
+    "title": "PEAK Moleskin & Felt Scissor, Str, 7\", Sh/Bl, Serr Bld",
+    "sku": "AD0-619",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-619: PEAK Moleskin & Felt Scissor, Sharp/Blunt Point, 7\" (19.1 Cm), Straight, Bottom Blade Serrated",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "923277",
+    "title": "PEAK Operating Scissor, Cvd, 4.5\", Sh/Bl",
+    "sku": "AD0-711",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-711: PEAK Operating Scissor Sharp/Blunt, Curved, 4.5\" (11.4 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "030014",
+    "title": "PEAK Operating Scissor, Cvd, 5\", Sh/Bl",
+    "sku": "AD0-713",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-713: PEAK Operating Scissor, Sharp/Blunt, Curved, 5\" (12.7 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "183802",
+    "title": "PEAK Operating Scissor, Cvd, 5.75\", Sh/Bl",
+    "sku": "AD0-714",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-714: PEAK Operating Scissor, Sharp/Blunt, Curved, 5.75\"(14.6 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "252464",
+    "title": "PEAK Operating Scissor, Cvd, 6\", Sh/Bl",
+    "sku": "AD0-715",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-715: PEAK Operating Scissor, Sharp/Blunt, Curved, 6\" (15.2 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "333921",
+    "title": "PEAK Operating Scissor, Cvd, 6.5\", Sh/Bl",
+    "sku": "AD0-716",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-716: PEAK Operating Scissor, Sharp/Blunt, Curved, 6.5\" (16.5 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "431557",
+    "title": "PEAK Operating Scissor, Cvd, 7.25\", Sh/Bl",
+    "sku": "AD0-718",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-718: PEAK Operating Scissor, Sharp/Blunt, Curved, 7.25\" (18.5 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "589448",
+    "title": "PEAK Moleskin & Felt Scissor, Cvd, 7\", Sh/Bl, Serr Bld",
+    "sku": "AD0-719",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AD0-719: PEAK Moleskin & Felt Scissor, Sharp/Blunt, 7\" (19.1 Cm), Curved, Bottom Blade Serrated",
+    "image": "",
+    "featured": false
   }
 ]
