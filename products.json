@@ -3925,5 +3925,38 @@
     "categoryThree": "AE3-211: PEAK Metz-Baby Scissor, 4.5\" (11.4 Cm), Straight",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "283896",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Str, 5.25\", Del",
+    "sku": "AE3-213",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-213: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, Delicate, 5.25\" (13.5 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "372690",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Str, 5.75\"",
+    "sku": "AE3-214",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-214: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, 5.75\" (14.6 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "474715",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Str, 7\"",
+    "sku": "AE3-218",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-218: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, 7\" (17.8 Cm)",
+    "image": "",
+    "featured": false
   }
 ]
