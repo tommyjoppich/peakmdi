@@ -144,13 +144,13 @@
   },
   {
     "id": "720192",
-    "title": "PEAK Operating Scissor, Bl/Bl",
+    "title": "PEAK Operating Scissor, Str, 5.75\", Bl/Bl",
     "sku": "AD0-214",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
-    "categoryThree": "AD0-214: PEAK Operating Scissor, Bl/Bl, Straight, Stainless Steel, 5 3/4\" (14.6 Cm)",
-    "image": "AD0-214 Operating Scissor Blunt Blunt Tips.png",
+    "categoryThree": "AD0-214: PEAK Operating Scissor, Bl/Bl, Straight, Stainless Steel, 5.75\" (14.6 Cm)",
+    "image": "AD0-214 w peak brand, operating sc 14.5cm bl:bl.PNG",
     "featured": false
   },
   {
@@ -166,13 +166,13 @@
   },
   {
     "id": "027787",
-    "title": "PEAK Deaver Scissor",
+    "title": "PEAK Deaver Scissor, Str, 5.5\", Sh/Bl",
     "sku": "AD0-814",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-814: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Straight, Stainless Steel, Sh/Bl",
-    "image": "AD0-814.png",
+    "image": "AD0-814 w PEAK brand, Deaver Scis 14cm Sh:Bl.png",
     "featured": false
   },
   {
@@ -183,7 +183,7 @@
     "subcategory": "SuperCut Scissors",
     "unitOfSale": "",
     "categoryThree": "CA4-3318: PEAK Metz Scissor, Supercut, Stainless Steel, Curved, 7\" (17.8 Cm)",
-    "image": "CA4-3318.png",
+    "image": "CA4-3318 w peak brand, SC metz srs cvd 18cm.JPG",
     "featured": false
   },
   {
@@ -194,7 +194,7 @@
     "subcategory": "SuperCut Plus Scissors",
     "unitOfSale": "",
     "categoryThree": "CA4-5566: PEAK Kelly Scissor, Supercut Plus, Curved 6.3\" (16cm), Sh/Sh Tip",
-    "image": "",
+    "image": "CA4-5566 w peak brand, SC Kelly Scrs, crv 16cm.PNG",
     "featured": false
   },
   {
@@ -205,18 +205,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-318: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Stainless Steel, Curved, 7\" (17.8 Cm)",
-    "image": "AE3-318.png",
-    "featured": false
-  },
-  {
-    "id": "449987",
-    "title": "PEAK Mayo Scissor, Beveled Blades, Curved, 6.75\"",
-    "sku": "AD5-117",
-    "category": "Scissors",
-    "subcategory": "Standard Scissors",
-    "unitOfSale": "",
-    "categoryThree": "AD5-117: PEAK Mayo Scissor, Standard Beveled Blade, Stainless Steel, Curved, 6.75\" (17.1 Cm).",
-    "image": "AD5-117.png",
+    "image": "AE3-318 w: PEAK brand, metz sci cvd 18cm.png",
     "featured": false
   },
   {
@@ -238,7 +227,7 @@
     "subcategory": "SuperCut Scissors",
     "unitOfSale": "",
     "categoryThree": "CF5-1546: PEAK Potts Smith Vascular Scissors, SuperCut, 7.5\" (19cm) Angle 60°",
-    "image": "CF5-1546.png",
+    "image": "CF5-1546 w peak brand, SC Potts Smith vsc sci 60 degrees 19cm.PNG",
     "featured": false
   },
   {
@@ -249,7 +238,7 @@
     "subcategory": "SuperCut Scissors",
     "unitOfSale": "",
     "categoryThree": "CF5-1544: PEAK Potts-Smith Vascular Scissors, Stainless Steel, SuperCut, 7.5\" (19cm) Angle 45°",
-    "image": "CF5-1544.png",
+    "image": "CF5-1544 w PEAK brand, SC Potts vasc sciss 45 degrees 19cm.PNG",
     "featured": false
   },
   {
@@ -315,7 +304,7 @@
     "subcategory": "Ceramic Scissors",
     "unitOfSale": "",
     "categoryThree": "CC3-5167: PEAK Mayo Scissors, Ceramic Coated, Curved, 6.7\" (17.0cm), Blunt/Blunt Tip",
-    "image": "",
+    "image": "CC3-5167 w peak brand, MC Mayo scissors cvd 17cm.JPG",
     "featured": false
   },
   {
@@ -370,7 +359,7 @@
     "subcategory": "SuperCut Scissors",
     "unitOfSale": "",
     "categoryThree": "CB2-5012: PEAK Stevens Scissors, Black Ring, SuperCut Straight, 4.5\" (11.5cm), Blunt tip",
-    "image": "",
+    "image": "CB2-5012 w PEAk brand, Bl-line SC stevens scrs str, 11.5cm Bl.PNG",
     "featured": false
   },
   {
@@ -403,7 +392,7 @@
     "subcategory": "SuperCut Scissors",
     "unitOfSale": "",
     "categoryThree": "CB2-2010: PEAK Iris Scissors, Black Ring, SuperCut, Straight 4.13\" (10.5cm)",
-    "image": "",
+    "image": "CB2-2010 w peak brand, Bl- line SC iris scis str, 10.5cm.PNG",
     "featured": false
   },
   {
@@ -458,7 +447,7 @@
     "subcategory": "SuperCut Plus Scissors",
     "unitOfSale": "",
     "categoryThree": "CA4-3570: PEAK Metzenbaum Slim, Supercut Plus Scissor, Curved, 7.75\" (20cm), Blunt/Blunt Tip",
-    "image": "",
+    "image": "CA4-3570 w peak brand, SC plus slim metz cvd 20cm.JPG",
     "featured": false
   },
   {
@@ -469,7 +458,7 @@
     "subcategory": "SuperCut Scissors",
     "unitOfSale": "",
     "categoryThree": "CA4-3523: PEAK Slim Metzenbaum Scissor, SuperCut, Delicate Tips, Curved, Nelson, 9\" (23.0 Cm)",
-    "image": "",
+    "image": "CA4-3523 w PEAK brand, SC metz slim sciss curved 23cm.PNG",
     "featured": false
   },
   {
@@ -480,7 +469,7 @@
     "subcategory": "SuperCut Plus Scissors",
     "unitOfSale": "",
     "categoryThree": "CA4-3370: PEAK Metzenbaum Scissor, Curved, Supercut Plus,  7.8\" (20cm), Blunt/Blunt Tip",
-    "image": "",
+    "image": "CA4-3370 w peak brand, SC plus metz sci cvd 20cm.JPG",
     "featured": false
   },
   {
@@ -502,7 +491,7 @@
     "subcategory": "SuperCut Plus Scissors",
     "unitOfSale": "",
     "categoryThree": "CA4-1368: PEAK Ragnell (Kilner) SuperCut Plus Scissors, 7\" (18cm), Blunt/Blunt Tip",
-    "image": "CA4-1368.png",
+    "image": "CA4-1368 w peak brand, SC Plus ragnell Kilner scrs 18cm.JPG",
     "featured": false
   },
   {
@@ -513,7 +502,7 @@
     "subcategory": "SuperCut Plus Scissors",
     "unitOfSale": "",
     "categoryThree": "CA3-5767: PEAK Mayo-Stille Supercut Plus Operating Scissors, Curved,  6.7\" (17.0cm), Blunt Round/Blunt Round Tip",
-    "image": "CA3-5767.png",
+    "image": "CA3-5767 w peak brand, SC plus mayo stille curved, 17cm.JPG",
     "featured": false
   },
   {
@@ -535,7 +524,7 @@
     "subcategory": "SuperCut Plus Scissors",
     "unitOfSale": "",
     "categoryThree": "CA3-5067: PEAK Mayo Supercut Plus Operating Scissors Straight,  6.7\" (17.0cm), Blunt Round/Blunt Round Tip",
-    "image": "CA3-5067.png",
+    "image": "CA3-5067 w peak brand, SC plus mayo scrs str 17cm.JPG",
     "featured": false
   },
   {
@@ -557,7 +546,7 @@
     "subcategory": "SuperCut Scissors",
     "unitOfSale": "",
     "categoryThree": "CA3-0316: PEAK SuperCut Operating Scissor, Curved, 6.5\" (16.5cm), blunt/blunt tips",
-    "image": "",
+    "image": "CA3-0316 w peak brand, SC operating scissors curved 15.5cm bl:bl.PNG",
     "featured": false
   },
   {
@@ -678,7 +667,7 @@
     "subcategory": "SuperCut Plus Scissors",
     "unitOfSale": "",
     "categoryThree": "TC14-0684: PEAK Ligature Scissors, Tungsten Carbide Blades, Micro Serration 5.7\" (14.5cm) Curved, Black/Gold Ring",
-    "image": "",
+    "image": "TC14-0684 w peak brand, HM lig scrs 14.5cm cvd.JPG",
     "featured": false
   },
   {
@@ -689,7 +678,7 @@
     "subcategory": "SuperCut Plus Scissors",
     "unitOfSale": "",
     "categoryThree": "TC14-0688: PEAK Ligature Scissors, Tungsten Carbide blades, Micro Serration, 7\" (18cm), Curved, Black/Gold Ring",
-    "image": "",
+    "image": "TC14-0688 w peak brand, HM lig scrs 14.5cm cvd copy.jpeg",
     "featured": false
   },
   {
@@ -3549,7 +3538,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-117: PEAK Mayo Scissor, Standard Beveled Blades, Curved, 6.75\" (17.1 Cm)",
-    "image": "AD5-117 mayo scissors beveled curved 5-1:2\" copy.png",
+    "image": "AD5-117 w: PEAK Brand, Mayo scissors curved 17.0cm.PNG",
     "featured": false
   },
   {
