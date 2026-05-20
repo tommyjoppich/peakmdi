@@ -4090,5 +4090,82 @@
     "categoryThree": "AE3-314: PEAK Metzenbaum Dissecting Scissors, Standard Pattern, Curved, 5.75\" (14.6 Cm)",
     "image": "AE3-314, AE3-320 metz dissecting scissors curved 7\" and 8\".png",
     "featured": false
+  },
+  {
+    "id": "933103",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Cvd, 8\"",
+    "sku": "AE3-320",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-320: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, 8\" (20.3 Cm)",
+    "image": "AE3320.png",
+    "featured": false
+  },
+  {
+    "id": "022122",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Cvd, Nelson, 9\"",
+    "sku": "AE3-323",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-323: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 9\" (22.9 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "164543",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Cvd, Nelson, 10.25\"",
+    "sku": "AE3-326",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-326: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 10.25\" (26.0 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "267781",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Cvd, Nelson, 11\"",
+    "sku": "AE3-328",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-328: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 11\" (28.0 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "359670",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Cvd, Nelson, 11.75\"",
+    "sku": "AE3-330",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-330: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 11.75\"  (30.0 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "430181",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Cvd, Nelson, 14\"",
+    "sku": "AE3-335",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-335: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 14\" (35.5 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "516458",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Cvd, Nelson, 16\"",
+    "sku": "AE3-340",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-340: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 16\" (40.5 Cm)",
+    "image": "",
+    "featured": false
   }
 ]
