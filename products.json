@@ -3978,7 +3978,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-226: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, Nelson, 10.25\" (26.0 Cm)",
-    "image": "AE3-226,AE3-228 nelson-metz dissecting scissors straight 10-1:4\" and 11\".png",
+    "image": "AE3-226 nelson-metz dissecting scissors straight 10-1:4\" and 11\".png",
     "featured": false
   },
   {
@@ -4001,6 +4001,94 @@
     "unitOfSale": "",
     "categoryThree": "Available in a variety of lengths & angles, with or without ejector pin. Contact us!",
     "image": "Stainless steel take-apart Kerrison.PNG",
+    "featured": false
+  },
+  {
+    "id": "476233",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Nelson, Str, 11\"",
+    "sku": "AE3-228",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-228: PEAK Metzenbaum Dissecting Scissor, Std Pat, Str, Nelson, 11\" (28.0 Cm)",
+    "image": "AE3-228 nelson-metz dissecting scissors straight 10-1:4\" and 11\" 2.png",
+    "featured": false
+  },
+  {
+    "id": "704379",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Str, Nelson, 11.75\"",
+    "sku": "AE3-230",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-230: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, Nelson, 11.75\" (30.0 Cm)",
+    "image": "AE3-230 nelson metz dissecting scissors straight 11-3:4\" and 14\" 2.png",
+    "featured": false
+  },
+  {
+    "id": "817823",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Nelson, Str, 14\"",
+    "sku": "AE3-235",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-235: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, Nelson, 14\" (35.5 Cm)",
+    "image": "AE3-235 nelson metz dissecting scissors straight 11-3:4\" and 14\".png",
+    "featured": false
+  },
+  {
+    "id": "942184",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Nelson, Str, 16\"",
+    "sku": "AE3-240",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-240: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, Nelson, 16\" (40.5 Cm)",
+    "image": "AE3240.png",
+    "featured": false
+  },
+  {
+    "id": "038915",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Nelson, Str, 18\"",
+    "sku": "AE3-245",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-245: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, Nelson, 18\" (45.5 Cm)",
+    "image": "AE3245.png",
+    "featured": false
+  },
+  {
+    "id": "115644",
+    "title": "PEAK Metzenbaum-Baby Scissor, 4.5\", Cvd",
+    "sku": "AE3-311",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-311: PEAK Metzenbaum-Baby Scissor, 4.5\" (11.4 Cm), Curved",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "236431",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Cvd, Del, 5.25\"",
+    "sku": "AE3-313",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-313: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Delicate, 5.25\" (13.5 Cm)",
+    "image": "AE3-313 metz dissecting scissors curved 7\" and 8\" 2.png",
+    "featured": false
+  },
+  {
+    "id": "389282",
+    "title": "PEAK Metzenbaum Dissecting Scissors, Cvd, 5.75\"",
+    "sku": "AE3-314",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-314: PEAK Metzenbaum Dissecting Scissors, Standard Pattern, Curved, 5.75\" (14.6 Cm)",
+    "image": "AE3-314, AE3-320 metz dissecting scissors curved 7\" and 8\".png",
     "featured": false
   }
 ]
