@@ -428,6 +428,20 @@
         <div class="cms-header">
           <h1>Export / Save JSON</h1>
         </div>
+        <div class="instructions" style="margin-bottom:16px;">
+          <h3>⚠️ Important: After saving to GitHub</h3>
+          <ol>
+            <li>After committing your updated JSON to GitHub, wait 1–2 minutes for the CDN to refresh.</li>
+            <li>Then click <strong>"Reload from GitHub"</strong> below to pull the latest version into this admin panel.</li>
+            <li>This ensures the admin always reflects what's live on the website.</li>
+          </ol>
+        </div>
+        <div style="display:flex;gap:12px;margin-bottom:24px;flex-wrap:wrap;">
+          <button class="btn-primary" onclick="reloadFromGitHub()" style="display:flex;align-items:center;gap:8px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+            Reload from GitHub
+          </button>
+        </div>
         <div class="export-panel">
           <h3>Your products.json</h3>
           <p>Copy the JSON below and paste it into your <strong>products.json</strong> file in your website folder.</p>
@@ -605,7 +619,7 @@
     // ── Load from products.json ────────────────────────────────
     async function init() {
       try {
-        const res = await fetch('products.json');
+        const res = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' });
         products = await res.json();
       } catch (e) {
         products = [];
@@ -825,6 +839,27 @@
 
     init();
 
+    /* ── Reload from GitHub (cache-busted) ── */
+    async function reloadFromGitHub() {
+      showToast('Reloading from GitHub...', '');
+      try {
+        const [pRes, rRes] = await Promise.all([
+          fetch('products.json?v=' + Date.now(), { cache: 'no-store' }),
+          fetch('resources.json?v=' + Date.now(), { cache: 'no-store' })
+        ]);
+        products  = await pRes.json();
+        resources = await rRes.json();
+        renderTable();
+        renderResourceTable();
+        updateSidebarCount();
+        updateResourceBadge();
+        updateJSONPreview();
+        showToast('Reloaded successfully from GitHub!', 'success');
+      } catch(e) {
+        showToast('Could not reload — check your connection.', 'error');
+      }
+    }
+
     /* ══════════════════════════════════════════════════════════
        RESOURCES CMS
     ══════════════════════════════════════════════════════════ */
@@ -839,7 +874,7 @@
 
     async function initResources() {
       try {
-        const r = await fetch('resources.json');
+        const r = await fetch('resources.json?v=' + Date.now(), { cache: 'no-store' });
         resources = await r.json();
       } catch(e) { resources = []; }
       updateResourceBadge();
