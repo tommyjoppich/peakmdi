@@ -4167,5 +4167,60 @@
     "categoryThree": "AE3-340: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 16\" (40.5 Cm)",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "347704",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Cvd, Nelson, 18\"",
+    "sku": "AE3-345",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-345: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 18\" (45.5 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "472315",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Del, Slim Pat, Str, 5.75\"",
+    "sku": "AE3-414",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-414: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Straight, 5.75\" (14.6 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "546994",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Del, Slim Pat, Str, 7\"",
+    "sku": "AE3-418",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-418: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Straight, 7\" (17.8 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "621378",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Del, Slim Pat, Str, 8\"",
+    "sku": "AE3-420",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-420: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Straight, 8\" (20.3 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "692702",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Del, Slim Pat, Str, Nelson, 9\"",
+    "sku": "AE3-423",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE3-423: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Straight, Nelson, 9\" (22.9 Cm)",
+    "image": "",
+    "featured": false
   }
 ]
