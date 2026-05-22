@@ -1,5 +1,104 @@
 [
   {
+    "id": "001",
+    "title": "PEAK Premium Scissor's",
+    "sku": "97345793589",
+    "category": "Scissors",
+    "subcategory": "Micro Scissors",
+    "unitOfSale": "1 per package",
+    "categoryThree": "Stainless Steel, Reusable, Autoclavable",
+    "image": "product1-scissors.png",
+    "featured": false
+  },
+  {
+    "id": "002",
+    "title": "Coronary Ostia Perfusion Kit",
+    "sku": "97345793590",
+    "category": "Retractors",
+    "subcategory": "Cardiac / Thoracic Retractors",
+    "unitOfSale": "1 per package",
+    "categoryThree": "Single Use, Sterile, Latex-Free",
+    "image": "product2-perfusion.png",
+    "featured": false
+  },
+  {
+    "id": "003",
+    "title": "Medical Grade Spoons",
+    "sku": "97345793591",
+    "category": "Tools",
+    "subcategory": "Hand Tools",
+    "unitOfSale": "",
+    "categoryThree": "Stainless Steel, Reusable, Autoclavable",
+    "image": "product3-spoons.png",
+    "featured": false
+  },
+  {
+    "id": "004",
+    "title": "Digital Blood Pressure Monitor",
+    "sku": "97345793592",
+    "category": "Monitoring",
+    "subcategory": "Vital Signs",
+    "unitOfSale": "1 per package",
+    "categoryThree": "Electronic, Reusable, Battery Operated",
+    "image": "product4-monitor.png",
+    "featured": false
+  },
+  {
+    "id": "005",
+    "title": "Hand Held Retractor Type A",
+    "sku": "97345793593",
+    "category": "Retractors",
+    "subcategory": "Hand Held Retractors",
+    "unitOfSale": "1 per package",
+    "categoryThree": "Stainless Steel, Reusable, Autoclavable",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "006",
+    "title": "MIS Valve Retractor",
+    "sku": "97345793594",
+    "category": "Retractors",
+    "subcategory": "MIS Valve Retractors",
+    "unitOfSale": "1 per package",
+    "categoryThree": "Stainless Steel, Reusable, Autoclavable",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "642405",
+    "title": "test1",
+    "sku": "1",
+    "category": "test1",
+    "subcategory": "test2",
+    "unitOfSale": "1",
+    "categoryThree": "132",
+    "image": "Screenshot 2025-02-19 105313.png",
+    "featured": false
+  },
+  {
+    "id": "665261",
+    "title": "test2",
+    "sku": "1234",
+    "category": "test1",
+    "subcategory": "test3",
+    "unitOfSale": "2",
+    "categoryThree": "24g",
+    "image": "Screenshot 2025-02-19 105403.png",
+    "featured": false
+  },
+  {
+    "id": "772061",
+    "title": "ThisIsATest",
+    "sku": "45",
+    "category": "ANewOne",
+    "subcategory": "SubCat",
+    "unitOfSale": "5",
+    "categoryThree": "more description",
+    "image": "Screenshot 2025-02-19 111201.png",
+    "featured": false
+  },
+  {
     "id": "422054",
     "title": "PEAK PremiumCut Mayo Scissor",
     "sku": "CD3-5117",
@@ -7,7 +106,7 @@
     "subcategory": "PremiumCut Scissors",
     "unitOfSale": "",
     "categoryThree": "CD3-5117: PEAK PremiumCut Mayo Scissor, Curved, 6.75\" (17cm), Stainless steel.",
-    "image": "CD3-5117; Mayo PremiumCut Scissor 6.75\" (17cm), curved.png",
+    "image": "CD3-5117 PEAK PremiumCut Mayo Scissor.png",
     "featured": true
   },
   {
@@ -56,7 +155,7 @@
   },
   {
     "id": "856809",
-    "title": "PEAK Operating Scissor, Sh/Bl",
+    "title": "PEAK Operating Scissor, 5.75\", Sh/Bl",
     "sku": "AD0-614",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
@@ -100,7 +199,7 @@
   },
   {
     "id": "215131",
-    "title": "PEAK Metzenbaum Dissecting Scissors",
+    "title": "PEAK Metzenbaum Dissecting Scissors, Cvd, 7\"",
     "sku": "AE3-318",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
@@ -155,7 +254,7 @@
   },
   {
     "id": "723977",
-    "title": "PEAK Micro-Vascular Scissors, Ceramic,  7\", 45°, Flat",
+    "title": "PEAK Micro-Vascular Scissors, Ceramic,  7\", 45°",
     "sku": "CC5-1945",
     "category": "Scissors",
     "subcategory": "Ceramic Scissors",
@@ -590,7 +689,7 @@
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33-SS7-1MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 7\" (175mm), 1mm, 90° up, stainless steel",
-    "image": "33-SS7-1MM90.png",
+    "image": "33SS71MM90.png",
     "featured": false
   },
   {
@@ -1107,7 +1206,7 @@
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33-SS10-3MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (250mm), 3mm, 40° up, stainless steel",
-    "image": "",
+    "image": "33-SS10-4MM40.png",
     "featured": false
   },
   {
@@ -1129,7 +1228,7 @@
     "subcategory": "Cannulated",
     "unitOfSale": "",
     "categoryThree": "33-SS10-4MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (250mm), 4mm, 40° up, stainless steel",
-    "image": "",
+    "image": "33-SS10-4MM40.png",
     "featured": false
   },
   {
@@ -2284,7 +2383,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC0-602: PEAK Iris Scissor, Standard Pattern, Straight, 4\" (10.2 Cm)",
-    "image": "AC2-010, AC2-011, AC2-012 iris scissors 4\" and 4-1:2\" and 5\".png",
+    "image": "AC0-602 copy.png",
     "featured": false
   },
   {
@@ -2449,7 +2548,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC2-109: PEAK Iris Scissor, Standard Pattern, Delicate, Curved, 3.5\" (8.9 Cm)",
-    "image": "AC2-109 iris scissors curved 3-1:2\".png",
+    "image": "AC2-109, no example.png",
     "featured": false
   },
   {
@@ -2482,7 +2581,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC3-009: PEAK Iris Scissor, Ribbon Style Ring Handle, Straight, Miniature Pattern, 3.75\" (9.5 Cm)",
-    "image": "AC3-009 iris ribbon straight(mini) 3-3:4\".png",
+    "image": "AC3-009 iris ribbon straight(mini).png",
     "featured": false
   },
   {
@@ -2493,18 +2592,18 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC3-010: PEAK Iris Scrissor, Ribbon Style Ring Handle, Straight, Standard Pattern, 4\" (10.2 Cm)",
-    "image": "AC3-010 iris ribbon ring scissors curved 4\".png",
+    "image": "AC3-010 iris ribbon ring scissors curved.png",
     "featured": false
   },
   {
     "id": "430896",
-    "title": "PEAK ris Scissor, Ribbon Style, Cvd, Mini, 3.75\"",
+    "title": "PEAK Iris Scissor, Ribbon Style, Cvd, Mini, 3.75\"",
     "sku": "AC3-109",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC3-109: PEAK Iris Scissor, Ribbon Style Ring Handle, Curved, Miniature Pattern, 3.75\" (9.5 Cm)",
-    "image": "AC3-109 iris ribbon ring scissors curved(mini) 3-3:4\".png",
+    "image": "AC3-109 iris ribbon ring scissors curved(mini).png",
     "featured": false
   },
   {
@@ -2515,7 +2614,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC3-110: PEAK Iris Scissor, Ribbon Style Ring Handle, Curved, Standard Pattern, 4\" (10.2 Cm)",
-    "image": "AC3-110 iris ribbon ring scissors curved(mini) 3-3:4\" copy.png",
+    "image": "AC3-110 iris ribbon ring scissors curved(mini).png",
     "featured": false
   },
   {
@@ -2537,7 +2636,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-010SB: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Straight, Sharp/Blunt",
-    "image": "AC4-010SB, AC4-012 knapp iris scissors straight S:B 4\" and 4-1:2\".png",
+    "image": "AC4-010SB iris scissors straight S:B.png",
     "featured": false
   },
   {
@@ -2548,7 +2647,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-010SS: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Straight, Sharp/Sharp",
-    "image": "AC4-010SB, AC4-012 knapp iris scissors straight S:B 4\" and 4-1:2\" 2.png",
+    "image": "Ac4-010SS.png",
     "featured": false
   },
   {
@@ -2559,7 +2658,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-011: PEAK Knapp Strabismus Scissor, Standard, Blunt Tips, Round Blade, 4\" (11.5 Cm), Straight",
-    "image": "AC4-011 knapp strabis scissor straight blunt tips, round blade 4-1:2\".png",
+    "image": "AC4-011 knapp strabis scissor straight blunt tips, round blade.png",
     "featured": false
   },
   {
@@ -2570,7 +2669,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-012: PEAK Knapp Iris Scissor, 4.5\" (11.5CM), Straight, Sharp/Blunt",
-    "image": "AC4-012 knapp iris scissors straight S:B 4\" and 4-1:2\" 2.png",
+    "image": "AC4-012 knapp iris scissors straight S:B.png",
     "featured": false
   },
   {
@@ -2581,7 +2680,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-110: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Curved, Blunt/Blunt",
-    "image": "AC4-110.png",
+    "image": "AC4-110 copy.png",
     "featured": false
   },
   {
@@ -2592,7 +2691,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-110SB: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Curved Sharp/Blunt",
-    "image": "AC4-110SB.png",
+    "image": "AC4-110SB no example.png",
     "featured": false
   },
   {
@@ -2603,7 +2702,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-110SS: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Curved Sharp/Sharp",
-    "image": "AC4-110SS copy.png",
+    "image": "AC4-110SS.png",
     "featured": false
   },
   {
@@ -2614,7 +2713,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-111: PEAK Knapp Strabismus Scissor, Standard, Blunt Tips, Round Blade, 4\" (11.5 Cm), Curved",
-    "image": "AC4-111 knapp strabis curved blunt tips, round blade 4-1:2\".png",
+    "image": "AC4-111 knapp strabis curved blunt tips, round blade.png",
     "featured": false
   },
   {
@@ -2625,7 +2724,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-112: PEAK Knapp Iris Scissor, 4.5\" (11.5CM), Curved, Sharp/Blunt",
-    "image": "AC4-112 knapp iris scissors curved .png",
+    "image": "AC4-112.png",
     "featured": false
   },
   {
@@ -2636,7 +2735,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC5-002: PEAK Stevens Tenotomy Scissor, Sharp Tips, 4.5\"; (11.4 Cm), Straight",
-    "image": "AC5-002 stevens tentotomy scissors straight sharp tip 4-1:2\".png",
+    "image": "AC5-002 stevens tentotomy scissors straight sharp tip.png",
     "featured": false
   },
   {
@@ -2647,7 +2746,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC5-003: PEAK Stevens Tentomy Scissor, Sharp Tips, 4.5\" (11.4 Cm), Curved",
-    "image": "AC5-003 stevens tentotomy scissors curved sharp tips 4-1:2\".png",
+    "image": "AC5-003 stevens tentotomy scissors curved sharp tips.png",
     "featured": false
   },
   {
@@ -2658,7 +2757,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC5-010: PEAK Stevens Tenotomy Scissor, Blunt Tips, Straight, 4 1/8\" (10.5 Cm)",
-    "image": "AC5-010 stevens tentotomy scissors straight 4-1:8\" and 4-1:2\".png",
+    "image": "AC5-010 stevens tentotomy scissors straight.png",
     "featured": false
   },
   {
@@ -2669,7 +2768,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC5-011: PEAK Stevens Tenotomy Scissor, Blunt Tips, Curved,  4 1/8\" (10.5 Cm)",
-    "image": "AC5-011 stevens tentotomy scissors curved 4-1:8\" and 4-1:2\".png",
+    "image": "AC5-011 stevens tentotomy scissors curved.png",
     "featured": false
   },
   {
@@ -2680,7 +2779,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC5-012: PEAK Stevens Tenotomy Scissor, Blunt Tips, Straight, 4.5\" (11.4 Cm)",
-    "image": "AC5-012 stevens tentotomy scissors straight 4-1:8\" and 4-1:2\" 2.png",
+    "image": "AC5-012 stevens tentotomy scissors straight.png",
     "featured": false
   },
   {
@@ -2691,7 +2790,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC5-013: PEAK Stevens Tenotomy Scissor, Blunt Tips, Curved, 4.5\" (11.4 Cm)",
-    "image": "AC5-013 stevens tentotomy scissors curved 4-1:8\" and 4-1:2\" 2.png",
+    "image": "AC5-013 stevens tentotomy scissors curved.png",
     "featured": false
   },
   {
@@ -2702,7 +2801,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC5-022: PEAK Stevens Tenotomy Scissor, Ribbon Style Ring Handle, 4\" (10.2 Cm), Straight, Sharp",
-    "image": "AC5-022 stevens tenot ribbon ring scissors straight blunt tips 4\" 2 copy.png",
+    "image": "AC5-022 stevens tenot ribbon ring scissors straight blunt tips.png",
     "featured": false
   },
   {
@@ -2713,7 +2812,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC5-023: PEAK Stevens Tenotomy Scissor, Ribbon Style Ring Handle, 4\" (10.2 Cm), Curved, Sharp",
-    "image": "AC5-023 stevens tenot scissors ribbon ring curved blunt tips 4\" copy.png",
+    "image": "AC5-023 stevens tenot scissors ribbon ring curved blunt tips.png",
     "featured": false
   },
   {
@@ -2724,7 +2823,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC5-032: PEAK Stevens Tenotomy Scissor, Ribbon Style Ring Handle, 4\" (10.2 Cm), Straight, Blunt",
-    "image": "AC5-032 stevens tenot ribbon ring scissors straight blunt tips 4\" 2.png",
+    "image": "AC5-032 stevens tenot ribbon ring scissors straight blunt tips.png",
     "featured": false
   },
   {
@@ -2735,7 +2834,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC5-033: PEAK Stevens Tenotomy Scissor, Ribbon Style Ring Handle, 4\" (10.2 Cm), Curved, Blunt",
-    "image": "AC5-033 stevens tenot scissors ribbon ring curved blunt tips 4\".png",
+    "image": "AC5-033 stevens tenot scissors ribbon ring curved blunt tips.png",
     "featured": false
   },
   {
@@ -2768,7 +2867,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AC5-065: PEAK Dissecting Scissor with Probe, 4 1/8\" (10.5 Cm), Angled",
-    "image": "AC5-065 dissecting scissors with probe angled 4\" .png",
+    "image": "AC5-065 dissecting scissors with probe.png",
     "featured": false
   },
   {
@@ -2812,7 +2911,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-315: PEAK Operating Scissor, Blunt/Blunt, Curved, 6\" (15.2cm)",
-    "image": "AD0-315 operating scissors curved B:B points 4-1:2\", 5\", 5-3:4\", 6\", 6-1:2\", 7-1:4\" 2.png",
+    "image": "AD0-315.png",
     "featured": false
   },
   {
@@ -3186,7 +3285,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-864: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Straight, Sharp/Sharp Point",
-    "image": "AD0-864 deaver scissors straight S:S point 5-1:2\".png",
+    "image": "AD0-864 deaver scissors straight S:S point.png",
     "featured": false
   },
   {
@@ -3241,7 +3340,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD3-020: PEAK Sims Scissor, 8\" (20.3 Cm), Straight, Blunt/Blunt Point",
-    "image": "AD3-020 sims scissors straight B:B points 8\".png",
+    "image": "AD3-020 sims scissors straight B:B points.png",
     "featured": false
   },
   {
@@ -3252,7 +3351,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD3-120: PEAK Sims Scissor, 8\" (20.3 Cm), Curved, Buntl/Blunt Point",
-    "image": "AD3-120 sims scissors curved B:B points 8\".png",
+    "image": "AD3-120 sims scissors curved B:B points.png",
     "featured": false
   },
   {
@@ -3285,7 +3384,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD3-420: PEAK Sims Scissor, 8\" (20.3 Cm), Straight, Sharp/Blunt Point",
-    "image": "AD3-420 sims scissors straight S:B points 8\".png",
+    "image": "AD3-420 sims scissors straight S:B points.png",
     "featured": false
   },
   {
@@ -3307,7 +3406,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD3-818: PEAK Doyen Abdominal Scissor, 7\" (17.8 Cm), Straight",
-    "image": "AD3-818 doyen abdominal scissors straight 7\".png",
+    "image": "AD3-818 doyen abdominal scissors straight.png",
     "featured": false
   },
   {
@@ -3329,7 +3428,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-014: PEAK Mayo Scissor, Standard Beveled Blade, Straight, 5.5\" (14.0 Cm)",
-    "image": "AD5-014 mayo scissors straight beveled 5-1:2\".png",
+    "image": "AD5-014 mayo scissors straight beveled.png",
     "featured": false
   },
   {
@@ -3340,7 +3439,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-017: PEAK Mayo Scissor, Standard Beveled Blade, Straight, 6.75\" (17.1 Cm)",
-    "image": "AD5-017 mayo scissors straight beveled 5-1:2\" copy.png",
+    "image": "AD5-017 mayo scissors straight beveled.png",
     "featured": false
   },
   {
@@ -3351,7 +3450,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-023: PEAK Mayo Scissor, Standard Beveled Blade, Straight, 9\" (22.9 Cm)",
-    "image": "AD5-023 mayo scissors straight 9\", 10\", 11\".png",
+    "image": "AD5-023 mayo scissors straight.png",
     "featured": false
   },
   {
@@ -3362,7 +3461,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-025: PEAK Mayo Scissor, Standard Beveled Blade, Straight, 10\" (25.0cm)",
-    "image": "AD5-025 mayo scissors straight 9\", 10\", 11\" copy.png",
+    "image": "AD5-025 mayo scissors straight.png",
     "featured": false
   },
   {
@@ -3373,7 +3472,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-028: PEAK Mayo Scissor, Standard Beveled Blades, Straight, 11\" (28.0 Cm)",
-    "image": "AD5-028 mayo scissors straight 9\", 10\", 11\" copy.png",
+    "image": "AD5-028 mayo scissors straight.png",
     "featured": false
   },
   {
@@ -3384,7 +3483,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-030: PEAK Mayo Scissors, Standard Beveled Blade, Str, 12\" (30.0 Cm)",
-    "image": "AD5-030 mayo scissors straight 9\", 10\", 11\" copy.png",
+    "image": "AD5-030 mayo scissors straight.png",
     "featured": false
   },
   {
@@ -3395,7 +3494,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-035: PEAK Mayo Scissor, Standard Beveled Blades, Straight, 14\" (35.0 Cm)",
-    "image": "AD5-035 mayo scissors straight 9\", 10\", 11\" copy.png",
+    "image": "AD5-035 mayo scissors straight.png",
     "featured": false
   },
   {
@@ -3406,7 +3505,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-040: PEAK Mayo Scissor, Standard Beveled Blades, Straight, 16\" (40.5 Cm)",
-    "image": "AD5-040 mayo scissors straight 9\", 10\", 11\" copy.png",
+    "image": "AD5-040 mayo scissors straight.png",
     "featured": false
   },
   {
@@ -3417,7 +3516,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-045: PEAK Mayo Scissor, Standard Beveled Blade, Straight, 18\" (45.5 Cm)",
-    "image": "AD5-045 mayo scissors straight 9\", 10\", 11\" copy.png",
+    "image": "AD5-045 mayo scissors straight.png",
     "featured": false
   },
   {
@@ -3428,7 +3527,7 @@
     "subcategory": "Standard scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-114: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 5.5\" (14.0 Cm)",
-    "image": "AD5-114 mayo scissors beveled curved 5-1:2\".png",
+    "image": "AD5-114 mayo scissors beveled curved.png",
     "featured": false
   },
   {
@@ -3450,7 +3549,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-123: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 9\" (22.9 Cm)",
-    "image": "AD5-123, mayo scissors curved 9\", 10\",  11\".png",
+    "image": "AD5-123, mayo scissors curved.png",
     "featured": false
   },
   {
@@ -3461,7 +3560,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-125: PEAK Mayo Scissors, Standard Beveled Blade, Curved, 10\" (25.0 Cm)",
-    "image": "AD5-125, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "image": "AD5-125, mayo scissors curved.png",
     "featured": false
   },
   {
@@ -3472,7 +3571,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-128: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 11\" (28.0 Cm)",
-    "image": "AD5-128, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "image": "AD5-128, mayo scissors curved .png",
     "featured": false
   },
   {
@@ -3483,7 +3582,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-130: PEAK Mayo Scissor, Standard Beveled Blades, Curved, 12\" (30.0 Cm)",
-    "image": "AD5-130, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "image": "AD5-130, mayo scissors curved.png",
     "featured": false
   },
   {
@@ -3494,7 +3593,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-135: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 14\" (35.0 Cm)",
-    "image": "AD5-135, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "image": "AD5-135, mayo scissors curved.png",
     "featured": false
   },
   {
@@ -3505,7 +3604,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-140: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 16\" (40.5 Cm)",
-    "image": "AD5-140, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "image": "AD5-140, mayo scissors curved.png",
     "featured": false
   },
   {
@@ -3516,7 +3615,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-145: PEAK Mayo Scissor, Standard Beveled Blade, Curved, 18\" (45.5 Cm)",
-    "image": "AD5-145, mayo scissors curved 9\", 10\",  11\" copy.png",
+    "image": "AD5-145, mayo scissors curved.png",
     "featured": false
   },
   {
@@ -3527,7 +3626,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-220: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Straight, 8\" (20.0 Cm)",
-    "image": "AD5-220 mayo harrington dissecting scissors slim straight 8\" and 9\".png",
+    "image": "AD5-220 mayo harrington dissecting scissors slim straight.png",
     "featured": false
   },
   {
@@ -3538,7 +3637,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-223: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Straight, 9\" (23.0 Cm)",
-    "image": "AD5-223 mayo harrington dissecting scissors slim straight 8\" and 9\" copy.png",
+    "image": "AD5-223 mayo harrington dissecting scissors slim straight.png",
     "featured": false
   },
   {
@@ -3549,7 +3648,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-226: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Straight,  11\" (29.0 Cm)",
-    "image": "AD5-226 mayo harrington dissecting scissors straight 11-1:2\".png",
+    "image": "AD5-226.png",
     "featured": false
   },
   {
@@ -3560,7 +3659,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-320: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Curved, 8\" (20.0cm)",
-    "image": "AD5-320 mayo harrington scissors slim curved 8\" and 9\".png",
+    "image": "AD5-320 mayo harrington dissecting slim pattern copy.png",
     "featured": false
   },
   {
@@ -3571,7 +3670,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-323: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Curved, 9\" (23.0 Cm)",
-    "image": "AD5-323 mayo harrington scissors slim curved 8\" and 9\" copy.png",
+    "image": "AD5-323 mayo harrington dissecting slim pattern copy.png",
     "featured": false
   },
   {
@@ -3582,7 +3681,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-326: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Curved, 11.5\"(29.0 Cm)",
-    "image": "AD5-226 mayo harrington dissecting scissors straight 11-1:2\".png",
+    "image": "AD5-326 mayo harrington dissecting slim pattern copy.png",
     "featured": false
   },
   {
@@ -3593,7 +3692,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-330: PEAK Mayo-Harrington Dissecting Scissor, Slim Pattern, Curved, 14\" (35.5 Cm)",
-    "image": "AD5-330 mayo harrington dissecting slim pattern curved 11-1:2\" copy.png",
+    "image": "AD5-330 mayo harrington dissecting slim pattern.png",
     "featured": false
   },
   {
@@ -3637,7 +3736,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-714: PEAK Mayo-Stille Dissecting Scissor, Rnd Bld, Cvd, 5.5\" (14.0 Cm)",
-    "image": "AD5-714 mayo-stille dissecting scissors round blades curved 5-1:2\" and 6\" and 6-3:4\".png",
+    "image": "AD5-714 mayo-stille dissecting scissors round blades.png",
     "featured": false
   },
   {
@@ -3648,7 +3747,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-715: PEAK Mayo-Stille Dissecting Scissor, Rnd Bld, Cvd, 6\" (15.2 Cm)",
-    "image": "AD5-715 mayo-stille dissecting scissors round blades curved 5-1:2\" and 6\" and 6-3:4\" copy.png",
+    "image": "AD5-715 mayo-stille dissecting scissors round.png",
     "featured": false
   },
   {
@@ -3659,7 +3758,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-717: PEAK Mayo-Stille Dissecting Scissor, Round Blade, Curved, 6.75\" (17.1cm)",
-    "image": "AD5-717 mayo-stille dissecting scissors round blades curved 5-1:2\" and 6\" and 6-3:4\" copy.png",
+    "image": "AD5-717 mayo-stille dissecting scissors round.png",
     "featured": false
   },
   {
@@ -3681,7 +3780,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD5-917: PEAK Mayo-Noble Dissecting Scissor, Curved, Beveled Blades, 6.75\"  (17.1 Cm)",
-    "image": "AD5-917 mayo noble dissecting scissors beveled curved 6-3:4\".png",
+    "image": "AD5-917 mayo noble dissecting scissors beveled .png",
     "featured": false
   },
   {
@@ -3703,7 +3802,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AD6-714: PEAK Sistrunk Operating Scissor, 5.5\"  (14.0 Cm), Slightly-Curved",
-    "image": "AD6-714 sistrunck operating scissors curved 5-1:2\" 2.png",
+    "image": "AD6-714 sistrunck operating scissors curved.png",
     "featured": false
   },
   {
@@ -3769,7 +3868,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE2-014: PEAK Brophy Scissor, Sharp Point, 5.5\" (14.0 Cm), Straight",
-    "image": "AE2-014 brophy scissors straight 5-1:2\".png",
+    "image": "AE2-014.png",
     "featured": false
   },
   {
@@ -3802,7 +3901,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE2-114: PEAK Brophy Scissor, Sharp Point, 5.5\" (14.0 Cm), Curved",
-    "image": "AE2-114 brophy scissors sharp point curved 5-1:2\".png",
+    "image": "AE2-114.png",
     "featured": false
   },
   {
@@ -3857,7 +3956,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-220: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, 8\" (20.3 Cm)",
-    "image": "AE3-220 metz dissecting scissors straight 7\" and 8\".png",
+    "image": "AE3-220 metz dissecting scissors straight.png",
     "featured": false
   },
   {
@@ -3868,7 +3967,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-223: PEAK Metzenbaum Dissecting Scissor, Nelson, Standard Pattern, Straight, 9\" (22.9 Cm)",
-    "image": "AE3-223 nelson-metz dissecting scissors straight 9\" 2.png",
+    "image": "AE3-223.png",
     "featured": false
   },
   {
@@ -3879,7 +3978,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-226: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, Nelson, 10.25\" (26.0 Cm)",
-    "image": "AE3-226 nelson-metz dissecting scissors straight 10-1:4\" and 11\".png",
+    "image": "AE3-226 nelson-metz dissecting scissors straight.png",
     "featured": false
   },
   {
@@ -3912,7 +4011,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-228: PEAK Metzenbaum Dissecting Scissor, Std Pat, Str, Nelson, 11\" (28.0 Cm)",
-    "image": "AE3-228 nelson-metz dissecting scissors straight 10-1:4\" and 11\" 2.png",
+    "image": "AE3-228 nelson-metz dissecting scissors straight.png",
     "featured": false
   },
   {
@@ -3923,7 +4022,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-230: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, Nelson, 11.75\" (30.0 Cm)",
-    "image": "AE3-230 nelson metz dissecting scissors straight 11-3:4\" and 14\" 2.png",
+    "image": "AE3-230 nelson metz dissecting scissors straight.png",
     "featured": false
   },
   {
@@ -3934,7 +4033,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-235: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Straight, Nelson, 14\" (35.5 Cm)",
-    "image": "AE3-235 nelson metz dissecting scissors straight 11-3:4\" and 14\".png",
+    "image": "AE3-235 nelson metz dissecting scissors straight .png",
     "featured": false
   },
   {
@@ -3978,7 +4077,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-313: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Delicate, 5.25\" (13.5 Cm)",
-    "image": "AE3-313 metz dissecting scissors curved 7\" and 8\" 2.png",
+    "image": "AE3-313 metz dissecting scissors curved.png",
     "featured": false
   },
   {
@@ -3989,7 +4088,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-314: PEAK Metzenbaum Dissecting Scissors, Standard Pattern, Curved, 5.75\" (14.6 Cm)",
-    "image": "AE3-314, AE3-320 metz dissecting scissors curved 7\" and 8\".png",
+    "image": "AE3-314 metz dissecting scissors curved.png",
     "featured": false
   },
   {
@@ -4000,7 +4099,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-320: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, 8\" (20.3 Cm)",
-    "image": "AE3320.png",
+    "image": "AE3-320 metz dissecting scissors curved.png",
     "featured": false
   },
   {
@@ -4011,7 +4110,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-323: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 9\" (22.9 Cm)",
-    "image": "",
+    "image": "AE3-323.png",
     "featured": false
   },
   {
@@ -4022,7 +4121,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-326: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 10.25\" (26.0 Cm)",
-    "image": "",
+    "image": "AE3-326.png",
     "featured": false
   },
   {
@@ -4033,7 +4132,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-328: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 11\" (28.0 Cm)",
-    "image": "",
+    "image": "ae3-328 copy.png",
     "featured": false
   },
   {
@@ -4044,7 +4143,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-330: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 11.75\"  (30.0 Cm)",
-    "image": "",
+    "image": "ae3-330.png",
     "featured": false
   },
   {
@@ -4055,7 +4154,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-335: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 14\" (35.5 Cm)",
-    "image": "",
+    "image": "ae3-335.png",
     "featured": false
   },
   {
@@ -4066,7 +4165,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-340: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 16\" (40.5 Cm)",
-    "image": "",
+    "image": "ae3-340.png",
     "featured": false
   },
   {
@@ -4077,7 +4176,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-345: PEAK Metzenbaum Dissecting Scissor, Standard Pattern, Curved, Nelson, 18\" (45.5 Cm)",
-    "image": "",
+    "image": "ae3-345.png",
     "featured": false
   },
   {
@@ -4088,7 +4187,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-414: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Straight, 5.75\" (14.6 Cm)",
-    "image": "",
+    "image": "AE3-414.png",
     "featured": false
   },
   {
@@ -4099,7 +4198,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-418: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Straight, 7\" (17.8 Cm)",
-    "image": "",
+    "image": "AE3-418.png",
     "featured": false
   },
   {
@@ -4110,7 +4209,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-420: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Straight, 8\" (20.3 Cm)",
-    "image": "",
+    "image": "AE3-420.png",
     "featured": false
   },
   {
@@ -4121,7 +4220,7 @@
     "subcategory": "Standard Scissors",
     "unitOfSale": "",
     "categoryThree": "AE3-423: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Straight, Nelson, 9\" (22.9 Cm)",
-    "image": "",
+    "image": "AE3-423.png",
     "featured": false
   }
 ]
