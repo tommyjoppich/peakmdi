@@ -1194,7 +1194,7 @@
     async function populateNavDropdowns() {
       let products = [];
       try {
-        const res = await fetch('products.json');
+        const res = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' });
         products = await res.json();
       } catch(e) { return; } // silently fail — static nav still works
 
@@ -1267,7 +1267,7 @@
 
       let products = [];
       try {
-        const r = await fetch('products.json');
+        const r = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' });
         products = await r.json();
       } catch(e) {
         grid.innerHTML = '<p style="color:#aaa;text-align:center">Could not load products.</p>';
@@ -1337,7 +1337,7 @@
     // Load products.json once for autocomplete
     (async () => {
       try {
-        const r = await fetch('products.json');
+        const r = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' });
         _searchProducts = await r.json();
       } catch(e) { _searchProducts = []; }
     })();
@@ -1483,7 +1483,7 @@
     async function populateFooter() {
       let products = [];
       try {
-        const r = await fetch('products.json');
+        const r = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' });
         products = await r.json();
       } catch(e) { return; }
 
