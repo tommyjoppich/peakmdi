@@ -567,7 +567,7 @@
     /* Populate Products nav dropdown from products.json */
     (async () => {
       let products = [];
-      try { const r = await fetch('products.json'); products = await r.json(); } catch(e) { return; }
+      try { const r = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' }); products = await r.json(); } catch(e) { return; }
       const tree = {};
       products.forEach(p => {
         if (!tree[p.category]) tree[p.category] = new Set();
@@ -615,7 +615,7 @@
     async function populateFooter() {
       let products = [];
       try {
-        const r = await fetch('products.json');
+        const r = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' });
         products = await r.json();
       } catch(e) { return; }
 
