@@ -492,7 +492,7 @@
       if (!id) { showError('No product specified.'); return; }
 
       try {
-        const res = await fetch('products.json');
+        const res = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' });
         const products = await res.json();
         const product = products.find(p => p.id === id);
         if (!product) { showError('Product not found.'); return; }
@@ -651,7 +651,7 @@
     // ── Populate nav dropdowns from products.json ──
     (async () => {
       let products = [];
-      try { const r = await fetch('products.json'); products = await r.json(); } catch(e) { return; }
+      try { const r = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' }); products = await r.json(); } catch(e) { return; }
       const tree = {};
       products.forEach(p => {
         if (!tree[p.category]) tree[p.category] = new Set();
@@ -740,7 +740,7 @@
     async function populateFooter() {
       let products = [];
       try {
-        const r = await fetch('products.json');
+        const r = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' });
         products = await r.json();
       } catch(e) { return; }
 
