@@ -668,7 +668,7 @@
 
     async function loadResources() {
       try {
-        const r = await fetch('resources.json');
+        const r = await fetch('resources.json?v=' + Date.now(), { cache: 'no-store' });
         allResources = (await r.json()).filter(x => x.type === 'pdf');
       } catch(e) {
         allResources = [];
@@ -727,7 +727,7 @@
     /* Populate nav + footer */
     async function populateNavDropdowns() {
       let products = [];
-      try { const r = await fetch('products.json'); products = await r.json(); } catch(e) { return; }
+      try { const r = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' }); products = await r.json(); } catch(e) { return; }
       const tree = {};
       products.forEach(p => {
         if (!tree[p.category]) tree[p.category] = new Set();
@@ -760,7 +760,7 @@
     }
     async function populateFooter() {
       let products = [];
-      try { const r = await fetch('products.json'); products = await r.json(); } catch(e) { return; }
+      try { const r = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' }); products = await r.json(); } catch(e) { return; }
       const categories = [...new Set(products.map(p => p.category).filter(Boolean))];
       const col = document.getElementById('footer-products-col');
       if (col) col.innerHTML = categories.map(cat =>
