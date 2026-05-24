@@ -365,6 +365,7 @@
                 <th>Product</th>
                 <th>Category</th>
                 <th>Sub-Category</th>
+                <th>Type</th>
                 <th>Product Number</th>
                 <th>Featured</th>
                 <th>Actions</th>
@@ -491,6 +492,11 @@
             <label>Sub-Category</label>
             <input type="text" id="field-subcategory" placeholder="e.g. Micro Scissors" />
           </div>
+        </div>
+
+        <div class="field-group">
+          <label>Type <span style="font-weight:400;color:#999;">(optional — e.g. Operating, Curved, Straight)</span></label>
+          <input type="text" id="field-type" placeholder="e.g. Operating (leave blank if not applicable)" />
         </div>
 
         <div class="field-row">
@@ -712,6 +718,7 @@
       document.getElementById('field-title').value = p.title || '';
       document.getElementById('field-category').value = p.category || '';
       document.getElementById('field-subcategory').value = p.subcategory || '';
+      document.getElementById('field-type').value = p.type || '';
       document.getElementById('field-sku').value = p.sku || '';
       document.getElementById('field-unitOfSale').value = p.unitOfSale || '';
       document.getElementById('field-categoryThree').value = p.categoryThree || '';
@@ -736,7 +743,7 @@
     }
 
     function clearForm() {
-      ['field-title','field-category','field-subcategory','field-sku','field-unitOfSale','field-categoryThree','field-image'].forEach(id => {
+      ['field-title','field-category','field-subcategory','field-type','field-sku','field-unitOfSale','field-categoryThree','field-image'].forEach(id => {
         document.getElementById(id).value = '';
       });
       document.getElementById('field-featured').checked = false;
@@ -777,6 +784,7 @@
         sku,
         category: cat,
         subcategory: document.getElementById('field-subcategory').value.trim(),
+        type:        document.getElementById('field-type').value.trim(),
         unitOfSale:  document.getElementById('field-unitOfSale').value.trim(),
         categoryThree: document.getElementById('field-categoryThree').value.trim(),
         image: imageVal,
