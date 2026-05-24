@@ -47,6 +47,8 @@
     .dropdown-menu { display: none; position: absolute; top: calc(100% + 14px); left: 50%; transform: translateX(-50%); background: var(--white); border: 1.5px solid var(--border); border-radius: 10px; box-shadow: 0 8px 28px rgba(0,0,0,0.12); width: 220px; padding: 6px; z-index: 9999; flex-direction: column; gap: 2px; }
     .dropdown-menu a { display: block; padding: 10px 14px; font-size: 14px; font-weight: 500; color: var(--text); border-radius: 6px; white-space: nowrap; transition: background 0.15s; }
     .dropdown-menu a:hover { background: #f0f0f0; color: var(--blue); }
+    .dropdown-menu .dd-cat-link { border-radius: 6px 0 0 6px; }
+    .dropdown-menu .dd-sub-link { border-radius: 6px 0 0 6px; }
     .dd-cat-row { display: flex; align-items: stretch; border-radius: 6px; position: relative; }
     .dd-cat-row:hover .dd-cat-link, .dd-cat-row:hover .dd-cat-chevron { background: #f0f0f0; }
     .dd-cat-link { flex: 1; padding: 10px 6px 10px 14px; font-size: 14px; font-weight: 600; color: var(--text); display: flex; align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: background 0.15s; border-radius: 6px 0 0 6px; max-width: 180px; }
@@ -63,7 +65,10 @@
     .dd-sub-list.open { display: flex; }
     .dd-sub-list::before { content: ''; position: absolute; top: 0; bottom: 0; left: -8px; width: 8px; }
     .dd-sub-link { display: flex; align-items: center; flex: 1; padding: 10px 14px; font-size: 13px; font-weight: 500; color: var(--muted); border-radius: 6px 0 0 6px; white-space: normal; word-break: break-word; transition: background 0.15s, color 0.15s; }
-    .dd-sub-link:hover { background: #f0f0f0; color: var(--blue); }
+    .dd-cat-row:hover .dd-sub-link { background: #f0f0f0; color: var(--blue); }
+    .dd-cat-row:hover .dd-sub-link ~ .dd-cat-chevron { background: #f0f0f0; }
+    .dd-cat-row:hover .dd-sub-link ~ .dd-cat-chevron svg { stroke: var(--blue); }
+    .dd-type-list .dd-sub-link:hover { background: #f0f0f0; color: var(--blue); }
     .dd-sub-link.active { background: #e4edf6; color: var(--blue); font-weight: 700; }
     .dd-cat-link.active { color: var(--blue); }
     .btn-quote { display: flex; align-items: center; gap: 10px; border: 2px solid var(--navy); border-radius: 8px; padding: 10px 20px; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--white); transition: background 0.15s, color 0.15s; white-space: nowrap; }
