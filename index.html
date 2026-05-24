@@ -629,6 +629,8 @@
     .nav-dropdown:hover > a { background: #f0f0f0; }
     .nav-dropdown:hover > a .chevron { transform: rotate(180deg); }
     .nav-dropdown:hover .dropdown-menu { display: flex; }
+    .nav-dropdown.type-open .dropdown-menu { display: flex; }
+    .nav-dropdown.type-open .dd-sub-list.open { display: flex; }
     /* Bridge: invisible padding under the trigger so moving mouse into
        the panel does not cause a mouseout on .nav-dropdown */
     .nav-dropdown::after {
@@ -789,7 +791,7 @@
     .dd-sub-list.open { display: flex; }
 
     .dd-sub-link {
-      display: block;
+      display: flex; align-items: center; flex: 1;
       padding: 10px 14px;
       font-size: 13px; font-weight: 500;
       color: var(--muted); border-radius: 6px;
@@ -886,39 +888,54 @@
       text-decoration: none; display: block;
     }
     .mobile-submenu a:last-child { border-bottom: none; }
+/* ── Type panel (3rd level flyout) ── */
+    .dd-type-list {
+      display: none;
+      position: fixed;
+      min-width: 200px;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+      padding: 6px;
+      z-index: 10002;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .dd-type-list.open { display: flex; }
+    .dd-type-list::before {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      left: -8px; width: 8px;
+    }
+
+    .dd-cat-row.sub-active .dd-sub-link { background: #e4edf6; color: var(--blue); }
+    .dd-cat-row.sub-active .dd-cat-chevron { background: #e4edf6; }
+    .dd-cat-row.sub-active .dd-cat-chevron svg { stroke: var(--blue); }
   </style>
 </head>
 <body>
 
 <header class="navbar">
-
-    <!-- Column 1: Logo (left) -->
-    <a href="#" class="navbar__logo">
+    <a href="index.html" class="navbar__logo">
       <img src="peak-logo.png" alt="PEAK – Built for the Surgeon" />
     </a>
 
-    <!-- Column 2: Nav links (always truly centered in full bar) -->
     <div class="navbar__center">
-
-      <!-- DESKTOP pill nav -->
+      <!-- Desktop -->
       <nav class="navbar__desktop">
         <div class="nav-group">
-          <a href="#" class="active">Home</a>
+          <a href="index.html" class="active">Home</a>
           <a href="about.html">About</a>
-
           <div class="nav-dropdown" id="dd-products-desktop">
-            <a href="products.html">
-              Products
+            <a href="products.html">Products
               <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
-            <div class="dropdown-menu" id="nav-dd-desktop-products">
-              <span style="font-size:12px;color:#aaa;padding:8px 14px;">Loading...</span>
-            </div>
+            <div class="dropdown-menu" id="nav-dd-desktop-products"></div>
           </div>
-
           <div class="nav-dropdown" id="dd-resources-desktop">
-            <a href="resources.html">
-              Resources
+            <a href="resources.html">Resources
               <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
             <div class="dropdown-menu">
@@ -928,30 +945,23 @@
               <a href="product-ifus.html">Product IFUs</a>
             </div>
           </div>
-
           <a href="contact.html">Contact Us</a>
         </div>
       </nav>
 
-      <!-- TABLET pill nav -->
+      <!-- Tablet -->
       <nav class="navbar__tablet">
         <div class="nav-group">
-          <a href="#" class="active">Home</a>
+          <a href="index.html" class="active">Home</a>
           <a href="about.html">About</a>
-
           <div class="nav-dropdown" id="dd-products-tablet">
-            <a href="products.html">
-              Products
+            <a href="products.html">Products
               <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
-            <div class="dropdown-menu" id="nav-dd-tablet-products">
-              <span style="font-size:12px;color:#aaa;padding:8px 14px;">Loading...</span>
-            </div>
+            <div class="dropdown-menu" id="nav-dd-tablet-products"></div>
           </div>
-
           <div class="nav-dropdown" id="dd-resources-tablet">
-            <a href="resources.html">
-              Resources
+            <a href="resources.html">Resources
               <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
             </a>
             <div class="dropdown-menu">
@@ -961,98 +971,60 @@
               <a href="product-ifus.html">Product IFUs</a>
             </div>
           </div>
-
           <a href="contact.html">Contact Us</a>
         </div>
       </nav>
+    </div>
 
-    </div><!-- /navbar__center -->
-
-    <!-- Column 3: Right action (Get A Quote / cart / hamburger) -->
     <div class="navbar__right">
-
-      <!-- Desktop: Get A Quote button -->
-      <button class="btn-quote navbar__desktop">
-        Get A Quote
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
-          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-        </svg>
+      <button class="btn-quote">Get A Quote
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
       </button>
-
-      <!-- Tablet: cart icon -->
-      <button class="cart-btn navbar__tablet" aria-label="Cart">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
-          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-        </svg>
-      </button>
-
-      <!-- Mobile: cart + hamburger -->
       <div class="navbar__mobile">
         <button class="cart-btn" aria-label="Cart">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
-            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-          </svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
         </button>
         <button class="hamburger" aria-label="Open menu" onclick="openMenu()">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <line x1="3" y1="12" x2="21" y2="12"/>
-            <line x1="3" y1="18" x2="21" y2="18"/>
-          </svg>
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
-
-    </div><!-- /navbar__right -->
-
+    </div>
   </header>
 
-  <!-- Mobile menu overlay -->
+  <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <!-- Left backdrop — tap to close -->
     <div class="mobile-menu__backdrop" onclick="closeMenu()"></div>
-    <!-- Right panel -->
     <div class="mobile-menu__panel">
-    <div class="mobile-menu__header">
-      <a href="index.html"><img src="peak-logo.png" alt="PEAK" /></a>
-      <button class="mobile-menu__close" onclick="closeMenu()">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
-      </button>
-    </div>
-    <nav>
-      <a href="#">Home</a>
-      <a href="about.html">About</a>
-
-      <!-- Products expandable -->
-      <div class="mobile-nav-row">
-        <a href="products.html" class="mobile-nav-link">Products</a>
-        <button class="mobile-nav-chevron" id="mob-toggle-products" onclick="toggleMobileSubmenu('mob-products','mob-toggle-products')">
-          <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+      <div class="mobile-menu__header">
+        <a href="index.html"><img src="peak-logo.png" alt="PEAK" /></a>
+        <button class="mobile-menu__close" onclick="closeMenu()">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
         </button>
       </div>
-      <div class="mobile-submenu" id="mob-products">
-        <span style="font-size:13px;color:#aaa;padding:8px 0;">Loading...</span>
-      </div>
-
-      <!-- Resources expandable -->
-      <div class="mobile-nav-row">
-        <a href="resources.html" class="mobile-nav-link">Resources</a>
-        <button class="mobile-nav-chevron" id="mob-toggle-resources" onclick="toggleMobileSubmenu('mob-resources','mob-toggle-resources')">
-          <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
-        </button>
-      </div>
-      <div class="mobile-submenu" id="mob-resources">
-        <a href="video-archive.html">Video Archive</a>
-        <a href="pdf-catalogs.html">PDF Catalogs</a>
-        <a href="education-materials.html">Education Materials</a>
-        <a href="product-ifus.html">Product IFUs</a>
-      </div>
-
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <div class="mobile-nav-row">
+          <a href="products.html" class="mobile-nav-link">Products</a>
+          <button class="mobile-nav-chevron" id="mob-toggle-products" onclick="toggleMobileSubmenu('mob-products','mob-toggle-products')">
+            <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="mobile-submenu" id="mob-products"></div>
+        <div class="mobile-nav-row">
+          <a href="resources.html" class="mobile-nav-link">Resources</a>
+          <button class="mobile-nav-chevron" id="mob-toggle-resources" onclick="toggleMobileSubmenu('mob-resources','mob-toggle-resources')">
+            <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+        </div>
+        <div class="mobile-submenu" id="mob-resources">
+          <a href="video-archive.html">Video Archive</a>
+          <a href="pdf-catalogs.html">PDF Catalogs</a>
+          <a href="education-materials.html">Education Materials</a>
+          <a href="product-ifus.html">Product IFUs</a>
+        </div>
+        <a href="contact.html">Contact Us</a>
+      </nav>
     </div>
   </div>
 
@@ -1199,20 +1171,28 @@
       } catch(e) { return; } // silently fail — static nav still works
 
       // Build category → subcategories map
+      // tree: cat → { sub → Set(types) }
       const tree = {};
       products.forEach(p => {
-        if (!tree[p.category]) tree[p.category] = new Set();
-        if (p.subcategory) tree[p.category].add(p.subcategory);
+        if (!p.category) return;
+        if (!tree[p.category]) tree[p.category] = {};
+        if (p.subcategory) {
+          if (!tree[p.category][p.subcategory]) tree[p.category][p.subcategory] = new Set();
+          if (p.type) tree[p.category][p.subcategory].add(p.type);
+        }
       });
 
       // Build HTML for dropdown items
       function buildDropdownHTML(tree) {
-        return Object.entries(tree).map(([cat, subs]) => {
-          const catURL = `products.html?cat=${encodeURIComponent(cat)}`;
-          const catId  = 'navdd-' + cat.replace(/\s+/g, '_');
-          const hasSubs = subs.size > 0;
+        // Remove any stale type panels from previous builds
+        document.querySelectorAll('.dd-type-list').forEach(el => el.remove());
 
-          // Category row: link on left, chevron on right (if has subs)
+        // Build HTML string only — no DOM manipulation here
+        return Object.entries(tree).map(([cat, subs]) => {
+          const catURL  = `products.html?cat=${encodeURIComponent(cat)}`;
+          const catId   = 'navdd-' + cat.replace(/\s+/g, '_');
+          const hasSubs = Object.keys(subs).length > 0;
+
           let h = `<div class="dd-cat-row">
             <a class="dd-cat-link" href="${catURL}">${cat}</a>
             ${hasSubs ? `<button class="dd-cat-chevron" onclick="toggleNavSub(event,'${catId}')">
@@ -1222,9 +1202,17 @@
 
           if (hasSubs) {
             h += `<div class="dd-sub-list" id="${catId}">`;
-            subs.forEach(sub => {
-              const subURL = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}`;
-              h += `<a class="dd-sub-link" href="${subURL}">${sub}</a>`;
+            Object.keys(subs).forEach(sub => {
+              const types    = subs[sub];
+              const subURL   = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}`;
+              const subId    = 'navtype-' + cat.replace(/\s+/g,'_') + '__' + sub.replace(/\s+/g,'_');
+              const hasTypes = types.size > 0;
+              h += `<div class="dd-cat-row">
+                <a class="dd-sub-link" href="${subURL}">${sub}</a>
+                ${hasTypes ? `<button class="dd-cat-chevron dd-type-chevron" data-typeid="${subId}" onclick="toggleNavType(event,'${subId}')">
+                  <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>` : ''}
+              </div>`;
             });
             h += `</div>`;
           }
@@ -1233,11 +1221,34 @@
       }
 
       // Build HTML for mobile submenu (flat with subcats indented)
+      function buildTypePanels(tree) {
+        // Called AFTER innerHTML is set — creates body-level type panels
+        document.querySelectorAll('.dd-type-list').forEach(el => el.remove());
+        Object.entries(tree).forEach(([cat, subs]) => {
+          Object.keys(subs).forEach(sub => {
+            const types = subs[sub];
+            if (!types.size) return;
+            const subId = 'navtype-' + cat.replace(/\s+/g,'_') + '__' + sub.replace(/\s+/g,'_');
+            const panel = document.createElement('div');
+            panel.className = 'dd-type-list';
+            panel.id = subId;
+            [...types].forEach(type => {
+              const a = document.createElement('a');
+              a.className = 'dd-sub-link';
+              a.href = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}&type=${encodeURIComponent(type)}`;
+              a.textContent = type;
+              panel.appendChild(a);
+            });
+            document.body.appendChild(panel);
+          });
+        });
+      }
+
       function buildMobileHTML(tree) {
         return Object.entries(tree).map(([cat, subs]) => {
           const catURL = `products.html?cat=${encodeURIComponent(cat)}`;
           let html = `<a href="${catURL}" style="font-weight:700">${cat}</a>`;
-          subs.forEach(sub => {
+          Object.keys(subs).forEach(sub => {
             const subURL = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}`;
             html += `<a href="${subURL}" style="padding-left:16px;font-size:14px">${sub}</a>`;
           });
@@ -1255,6 +1266,7 @@
       if (desktopDD) desktopDD.innerHTML = ddHTML;
       if (tabletDD)  tabletDD.innerHTML  = ddHTML;
       if (mobileDD)  mobileDD.innerHTML  = mobHTML;
+      buildTypePanels(tree);
     }
 
     populateNavDropdowns();
@@ -1313,9 +1325,44 @@
     }
 
     /* Close dropdowns when clicking outside */
-    document.addEventListener('click', function(e) {
-      if (!e.target.closest('.nav-dropdown')) {
+    document.addEventListener('click', e => {
+      const inDropdown  = e.target.closest('.nav-dropdown');
+      const inTypePanel = e.target.closest('.dd-type-list');
+
+      if (!inDropdown && !inTypePanel) {
+        // Clicked completely outside everything — close all
         document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+        document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
+        document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      } else if (inDropdown && !e.target.closest('.dd-sub-list') && !e.target.closest('.dd-cat-chevron') && !e.target.closest('.dd-type-chevron')) {
+        // Clicked on a top-level category link — close sub and type panels
+        document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
+        document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      }
+      // inTypePanel or inside dd-sub-list/chevron: let the event pass through naturally
+    });
+
+    // Close type panel when mouse leaves the nav area — use mousemove to check
+    // if mouse is over neither the dropdown nor the type panel
+    document.addEventListener('mousemove', e => {
+      const openTypePanel = document.querySelector('.dd-type-list.open');
+      if (!openTypePanel) return;
+      const inDropdown  = e.target.closest('.nav-dropdown');
+      const inTypePanel = e.target.closest('.dd-type-list');
+      const inSubList   = e.target.closest('.dd-sub-list');
+      if (!inDropdown && !inTypePanel && !inSubList) {
+        openTypePanel.classList.remove('open');
+        document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
       }
     });
 
@@ -1438,32 +1485,59 @@
     }
 
     /* ── Toggle nested nav submenu — positioned alongside the triggering row ── */
-        function toggleNavSub(e, id) {
+        function toggleNavType(e, id) {
       e.preventDefault();
       e.stopPropagation();
-      const sub = document.getElementById(id);
+      const typePanel = document.getElementById(id);
       const btn = e.currentTarget;
-      if (!sub) return;
+      if (!typePanel) return;
 
-      const isOpen = sub.classList.contains('open');
+      const isOpen = typePanel.classList.contains('open');
 
-      // Close all open sub-lists first
-      document.querySelectorAll('.dd-sub-list').forEach(el => {
-        el.classList.remove('open');
-        el.style.top = '0';
-      });
-      document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
-      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+      // Close all type panels and remove lock from all nav-dropdowns
+      document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('sub-active'));
 
       if (!isOpen) {
         const row = btn.closest('.dd-cat-row');
+        const subList = btn.closest('.dd-sub-list');
+        const navDropdown = btn.closest('.nav-dropdown');
+        const rowRect     = row ? row.getBoundingClientRect() : btn.getBoundingClientRect();
+        const subListRect = subList ? subList.getBoundingClientRect() : rowRect;
+
+        typePanel.style.top  = rowRect.top + 'px';
+        typePanel.style.left = (subListRect.right + 6) + 'px';
+        typePanel.classList.add('open');
+        btn.classList.add('open');
+        // Highlight the sub-category row the same way categories are highlighted when open
+        if (row) row.classList.add('sub-active');
+
+        // Lock the parent nav-dropdown open so CSS :hover loss doesn't close it
+        if (navDropdown) navDropdown.classList.add('type-open');
+      }
+    }
+
+    function toggleNavSub(e, id) {
+      e.preventDefault(); e.stopPropagation();
+      const sub = document.getElementById(id);
+      const btn = e.currentTarget;
+      if (!sub) return;
+      const isOpen = sub.classList.contains('open');
+      document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
+      document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+      // Always close any open type panel when switching categories
+      document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('sub-active'));
+      if (!isOpen) {
+        const row = btn.closest('.dd-cat-row');
         const menu = btn.closest('.dropdown-menu');
-        let offsetTop = 0;
-        let el = row;
-        while (el && el !== menu) {
-          offsetTop += el.offsetTop;
-          el = el.offsetParent;
-        }
+        let offsetTop = 0, el = row;
+        while (el && el !== menu) { offsetTop += el.offsetTop; el = el.offsetParent; }
         sub.style.top = offsetTop + 'px';
         sub.classList.add('open');
         btn.classList.add('open');
