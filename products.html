@@ -201,6 +201,34 @@
     .cat-chevron.open svg { transform: rotate(180deg); }
 
     .subcat-list { display: none; flex-direction: column; margin-top: 2px; padding-left: 12px; }
+    /* New 3-level sidebar styles */
+    .sub-list  { display: none; flex-direction: column; padding: 4px 0 4px 0; gap: 4px; }
+    .sub-list.open  { display: flex; }
+    .sub-item  { display: flex; flex-direction: column; width: 100%; }
+    .sub-row   { display: flex; align-items: stretch; border-radius: 6px; width: 100%; }
+    .sub-label {
+      flex: 1; background: none; border: none; text-align: left;
+      padding: 8px 6px 8px 24px; font-size: 13px; font-weight: 500;
+      color: var(--muted); cursor: pointer; border-radius: 6px 0 0 6px;
+      transition: background 0.15s;
+    }
+    .sub-row:hover .sub-label,
+    .sub-row:hover .cat-chevron { background: #f0f0f0; }
+    .sub-row:hover .sub-label   { color: var(--blue); }
+    .sub-row:hover .cat-chevron svg { stroke: var(--blue); }
+    .sub-label.active           { background: #e4edf6; color: var(--blue); }
+    .sub-label.active + .cat-chevron { background: #e4edf6; }
+    .sub-label.active + .cat-chevron svg { stroke: var(--blue); }
+    .type-list { display: none; flex-direction: column; padding: 4px 0 4px 0; gap: 2px; }
+    .type-list.open { display: flex; }
+    .type-label {
+      background: none; border: none; text-align: left;
+      padding: 6px 8px 6px 38px; font-size: 12px; font-weight: 500;
+      color: #888; cursor: pointer; border-radius: 6px;
+      transition: background 0.15s; width: 100%;
+    }
+    .type-label:hover { background: #f0f0f0; color: var(--blue); }
+    .type-label.active { background: #e4edf6; color: var(--blue); }
     .subcat-list.open { display: flex; }
     .subcat-btn {
       display: block; width: 100%; background: none; border: none;
@@ -315,6 +343,8 @@
     .nav-dropdown:hover > a { background: #f0f0f0; }
     .nav-dropdown:hover > a .chevron { transform: rotate(180deg); }
     .nav-dropdown:hover .dropdown-menu { display: flex; }
+    .nav-dropdown.type-open .dropdown-menu { display: flex; }
+    .nav-dropdown.type-open .dd-sub-list.open { display: flex; }
     /* Bridge to prevent mouseout gap between trigger and panel */
     .nav-dropdown::after {
       content: ''; position: absolute;
@@ -391,7 +421,7 @@
     .dd-sub-list.open { display: flex; }
 
     .dd-sub-link {
-      display: block;
+      display: flex; align-items: center; flex: 1;
       padding: 10px 14px;
       font-size: 13px; font-weight: 500;
       color: var(--muted); border-radius: 6px;
@@ -399,7 +429,7 @@
       transition: background 0.15s, color 0.15s;
     }
     .dd-sub-link:hover { background: #f0f0f0; color: var(--blue); }
-    .dd-sub-link.active { background: #e4edf6; color: var(--blue); font-weight: 700; }
+    .dd-sub-link.active { background: #e4edf6; color: var(--blue); }
     .dd-cat-link.active { color: var(--blue); }
     .dd-cat-row:has(.dd-cat-link.active) .dd-cat-chevron { color: var(--blue); }
     /* Transparent bridge fills the gap so mouse doesn't leave hover zone */
@@ -498,6 +528,31 @@
       text-decoration: none; display: block;
     }
     .mobile-submenu a:last-child { border-bottom: none; }
+/* ── Type panel (3rd level flyout) ── */
+    .dd-type-list {
+      display: none;
+      position: fixed;
+      min-width: 200px;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+      padding: 6px;
+      z-index: 10002;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .dd-type-list.open { display: flex; }
+    .dd-type-list::before {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      left: -8px; width: 8px;
+    }
+
+    .dd-cat-row.sub-active .dd-sub-link { background: #e4edf6; color: var(--blue); }
+    .dd-cat-row.sub-active .dd-cat-chevron { background: #e4edf6; }
+    .dd-cat-row.sub-active .dd-cat-chevron svg { stroke: var(--blue); }
   </style>
 </head>
 <body>
@@ -507,7 +562,9 @@
     <a href="index.html" class="navbar__logo">
       <img src="peak-logo.png" alt="PEAK – Built for the Surgeon" />
     </a>
+
     <div class="navbar__center">
+      <!-- Desktop -->
       <nav class="navbar__desktop">
         <div class="nav-group">
           <a href="index.html">Home</a>
@@ -519,14 +576,21 @@
             <div class="dropdown-menu" id="nav-dd-desktop-products"></div>
           </div>
           <div class="nav-dropdown" id="dd-resources-desktop">
-            <a href="resources.html" onclick="toggleDropdown(event,'dd-resources-desktop')">Resources <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
+            <a href="resources.html">Resources
+              <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
             <div class="dropdown-menu">
-              <a href="video-archive.html">Video Archive</a><a href="pdf-catalogs.html">PDF Catalogs</a><a href="education-materials.html">Education Materials</a><a href="product-ifus.html">Product IFUs</a>
+              <a href="video-archive.html">Video Archive</a>
+              <a href="pdf-catalogs.html">PDF Catalogs</a>
+              <a href="education-materials.html">Education Materials</a>
+              <a href="product-ifus.html">Product IFUs</a>
             </div>
           </div>
           <a href="contact.html">Contact Us</a>
         </div>
       </nav>
+
+      <!-- Tablet -->
       <nav class="navbar__tablet">
         <div class="nav-group">
           <a href="index.html">Home</a>
@@ -538,22 +602,37 @@
             <div class="dropdown-menu" id="nav-dd-tablet-products"></div>
           </div>
           <div class="nav-dropdown" id="dd-resources-tablet">
-            <a href="resources.html" onclick="toggleDropdown(event,'dd-resources-tablet')">Resources <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></a>
-            <div class="dropdown-menu"><a href="video-archive.html">Video Archive</a><a href="pdf-catalogs.html">PDF Catalogs</a><a href="education-materials.html">Education Materials</a><a href="product-ifus.html">Product IFUs</a></div>
+            <a href="resources.html">Resources
+              <svg class="chevron" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+            <div class="dropdown-menu">
+              <a href="video-archive.html">Video Archive</a>
+              <a href="pdf-catalogs.html">PDF Catalogs</a>
+              <a href="education-materials.html">Education Materials</a>
+              <a href="product-ifus.html">Product IFUs</a>
+            </div>
           </div>
           <a href="contact.html">Contact Us</a>
         </div>
       </nav>
     </div>
+
     <div class="navbar__right">
-      <button class="btn-quote">Get A Quote <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+      <button class="btn-quote">Get A Quote
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+      </button>
       <div class="navbar__mobile">
-        <button class="cart-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
-        <button class="hamburger" onclick="openMenu()"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+        <button class="cart-btn" aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        </button>
+        <button class="hamburger" aria-label="Open menu" onclick="openMenu()">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
       </div>
     </div>
   </header>
 
+  <!-- Mobile menu -->
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu__backdrop" onclick="closeMenu()"></div>
     <div class="mobile-menu__panel">
@@ -603,7 +682,9 @@
     <span id="bc-cat-sep" style="display:none">›</span>
     <a href="#" id="bc-cat" style="color:var(--muted);display:none;"></a>
     <span id="bc-sub-sep" style="display:none">›</span>
-    <span id="bc-sub" style="display:none;"></span>
+    <a href="#" id="bc-sub" style="color:var(--muted);display:none;"></a>
+    <span id="bc-type-sep" style="display:none">›</span>
+    <span id="bc-type" style="display:none;"></span>
     <span id="bc-all" style="">All Products</span>
   </div>
 
@@ -673,19 +754,28 @@
     let allProducts = [];
     let activeCategory = null;
     let activeSubcategory = null;
+    let activeType = null;
 
     // ── Load products.json ─────────────────────────────────────
     async function loadProducts() {
       try {
         const res = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' });
-        allProducts = await res.json();
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        const text = await res.text();
+        try {
+          allProducts = JSON.parse(text);
+        } catch(parseErr) {
+          throw new Error('JSON parse error: ' + parseErr.message);
+        }
         buildCategoryTree();
-        populateNavDropdowns(); // highlightNavDropdown() called inside after DOM is ready
-        applyURLParams();   // apply ?cat= / ?sub= from URL before first render
+        populateNavDropdowns();
+        applyURLParams();
+        applyActiveStatesToTree();
         applyFilters();
       } catch (e) {
+        console.error('loadProducts error:', e);
         document.getElementById('product-grid').innerHTML =
-          '<div class="empty-state"><p>Could not load products.json. Make sure it is in the same folder.</p></div>';
+          `<div class="empty-state"><p>Could not load products.json: ${e.message}</p><p style="font-size:12px;color:#aaa;margin-top:8px;">Check the browser console (F12) for details.</p></div>`;
       }
     }
 
@@ -693,26 +783,43 @@
     function populateNavDropdowns() {
       const tree = {};
       allProducts.forEach(p => {
-        if (!tree[p.category]) tree[p.category] = new Set();
-        if (p.subcategory) tree[p.category].add(p.subcategory);
+        if (!tree[p.category]) tree[p.category] = {};
+        if (p.subcategory) {
+          if (!tree[p.category][p.subcategory]) tree[p.category][p.subcategory] = new Set();
+          if (p.type) tree[p.category][p.subcategory].add(p.type);
+        }
       });
 
       function buildDropdownHTML(tree) {
+        // Remove any stale type panels from previous builds
+        document.querySelectorAll('.dd-type-list').forEach(el => el.remove());
+
+        // Build HTML string only — no DOM manipulation here
         return Object.entries(tree).map(([cat, subs]) => {
           const catURL  = `products.html?cat=${encodeURIComponent(cat)}`;
           const catId   = 'navdd-' + cat.replace(/\s+/g, '_');
-          const hasSubs = subs.size > 0;
+          const hasSubs = Object.keys(subs).length > 0;
+
           let h = `<div class="dd-cat-row">
             <a class="dd-cat-link" href="${catURL}">${cat}</a>
             ${hasSubs ? `<button class="dd-cat-chevron" onclick="toggleNavSub(event,'${catId}')">
               <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
             </button>` : ''}
           </div>`;
+
           if (hasSubs) {
             h += `<div class="dd-sub-list" id="${catId}">`;
-            subs.forEach(sub => {
-              const subURL = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}`;
-              h += `<a class="dd-sub-link" href="${subURL}">${sub}</a>`;
+            Object.keys(subs).forEach(sub => {
+              const types    = subs[sub];
+              const subURL   = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}`;
+              const subId    = 'navtype-' + cat.replace(/\s+/g,'_') + '__' + sub.replace(/\s+/g,'_');
+              const hasTypes = types.size > 0;
+              h += `<div class="dd-cat-row">
+                <a class="dd-sub-link" href="${subURL}">${sub}</a>
+                ${hasTypes ? `<button class="dd-cat-chevron dd-type-chevron" data-typeid="${subId}" onclick="toggleNavType(event,'${subId}')">
+                  <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>` : ''}
+              </div>`;
             });
             h += `</div>`;
           }
@@ -720,11 +827,34 @@
         }).join('');
       }
 
+      function buildTypePanels(tree) {
+        // Called AFTER innerHTML is set — creates body-level type panels
+        document.querySelectorAll('.dd-type-list').forEach(el => el.remove());
+        Object.entries(tree).forEach(([cat, subs]) => {
+          Object.keys(subs).forEach(sub => {
+            const types = subs[sub];
+            if (!types.size) return;
+            const subId = 'navtype-' + cat.replace(/\s+/g,'_') + '__' + sub.replace(/\s+/g,'_');
+            const panel = document.createElement('div');
+            panel.className = 'dd-type-list';
+            panel.id = subId;
+            [...types].forEach(type => {
+              const a = document.createElement('a');
+              a.className = 'dd-sub-link';
+              a.href = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}&type=${encodeURIComponent(type)}`;
+              a.textContent = type;
+              panel.appendChild(a);
+            });
+            document.body.appendChild(panel);
+          });
+        });
+      }
+
       function buildMobileHTML(tree) {
         return Object.entries(tree).map(([cat, subs]) => {
           const catURL = `products.html?cat=${encodeURIComponent(cat)}`;
           let h = `<a href="${catURL}" style="font-weight:700">${cat}</a>`;
-          subs.forEach(sub => {
+          Object.keys(subs).forEach(sub => {
             const subURL = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}`;
             h += `<a href="${subURL}" style="padding-left:16px;font-size:14px">${sub}</a>`;
           });
@@ -740,6 +870,7 @@
       if (desktopDD) desktopDD.innerHTML = ddHTML;
       if (tabletDD)  tabletDD.innerHTML  = ddHTML;
       if (mobileDD)  mobileDD.innerHTML  = mobHTML;
+      buildTypePanels(tree);
 
       // Now that dropdown DOM exists, apply active states from URL
       highlightNavDropdown();
@@ -748,42 +879,47 @@
     // ── Highlight active category/subcategory in nav dropdown ──
     function highlightNavDropdown() {
       const params = new URLSearchParams(window.location.search);
-      const cat = params.get('cat');
-      const sub = params.get('sub');
+      const cat  = params.get('cat');
+      const sub  = params.get('sub');
+      const type = params.get('type');
       if (!cat) return;
 
-      // Mark all matching category links active across both desktop + tablet panels
+      // Only mark active states on links — never force-open sub-lists or type panels.
+      // The dropdown should always open fresh on hover; active state = blue text only.
       document.querySelectorAll('.dd-cat-link').forEach(link => {
-        if (link.textContent.trim() === cat) {
-          link.classList.add('active');
-          const row     = link.closest('.dd-cat-row');
-          const chevron = row ? row.querySelector('.dd-cat-chevron') : null;
-          const menu    = row ? row.closest('.dropdown-menu') : null;
+        if (link.textContent.trim() !== cat) return;
+        link.classList.add('active');
+        const row = link.closest('.dd-cat-row');
 
-          if (sub && row) {
-            row.classList.add('open');
-            if (chevron) chevron.classList.add('open');
+        if (!sub || !row) return;
 
-            // Find this panel's sub-list by matching href to avoid duplicate-ID issues
-            const subList = row.nextElementSibling;
-            if (subList && subList.classList.contains('dd-sub-list')) {
-              subList.classList.add('open');
-              // Position alongside the row
-              if (menu) {
-                let offsetTop = 0, el = row;
-                while (el && el !== menu) { offsetTop += el.offsetTop; el = el.offsetParent; }
-                subList.style.top = offsetTop + 'px';
-              }
+        // Open the category row (chevron rotates) but NOT the sub-list
+        row.classList.add('open');
+        const chevron = row.querySelector('.dd-cat-chevron');
+        if (chevron) chevron.classList.add('open');
 
-              // Mark the matching sub-link active within this panel
-              subList.querySelectorAll('.dd-sub-link').forEach(subLink => {
-                if (subLink.textContent.trim() === sub) {
-                  subLink.classList.add('active');
-                }
-              });
-            }
-          }
-        }
+        // Find the sub-list and mark the matching sub-link blue — but keep sub-list closed
+        const subList = row.nextElementSibling;
+        if (!subList || !subList.classList.contains('dd-sub-list')) return;
+
+        subList.querySelectorAll('.dd-cat-row').forEach(subRow => {
+          const subLink = subRow.querySelector('.dd-sub-link');
+          if (!subLink || subLink.textContent.trim() !== sub) return;
+          subLink.classList.add('active');
+
+          if (!type) return;
+          // Mark the type link active inside its panel (panel stays closed until hovered)
+          const typeChev = subRow.querySelector('.dd-type-chevron');
+          if (!typeChev) return;
+          const onclickVal = typeChev.getAttribute('onclick') || '';
+          const match      = onclickVal.match(/'(navtype-[^']+)'/);
+          const typeId     = match ? match[1] : null;
+          const typePanel  = typeId ? document.getElementById(typeId) : null;
+          if (!typePanel) return;
+          typePanel.querySelectorAll('.dd-sub-link').forEach(typeLink => {
+            if (typeLink.textContent.trim() === type) typeLink.classList.add('active');
+          });
+        });
       });
     }
 
@@ -792,6 +928,7 @@
       const params = new URLSearchParams(window.location.search);
       const cat    = params.get('cat');
       const sub    = params.get('sub');
+      const type   = params.get('type');
       const search = params.get('search');
 
       // Pre-fill search box if ?search= present
@@ -803,35 +940,71 @@
       if (!cat) return;
 
       activeCategory    = cat;
-      activeSubcategory = sub || null;
-
-      document.querySelectorAll('.cat-label').forEach(btn => {
-        if (btn.dataset.category === cat) btn.classList.add('active');
-      });
-
-      const subListId = 'subcat-' + cat.replace(/\s+/g,'_');
-      const subList   = document.getElementById(subListId);
-      const catItem   = subList ? subList.closest('.cat-item') : null;
-      const chevron   = catItem ? catItem.querySelector('.cat-chevron') : null;
-
-      if (subList) subList.classList.add('open');
-      if (chevron) chevron.classList.add('open');
-
-      if (sub) {
-        document.querySelectorAll('.subcat-btn').forEach(btn => {
-          if (btn.dataset.sub === sub) btn.classList.add('active');
-        });
-      }
+      activeSubcategory = sub  || null;
+      activeType        = type || null;
 
       document.getElementById('btn-all').classList.remove('active');
+
+      // Highlight category in sidebar
+      document.querySelectorAll('.cat-label').forEach(btn => {
+        if (btn.textContent.trim() === cat) btn.classList.add('active');
+      });
+
+      // The sidebar is built by buildCategoryTree() using dynamic DOM elements.
+      // Active states on sub-list/type-list items are applied after the tree is built
+      // via applyActiveStatesToTree() which is called from buildCategoryTree().
+    }
+
+    function applyActiveStatesToTree() {
+      if (!activeCategory) return;
+
+      // Find and open/activate the matching category row
+      document.querySelectorAll('.cat-item').forEach(item => {
+        const label = item.querySelector('.cat-label');
+        if (!label || label.textContent.trim() !== activeCategory) return;
+
+        label.classList.add('active');
+        const chevron = item.querySelector('.cat-chevron');
+        const subList = item.querySelector('.sub-list');
+        if (subList) { subList.classList.add('open'); }
+        if (chevron) { chevron.classList.add('open'); }
+
+        if (!activeSubcategory) return;
+
+        // Find matching sub-label
+        subList && subList.querySelectorAll('.sub-label').forEach(subBtn => {
+          if (subBtn.textContent.trim() !== activeSubcategory) return;
+
+          subBtn.classList.add('active');
+          const subItem  = subBtn.closest('.sub-item');
+          const typeList = subItem ? subItem.querySelector('.type-list') : null;
+          const typeChev = subItem ? subItem.querySelector('.cat-chevron') : null;
+
+          if (!activeType) return;
+
+          if (typeList) { typeList.classList.add('open'); }
+          if (typeChev) { typeChev.classList.add('open'); }
+
+          typeList && typeList.querySelectorAll('.type-label').forEach(typeBtn => {
+            if (typeBtn.textContent.trim() === activeType) {
+              typeBtn.classList.add('active');
+            }
+          });
+        });
+      });
     }
 
     // ── Build sidebar category tree from data ──────────────────
     function buildCategoryTree() {
+      // Build tree: cat → sub → Set(types)
       const tree = {};
       allProducts.forEach(p => {
-        if (!tree[p.category]) tree[p.category] = new Set();
-        if (p.subcategory) tree[p.category].add(p.subcategory);
+        if (!p.category) return;
+        if (!tree[p.category]) tree[p.category] = {};
+        if (p.subcategory) {
+          if (!tree[p.category][p.subcategory]) tree[p.category][p.subcategory] = new Set();
+          if (p.type) tree[p.category][p.subcategory].add(p.type);
+        }
       });
 
       const container = document.getElementById('category-tree');
@@ -841,37 +1014,72 @@
         const item = document.createElement('div');
         item.className = 'cat-item';
 
-        // Wrapper row: text button (filters) + chevron button (expands)
+        // Category row
         const row = document.createElement('div');
         row.className = 'cat-row';
-
         const catBtn = document.createElement('button');
         catBtn.className = 'cat-label';
-        catBtn.dataset.category = cat;
         catBtn.textContent = cat;
-        catBtn.onclick = () => handleCategoryClick(cat, chevronBtn);
+        catBtn.onclick = () => { activeCategory = cat; activeSubcategory = null; activeType = null; applyFilters(); updateSidebarActive(); };
         row.appendChild(catBtn);
 
-        const chevronBtn = document.createElement('button');
-        chevronBtn.className = 'cat-chevron';
-        chevronBtn.innerHTML = `<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>`;
-        chevronBtn.onclick = () => toggleCatExpand(cat, chevronBtn);
-        row.appendChild(chevronBtn);
-
+        const hasSubs = Object.keys(subs).length > 0;
+        if (hasSubs) {
+          const chevBtn = document.createElement('button');
+          chevBtn.className = 'cat-chevron';
+          chevBtn.innerHTML = '<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>';
+          chevBtn.onclick = () => {
+            const sl = item.querySelector('.sub-list');
+            const open = sl.classList.toggle('open');
+            chevBtn.classList.toggle('open', open);
+          };
+          row.appendChild(chevBtn);
+        }
         item.appendChild(row);
 
-        if (subs.size > 0) {
+        if (hasSubs) {
           const subList = document.createElement('div');
-          subList.className = 'subcat-list';
-          subList.id = 'subcat-' + cat.replace(/\s+/g,'_');
+          subList.className = 'sub-list';
+          Object.entries(subs).forEach(([sub, types]) => {
+            const subItem = document.createElement('div');
+            subItem.className = 'sub-item';
 
-          subs.forEach(sub => {
-            const btn = document.createElement('button');
-            btn.className = 'subcat-btn';
-            btn.dataset.sub = sub;
-            btn.textContent = sub;
-            btn.onclick = () => handleSubcategoryClick(cat, sub, btn);
-            subList.appendChild(btn);
+            const subRow = document.createElement('div');
+            subRow.className = 'sub-row';
+            const subBtn = document.createElement('button');
+            subBtn.className = 'sub-label';
+            subBtn.textContent = sub;
+            subBtn.onclick = () => { activeCategory = cat; activeSubcategory = sub; activeType = null; applyFilters(); updateSidebarActive(); };
+            subRow.appendChild(subBtn);
+
+            const hasTypes = types.size > 0;
+            if (hasTypes) {
+              const typeChev = document.createElement('button');
+              typeChev.className = 'cat-chevron';
+              typeChev.innerHTML = '<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>';
+              typeChev.onclick = () => {
+                const tl = subItem.querySelector('.type-list');
+                const open = tl.classList.toggle('open');
+                typeChev.classList.toggle('open', open);
+              };
+              subRow.appendChild(typeChev);
+            }
+            subItem.appendChild(subRow);
+
+            if (hasTypes) {
+              const typeList = document.createElement('div');
+              typeList.className = 'type-list';
+              types.forEach(type => {
+                const typeBtn = document.createElement('button');
+                typeBtn.className = 'type-label';
+                typeBtn.textContent = type;
+                typeBtn.onclick = () => { activeCategory = cat; activeSubcategory = sub; activeType = type; applyFilters(); updateSidebarActive(); };
+                typeList.appendChild(typeBtn);
+              });
+              subItem.appendChild(typeList);
+            }
+
+            subList.appendChild(subItem);
           });
           item.appendChild(subList);
         }
@@ -880,7 +1088,7 @@
       });
     }
 
-    // Click category label → filter to that category + expand subs
+
     function handleCategoryClick(cat, chevronEl) {
       const subList = document.getElementById('subcat-' + cat.replace(/\s+/g,'_'));
       clearAllActive();
@@ -935,8 +1143,10 @@
       clearAllActive();
       activeCategory = null;
       activeSubcategory = null;
+      activeType = null;
       document.getElementById('btn-all').classList.add('active');
       applyFilters();
+      updateSidebarActive();
     }
 
     function clearAllActive() {
@@ -948,22 +1158,90 @@
       document.getElementById('btn-all').classList.remove('active');
     }
 
+    function updateSidebarActive() {
+      // Clear all sidebar active states
+      document.querySelectorAll('.cat-label').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.sub-label').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.type-label').forEach(el => el.classList.remove('active'));
+      document.getElementById('btn-all').classList.remove('active');
+
+      // Clear and refresh nav dropdown active states
+      document.querySelectorAll('.dd-cat-link').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.dd-sub-link').forEach(el => el.classList.remove('active'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open', 'sub-active'));
+      document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
+      document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+
+      // Update URL to reflect current filter state
+      const params = new URLSearchParams();
+      if (activeCategory)    params.set('cat',  activeCategory);
+      if (activeSubcategory) params.set('sub',  activeSubcategory);
+      if (activeType)        params.set('type', activeType);
+      const newURL = window.location.pathname + (params.toString() ? '?' + params.toString() : '');
+      window.history.pushState({}, '', newURL);
+
+      // Re-highlight nav based on new URL
+      highlightNavDropdown();
+
+      if (!activeCategory) {
+        document.getElementById('btn-all').classList.add('active');
+        return;
+      }
+
+      // Walk the live DOM to find and activate the right sidebar elements
+      document.querySelectorAll('.cat-item').forEach(item => {
+        const catLabel = item.querySelector('.cat-label');
+        if (!catLabel || catLabel.textContent.trim() !== activeCategory) return;
+        catLabel.classList.add('active');
+
+        if (!activeSubcategory) return;
+        const subList = item.querySelector('.sub-list');
+        if (!subList) return;
+        subList.classList.add('open');
+        const catChev = item.querySelector('.cat-row .cat-chevron');
+        if (catChev) catChev.classList.add('open');
+
+        subList.querySelectorAll('.sub-label').forEach(subLabel => {
+          if (subLabel.textContent.trim() !== activeSubcategory) return;
+          subLabel.classList.add('active');
+
+          if (!activeType) return;
+          const subItem  = subLabel.closest('.sub-item');
+          const typeList = subItem ? subItem.querySelector('.type-list') : null;
+          const typeChev = subItem ? subItem.querySelector('.cat-chevron') : null;
+          if (typeList) typeList.classList.add('open');
+          if (typeChev) typeChev.classList.add('open');
+          typeList && typeList.querySelectorAll('.type-label').forEach(typeLabel => {
+            if (typeLabel.textContent.trim() === activeType) typeLabel.classList.add('active');
+          });
+        });
+      });
+    }
+
     // ── Filter + render ────────────────────────────────────────
     function applyFilters() {
       const query = document.getElementById('search-input').value.toLowerCase().trim();
 
       let filtered = allProducts.filter(p => {
-        const matchCat = !activeCategory || p.category === activeCategory;
-        const matchSub = !activeSubcategory || p.subcategory === activeSubcategory;
+        const matchCat    = !activeCategory    || p.category    === activeCategory;
+        const matchSub    = !activeSubcategory || p.subcategory === activeSubcategory;
+        const matchType   = !activeType        || p.type        === activeType;
         const matchSearch = !query ||
           p.title.toLowerCase().includes(query) ||
           p.sku.toLowerCase().includes(query) ||
           (p.categoryThree || '').toLowerCase().includes(query);
-        return matchCat && matchSub && matchSearch;
+        return matchCat && matchSub && matchType && matchSearch;
       });
 
       // Update heading
-      const title = activeSubcategory || activeCategory || 'All Products';
+      let title;
+      if (activeType && activeSubcategory) {
+        title = activeSubcategory + ' - ' + activeType;
+      } else {
+        title = activeSubcategory || activeCategory || 'All Products';
+      }
       document.getElementById('section-title').textContent = title;
 
       // Update breadcrumb trail
@@ -973,7 +1251,24 @@
       const bcSubSep = document.getElementById('bc-sub-sep');
       const bcAll    = document.getElementById('bc-all');
 
-      if (activeCategory && activeSubcategory) {
+      const bcType    = document.getElementById('bc-type');
+      const bcTypeSep = document.getElementById('bc-type-sep');
+
+      if (activeCategory && activeSubcategory && activeType) {
+        // Home > Products > Category > Subcategory > Type
+        bcAll.style.display    = 'none';
+        bcCat.textContent      = activeCategory;
+        bcCat.href             = `products.html?cat=${encodeURIComponent(activeCategory)}`;
+        bcCat.style.display    = 'inline';
+        bcCatSep.style.display = 'inline';
+        bcSub.textContent      = activeSubcategory;
+        bcSub.href             = `products.html?cat=${encodeURIComponent(activeCategory)}&sub=${encodeURIComponent(activeSubcategory)}`;
+        bcSub.style.display    = 'inline';
+        bcSubSep.style.display = 'inline';
+        bcType.textContent     = activeType;
+        bcType.style.display   = 'inline';
+        bcTypeSep.style.display= 'inline';
+      } else if (activeCategory && activeSubcategory) {
         // Home > Products > Category > Subcategory
         bcAll.style.display    = 'none';
         bcCat.textContent      = activeCategory;
@@ -981,8 +1276,11 @@
         bcCat.style.display    = 'inline';
         bcCatSep.style.display = 'inline';
         bcSub.textContent      = activeSubcategory;
+        bcSub.href             = `products.html?cat=${encodeURIComponent(activeCategory)}&sub=${encodeURIComponent(activeSubcategory)}`;
         bcSub.style.display    = 'inline';
         bcSubSep.style.display = 'inline';
+        bcType.style.display   = 'none';
+        bcTypeSep.style.display= 'none';
       } else if (activeCategory) {
         // Home > Products > Category
         bcAll.style.display    = 'none';
@@ -992,6 +1290,8 @@
         bcCatSep.style.display = 'inline';
         bcSub.style.display    = 'none';
         bcSubSep.style.display = 'none';
+        bcType.style.display   = 'none';
+        bcTypeSep.style.display= 'none';
       } else {
         // Home > Products > All Products
         bcAll.style.display    = 'inline';
@@ -999,6 +1299,8 @@
         bcCatSep.style.display = 'none';
         bcSub.style.display    = 'none';
         bcSubSep.style.display = 'none';
+        bcType.style.display   = 'none';
+        bcTypeSep.style.display= 'none';
       }
       document.getElementById('product-count').textContent =
         `Showing ${filtered.length} of ${allProducts.length} results`;
@@ -1050,8 +1352,60 @@
       const el = document.getElementById(id);
       if (el) document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
     }
+    
+      // Also close type panels when dropdown area is left
+      document.querySelectorAll('.nav-dropdown').forEach(dd => {
+        dd.addEventListener('mouseleave', () => {
+          // Small delay so user can move to type panel
+          setTimeout(() => {
+            const typeHovered = document.querySelector('.dd-type-list:hover');
+            if (!typeHovered) {
+              document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+              document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+            }
+          }, 150);
+        });
+      });
+
     document.addEventListener('click', e => {
-      if (!e.target.closest('.nav-dropdown')) document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+      const inDropdown  = e.target.closest('.nav-dropdown');
+      const inTypePanel = e.target.closest('.dd-type-list');
+
+      if (!inDropdown && !inTypePanel) {
+        // Clicked completely outside everything — close all
+        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+        document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
+        document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      } else if (inDropdown && !e.target.closest('.dd-sub-list') && !e.target.closest('.dd-cat-chevron') && !e.target.closest('.dd-type-chevron')) {
+        // Clicked on a top-level category link — close sub and type panels
+        document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
+        document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      }
+      // inTypePanel or inside dd-sub-list/chevron: let the event pass through naturally
+    });
+
+    // Close type panel when mouse leaves the nav area — use mousemove to check
+    // if mouse is over neither the dropdown nor the type panel
+    document.addEventListener('mousemove', e => {
+      const openTypePanel = document.querySelector('.dd-type-list.open');
+      if (!openTypePanel) return;
+      const inDropdown  = e.target.closest('.nav-dropdown');
+      const inTypePanel = e.target.closest('.dd-type-list');
+      const inSubList   = e.target.closest('.dd-sub-list');
+      if (!inDropdown && !inTypePanel && !inSubList) {
+        openTypePanel.classList.remove('open');
+        document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      }
     });
     function toggleMobileSubmenu(submenuId, toggleId) {
       document.getElementById(submenuId).classList.toggle('open');
@@ -1062,32 +1416,59 @@
     loadProducts();
 
     /* ── Toggle nested nav submenu — positioned alongside the triggering row ── */
-        function toggleNavSub(e, id) {
+        function toggleNavType(e, id) {
       e.preventDefault();
       e.stopPropagation();
-      const sub = document.getElementById(id);
+      const typePanel = document.getElementById(id);
       const btn = e.currentTarget;
-      if (!sub) return;
+      if (!typePanel) return;
 
-      const isOpen = sub.classList.contains('open');
+      const isOpen = typePanel.classList.contains('open');
 
-      // Close all open sub-lists first
-      document.querySelectorAll('.dd-sub-list').forEach(el => {
-        el.classList.remove('open');
-        el.style.top = '0';
-      });
-      document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
-      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+      // Close all type panels and remove lock from all nav-dropdowns
+      document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('sub-active'));
 
       if (!isOpen) {
         const row = btn.closest('.dd-cat-row');
+        const subList = btn.closest('.dd-sub-list');
+        const navDropdown = btn.closest('.nav-dropdown');
+        const rowRect     = row ? row.getBoundingClientRect() : btn.getBoundingClientRect();
+        const subListRect = subList ? subList.getBoundingClientRect() : rowRect;
+
+        typePanel.style.top  = rowRect.top + 'px';
+        typePanel.style.left = (subListRect.right + 6) + 'px';
+        typePanel.classList.add('open');
+        btn.classList.add('open');
+        // Highlight the sub-category row the same way categories are highlighted when open
+        if (row) row.classList.add('sub-active');
+
+        // Lock the parent nav-dropdown open so CSS :hover loss doesn't close it
+        if (navDropdown) navDropdown.classList.add('type-open');
+      }
+    }
+
+    function toggleNavSub(e, id) {
+      e.preventDefault(); e.stopPropagation();
+      const sub = document.getElementById(id);
+      const btn = e.currentTarget;
+      if (!sub) return;
+      const isOpen = sub.classList.contains('open');
+      document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
+      document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+      // Always close any open type panel when switching categories
+      document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('sub-active'));
+      if (!isOpen) {
+        const row = btn.closest('.dd-cat-row');
         const menu = btn.closest('.dropdown-menu');
-        let offsetTop = 0;
-        let el = row;
-        while (el && el !== menu) {
-          offsetTop += el.offsetTop;
-          el = el.offsetParent;
-        }
+        let offsetTop = 0, el = row;
+        while (el && el !== menu) { offsetTop += el.offsetTop; el = el.offsetParent; }
         sub.style.top = offsetTop + 'px';
         sub.classList.add('open');
         btn.classList.add('open');
