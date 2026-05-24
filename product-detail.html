@@ -47,6 +47,8 @@
     .nav-dropdown.open .dropdown-menu { display: flex; }
     .dropdown-menu a { display: block; padding: 10px 14px; font-size: 14px; font-weight: 500; color: var(--text); border-radius: 6px; white-space: nowrap; transition: background 0.15s; }
     .dropdown-menu a:hover { background: #f0f0f0; color: var(--blue); }
+    .dropdown-menu .dd-cat-link { border-radius: 6px 0 0 6px; }
+    .dropdown-menu .dd-sub-link { border-radius: 6px 0 0 6px; }
     .btn-quote { display: flex; align-items: center; gap: 10px; border: 2px solid var(--navy); border-radius: 8px; padding: 10px 20px; font-size: 14px; font-weight: 700; color: var(--navy); background: var(--white); transition: background 0.15s, color 0.15s; white-space: nowrap; }
     .btn-quote:hover { background: var(--navy); color: var(--white); }
     .navbar__tablet { display: none; }
@@ -241,12 +243,17 @@
       display: flex; align-items: center; flex: 1;
       padding: 10px 14px;
       font-size: 13px; font-weight: 500;
-      color: var(--muted); border-radius: 6px;
+      color: var(--muted); border-radius: 6px 0 0 6px;
       white-space: normal; word-break: break-word;
       transition: background 0.15s, color 0.15s;
     }
-    .dd-sub-link:hover { background: #f0f0f0; color: var(--blue); }
-    .dd-sub-link.active { background: #e4edf6; color: var(--blue); font-weight: 700; }
+    .dd-cat-row:hover .dd-sub-link { background: #f0f0f0; color: var(--blue); }
+    .dd-type-list .dd-sub-link:hover { background: #f0f0f0; color: var(--blue); }
+    .dd-cat-row:hover .dd-sub-link ~ .dd-cat-chevron { background: #f0f0f0; }
+    .dd-cat-row:hover .dd-sub-link ~ .dd-cat-chevron svg { stroke: var(--blue); }
+    .dd-sub-link.active { background: #e4edf6; color: var(--blue); }
+    .dd-sub-link.active + .dd-cat-chevron { background: #e4edf6; }
+    .dd-sub-link.active + .dd-cat-chevron svg { stroke: var(--blue); }
     .dd-cat-link.active { color: var(--blue); }
     /* Transparent bridge fills the gap so mouse doesn't leave hover zone */
     .dd-sub-list::before {
@@ -528,7 +535,8 @@
         if (!product) { showError('Product not found.'); return; }
         _currentProduct = product;
         renderProduct(product);
-        highlightNavDropdownFromProduct(product);
+        // Delay slightly to ensure buildTypePanels has run and type panels exist in DOM
+        setTimeout(() => highlightNavDropdownFromProduct(product), 50);
       } catch (e) {
         showError('Could not load products.json.');
       }
@@ -699,46 +707,118 @@
     loadProduct();
 
     function highlightNavDropdownFromProduct(p) {
-      const cat = p ? p.category : null;
-      const sub = p ? p.subcategory : null;
+      const cat  = p ? p.category    : null;
+      const sub  = p ? p.subcategory : null;
+      const type = p ? p.type        : null;
       if (!cat) return;
 
-      // Mark all matching category links active across both desktop + tablet panels
+      // Only mark active states on links — never force-open sub-lists or type panels.
       document.querySelectorAll('.dd-cat-link').forEach(link => {
-        if (link.textContent.trim() === cat) {
-          link.classList.add('active');
-          const row     = link.closest('.dd-cat-row');
-          const chevron = row ? row.querySelector('.dd-cat-chevron') : null;
-          const menu    = row ? row.closest('.dropdown-menu') : null;
+        if (link.textContent.trim() !== cat) return;
+        link.classList.add('active');
+        const row = link.closest('.dd-cat-row');
 
-          if (sub && row) {
-            row.classList.add('open');
-            if (chevron) chevron.classList.add('open');
+        if (!sub || !row) return;
 
-            // Find this panel's sub-list by matching href to avoid duplicate-ID issues
-            const subList = row.nextElementSibling;
-            if (subList && subList.classList.contains('dd-sub-list')) {
-              subList.classList.add('open');
-              // Position alongside the row
-              if (menu) {
-                let offsetTop = 0, el = row;
-                while (el && el !== menu) { offsetTop += el.offsetTop; el = el.offsetParent; }
-                subList.style.top = offsetTop + 'px';
-              }
+        // Open the category row (chevron rotates) but NOT the sub-list
+        row.classList.add('open');
+        const chevron = row.querySelector('.dd-cat-chevron');
+        if (chevron) chevron.classList.add('open');
 
-              // Mark the matching sub-link active within this panel
-              subList.querySelectorAll('.dd-sub-link').forEach(subLink => {
-                if (subLink.textContent.trim() === sub) {
-                  subLink.classList.add('active');
-                }
-              });
-            }
-          }
-        }
+        // Find the sub-list and mark the matching sub-link blue — keep sub-list closed
+        const subList = row.nextElementSibling;
+        if (!subList || !subList.classList.contains('dd-sub-list')) return;
+
+        subList.querySelectorAll('.dd-cat-row').forEach(subRow => {
+          const subLink = subRow.querySelector('.dd-sub-link');
+          if (!subLink || subLink.textContent.trim() !== sub) return;
+          subLink.classList.add('active');
+
+          if (!type) return;
+          // Mark the type link active inside its panel (panel stays closed until hovered)
+          const typeChev = subRow.querySelector('.dd-type-chevron');
+          if (!typeChev) return;
+          const onclickVal = typeChev.getAttribute('onclick') || '';
+          const match      = onclickVal.match(/'(navtype-[^']+)'/);
+          const typeId     = match ? match[1] : null;
+          const typePanel  = typeId ? document.getElementById(typeId) : null;
+          if (!typePanel) return;
+          typePanel.querySelectorAll('.dd-sub-link').forEach(typeLink => {
+            if (typeLink.textContent.trim() === type) typeLink.classList.add('active');
+          });
+        });
       });
     }
 
     // ── Populate nav dropdowns from products.json ──
+    function toggleNavType(e, id) {
+      e.preventDefault();
+      e.stopPropagation();
+      const typePanel = document.getElementById(id);
+      const btn = e.currentTarget;
+      if (!typePanel) return;
+
+      const isOpen = typePanel.classList.contains('open');
+
+      // Close all type panels and remove lock from all nav-dropdowns
+      document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('sub-active'));
+      // Restore active states for the current product after clearing
+      if (typeof _currentProduct !== 'undefined' && _currentProduct) {
+        highlightNavDropdownFromProduct(_currentProduct);
+      }
+
+      if (!isOpen) {
+        const row = btn.closest('.dd-cat-row');
+        const subList = btn.closest('.dd-sub-list');
+        const navDropdown = btn.closest('.nav-dropdown');
+        const rowRect     = row ? row.getBoundingClientRect() : btn.getBoundingClientRect();
+        const subListRect = subList ? subList.getBoundingClientRect() : rowRect;
+
+        typePanel.style.top  = rowRect.top + 'px';
+        typePanel.style.left = (subListRect.right + 6) + 'px';
+        typePanel.classList.add('open');
+        btn.classList.add('open');
+        // Highlight the sub-category row the same way categories are highlighted when open
+        if (row) row.classList.add('sub-active');
+
+        // Lock the parent nav-dropdown open so CSS :hover loss doesn't close it
+        if (navDropdown) navDropdown.classList.add('type-open');
+      }
+    }
+
+    function toggleNavSub(e, id) {
+      e.preventDefault(); e.stopPropagation();
+      const sub = document.getElementById(id);
+      const btn = e.currentTarget;
+      if (!sub) return;
+      const isOpen = sub.classList.contains('open');
+      document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
+      document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+      // Always close any open type panel when switching categories
+      document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('sub-active'));
+      // Restore active states for the current product after clearing
+      if (typeof _currentProduct !== 'undefined' && _currentProduct) {
+        highlightNavDropdownFromProduct(_currentProduct);
+      }
+      if (!isOpen) {
+        const row = btn.closest('.dd-cat-row');
+        const menu = btn.closest('.dropdown-menu');
+        let offsetTop = 0, el = row;
+        while (el && el !== menu) { offsetTop += el.offsetTop; el = el.offsetParent; }
+        sub.style.top = offsetTop + 'px';
+        sub.classList.add('open');
+        btn.classList.add('open');
+        row.classList.add('open');
+      }
+    }
+
     (async () => {
       let products = [];
       try { const r = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' }); products = await r.json(); } catch(e) { return; }
@@ -829,70 +909,13 @@
       if (mob) mob.innerHTML = buildMob(tree);
       // If product already loaded, apply active state now; otherwise renderProduct will call it
       if (typeof _currentProduct !== 'undefined' && _currentProduct) {
-        highlightNavDropdownFromProduct(_currentProduct);
       }
     buildTypePanels(tree);
+    // Type panels now exist in DOM — safe to highlight active type link
+    if (typeof _currentProduct !== 'undefined' && _currentProduct) {
+      highlightNavDropdownFromProduct(_currentProduct);
+    }
     })();
-
-        function toggleNavType(e, id) {
-      e.preventDefault();
-      e.stopPropagation();
-      const typePanel = document.getElementById(id);
-      const btn = e.currentTarget;
-      if (!typePanel) return;
-
-      const isOpen = typePanel.classList.contains('open');
-
-      // Close all type panels and remove lock from all nav-dropdowns
-      document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
-      document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
-      document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
-      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('sub-active'));
-
-      if (!isOpen) {
-        const row = btn.closest('.dd-cat-row');
-        const subList = btn.closest('.dd-sub-list');
-        const navDropdown = btn.closest('.nav-dropdown');
-        const rowRect     = row ? row.getBoundingClientRect() : btn.getBoundingClientRect();
-        const subListRect = subList ? subList.getBoundingClientRect() : rowRect;
-
-        typePanel.style.top  = rowRect.top + 'px';
-        typePanel.style.left = (subListRect.right + 6) + 'px';
-        typePanel.classList.add('open');
-        btn.classList.add('open');
-        // Highlight the sub-category row the same way categories are highlighted when open
-        if (row) row.classList.add('sub-active');
-
-        // Lock the parent nav-dropdown open so CSS :hover loss doesn't close it
-        if (navDropdown) navDropdown.classList.add('type-open');
-      }
-    }
-
-    function toggleNavSub(e, id) {
-      e.preventDefault(); e.stopPropagation();
-      const sub = document.getElementById(id);
-      const btn = e.currentTarget;
-      if (!sub) return;
-      const isOpen = sub.classList.contains('open');
-      document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
-      document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
-      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
-      // Always close any open type panel when switching categories
-      document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
-      document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
-      document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
-      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('sub-active'));
-      if (!isOpen) {
-        const row = btn.closest('.dd-cat-row');
-        const menu = btn.closest('.dropdown-menu');
-        let offsetTop = 0, el = row;
-        while (el && el !== menu) { offsetTop += el.offsetTop; el = el.offsetParent; }
-        sub.style.top = offsetTop + 'px';
-        sub.classList.add('open');
-        btn.classList.add('open');
-        row.classList.add('open');
-      }
-    }
   </script>
   <script>
 
