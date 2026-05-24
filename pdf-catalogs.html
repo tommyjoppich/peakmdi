@@ -59,6 +59,8 @@
     .nav-dropdown:hover > a { background: #f0f0f0; }
     .nav-dropdown:hover > a .chevron { transform: rotate(180deg); }
     .nav-dropdown:hover .dropdown-menu { display: flex; }
+    .nav-dropdown.type-open .dropdown-menu { display: flex; }
+    .nav-dropdown.type-open .dd-sub-list.open { display: flex; }
     .nav-dropdown::after {
       content: ''; position: absolute; top: 100%; left: 0; right: 0;
       height: 14px; background: transparent;
@@ -292,7 +294,7 @@
     .dd-sub-list.open { display: flex; }
 
     .dd-sub-link {
-      display: block;
+      display: flex; align-items: center; flex: 1;
       padding: 10px 14px;
       font-size: 13px; font-weight: 500;
       color: var(--muted); border-radius: 6px;
@@ -492,6 +494,32 @@
       text-decoration: none; display: block;
     }
     .mobile-submenu a:last-child { border-bottom: none; }
+
+    .dd-cat-row.sub-active .dd-sub-link { background: #e4edf6; color: var(--blue); }
+    .dd-cat-row.sub-active .dd-cat-chevron { background: #e4edf6; }
+    .dd-cat-row.sub-active .dd-cat-chevron svg { stroke: var(--blue); }
+  
+    /* ── Type panel (3rd level flyout) ── */
+    .dd-type-list {
+      display: none;
+      position: fixed;
+      min-width: 200px;
+      background: var(--white);
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+      padding: 6px;
+      z-index: 10002;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .dd-type-list.open { display: flex; }
+    .dd-type-list::before {
+      content: '';
+      position: absolute;
+      top: 0; bottom: 0;
+      left: -8px; width: 8px;
+    }
   </style>
 </head>
 <body>
@@ -728,24 +756,74 @@
     async function populateNavDropdowns() {
       let products = [];
       try { const r = await fetch('products.json?v=' + Date.now(), { cache: 'no-store' }); products = await r.json(); } catch(e) { return; }
+      // tree: cat → { sub → Set(types) }
       const tree = {};
       products.forEach(p => {
-        if (!tree[p.category]) tree[p.category] = new Set();
-        if (p.subcategory) tree[p.category].add(p.subcategory);
+        if (!p.category) return;
+        if (!tree[p.category]) tree[p.category] = {};
+        if (p.subcategory) {
+          if (!tree[p.category][p.subcategory]) tree[p.category][p.subcategory] = new Set();
+          if (p.type) tree[p.category][p.subcategory].add(p.type);
+        }
       });
       function buildDD(tree) {
+        // Remove any stale type panels from previous builds
+        document.querySelectorAll('.dd-type-list').forEach(el => el.remove());
+
+        // Build HTML string only — no DOM manipulation here
         return Object.entries(tree).map(([cat, subs]) => {
-          const catURL = `products.html?cat=${encodeURIComponent(cat)}`;
-          const catId  = 'navdd-' + cat.replace(/\s+/g, '_');
-          const hasSubs = subs.size > 0;
-          let h = `<div class="dd-cat-row"><a class="dd-cat-link" href="${catURL}">${cat}</a>${hasSubs ? `<button class="dd-cat-chevron" onclick="toggleNavSub(event,'${catId}')"><svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>` : ''}</div>`;
+          const catURL  = `products.html?cat=${encodeURIComponent(cat)}`;
+          const catId   = 'navdd-' + cat.replace(/\s+/g, '_');
+          const hasSubs = Object.keys(subs).length > 0;
+
+          let h = `<div class="dd-cat-row">
+            <a class="dd-cat-link" href="${catURL}">${cat}</a>
+            ${hasSubs ? `<button class="dd-cat-chevron" onclick="toggleNavSub(event,'${catId}')">
+              <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>` : ''}
+          </div>`;
+
           if (hasSubs) {
             h += `<div class="dd-sub-list" id="${catId}">`;
-            subs.forEach(sub => { h += `<a class="dd-sub-link" href="products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}">${sub}</a>`; });
+            Object.keys(subs).forEach(sub => {
+              const types    = subs[sub];
+              const subURL   = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}`;
+              const subId    = 'navtype-' + cat.replace(/\s+/g,'_') + '__' + sub.replace(/\s+/g,'_');
+              const hasTypes = types.size > 0;
+              h += `<div class="dd-cat-row">
+                <a class="dd-sub-link" href="${subURL}">${sub}</a>
+                ${hasTypes ? `<button class="dd-cat-chevron dd-type-chevron" data-typeid="${subId}" onclick="toggleNavType(event,'${subId}')">
+                  <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>` : ''}
+              </div>`;
+            });
             h += `</div>`;
           }
           return h;
         }).join('');
+      }
+
+      function buildTypePanels(tree) {
+        // Called AFTER innerHTML is set — creates body-level type panels
+        document.querySelectorAll('.dd-type-list').forEach(el => el.remove());
+        Object.entries(tree).forEach(([cat, subs]) => {
+          Object.keys(subs).forEach(sub => {
+            const types = subs[sub];
+            if (!types.size) return;
+            const subId = 'navtype-' + cat.replace(/\s+/g,'_') + '__' + sub.replace(/\s+/g,'_');
+            const panel = document.createElement('div');
+            panel.className = 'dd-type-list';
+            panel.id = subId;
+            [...types].forEach(type => {
+              const a = document.createElement('a');
+              a.className = 'dd-sub-link';
+              a.href = `products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}&type=${encodeURIComponent(type)}`;
+              a.textContent = type;
+              panel.appendChild(a);
+            });
+            document.body.appendChild(panel);
+          });
+        });
       }
       const ddHTML = buildDD(tree);
       ['nav-dd-desktop-products','nav-dd-tablet-products'].forEach(id => {
@@ -754,9 +832,10 @@
       const mob = document.getElementById('mob-products');
       if (mob) mob.innerHTML = Object.entries(tree).map(([cat, subs]) => {
         let h = `<a href="products.html?cat=${encodeURIComponent(cat)}" style="font-weight:700">${cat}</a>`;
-        subs.forEach(sub => { h += `<a href="products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}" style="padding-left:16px;font-size:14px">${sub}</a>`; });
+        Object.keys(subs).forEach(sub => { h += `<a href="products.html?cat=${encodeURIComponent(cat)}&sub=${encodeURIComponent(sub)}" style="padding-left:16px;font-size:14px">${sub}</a>`; });
         return h;
       }).join('');
+      buildTypePanels(tree);
     }
     async function populateFooter() {
       let products = [];
@@ -770,29 +849,119 @@
     function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow='hidden'; }
     function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow=''; }
     document.getElementById('mobileMenu').addEventListener('click', e => { if (e.target === document.getElementById('mobileMenu')) closeMenu(); });
+    
+      // Also close type panels when dropdown area is left
+      document.querySelectorAll('.nav-dropdown').forEach(dd => {
+        dd.addEventListener('mouseleave', () => {
+          // Small delay so user can move to type panel
+          setTimeout(() => {
+            const typeHovered = document.querySelector('.dd-type-list:hover');
+            if (!typeHovered) {
+              document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+              document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+            }
+          }, 150);
+        });
+      });
+
     document.addEventListener('click', e => {
-      if (!e.target.closest('.nav-dropdown')) document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
-      if (!e.target.closest('.dd-sub-list') && !e.target.closest('.dd-cat-chevron')) {
-        document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top='0'; });
+      const inDropdown  = e.target.closest('.nav-dropdown');
+      const inTypePanel = e.target.closest('.dd-type-list');
+
+      if (!inDropdown && !inTypePanel) {
+        // Clicked completely outside everything — close all
+        document.querySelectorAll('.nav-dropdown').forEach(d => d.classList.remove('open'));
+        document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
         document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
         document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      } else if (inDropdown && !e.target.closest('.dd-sub-list') && !e.target.closest('.dd-cat-chevron') && !e.target.closest('.dd-type-chevron')) {
+        // Clicked on a top-level category link — close sub and type panels
+        document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
+        document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      }
+      // inTypePanel or inside dd-sub-list/chevron: let the event pass through naturally
+    });
+
+    // Close type panel when mouse leaves the nav area — use mousemove to check
+    // if mouse is over neither the dropdown nor the type panel
+    document.addEventListener('mousemove', e => {
+      const openTypePanel = document.querySelector('.dd-type-list.open');
+      if (!openTypePanel) return;
+      const inDropdown  = e.target.closest('.nav-dropdown');
+      const inTypePanel = e.target.closest('.dd-type-list');
+      const inSubList   = e.target.closest('.dd-sub-list');
+      if (!inDropdown && !inTypePanel && !inSubList) {
+        openTypePanel.classList.remove('open');
+        document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+        document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
       }
     });
     function toggleMobileSubmenu(id, tid) { document.getElementById(id).classList.toggle('open'); document.getElementById(tid).classList.toggle('open'); }
+    function toggleNavType(e, id) {
+      e.preventDefault();
+      e.stopPropagation();
+      const typePanel = document.getElementById(id);
+      const btn = e.currentTarget;
+      if (!typePanel) return;
+
+      const isOpen = typePanel.classList.contains('open');
+
+      // Close all type panels and remove lock from all nav-dropdowns
+      document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('sub-active'));
+
+      if (!isOpen) {
+        const row = btn.closest('.dd-cat-row');
+        const subList = btn.closest('.dd-sub-list');
+        const navDropdown = btn.closest('.nav-dropdown');
+        const rowRect     = row ? row.getBoundingClientRect() : btn.getBoundingClientRect();
+        const subListRect = subList ? subList.getBoundingClientRect() : rowRect;
+
+        typePanel.style.top  = rowRect.top + 'px';
+        typePanel.style.left = (subListRect.right + 6) + 'px';
+        typePanel.classList.add('open');
+        btn.classList.add('open');
+        // Highlight the sub-category row the same way categories are highlighted when open
+        if (row) row.classList.add('sub-active');
+
+        // Lock the parent nav-dropdown open so CSS :hover loss doesn't close it
+        if (navDropdown) navDropdown.classList.add('type-open');
+      }
+    }
+
     function toggleNavSub(e, id) {
       e.preventDefault(); e.stopPropagation();
-      const sub = document.getElementById(id), btn = e.currentTarget;
+      const sub = document.getElementById(id);
+      const btn = e.currentTarget;
       if (!sub) return;
       const isOpen = sub.classList.contains('open');
-      document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top='0'; });
+      document.querySelectorAll('.dd-sub-list').forEach(el => { el.classList.remove('open'); el.style.top = '0'; });
       document.querySelectorAll('.dd-cat-chevron').forEach(el => el.classList.remove('open'));
       document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('open'));
+      // Always close any open type panel when switching categories
+      document.querySelectorAll('.dd-type-list').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.dd-type-chevron').forEach(el => el.classList.remove('open'));
+      document.querySelectorAll('.nav-dropdown').forEach(el => el.classList.remove('type-open'));
+      document.querySelectorAll('.dd-cat-row').forEach(el => el.classList.remove('sub-active'));
       if (!isOpen) {
-        const row = btn.closest('.dd-cat-row'), menu = btn.closest('.dropdown-menu');
+        const row = btn.closest('.dd-cat-row');
+        const menu = btn.closest('.dropdown-menu');
         let offsetTop = 0, el = row;
         while (el && el !== menu) { offsetTop += el.offsetTop; el = el.offsetParent; }
         sub.style.top = offsetTop + 'px';
-        sub.classList.add('open'); btn.classList.add('open'); row.classList.add('open');
+        sub.classList.add('open');
+        btn.classList.add('open');
+        row.classList.add('open');
       }
     }
 
