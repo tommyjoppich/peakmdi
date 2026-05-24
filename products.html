@@ -72,6 +72,8 @@
       color: var(--text); border-radius: 6px; white-space: nowrap; transition: background 0.15s;
     }
     .dropdown-menu a:hover { background: #f0f0f0; color: var(--blue); }
+    .dropdown-menu .dd-cat-link { border-radius: 6px 0 0 6px; }
+    .dropdown-menu .dd-sub-link { border-radius: 6px 0 0 6px; }
     .btn-quote {
       display: flex; align-items: center; gap: 10px;
       border: 2px solid var(--navy); border-radius: 8px;
@@ -297,7 +299,7 @@
 
     .product-card__img {
       width: 100%; aspect-ratio: 1 / 1;
-      background: #f5f5f5; overflow: hidden;
+      background: #fff; overflow: hidden;
       display: flex; align-items: center; justify-content: center;
     }
     .product-card__img img { width: 100%; height: 100%; object-fit: contain; }
@@ -424,22 +426,20 @@
       display: flex; align-items: center; flex: 1;
       padding: 10px 14px;
       font-size: 13px; font-weight: 500;
-      color: var(--muted); border-radius: 6px;
+      color: var(--muted); border-radius: 6px 0 0 6px;
       white-space: normal; word-break: break-word;
       transition: background 0.15s, color 0.15s;
     }
-    .dd-sub-link:hover { background: #f0f0f0; color: var(--blue); }
+    .dd-cat-row:hover .dd-sub-link { background: #f0f0f0; color: var(--blue); }
+    .dd-type-list .dd-sub-link:hover { background: #f0f0f0; color: var(--blue); }
+    .dd-cat-row:hover .dd-sub-link ~ .dd-cat-chevron { background: #f0f0f0; }
+    .dd-cat-row:hover .dd-sub-link ~ .dd-cat-chevron svg { stroke: var(--blue); }
     .dd-sub-link.active { background: #e4edf6; color: var(--blue); }
-    .dd-cat-link.active { color: var(--blue); }
-    .dd-cat-row:has(.dd-cat-link.active) .dd-cat-chevron { color: var(--blue); }
-    /* Transparent bridge fills the gap so mouse doesn't leave hover zone */
-    .dd-sub-list::before {
-      content: '';
-      position: absolute;
-      top: 0; bottom: 0;
-      left: -8px;
-      width: 8px;
-    }
+    .dd-sub-link.active + .dd-cat-chevron { background: #e4edf6; }
+    .dd-sub-link.active + .dd-cat-chevron svg { stroke: var(--blue); }
+        .dd-cat-link.active { background: #e4edf6; color: var(--blue); }
+    .dd-cat-link.active + .dd-cat-chevron { background: #e4edf6; }
+    .dd-cat-link.active + .dd-cat-chevron svg { stroke: var(--blue); }
 
 
     
