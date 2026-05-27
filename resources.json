@@ -94,5 +94,13 @@
     "description": "",
     "thumbnail": "",
     "resource": "Resource_PDFs/IFUs/PEAK RETRACT ROBOT MAINTENANCE – 0817.pdf"
+  },
+  {
+    "id": "r699024",
+    "type": "video",
+    "title": "CT-0100 Minimally Invasive Retractor",
+    "description": "Inspection & Troubleshooting",
+    "thumbnail": "Resource_Thumbnails/CT-0100 Inspection.mov",
+    "resource": "CT-0100 Inspection.mov"
   }
 ]
