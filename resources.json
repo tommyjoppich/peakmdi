@@ -62,5 +62,13 @@
     "description": "short description test",
     "thumbnail": "Resource_Thumbnails/thumbnail_test4.jpg",
     "resource": "Resource_PDFs/IFUs/TestDoc2.pdf"
+  },
+  {
+    "id": "r365924",
+    "type": "ifu",
+    "title": "IFU Stainless Steel",
+    "description": "STAINLESS STEEL INSTRUMENTS CLEANING, MAINTENANCE & STERILIZATION",
+    "thumbnail": "Resource_Thumbnails/STAINLESS STEEL PEAK INSTRUMENTS CLEANING, STERILIZATION & MAINTENANCE 1.1.2023",
+    "resource": "Resource_PDFs/IFUs/STAINLESS STEEL PEAK INSTRUMENTS CLEANING, STERILIZATION & MAINTENANCE 1.1.2023.pdf"
   }
 ]
