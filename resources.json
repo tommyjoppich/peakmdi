@@ -86,5 +86,13 @@
     "description": "Validated Instructions For Use (IFUs)",
     "thumbnail": "",
     "resource": "Resource_PDFs/IFUs/ClearFlush Kerrison IFU 5-25-2023.pdf"
+  },
+  {
+    "id": "r932468",
+    "type": "ifu",
+    "title": "PEAK RETRACT ROBOT MAINTENANCE IFU",
+    "description": "",
+    "thumbnail": "",
+    "resource": "Resource_PDFs/IFUs/PEAK RETRACT ROBOT MAINTENANCE – 0817.pdf"
   }
 ]
