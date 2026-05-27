@@ -78,5 +78,13 @@
     "description": "STAINLESS STEEL CANNULAS AND NEEDLES\nCLEANING, MAINTENANCE & STERILIZATION",
     "thumbnail": "",
     "resource": "Resource_PDFs/IFUs/PEAK STAINLESS STEEL CANNULAS AND NEEDLES IFU 11.1.2021.pdf"
+  },
+  {
+    "id": "r509994",
+    "type": "ifu",
+    "title": "PEAK Cannulated Flushable Kerrison Rongeurs IFU",
+    "description": "Validated Instructions For Use (IFUs)",
+    "thumbnail": "",
+    "resource": "Resource_PDFs/IFUs/ClearFlush Kerrison IFU 5-25-2023.pdf"
   }
 ]
