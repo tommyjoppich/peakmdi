@@ -70,5 +70,13 @@
     "description": "STAINLESS STEEL INSTRUMENTS CLEANING, MAINTENANCE & STERILIZATION",
     "thumbnail": "Resource_Thumbnails/STAINLESS STEEL PEAK INSTRUMENTS CLEANING, STERILIZATION & MAINTENANCE 1.1.2023",
     "resource": "Resource_PDFs/IFUs/STAINLESS STEEL PEAK INSTRUMENTS CLEANING, STERILIZATION & MAINTENANCE 1.1.2023.pdf"
+  },
+  {
+    "id": "r971685",
+    "type": "ifu",
+    "title": "IFU Stainless Cannulas and Needles",
+    "description": "STAINLESS STEEL CANNULAS AND NEEDLES\nCLEANING, MAINTENANCE & STERILIZATION",
+    "thumbnail": "",
+    "resource": "Resource_PDFs/IFUs/PEAK STAINLESS STEEL CANNULAS AND NEEDLES IFU 11.1.2021.pdf"
   }
 ]
