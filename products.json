@@ -4471,5 +4471,29 @@
     "categoryThree": "AE3-423: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Straight, Nelson, 9\" (22.9 Cm)",
     "image": "AE3-423.png",
     "featured": false
+  },
+  {
+    "id": "088205",
+    "title": "EAK Metzenbaum Dissecting Scissor, Del, Slim, Cvd, 5.75\"",
+    "sku": "AE3-514",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Metzenbaum",
+    "unitOfSale": "",
+    "categoryThree": "AE3-514: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Curved, 5.75\"  (14.6 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "196462",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Del, Slim Pat, Cvd, 7\"",
+    "sku": "AE3-518",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Metzenbaum",
+    "unitOfSale": "",
+    "categoryThree": "AE3-518: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Curved, 7\" (17.8 Cm)",
+    "image": "",
+    "featured": false
   }
 ]
