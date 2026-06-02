@@ -4555,5 +4555,53 @@
     "categoryThree": "PEAK Table Clamp",
     "image": "42e34e2a-c67f-4a07-94c1-67a872459b43.png",
     "featured": false
+  },
+  {
+    "id": "159541",
+    "title": "PEAK Tubing Holder",
+    "sku": "Variable",
+    "category": "Tubing Holder",
+    "subcategory": "",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Tubing Holder",
+    "image": "af161b1e-3949-40a0-aa75-80a45cf877d8.png",
+    "featured": false
+  },
+  {
+    "id": "249752",
+    "title": "PEAK Suture Tray",
+    "sku": "Variable",
+    "category": "Trays",
+    "subcategory": "",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Suture Tray",
+    "image": "Suture Tray.png",
+    "featured": false
+  },
+  {
+    "id": "311226",
+    "title": "PEAK Trochar",
+    "sku": "Variable",
+    "category": "Trochars",
+    "subcategory": "",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Trochar",
+    "image": "8218c2fc-e1e2-4c6a-ace4-496191e36eaa.png",
+    "featured": false
+  },
+  {
+    "id": "375820",
+    "title": "PEAK Instrument Holder",
+    "sku": "Variable",
+    "category": "Instrument Holders",
+    "subcategory": "",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Instrument Holder",
+    "image": "9fe617ff-9ae7-4d1a-80fc-5a01a714d04d.png",
+    "featured": false
   }
 ]
