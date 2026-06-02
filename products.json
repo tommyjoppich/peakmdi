@@ -4603,5 +4603,53 @@
     "categoryThree": "PEAK Instrument Holder",
     "image": "9fe617ff-9ae7-4d1a-80fc-5a01a714d04d.png",
     "featured": false
+  },
+  {
+    "id": "958804",
+    "title": "PEAK Tubing Manifold",
+    "sku": "Variable",
+    "category": "Tubing Manifold",
+    "subcategory": "",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Tubing Manifold",
+    "image": "Tubing Manifold.png",
+    "featured": false
+  },
+  {
+    "id": "036376",
+    "title": "PEAK Sump Sucker",
+    "sku": "Variable",
+    "category": "Suckers",
+    "subcategory": "Sump Sucker",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Sump Sucker",
+    "image": "Sump Sucker 7mm 13.5 cm 2.png",
+    "featured": false
+  },
+  {
+    "id": "259419",
+    "title": "PEAK Knot Pusher",
+    "sku": "Variable",
+    "category": "Knot Pusher",
+    "subcategory": "",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Knot Pusher",
+    "image": "Knot Pusher.png",
+    "featured": false
+  },
+  {
+    "id": "330048",
+    "title": "PEAK Copper Retractors",
+    "sku": "Variable",
+    "category": "Retractors",
+    "subcategory": "Copper Retractors",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Copper Retractors",
+    "image": "Copper Retractors.png",
+    "featured": false
   }
 ]
