@@ -4495,5 +4495,65 @@
     "categoryThree": "AE3-518: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Curved, 7\" (17.8 Cm)",
     "image": "",
     "featured": false
+  },
+  {
+    "id": "070062",
+    "title": "PEAK Bone Tamp",
+    "sku": "Variable",
+    "category": "Bone Tamps",
+    "subcategory": "",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Bone Tamp",
+    "image": "Bone Tamp.png",
+    "featured": false
+  },
+  {
+    "id": "144957",
+    "title": "PEAK Elongated Bone Tamp",
+    "sku": "Variable",
+    "category": "Bone Tamps",
+    "subcategory": "Elongated",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Elongated Bone Tamp",
+    "image": "Bone tamp elongated.png",
+    "featured": false
+  },
+  {
+    "id": "395740",
+    "title": "PEAK Profusion Cannula",
+    "sku": "Variable",
+    "category": "Cannulas",
+    "subcategory": "Profusion Cannulas",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Profusion Cannula",
+    "image": "Profusion Cannula Pic 2.png",
+    "featured": false
+  },
+  {
+    "id": "436960",
+    "title": "PEAK Cannula",
+    "sku": "Variable",
+    "category": "Cannulas",
+    "subcategory": "Cannulas",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Cannula",
+    "image": "Cannula Pic.png",
+    "featured": false
+  },
+  {
+    "id": "507221",
+    "title": "PEAK Table Clamp",
+    "sku": "Variable",
+    "category": "Clamps",
+    "subcategory": "Table Clamps",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Table Clamp",
+    "image": "42e34e2a-c67f-4a07-94c1-67a872459b43.png",
+    "featured": false
   }
 ]
