@@ -4711,5 +4711,17 @@
     "categoryThree": "PEAK Flushable Cannulated Kerrison Rongeur, Pin",
     "image": "Kerrison pin.png",
     "featured": false
+  },
+  {
+    "id": "918619",
+    "title": "PEAK Tungsten Carbide Wire Cutting Scissor",
+    "sku": "TCI-9011",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide",
+    "type": "Wire Cutting",
+    "unitOfSale": "",
+    "categoryThree": "TCI-9011: PEAK Wire Cutting Scissor, Tungsten Carbide Blade with 1 Micro Serrated Blade, Angled To Side, 4.75\" (12.1 Cm)",
+    "image": "Wire cutting scissors.png",
+    "featured": false
   }
 ]
