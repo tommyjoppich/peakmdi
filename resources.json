@@ -102,5 +102,13 @@
     "description": "Inspection & Troubleshooting",
     "thumbnail": "Resource_Thumbnails/CT-0100 Inspection.mov",
     "resource": "CT-0100 Inspection.mov"
+  },
+  {
+    "id": "r066539",
+    "type": "pdf",
+    "title": "PEAK MEDICAL Grade Spoons",
+    "description": "SPECIALTY MEDICAL GRADE STAINLESS STEEL SPOONS FOR SURGICAL APPLICATIONS",
+    "thumbnail": "",
+    "resource": "Resource_PDFs/Catalogs/Medical Grade Spoons FNL.pdf"
   }
 ]
