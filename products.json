@@ -4663,5 +4663,53 @@
     "categoryThree": "PEAK Monster Bar",
     "image": "Monster bar PEAK.png",
     "featured": false
+  },
+  {
+    "id": "992368",
+    "title": "PEAK Hibbs Retractor, Small, 1.25 W x 9\" L",
+    "sku": "3318-0824-05",
+    "category": "Retractors",
+    "subcategory": "",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "3318-0824-05: PEAK Hibbs Retractor, Small 1.25 x 3\" Rounded 45 Degree Angled Down with 4 Soft Blunt Teeth, 1.25 Wide by 9\" Length",
+    "image": "Hibbs Retractor PEAK.png",
+    "featured": false
+  },
+  {
+    "id": "079821",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeur, Tubing Hose",
+    "sku": "33-CFK-100",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Accessories",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Flushable Cannulated Kerrison Rongeur, Tubing Hose",
+    "image": "Kerrison Tubing Hose.png",
+    "featured": false
+  },
+  {
+    "id": "130477",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeur, Elastic Connector",
+    "sku": "33-CFK-100",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Accessories",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Flushable Cannulated Kerrison Rongeur, Elastic Connector",
+    "image": "Kerrison elastic and pin.png",
+    "featured": false
+  },
+  {
+    "id": "166393",
+    "title": "PEAK Flushable Cannulated Kerrison Rongeur, Pin",
+    "sku": "33-CFK-100",
+    "category": "Kerrison Rongeurs",
+    "subcategory": "Accessories",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Flushable Cannulated Kerrison Rongeur, Pin",
+    "image": "Kerrison pin.png",
+    "featured": false
   }
 ]
