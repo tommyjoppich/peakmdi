@@ -118,5 +118,13 @@
     "description": "PEAK Nathanson Liver Retractors for Martin’s Arm",
     "thumbnail": "",
     "resource": "Resource_PDFs/Catalogs/Nathenson Retractors Brochure FL.pdf"
+  },
+  {
+    "id": "r067979",
+    "type": "pdf",
+    "title": "PEAK Goose Neck MultiFlex Frame Retractor",
+    "description": "PEAK Goose Neck Retractor In Laparoscopic Surgery",
+    "thumbnail": "",
+    "resource": "Resource_PDFs/Catalogs/PEAK Goose MultiFlex Frame Retractor FL.pdf"
   }
 ]
