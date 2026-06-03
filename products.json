@@ -4651,5 +4651,17 @@
     "categoryThree": "PEAK Copper Retractors",
     "image": "Copper Retractors.png",
     "featured": false
+  },
+  {
+    "id": "152464",
+    "title": "PEAK Monster Bar",
+    "sku": "Variable",
+    "category": "Monster Bar",
+    "subcategory": "",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Monster Bar",
+    "image": "Monster bar PEAK.png",
+    "featured": false
   }
 ]
