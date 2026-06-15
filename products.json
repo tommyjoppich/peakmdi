@@ -4641,30 +4641,6 @@
     "featured": false
   },
   {
-    "id": "330048",
-    "title": "PEAK Copper Retractors",
-    "sku": "Variable",
-    "category": "Retractors",
-    "subcategory": "Copper Retractors",
-    "type": "",
-    "unitOfSale": "",
-    "categoryThree": "PEAK Copper Retractors",
-    "image": "Copper Retractors.png",
-    "featured": false
-  },
-  {
-    "id": "152464",
-    "title": "PEAK Monster Bar",
-    "sku": "Variable",
-    "category": "Monster Bar",
-    "subcategory": "",
-    "type": "",
-    "unitOfSale": "",
-    "categoryThree": "PEAK Monster Bar",
-    "image": "Monster bar PEAK.png",
-    "featured": false
-  },
-  {
     "id": "992368",
     "title": "PEAK Hibbs Retractor, Small, 1.25 W x 9\" L",
     "sku": "3318-0824-05",
@@ -4678,7 +4654,7 @@
   },
   {
     "id": "079821",
-    "title": "PEAK Flushable Cannulated Kerrison Rongeur, Tubing Hose",
+    "title": "PEAK Flushable Automatic Washer Flushing complete system",
     "sku": "33-CFK-100",
     "category": "Kerrison Rongeurs",
     "subcategory": "Accessories",
@@ -4690,12 +4666,12 @@
   },
   {
     "id": "130477",
-    "title": "PEAK Flushable Cannulated Kerrison Rongeur, Elastic Connector",
-    "sku": "33-CFK-100",
+    "title": "PEAK Automatic Washer Flushing System-Strap (Pk of 5)",
+    "sku": "33-CFK-100-B",
     "category": "Kerrison Rongeurs",
     "subcategory": "Accessories",
     "type": "",
-    "unitOfSale": "",
+    "unitOfSale": "Five Per Pack",
     "categoryThree": "PEAK Flushable Cannulated Kerrison Rongeur, Elastic Connector",
     "image": "Kerrison elastic and pin.png",
     "featured": false
@@ -4703,12 +4679,12 @@
   {
     "id": "166393",
     "title": "PEAK Flushable Cannulated Kerrison Rongeur, Pin",
-    "sku": "33-CFK-100",
+    "sku": "33-CFK-100-A",
     "category": "Kerrison Rongeurs",
     "subcategory": "Accessories",
     "type": "",
-    "unitOfSale": "",
-    "categoryThree": "PEAK Flushable Cannulated Kerrison Rongeur, Pin",
+    "unitOfSale": "Box of 10",
+    "categoryThree": "PEAK Cannulated Pin Automatic Washer Flushing System-17 gauge tip box of 10 reusable",
     "image": "Kerrison pin.png",
     "featured": false
   },
@@ -4720,7 +4696,7 @@
     "subcategory": "Tungsten Carbide Scissors",
     "type": "Wire Cutting",
     "unitOfSale": "",
-    "categoryThree": "TCI-9011: PEAK Wire Cutting Scissor, Tungsten Carbide Blade with 1 Micro Serrated Blade, Angled To Side, 4.75\" (12.1 Cm)",
+    "categoryThree": "TCI-9011: PEAK Wire Cutting Scissor, Tungsten Carbide Blade with 1 Micro Serrated Blade, Angled To Side, 10\" (25.4 Cm)",
     "image": "Wire cutting scissors.png",
     "featured": false
   }
