@@ -4750,5 +4750,41 @@
     "categoryThree": "AE5-015: PEAK Joseph Nasal Scissor, 5-3/4\" (14.6 Cm), Sharp/Sharp, Straight",
     "image": "Joe Nasal Sh.webp",
     "featured": false
+  },
+  {
+    "id": "315355",
+    "title": "PEAK Joseph Nasal Scr, 5-3/4\", Sh Outer Edges, Str",
+    "sku": "AE5-016",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Joeseph",
+    "unitOfSale": "",
+    "categoryThree": "AE5-016: PEAK Joseph Nasal Scissor, 5-3/4\" (14.6 Cm), Sharp Outer Edges, Straight",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "492188",
+    "title": "PEAK Brown Dis Scr, Hvy Hndl, Nar Bld, 5-3/4\", Str",
+    "sku": "AE5-075",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Brown",
+    "unitOfSale": "",
+    "categoryThree": "AE5-075: PEAK Brown Dissecting Scissor, Heavy Handle, Narrow Blade, 5-3/4\" (14.5 Cm), Straight",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "650159",
+    "title": "PEAK Brown Dis Scr, Hvy Hndl, Nar Bld, 5-3/4\", Cvd",
+    "sku": "AE5-076",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Brown",
+    "unitOfSale": "",
+    "categoryThree": "AE5-076: Brown Dissecting Scissor, Heavy Handle, Narrow Blade, 5-3/4\" (14.5 Cm), Curved",
+    "image": "",
+    "featured": false
   }
 ]
