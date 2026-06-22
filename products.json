@@ -2540,7 +2540,7 @@
     "type": "Dissecting",
     "unitOfSale": "",
     "categoryThree": "AC0-702: PEAK Knapp Dissecting Scissor, 5\", Blunt/Blunt, Straight",
-    "image": "",
+    "image": "Knapp Dissecting BL.png",
     "featured": false
   },
   {
@@ -2981,9 +2981,10 @@
     "sku": "AC5-062",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
+    "type": "",
     "unitOfSale": "",
     "categoryThree": "AC5-062: PEAK Dissecting Scissor with Probe, 4 1/8\" (10.5 Cm), Straight",
-    "image": "",
+    "image": "Dissecting probe Str.png",
     "featured": false
   },
   {
@@ -2995,7 +2996,7 @@
     "type": "Dissecting",
     "unitOfSale": "",
     "categoryThree": "AC5-063: PEAK Dissecting Scissor with Probe, 4 1/8\" (10.5 Cm), Curved",
-    "image": "",
+    "image": "Dissecting Probe Crv.jpg",
     "featured": false
   },
   {
@@ -4712,6 +4713,42 @@
     "unitOfSale": "",
     "categoryThree": "AE3-520: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Curved 8\" (20.3cm)",
     "image": "",
+    "featured": false
+  },
+  {
+    "id": "835760",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Del, Slim Pat, Cvd, Nelson, 9\"",
+    "sku": "AE3-523",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Metzenbaum",
+    "unitOfSale": "",
+    "categoryThree": "AE3-523: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Curved, Nelson, 9\" (22.9 Cm)",
+    "image": "Metz Dis Crv.jpg",
+    "featured": false
+  },
+  {
+    "id": "651012",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Del, Slim Pat, Cvd, Nelson, 11\"",
+    "sku": "AE3-528",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Metzenbaum",
+    "unitOfSale": "",
+    "categoryThree": "AE3-528: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern,  Curved, Nelson, 11\" (28.0 Cm)",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "489223",
+    "title": "PEAK Joseph Nasal Scr, 5-3/4\", Sh/Sh, Str",
+    "sku": "AE5-015",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Joeseph",
+    "unitOfSale": "",
+    "categoryThree": "AE5-015: PEAK Joseph Nasal Scissor, 5-3/4\" (14.6 Cm), Sharp/Sharp, Straight",
+    "image": "Joe Nasal Sh.webp",
     "featured": false
   }
 ]
