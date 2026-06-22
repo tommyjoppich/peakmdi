@@ -698,36 +698,36 @@
   {
     "id": "907893",
     "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
-    "sku": "33SS91MM40",
+    "sku": "33-SS9-1MM40",
     "category": "Kerrison Rongeurs",
     "subcategory": "Cannulated",
     "type": "Stainless Steel",
     "unitOfSale": "",
-    "categoryThree": "33SS91MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 9\" (225mm), 1mm, 40° up, stainless steel",
+    "categoryThree": "33-SS9-1MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 9\" (225mm), 1mm, 40° up, stainless steel",
     "image": "33SS91MM40.png",
     "featured": false
   },
   {
     "id": "982866",
     "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
-    "sku": "33SS101MM40",
+    "sku": "33-SS10-1MM40",
     "category": "Kerrison Rongeurs",
     "subcategory": "Cannulated",
     "type": "Stainless Steel",
     "unitOfSale": "",
-    "categoryThree": "33SS101MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (250mm), 1mm, 40° up, stainless steel",
+    "categoryThree": "33-SS10-1MM40: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (250mm), 1mm, 40° up, stainless steel",
     "image": "33SS101MM40.png",
     "featured": false
   },
   {
     "id": "042227",
     "title": "PEAK Flushable Cannulated Kerrison Rongeurs",
-    "sku": "33-SS10-1MM90",
+    "sku": "33SS101MM90",
     "category": "Kerrison Rongeurs",
     "subcategory": "Cannulated",
     "type": "Stainless Steel",
     "unitOfSale": "",
-    "categoryThree": "33-SS10-1MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (250mm), 1mm, 90° up, stainless steel",
+    "categoryThree": "33SS101MM90: PEAK Flushable Cannulated Kerrison Rongeur, Micro, 10\" (250mm), 1mm, 90° up, stainless steel",
     "image": "33SS101MM90.png",
     "featured": false
   },
@@ -3364,9 +3364,10 @@
     "sku": "AD0-619",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
+    "type": "",
     "unitOfSale": "",
     "categoryThree": "AD0-619: PEAK Moleskin & Felt Scissor, Sharp/Blunt Point, 7\" (19.1 Cm), Straight, Bottom Blade Serrated",
-    "image": "",
+    "image": "Moleskin SCR 2.png",
     "featured": false
   },
   {
@@ -3447,9 +3448,10 @@
     "sku": "AD0-719",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
+    "type": "",
     "unitOfSale": "",
     "categoryThree": "AD0-719: PEAK Moleskin & Felt Scissor, Sharp/Blunt, 7\" (19.1 Cm), Curved, Bottom Blade Serrated",
-    "image": "",
+    "image": "Moleskin SCR.png",
     "featured": false
   },
   {
@@ -3473,7 +3475,7 @@
     "type": "Deaver",
     "unitOfSale": "",
     "categoryThree": "AD0-884: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Straight, Blunt/Blunt Point",
-    "image": "",
+    "image": "Deaver BLBL.png",
     "featured": false
   },
   {
