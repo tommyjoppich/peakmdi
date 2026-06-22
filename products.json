@@ -4701,5 +4701,17 @@
     "categoryThree": "TCI-9011: PEAK Wire Cutting Scissor, Tungsten Carbide Blade with 1 Micro Serrated Blade, Angled To Side, 10\" (25.4 Cm)",
     "image": "Wire cutting scissors.png",
     "featured": false
+  },
+  {
+    "id": "668822",
+    "title": "PEAK Metzenbaum Dissecting Scissor, Del, Slim Pat, Cvd, 8\"",
+    "sku": "AE3-520",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Metzenbaum",
+    "unitOfSale": "",
+    "categoryThree": "AE3-520: PEAK Metzenbaum Dissecting Scissor, Delicate, Slim Pattern, Curved 8\" (20.3cm)",
+    "image": "",
+    "featured": false
   }
 ]
