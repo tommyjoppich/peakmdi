@@ -4104,9 +4104,10 @@
     "sku": "AE2-053",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
+    "type": "",
     "unitOfSale": "",
     "categoryThree": "AE2-053: PEAK Gradle Scissor, Standard Pattern Handle, Slightly Curved, Sharp Point, 3.75\"  (9.5 Cm)",
-    "image": "",
+    "image": "gradle str.png",
     "featured": false
   },
   {
@@ -4115,9 +4116,10 @@
     "sku": "AE2-054",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
+    "type": "",
     "unitOfSale": "",
     "categoryThree": "AE2-054: PEAK Gradle Scissor, Ribbon Style Ring Handle, Slightly Curved, Sharp Point, 3.75\" (9.5 Cm)",
-    "image": "",
+    "image": "gradle str rib.png",
     "featured": false
   },
   {
