@@ -3578,9 +3578,10 @@
     "sku": "AD3-520",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
+    "type": "",
     "unitOfSale": "",
     "categoryThree": "AD3-520: PEAK Sims Scissor, 8\" (20.3 Cm), Curved, Sharp/Blunt Point",
-    "image": "",
+    "image": "sims crv shbl.png",
     "featured": false
   },
   {
@@ -3600,9 +3601,10 @@
     "sku": "AD3-918",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
+    "type": "",
     "unitOfSale": "",
     "categoryThree": "AD3-918: PEAK Doyen Abdominal Scissor, 7\" (17.8 Cm), Curved",
-    "image": "",
+    "image": "doy crv.png",
     "featured": false
   },
   {
@@ -3914,7 +3916,7 @@
     "type": "Mayo",
     "unitOfSale": "",
     "categoryThree": "AD5-614: PEAK Mayo-Stille Dissecting Scissor, Round Blades, Straight, 5.5\" (14.0 Cm)",
-    "image": "",
+    "image": "maystil str.png",
     "featured": false
   },
   {
@@ -3926,7 +3928,7 @@
     "type": "Mayo",
     "unitOfSale": "",
     "categoryThree": "AD5-615: PEAK Mayo-Stille Dissecting Scissor, Round Blades, Straight, 6\"",
-    "image": "",
+    "image": "maystil str 2.png",
     "featured": false
   },
   {
@@ -3938,7 +3940,7 @@
     "type": "Mayo",
     "unitOfSale": "",
     "categoryThree": "AD5-617: PEAK Mayo-Stille Dissecting Scissor, Round Blades, Straight, 6.75\" (17.1cm)",
-    "image": "",
+    "image": "maystil str 3.png",
     "featured": false
   },
   {
