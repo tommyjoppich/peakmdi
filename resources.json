@@ -134,5 +134,13 @@
     "description": "Consistent cutting quality with sustained precision over repeated use.",
     "thumbnail": "Resource_Thumbnails/logo 10.jpg",
     "resource": "Resource_PDFs/Catalogs/PEAK PREMIUM CUT Brochure FL.pdf-39.pdf"
+  },
+  {
+    "id": "r130342",
+    "type": "ifu",
+    "title": "IFU Aluminum Trays or Containers",
+    "description": "ALUMINUM TRAYS OR CONTAINERS CLEANING, STERILIZATION & MAINTENANCE",
+    "thumbnail": "",
+    "resource": "Resource_PDFs/IFUs/PEAK ALUMINUM TRAYS OR CONTAINERS STERILIZATION & MAINTENANCE PDF (1).pdf"
   }
 ]
