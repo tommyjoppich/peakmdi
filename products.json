@@ -3543,9 +3543,10 @@
     "sku": "AD3-220",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
+    "type": "",
     "unitOfSale": "",
     "categoryThree": "AD3-220: PEAK Sims Scissor, 8\" (20.3 Cm), Straight, Sharp/Sharp Point",
-    "image": "",
+    "image": "str sims shsh.png",
     "featured": false
   },
   {
@@ -3554,9 +3555,10 @@
     "sku": "AD3-320",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
+    "type": "",
     "unitOfSale": "",
     "categoryThree": "AD3320: PEAK Sims Scissor, 8\" (20.3 Cm), Curved, Sharp/Sharp Point",
-    "image": "",
+    "image": "sims crv shsh.png",
     "featured": false
   },
   {
