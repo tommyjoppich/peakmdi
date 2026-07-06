@@ -48,14 +48,6 @@
     "resource": "https://www.webpagetest.org/"
   },
   {
-    "id": "r926305",
-    "type": "ifu",
-    "title": "Test_ProductIFU",
-    "description": "short description test",
-    "thumbnail": "Resource_Thumbnails/thumbnail_test4.jpg",
-    "resource": "Resource_PDFs/IFUs/TestDoc2.pdf"
-  },
-  {
     "id": "r365924",
     "type": "ifu",
     "title": "IFU Stainless Steel",
