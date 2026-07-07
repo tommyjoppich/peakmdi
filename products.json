@@ -5128,5 +5128,41 @@
     "categoryThree": "15MM Diameter Olympus Style Thoracic Trocar, Smooth, 6.5cm Length",
     "image": "Trochar large 8.png",
     "featured": false
+  },
+  {
+    "id": "931404",
+    "title": "PEAK Coronary Ostia Perfusion Cannula, 3.0mm Tip, Angle - 50",
+    "sku": "3324-50300L",
+    "category": "Coronary Ostia Perfusion Cannula",
+    "subcategory": "Multi-Use Ostia Cannula",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "3324-50300L: PEAK Re-usable - Small - Coronary Ostial Cannula, Stainless Steel - 50 degree Angled Shaft, 3.0mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D., Available with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
+    "image": "24-50300L (w Luer Lock).png",
+    "featured": false
+  },
+  {
+    "id": "161321",
+    "title": "PEAK Coronary Ostia Perfusion Cannula, 3.75mm Tip, Angled 50°",
+    "sku": "3324-50375L",
+    "category": "Coronary Ostia Perfusion Cannula",
+    "subcategory": "Multi-Use Ostia Cannula",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "3324-50375L: PEAK Re-usable - Medium - Coronary Ostia Cannula, Stainless Steel - 50° Angled Shaft, 3.75mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D., \n\nAvailable with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
+    "image": "3324-50375L (w:o Luer lock).png",
+    "featured": false
+  },
+  {
+    "id": "300773",
+    "title": "PEAK Coronary Ostia Perfusion Cannula, 4.5mm Tip, Angled 50°",
+    "sku": "3324-50450L",
+    "category": "Coronary Ostia Perfusion Cannula",
+    "subcategory": "Multi-Use Ostia Cannula",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "3324-50450L: PEAK Re-usable - Large - Coronary Ostia Cannula, Stainless Steel - 50° Angled Shaft, 4.5mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D.\n\nAvailable with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
+    "image": "3324-50450L (w:o Luer lock).png",
+    "featured": false
   }
 ]
