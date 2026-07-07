@@ -4888,5 +4888,29 @@
     "categoryThree": "3318-0824-06: PEAK Hibbs Retractor, Medium, 1.5 inch x 4.75 inch Blade, Rounded 45 Degree Angled Down with 3 Sharp Teeth, 4 inch Length Blunt Squared Off Blade attached to 5.75 inch Ergo Handle.",
     "image": "Hibbs Retractor PEAKsize Medium.png",
     "featured": false
+  },
+  {
+    "id": "477605",
+    "title": "PEAK 5MM Thoracic Trocar",
+    "sku": "2425-05-OLY1",
+    "category": "Trocars",
+    "subcategory": "Multi-Use",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "5MM Diameter Olympus Style Thoracic Trocar, Smooth, 4.5cm Length",
+    "image": "Trochar 1.1.png",
+    "featured": false
+  },
+  {
+    "id": "012197",
+    "title": "PEAK 7MM Thoracic Trocar",
+    "sku": "24245-07-OLY1",
+    "category": "Trocars",
+    "subcategory": "Multi-Use",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "7MM Diameter Olympus Style Thoracic Trocar, Smooth, 4.5cm Length",
+    "image": "Trochar small 2.png",
+    "featured": false
   }
 ]
