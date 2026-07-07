@@ -5131,13 +5131,13 @@
   },
   {
     "id": "931404",
-    "title": "PEAK Coronary Ostia Perfusion Cannula, 3.0mm Tip, Angle - 50",
+    "title": "PEAK Coronary Ostia Perfusion Cannula, 3.0mm Tip, Angled 50°",
     "sku": "3324-50300L",
     "category": "Coronary Ostia Perfusion Cannula",
     "subcategory": "Multi-Use Ostia Cannula",
     "type": "",
     "unitOfSale": "",
-    "categoryThree": "3324-50300L: PEAK Re-usable - Small - Coronary Ostial Cannula, Stainless Steel - 50 degree Angled Shaft, 3.0mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D., Available with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
+    "categoryThree": "3324-50300L: PEAK Re-usable - Small - Coronary Ostial Cannula, Stainless Steel - 50 degree Angled Shaft, 3.0mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D. \n\nAvailable with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
     "image": "24-50300L (w Luer Lock).png",
     "featured": false
   },
@@ -5149,7 +5149,7 @@
     "subcategory": "Multi-Use Ostia Cannula",
     "type": "",
     "unitOfSale": "",
-    "categoryThree": "3324-50375L: PEAK Re-usable - Medium - Coronary Ostia Cannula, Stainless Steel - 50° Angled Shaft, 3.75mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D., \n\nAvailable with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
+    "categoryThree": "3324-50375L: PEAK Re-usable - Medium - Coronary Ostia Cannula, Stainless Steel - 50° Angled Shaft, 3.75mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D. \n\nAvailable with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
     "image": "3324-50375L (w:o Luer lock).png",
     "featured": false
   },
@@ -5163,6 +5163,42 @@
     "unitOfSale": "",
     "categoryThree": "3324-50450L: PEAK Re-usable - Large - Coronary Ostia Cannula, Stainless Steel - 50° Angled Shaft, 4.5mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D.\n\nAvailable with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
     "image": "3324-50450L (w:o Luer lock).png",
+    "featured": false
+  },
+  {
+    "id": "873407",
+    "title": "PEAK Coronary Ostia Perfusion Cannula, 3mm Tip, Angled 90°",
+    "sku": "3324-90300L",
+    "category": "Coronary Ostia Perfusion Cannula",
+    "subcategory": "Multi-Use Ostia Cannula",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "3324-90300L: PEAK Re-usable - Small - Coronary Ostia Cannula, Stainless Steel - 90° Angled Shaft, 3.0mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D.\n\nAvailable with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
+    "image": "24-90300L (w: Luer Lock).png",
+    "featured": false
+  },
+  {
+    "id": "992218",
+    "title": "PEAK Coronary Ostia Perfusion Cannula, 3.75mm Tip, Angled 90°",
+    "sku": "3324-90375L",
+    "category": "Coronary Ostia Perfusion Cannula",
+    "subcategory": "Multi-Use Ostia Cannula",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "3324-90375L: PEAK Re-usable - Medium - Coronary Ostia Cannula, Stainless Steel - 90 degree Angled Shaft, 3.75mmTip, 24cm overall length, suction tube 3mm O.D, 2mm I.D. \n\nAvailable with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
+    "image": "3324-90375L (w:o Luer Lock).png",
+    "featured": false
+  },
+  {
+    "id": "119333",
+    "title": "PEAK Coronary Ostia Perfusion Cannula, 4.5mm Tip, Angled 90°",
+    "sku": "3324-90450L",
+    "category": "Coronary Ostia Perfusion Cannula",
+    "subcategory": "Multi-Use Ostia Cannula",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "3324-90450L: PEAK Re-usable - Large - Coronary Ostia Cannula, Stainless Steel - 90° Angled Shaft, 4.5mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D.\n\nAvailable with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
+    "image": "3324-90450L (w:o Luer Lock).png",
     "featured": false
   }
 ]
