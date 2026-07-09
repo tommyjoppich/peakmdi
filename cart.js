@@ -148,15 +148,15 @@ function cartInjectModal() {
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
             630-520-5023
           </a>
-          <a href="mailto:info@peakmdi.com" style="
+          <button onclick="openQuoteEmailDialog()" style="
             display:flex; align-items:center; gap:8px;
             background:#2e6da4; color:#fff; border-radius:8px;
             padding:10px 18px; font-size:13px; font-weight:700;
-            text-decoration:none; transition:background 0.15s; flex:1; justify-content:center;
+            border:none; cursor:pointer; transition:background 0.15s; flex:1; justify-content:center;
           " onmouseover="this.style.background='#245a8c'" onmouseout="this.style.background='#2e6da4'">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            info@peakmdi.com
-          </a>
+            Email Quote Request
+          </button>
           <!-- Live Quote with AI — inactive / coming soon -->
           <div style="position:relative;flex:1;">
             <div style="
@@ -416,3 +416,110 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.key === 'Escape') cartCloseModal();
   });
 });
+
+
+/* ── Quote Email Dialog ── */
+function openQuoteEmailDialog() {
+  // Build cart items summary
+  const cart = cartGet();
+  if (cart.length === 0) { alert('Your cart is empty.'); return; }
+
+  // Remove existing dialog if any
+  const existing = document.getElementById('quote-email-dialog');
+  if (existing) existing.remove();
+
+  const overlay = document.createElement('div');
+  overlay.id = 'quote-email-dialog';
+  overlay.style.cssText = `
+    position:fixed; inset:0; z-index:100001;
+    background:rgba(0,0,0,0.5);
+    display:flex; align-items:center; justify-content:center; padding:20px;
+  `;
+
+  overlay.innerHTML = `
+    <div style="
+      background:#fff; border-radius:12px; padding:36px 32px;
+      width:100%; max-width:480px; max-height:90vh; overflow-y:auto;
+      box-shadow:0 16px 48px rgba(0,0,0,0.2);
+    ">
+      <h2 style="margin:0 0 6px; font-size:20px; color:#1a2b4a;">Request a Quote</h2>
+      <p style="margin:0 0 24px; font-size:13px; color:#888;">Please fill in your details below. All fields are required.</p>
+
+      ${['Full Name','Facility','Staff Position','Email','Phone Number'].map(label => {
+        const id = 'qe-' + label.toLowerCase().replace(/\s+/g,'-');
+        const type = label === 'Email' ? 'email' : label === 'Phone Number' ? 'tel' : 'text';
+        return `
+          <label style="display:block; font-size:13px; font-weight:600; color:#1a2b4a; margin-bottom:4px;">${label}</label>
+          <input id="${id}" type="${type}" placeholder="${label}"
+            oninput="checkQuoteFormReady()"
+            style="width:100%; padding:10px 14px; border:1.5px solid #dde3ec; border-radius:8px;
+                   font-size:14px; margin-bottom:14px; box-sizing:border-box; outline:none;
+                   transition:border-color 0.2s;"
+            onfocus="this.style.borderColor='#2563a8'"
+            onblur="this.style.borderColor='#dde3ec'" />
+        `;
+      }).join('')}
+
+      <button id="qe-submit" disabled
+        onclick="submitQuoteEmail()"
+        style="
+          width:100%; padding:13px; border:none; border-radius:8px;
+          font-size:14px; font-weight:700; cursor:not-allowed;
+          background:#ccc; color:#fff; transition:background 0.2s; margin-top:4px;
+        ">
+        Send Quote Request to PEAK MDI Staff
+      </button>
+      <button onclick="document.getElementById('quote-email-dialog').remove()"
+        style="
+          width:100%; padding:10px; border:1.5px solid #dde3ec; border-radius:8px;
+          font-size:13px; background:#fff; color:#666; cursor:pointer; margin-top:10px;
+        ">
+        Cancel
+      </button>
+    </div>
+  `;
+
+  document.body.appendChild(overlay);
+}
+
+function checkQuoteFormReady() {
+  const ids = ['qe-full-name','qe-facility','qe-staff-position','qe-email','qe-phone-number'];
+  const allFilled = ids.every(id => {
+    const el = document.getElementById(id);
+    return el && el.value.trim() !== '';
+  });
+  const btn = document.getElementById('qe-submit');
+  if (btn) {
+    btn.disabled = !allFilled;
+    btn.style.background   = allFilled ? '#2e6da4' : '#ccc';
+    btn.style.cursor       = allFilled ? 'pointer'  : 'not-allowed';
+  }
+}
+
+function submitQuoteEmail() {
+  const name     = document.getElementById('qe-full-name').value.trim();
+  const facility = document.getElementById('qe-facility').value.trim();
+  const position = document.getElementById('qe-staff-position').value.trim();
+  const email    = document.getElementById('qe-email').value.trim();
+  const phone    = document.getElementById('qe-phone-number').value.trim();
+
+  const cart  = cartGet();
+  const items = cart.map((p, i) =>
+    `${i + 1}. ${p.title} (SKU: ${p.sku})${p.qty > 1 ? ' x' + p.qty : ''}`
+  ).join('%0A');
+
+  const subject = encodeURIComponent('Quote Request from ' + name);
+  const body = encodeURIComponent(
+    'Quote Request Details\n' +
+    '=====================\n' +
+    'Full Name:      ' + name     + '\n' +
+    'Facility:       ' + facility + '\n' +
+    'Staff Position: ' + position + '\n' +
+    'Email:          ' + email    + '\n' +
+    'Phone:          ' + phone    + '\n\n' +
+    'Requested Items:\n'
+  ) + items;
+
+  window.location.href = `mailto:info@peakmdi.com?subject=${subject}&body=${body}`;
+  document.getElementById('quote-email-dialog').remove();
+}
