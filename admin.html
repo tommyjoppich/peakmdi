@@ -273,8 +273,49 @@
       .cms-main { padding: 20px 16px; }
     }
   </style>
+
+  <style id="pw-style">
+    #pw-overlay {
+      position: fixed; inset: 0; z-index: 99999;
+      background: #f5f7fa;
+      display: flex; align-items: center; justify-content: center;
+    }
+    #pw-box {
+      background: #fff; border-radius: 12px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      padding: 48px 40px; width: 100%; max-width: 380px;
+      display: flex; flex-direction: column; align-items: center; gap: 20px;
+    }
+    #pw-box img { height: 60px; margin-bottom: 8px; }
+    #pw-box h2 { margin: 0; font-size: 20px; color: #1a2b4a; }
+    #pw-box p  { margin: 0; font-size: 14px; color: #888; text-align: center; }
+    #pw-input {
+      width: 100%; padding: 12px 16px; border: 1.5px solid #dde3ec;
+      border-radius: 8px; font-size: 15px; outline: none;
+      transition: border-color 0.2s;
+    }
+    #pw-input:focus { border-color: #2563a8; }
+    #pw-input.error { border-color: #e53e3e; }
+    #pw-error { color: #e53e3e; font-size: 13px; display: none; }
+    #pw-btn {
+      width: 100%; padding: 12px; background: #1a2b4a; color: #fff;
+      border: none; border-radius: 8px; font-size: 15px; font-weight: 600;
+      cursor: pointer; transition: background 0.2s;
+    }
+    #pw-btn:hover { background: #2563a8; }
+  </style>
 </head>
 <body>
+  <div id="pw-overlay">
+    <div id="pw-box">
+      <img src="peak-logo.png" alt="PEAK MDI" />
+      <h2>Admin Access</h2>
+      <p>Enter the admin password to continue.</p>
+      <input id="pw-input" type="password" placeholder="Password" onkeydown="if(event.key==='Enter')pwSubmit()" />
+      <span id="pw-error">Incorrect password. Please try again.</span>
+      <button id="pw-btn" onclick="pwSubmit()">Unlock</button>
+    </div>
+  </div>
 
   <!-- ── TOP BAR ── -->
   <div class="topbar">
@@ -524,6 +565,20 @@
           </div>
           <img id="img-preview" class="img-preview" alt="Preview" />
           <input type="text" id="field-image" placeholder="Filename e.g. Product_Pictures/product1-scissors.png" style="margin-top:8px" />
+<label style="margin-top:12px">Product Image 2 (Optional)</label>
+<div class="img-upload-area" onclick="document.getElementById('field-image2-file').click()">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+  <span>Click to upload image 2</span>
+</div>
+<input type="file" id="field-image2-file" accept="image/*" onchange="handleImageUpload2(event)" style="display:none" />
+<input type="text" id="field-image2" placeholder="Filename e.g. Product_Pictures/product1b.png" style="margin-top:8px" />
+<label style="margin-top:12px">Product Image 3 (Optional)</label>
+<div class="img-upload-area" onclick="document.getElementById('field-image3-file').click()">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#bbb" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+  <span>Click to upload image 3</span>
+</div>
+<input type="file" id="field-image3-file" accept="image/*" onchange="handleImageUpload3(event)" style="display:none" />
+<input type="text" id="field-image3" placeholder="Filename e.g. Product_Pictures/product1c.png" style="margin-top:8px" />
         </div>
 
         <div class="field-group">
@@ -722,7 +777,9 @@
       document.getElementById('field-sku').value = p.sku || '';
       document.getElementById('field-unitOfSale').value = p.unitOfSale || '';
       document.getElementById('field-categoryThree').value = p.categoryThree || '';
-      document.getElementById('field-image').value = p.image || '';
+      document.getElementById('field-image').value  = p.image  || '';
+      document.getElementById('field-image2').value = p.image2 || '';
+      document.getElementById('field-image3').value = p.image3 || '';
       document.getElementById('field-featured').checked = !!p.featured;
 
       const preview = document.getElementById('img-preview');
@@ -743,7 +800,7 @@
     }
 
     function clearForm() {
-      ['field-title','field-category','field-subcategory','field-type','field-sku','field-unitOfSale','field-categoryThree','field-image'].forEach(id => {
+      ['field-title','field-category','field-subcategory','field-type','field-sku','field-unitOfSale','field-categoryThree','field-image','field-image2','field-image3'].forEach(id => {
         document.getElementById(id).value = '';
       });
       document.getElementById('field-featured').checked = false;
@@ -754,6 +811,14 @@
       const file = e.target.files[0];
       if (!file) return;
       document.getElementById('field-image').value = file.name;
+    }
+    function handleImageUpload2(event) {
+      const file = event.target.files[0]; if (!file) return;
+      document.getElementById('field-image2').value = file.name;
+    }
+    function handleImageUpload3(event) {
+      const file = event.target.files[0]; if (!file) return;
+      document.getElementById('field-image3').value = file.name;
       const reader = new FileReader();
       reader.onload = ev => {
         const preview = document.getElementById('img-preview');
@@ -775,7 +840,9 @@
       }
 
       // Store only the bare filename — imgSrc() adds the folder at render time
-      const rawImage = document.getElementById('field-image').value.trim();
+      const rawImage  = document.getElementById('field-image').value.trim();
+      const rawImage2 = document.getElementById('field-image2').value.trim();
+      const rawImage3 = document.getElementById('field-image3').value.trim();
       const imageVal = rawImage.replace('Product_Pictures/', ''); // strip prefix if accidentally included
 
       const data = {
@@ -787,7 +854,9 @@
         type:        document.getElementById('field-type').value.trim(),
         unitOfSale:  document.getElementById('field-unitOfSale').value.trim(),
         categoryThree: document.getElementById('field-categoryThree').value.trim(),
-        image: imageVal,
+        image:    imageVal,
+        image2:   rawImage2.replace('Product_Pictures/', ''),
+        image3:   rawImage3.replace('Product_Pictures/', ''),
         featured: document.getElementById('field-featured').checked,
       };
 
@@ -1115,6 +1184,27 @@
     }
 
     initResources();
+  </script>
+
+  <script>
+    (function() {
+      if (sessionStorage.getItem('peak-admin-auth') === 'true') {
+        document.getElementById('pw-overlay').style.display = 'none';
+      }
+    })();
+    function pwSubmit() {
+      const input = document.getElementById('pw-input');
+      if (input.value === 'peak123') {
+        sessionStorage.setItem('peak-admin-auth', 'true');
+        document.getElementById('pw-overlay').style.display = 'none';
+        document.getElementById('pw-style').remove();
+      } else {
+        input.classList.add('error');
+        document.getElementById('pw-error').style.display = 'block';
+        input.value = '';
+        setTimeout(() => input.classList.remove('error'), 1500);
+      }
+    }
   </script>
 </body>
 </html>
