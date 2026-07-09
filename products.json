@@ -4567,13 +4567,13 @@
   },
   {
     "id": "375820",
-    "title": "PEAK Instrument Holder",
-    "sku": "Variable",
-    "category": "Holders",
-    "subcategory": "Instrument Holder",
+    "title": "PEAK Scope/Instrument Holder, For use with Martin Arm",
+    "sku": "FCE-10101",
+    "category": "Bed Rail Mounts, Martin Arms, Instrument & Scope Holders",
+    "subcategory": "",
     "type": "",
     "unitOfSale": "",
-    "categoryThree": "PEAK Instrument Holder",
+    "categoryThree": "FCE-10101: PEAK Scope/instrument Holder;  with Articulation Joint, Self Retaining Clamp, For use with Martin Arm (P/N: BFA-8800)",
     "image": "9fe617ff-9ae7-4d1a-80fc-5a01a714d04d.png",
     "featured": false
   },
@@ -5175,18 +5175,6 @@
     "unitOfSale": "",
     "categoryThree": "3324-90450L: PEAK Re-usable - Large - Coronary Ostia Cannula, Stainless Steel - 90° Angled Shaft, 4.5mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D.\n\nAvailable with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
     "image": "3324-90450L (w:o Luer Lock), more bright white.png",
-    "featured": false
-  },
-  {
-    "id": "093356",
-    "title": "PEAK Scope/Instrument Holder, For use with Martin Arm",
-    "sku": "FCE-10101",
-    "category": "Bed Rail Mounts, Martin Arms, Instrument & Scope Holders",
-    "subcategory": "",
-    "type": "",
-    "unitOfSale": "",
-    "categoryThree": "FCE-10101: PEAK Scope/instrument Holder;  with Articulation Joint, Self Retaining Clamp, For use with Martin Arm (P/N: BFA-8800)",
-    "image": "",
     "featured": false
   }
 ]
