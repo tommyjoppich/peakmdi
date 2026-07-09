@@ -98,16 +98,46 @@
       align-items: start;
     }
 
-    /* Product image */
+    /* Product image carousel */
     .detail-image {
       background: #fff;
       border-radius: var(--radius);
       aspect-ratio: 1 / 1;
       overflow: hidden;
+      position: relative;
       display: flex; align-items: center; justify-content: center;
     }
-    .detail-image img { width: 100%; height: 100%; object-fit: contain; }
-    .detail-image .no-img { color: #bbb; font-size: 14px; }
+    .carousel-track {
+      display: flex; width: 100%; height: 100%;
+      transition: transform 0.35s ease;
+    }
+    .carousel-slide {
+      min-width: 100%; height: 100%;
+      display: flex; align-items: center; justify-content: center;
+      background: #fff;
+    }
+    .carousel-slide img { width: 100%; height: 100%; object-fit: contain; }
+    .carousel-slide .no-img { color: #bbb; font-size: 14px; }
+    .carousel-btn {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      background: rgba(255,255,255,0.85); border: 1.5px solid #dde3ec;
+      border-radius: 50%; width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; z-index: 2; transition: background 0.15s;
+    }
+    .carousel-btn:hover { background: #e4edf6; }
+    .carousel-btn svg { stroke: #1a2b4a; }
+    .carousel-prev { left: 8px; }
+    .carousel-next { right: 8px; }
+    .carousel-dots {
+      position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+      display: flex; gap: 6px;
+    }
+    .carousel-dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #ccc; cursor: pointer; transition: background 0.2s;
+    }
+    .carousel-dot.active { background: #2563a8; }
 
     /* Product info */
     .detail-info {}
@@ -578,10 +608,15 @@
       // Detail layout
       document.getElementById('detail-container').innerHTML = `
         <div class="detail-layout">
-          <div class="detail-image">
-            ${p.image
-              ? `<img src="${imgSrc(p.image)}" alt="${p.title}" />`
-              : `<span class="no-img">Image Coming Soon!</span>`}
+          <div class="detail-image" id="detail-carousel">
+            <div class="carousel-track" id="carousel-track"></div>
+            <button class="carousel-btn carousel-prev" id="carousel-prev" onclick="carouselPrev()" style="display:none">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <button class="carousel-btn carousel-next" id="carousel-next" onclick="carouselNext()" style="display:none">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <div class="carousel-dots" id="carousel-dots"></div>
           </div>
           <div class="detail-info">
             <h1 class="detail-info__title">${p.title}</h1>
@@ -617,6 +652,7 @@
           </div>
         </div>
       `;
+      buildCarousel(p);
     }
 
     function showError(msg) {
@@ -940,6 +976,68 @@
     }
     populateFooter();
 
+
+    /* ── Image Carousel ── */
+    let _carouselIndex = 0;
+    let _carouselImages = [];
+
+    function buildCarousel(p) {
+      _carouselIndex = 0;
+      _carouselImages = [p.image, p.image2, p.image3].filter(Boolean);
+
+      const track = document.getElementById('carousel-track');
+      const dots  = document.getElementById('carousel-dots');
+      const prev  = document.getElementById('carousel-prev');
+      const next  = document.getElementById('carousel-next');
+
+      if (!track) return;
+
+      if (_carouselImages.length === 0) {
+        track.innerHTML = `<div class="carousel-slide"><span class="no-img">Image Coming Soon!</span></div>`;
+        dots.innerHTML = '';
+        prev.style.display = 'none';
+        next.style.display = 'none';
+        return;
+      }
+
+      track.innerHTML = _carouselImages.map(img =>
+        `<div class="carousel-slide"><img src="${imgSrc(img)}" alt="Product image" /></div>`
+      ).join('');
+
+      dots.innerHTML = _carouselImages.length > 1
+        ? _carouselImages.map((_, i) =>
+            `<div class="carousel-dot${i === 0 ? ' active' : ''}" onclick="carouselGoTo(${i})"></div>`
+          ).join('')
+        : '';
+
+      const multi = _carouselImages.length > 1;
+      prev.style.display = multi ? 'flex' : 'none';
+      next.style.display = multi ? 'flex' : 'none';
+      updateCarousel();
+    }
+
+    function updateCarousel() {
+      const track = document.getElementById('carousel-track');
+      if (track) track.style.transform = `translateX(-${_carouselIndex * 100}%)`;
+      document.querySelectorAll('.carousel-dot').forEach((d, i) =>
+        d.classList.toggle('active', i === _carouselIndex)
+      );
+    }
+
+    function carouselPrev() {
+      _carouselIndex = (_carouselIndex - 1 + _carouselImages.length) % _carouselImages.length;
+      updateCarousel();
+    }
+
+    function carouselNext() {
+      _carouselIndex = (_carouselIndex + 1) % _carouselImages.length;
+      updateCarousel();
+    }
+
+    function carouselGoTo(i) {
+      _carouselIndex = i;
+      updateCarousel();
+    }
   </script>
   <script src="cart.js"></script>
 </body>
