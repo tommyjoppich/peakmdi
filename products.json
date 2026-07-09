@@ -5176,5 +5176,77 @@
     "categoryThree": "3324-90450L: PEAK Re-usable - Large - Coronary Ostia Cannula, Stainless Steel - 90° Angled Shaft, 4.5mm Tip, 24cm Overall Length, Suction Tube 3mm O.D, 2mm I.D.\n\nAvailable with Luer Lock Female Connector or Press fit Bubble Hose tubing connect.",
     "image": "3324-90450L (w:o Luer Lock), more bright white.png",
     "featured": false
+  },
+  {
+    "id": "089948",
+    "title": "PEAK Universal Martin's Arm, 20\"",
+    "sku": "BFA-8800",
+    "category": "Bed Rail Mounts, Martin's Arms, Instrument & Scope Holders",
+    "subcategory": "Universal Martin's Arms",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "BFA-8800: PEAK Martin's Arm - Single Arm Instrument with Fixed Universal Instrument Clamp (20\"). Autoclavable.",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "338240",
+    "title": "PEAK Universal Martin's Arm, 26”",
+    "sku": "BFA-8801",
+    "category": "Bed Rail Mounts, Martin Arms, Instrument & Scope Holders",
+    "subcategory": "Universal Martin's Arms",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "BFA-8801: PEAK Bariatric Martin's Arm - Single Arm with Universal Instrument Clamp, Extra-Long Mounting Rod (26\").",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "585627",
+    "title": "PEAK Universal Martin's Arm, 26\"",
+    "sku": "BFA-8802",
+    "category": "Bed Rail Mounts, Martin Arms, Instrument & Scope Holders",
+    "subcategory": "Universal Martin's Arms",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "BFA-8802: PEAK Martin's Dual Arm Instrument for Multiple Instruments Applied from One Side of the Operating Table with Mounting Rod (26\")",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "755788",
+    "title": "PEAK Universal Martin's Arm",
+    "sku": "BFA-8803",
+    "category": "Bed Rail Mounts, Martin's Arms, Instrument & Scope Holders",
+    "subcategory": "Universal Martin's Arms",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "BFA-8803: PEAK Martin's Arm Instrument with Horizontal Elongated Extension 10\", Standard 20\" Vertical Mounting Rod",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "881752",
+    "title": "PEAK Universal Martin's Arm, Elongated w/ Bariatric Rod",
+    "sku": "BFA-8804",
+    "category": "Bed Rail Mounts, Martin's Arms, Instrument & Scope Holders",
+    "subcategory": "Universal Martin's Arms",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "BFA-8804: PEAK Martin's Arm: Single Arm Instrument with Horizontal Elongated Extension 10\" with 26\" Vertical Bariatric Rod",
+    "image": "",
+    "featured": false
+  },
+  {
+    "id": "279665",
+    "title": "PEAK Heavy Duty O.R. Bed Rail Clamp",
+    "sku": "BFA-9053",
+    "category": "Bed Rail Mounts, Martin Arms, Instrument & Scope Holders",
+    "subcategory": "Bed Rail Mounts",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "BFA-9053: PEAK O.R. Bed Rail Clamp Heavy Duty, 5/8\" Round Hole or Available in 1/2\" x 1\" Slot",
+    "image": "",
+    "featured": false
   }
 ]
