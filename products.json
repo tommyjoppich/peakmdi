@@ -5260,5 +5260,47 @@
     "image2": "",
     "image3": "",
     "featured": false
+  },
+  {
+    "id": "065353",
+    "title": "PEAK Thoracic Trocar, 5MM, 7.5\"",
+    "sku": "24275-05-OLY1",
+    "category": "Trocars",
+    "subcategory": "Multi-Use",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "5MM Diameter Olympus Style Thoracic Trocar, Smooth, 7.5cm Length",
+    "image": "Trochar small final 1.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "214500",
+    "title": "PEAK Thoracic Trocar, 7MM, 7.5\"",
+    "sku": "24275-07-OLY1",
+    "category": "Trocars",
+    "subcategory": "Multi-Use",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "7MM Diameter Olympus Style Thoracic Trocar, Smooth, 7.5cm Length",
+    "image": "Trochar small final 2.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "410829",
+    "title": "PEAK Thoracic Trocar, 10MM, 7.5\"",
+    "sku": "24275-10-OLY1",
+    "category": "Trocars",
+    "subcategory": "Multi-Use",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "10MM Diameter Olympus Style Thoracic Trocar, Smooth, 7.5cm Length",
+    "image": "Trochar Medium final 1.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
   }
 ]
