@@ -4602,18 +4602,6 @@
     "featured": false
   },
   {
-    "id": "259419",
-    "title": "PEAK Knot Pusher",
-    "sku": "335210531",
-    "category": "Knot Pusher",
-    "subcategory": "",
-    "type": "",
-    "unitOfSale": "",
-    "categoryThree": "335210531: PEAK Knot Pusher, 5mm \"M\" - 37.5cm Working Length, Closed, Angled Tear Drop Shaped Tip, Knot Pusher, CM Markings, 3mm Oval Suture Hole, \"M\" 6-sided Handle - Reusable - Stainless Steel.",
-    "image": "Knot Pusher.png",
-    "featured": false
-  },
-  {
     "id": "992368",
     "title": "PEAK Hibbs Retractor, Small",
     "sku": "3318-0824-05",
@@ -5749,6 +5737,20 @@
     "image": "Sleeve Lg 2 final.png",
     "image2": "",
     "image3": "",
+    "featured": false
+  },
+  {
+    "id": "523819",
+    "title": "PEAK Knot Pusher",
+    "sku": "52105-31-12M",
+    "category": "Robotics Kit",
+    "subcategory": "Knot Pusher",
+    "type": "",
+    "unitOfSale": "Sold in PEAK Robotics Kit and Separately",
+    "categoryThree": "52105-31-12M: PEAK 5MM “M” 37.5CM Working Length, Closed, Angled teardrop-shaped Knot Pusher, CM Marking 3MM Oval Suture Hole “M” - 6 Sided Handle, Stainless Steel",
+    "image": "Knot pusher copy.png",
+    "image2": "PEAK robotics kit full white.png",
+    "image3": "Knot Pusher.png",
     "featured": false
   }
 ]
