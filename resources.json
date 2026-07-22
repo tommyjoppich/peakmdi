@@ -142,5 +142,13 @@
     "description": "View and Download our Wire-Cutting Scissor Brochure!",
     "thumbnail": "Resource_Thumbnails/Blue PEAK logo thumbnail wire cutters.jpg",
     "resource": "Resource_PDFs/Catalogs/PEAK Wire Cutting Scissors Brochure.pdf"
+  },
+  {
+    "id": "r050703",
+    "type": "pdf",
+    "title": "PEAK ROBOTICS KIT BROCHURE",
+    "description": "",
+    "thumbnail": "Resource_Thumbnails/Blue PEAK logo copy for robotics brochure.png",
+    "resource": ""
   }
 ]
