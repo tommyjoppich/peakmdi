@@ -5794,5 +5794,33 @@
     "image2": "PEAK robotics kit full white copy 3.png",
     "image3": "",
     "featured": false
+  },
+  {
+    "id": "368338",
+    "title": "PEAK Ball-Tipped Sucker, 40cm",
+    "sku": "3324-30140",
+    "category": "Robotics Kit",
+    "subcategory": "Ball-Tipped Sucker",
+    "type": "",
+    "unitOfSale": "Sold in PEAK Robotics Kit and Separately",
+    "categoryThree": "3324-30140: PEAK Ball-Tipped Aluminum Endoscopy Suction Tube, 5mm Diameter, 45° Bend, 40cm Overall Length.",
+    "image": "Ball tipped sucker 40.png",
+    "image2": "PEAK robotics kit full white copy 4.png",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "477380",
+    "title": "PEAK Ball-Tipped Sucker, 30cm",
+    "sku": "3324-30130",
+    "category": "Robotics Kit",
+    "subcategory": "Ball-Tipped Sucker",
+    "type": "",
+    "unitOfSale": "Sold in PEAK Robotics Kit and Separately",
+    "categoryThree": "3324-30130: PEAK Ball-Tipped Aluminum Endoscopy Suction Tube, 5mm Diameter, 45° Bend, 30cm Overall Length.",
+    "image": "Ball tipped sucker 30cm.png",
+    "image2": "PEAK robotics kit full white copy 5.png",
+    "image3": "",
+    "featured": false
   }
 ]
