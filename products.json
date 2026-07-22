@@ -5741,7 +5741,7 @@
   },
   {
     "id": "523819",
-    "title": "PEAK Knot Pusher",
+    "title": "PEAK Knot Pusher, 37.5cm",
     "sku": "52105-31-12M",
     "category": "Robotics Kit",
     "subcategory": "Knot Pusher",
@@ -5751,6 +5751,48 @@
     "image": "Knot pusher copy.png",
     "image2": "PEAK robotics kit full white.png",
     "image3": "Knot Pusher.png",
+    "featured": false
+  },
+  {
+    "id": "081508",
+    "title": "PEAK Knot Pusher, 30.5cm",
+    "sku": "52205-31-12M",
+    "category": "Robotics Kit",
+    "subcategory": "Knot Pusher",
+    "type": "",
+    "unitOfSale": "Sold in PEAK Robotics Kit and Separately",
+    "categoryThree": "52205-31-12M: PEAK 5MM “M” 30.5CM Working Length, Closed, Angled teardrop-shaped Knot Pusher, CM Marking 3MM Oval Suture Hole “M” - 6-Sided Handle, Stainless Steel",
+    "image": "Knot pusher copy 2.png",
+    "image2": "PEAK robotics kit full white copy 1.png",
+    "image3": "Knot Pusher copy 3.png",
+    "featured": false
+  },
+  {
+    "id": "329489",
+    "title": "PEAK Suture Puller, Left",
+    "sku": "23-0117BC-L",
+    "category": "Robotics Kit",
+    "subcategory": "Suture Pullers",
+    "type": "",
+    "unitOfSale": "Sold in PEAK Robotics Kit and Separately",
+    "categoryThree": "23-0117BC-L: PEAK Suture Puller, 3mm Tapered to a 1.5mm Tip. 6mm Knurled 6\" Handle, 9\" Working Length, Overall Length 15\".  Suture Loop LEFT.",
+    "image": "suture hooks left.png",
+    "image2": "PEAK robotics kit full white copy 2.png",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "573142",
+    "title": "PEAK Suture Puller, Right",
+    "sku": "23-0117BC-R",
+    "category": "Robotics Kit",
+    "subcategory": "Suture Pullers",
+    "type": "",
+    "unitOfSale": "Sold in PEAK Robotics Kit and Separately",
+    "categoryThree": "23-0117BC-R: PEAK Suture Puller, 3mm Tapered to a 1.5mm Tip. 6mm Knurled 6\" Handle, 9\" Working Length, Overall length 15\". Suture loop RIGHT",
+    "image": "suture hooks right.png",
+    "image2": "PEAK robotics kit full white copy 3.png",
+    "image3": "",
     "featured": false
   }
 ]
