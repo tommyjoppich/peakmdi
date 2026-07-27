@@ -1,21 +1,5 @@
 [
   {
-    "id": "r001",
-    "type": "video",
-    "title": "Sample Surgical Technique Video",
-    "description": "A demonstration of proper surgical technique using PEAK instruments.",
-    "thumbnail": "",
-    "resource": "https://www.youtube.com/embed/dQw4w9WgXcQ"
-  },
-  {
-    "id": "r003",
-    "type": "article",
-    "title": "Understanding Cardiac Retractors",
-    "description": "An in-depth reading on the history and proper use of cardiac retractors in modern surgery.",
-    "thumbnail": "",
-    "resource": "https://example.com/article"
-  },
-  {
     "id": "r004",
     "type": "ifu",
     "title": "PEAK Premium Scissors IFU",
@@ -24,28 +8,12 @@
     "resource": ""
   },
   {
-    "id": "r731143",
-    "type": "video",
-    "title": "Test_Video",
-    "description": "sdhjkc ds adfivhy qwqsa wiu. yuiahs",
-    "thumbnail": "Resource_Thumbnails/thumbnail_test.jpg",
-    "resource": "https://www.youtube.com/watch?v=_2H0gwg1pA8"
-  },
-  {
     "id": "r842296",
     "type": "pdf",
     "title": "PEAK Instrument Catalogue",
     "description": "Surgical Instrumentation",
     "thumbnail": "Resource_Thumbnails/thumnail_test2.jpg",
     "resource": "Resource_PDFs/Catalogs/TestDoc - Google Docs.pdf"
-  },
-  {
-    "id": "r891289",
-    "type": "article",
-    "title": "Test_EducationMaterial",
-    "description": "sdvhk akuvc as jdvhk sdvkhjb akshcv asdbcasd xzizx aox zxocwq qisdc zxvvsz asck qawo osxcv really long name test",
-    "thumbnail": "Resource_Thumbnails/thumbnail_test3.jpg",
-    "resource": "https://www.webpagetest.org/"
   },
   {
     "id": "r365924",
@@ -132,23 +100,7 @@
     "type": "ifu",
     "title": "IFU Aluminum Trays or Containers",
     "description": "ALUMINUM TRAYS OR CONTAINERS CLEANING, STERILIZATION & MAINTENANCE",
-    "thumbnail": "Resource_Thumbnails/Blue PEAK logo thumbnail Aluminum Trays .jpeg",
+    "thumbnail": "",
     "resource": "Resource_PDFs/IFUs/PEAK ALUMINUM TRAYS OR CONTAINERS STERILIZATION & MAINTENANCE PDF (1).pdf"
-  },
-  {
-    "id": "r757647",
-    "type": "pdf",
-    "title": "PEAK Wire-Cutting Scissors Brochure",
-    "description": "View and Download our Wire-Cutting Scissor Brochure!",
-    "thumbnail": "Resource_Thumbnails/Blue PEAK logo thumbnail wire cutters.jpg",
-    "resource": "Resource_PDFs/Catalogs/PEAK Wire Cutting Scissors Brochure.pdf"
-  },
-  {
-    "id": "r050703",
-    "type": "pdf",
-    "title": "PEAK ROBOTICS KIT BROCHURE",
-    "description": "",
-    "thumbnail": "Resource_Thumbnails/Blue PEAK logo copy for robotics brochure.png",
-    "resource": "Resource_PDFs/Catalogs/Robotic Kit Brochure.pdf"
   }
 ]
