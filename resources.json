@@ -2,18 +2,10 @@
   {
     "id": "r004",
     "type": "ifu",
-    "title": "PEAK Premium Scissors IFU",
+    "title": "PEAK PremiumCut Scissors IFU",
     "description": "Instructions for Use documentation for the PEAK Premium Scissors product line.",
-    "thumbnail": "Resource_Thumbnails/logo 11.jpeg",
+    "thumbnail": "Resource_Thumbnails/PremiumCut Thumbnail.jpg",
     "resource": ""
-  },
-  {
-    "id": "r842296",
-    "type": "pdf",
-    "title": "PEAK Instrument Catalogue",
-    "description": "Surgical Instrumentation",
-    "thumbnail": "Resource_Thumbnails/thumnail_test2.jpg",
-    "resource": "Resource_PDFs/Catalogs/TestDoc - Google Docs.pdf"
   },
   {
     "id": "r365924",
@@ -28,7 +20,7 @@
     "type": "ifu",
     "title": "IFU Stainless Cannulas and Needles",
     "description": "STAINLESS STEEL CANNULAS AND NEEDLES\nCLEANING, MAINTENANCE & STERILIZATION",
-    "thumbnail": "Resource_Thumbnails/logo 2 for IFU.jpg",
+    "thumbnail": "Resource_Thumbnails/Cannulas thumbnail.jpg",
     "resource": "Resource_PDFs/IFUs/PEAK STAINLESS STEEL CANNULAS AND NEEDLES IFU 11.1.2021.pdf"
   },
   {
@@ -36,7 +28,7 @@
     "type": "ifu",
     "title": "PEAK Cannulated Flushable Kerrison Rongeurs IFU",
     "description": "Validated Instructions For Use (IFUs)",
-    "thumbnail": "Resource_Thumbnails/logo 3 for IFU copy.jpg",
+    "thumbnail": "Resource_Thumbnails/Kerrison Thumbnail.jpg",
     "resource": "Resource_PDFs/IFUs/ClearFlush Kerrison IFU 5-25-2023.pdf"
   },
   {
@@ -52,7 +44,7 @@
     "type": "video",
     "title": "CT-0100 Minimally Invasive Retractor",
     "description": "Inspection & Troubleshooting Of the MIS Retractor Tray for AVR/MVR",
-    "thumbnail": "Resource_Thumbnails/logo 5 for IFU copy 3.jpg",
+    "thumbnail": "Resource_Thumbnails/CT-0100 Thumbnail photo.jpg",
     "resource": "https://www.youtube.com/watch?v=OTn-v_pCDeU"
   },
   {
@@ -66,9 +58,9 @@
   {
     "id": "r659674",
     "type": "pdf",
-    "title": "Nathenson Retractors Brochure",
+    "title": "Nathanson Retractors Brochure",
     "description": "PEAK Nathanson Liver Retractors for Martin’s Arm",
-    "thumbnail": "Resource_Thumbnails/logo 7.jpg",
+    "thumbnail": "Resource_Thumbnails/Nathanson thumbnail.jpg",
     "resource": "Resource_PDFs/Catalogs/Nathenson Retractors Brochure FL.pdf"
   },
   {
@@ -92,7 +84,7 @@
     "type": "pdf",
     "title": "PEAK PREMIUM CUT Scissors",
     "description": "Consistent cutting quality with sustained precision over repeated use.",
-    "thumbnail": "Resource_Thumbnails/logo 10.jpg",
+    "thumbnail": "Resource_Thumbnails/PremiumCut Thumbnail Catalog.jpeg",
     "resource": "Resource_PDFs/Catalogs/PEAK PREMIUM CUT Brochure FL.pdf-39.pdf"
   },
   {
@@ -100,7 +92,7 @@
     "type": "ifu",
     "title": "IFU Aluminum Trays or Containers",
     "description": "ALUMINUM TRAYS OR CONTAINERS CLEANING, STERILIZATION & MAINTENANCE",
-    "thumbnail": "",
+    "thumbnail": "Resource_Thumbnails/Tubing holder Alumnium Thumbail.jpg",
     "resource": "Resource_PDFs/IFUs/PEAK ALUMINUM TRAYS OR CONTAINERS STERILIZATION & MAINTENANCE PDF (1).pdf"
   }
 ]
