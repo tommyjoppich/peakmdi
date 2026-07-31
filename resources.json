@@ -34,7 +34,7 @@
   {
     "id": "r932468",
     "type": "ifu",
-    "title": "PEAK RETRACT ROBOT MAINTENANCE IFU",
+    "title": "PEAK Retract Robot Maintenance IFU",
     "description": "",
     "thumbnail": "Resource_Thumbnails/logo 4 for IFU copy 2.jpg",
     "resource": "Resource_PDFs/IFUs/PEAK RETRACT ROBOT MAINTENANCE – 0817.pdf"
@@ -50,7 +50,7 @@
   {
     "id": "r066539",
     "type": "pdf",
-    "title": "PEAK MEDICAL Grade Spoons",
+    "title": "PEAK Medical Grade Spoons Brochure",
     "description": "SPECIALTY MEDICAL GRADE STAINLESS STEEL SPOONS FOR SURGICAL APPLICATIONS",
     "thumbnail": "Resource_Thumbnails/logo 6.jpg",
     "resource": "Resource_PDFs/Catalogs/Medical Grade Spoons FNL.pdf"
@@ -58,7 +58,7 @@
   {
     "id": "r659674",
     "type": "pdf",
-    "title": "Nathanson Retractors Brochure",
+    "title": "PEAK Nathanson Liver Retractors Brochure",
     "description": "PEAK Nathanson Liver Retractors for Martin’s Arm",
     "thumbnail": "Resource_Thumbnails/cropped nathanson retractor thumbnail.jpeg",
     "resource": "Resource_PDFs/Catalogs/Nathenson Retractors Brochure FL.pdf"
@@ -66,7 +66,7 @@
   {
     "id": "r067979",
     "type": "pdf",
-    "title": "PEAK Goose Neck MultiFlex Frame Retractor",
+    "title": "PEAK Goose Neck MultiFlex Frame Retractor Brochure",
     "description": "PEAK Goose Neck Retractor In Laparoscopic Surgery",
     "thumbnail": "Resource_Thumbnails/logo 8.jpg",
     "resource": "Resource_PDFs/Catalogs/PEAK Goose MultiFlex Frame Retractor FL.pdf"
@@ -74,7 +74,7 @@
   {
     "id": "r449616",
     "type": "pdf",
-    "title": "PEAK MARTIN's Arm",
+    "title": "PEAK Martin's Arm Brochure",
     "description": "SINGLE ARM INSTRUMENT WITH FIXED UNIVERSAL INSTRUMENT CLAMP",
     "thumbnail": "Resource_Thumbnails/logo 9.jpg",
     "resource": "Resource_PDFs/Catalogs/PEAK MARTIN's Arm FL.pdf"
@@ -82,7 +82,7 @@
   {
     "id": "r862756",
     "type": "pdf",
-    "title": "PEAK PREMIUM CUT Scissors",
+    "title": "PEAK PremiumCut Scissors Catalog",
     "description": "Consistent cutting quality with sustained precision over repeated use.",
     "thumbnail": "Resource_Thumbnails/premiumcut thumbnail for Catalog.jpeg",
     "resource": "Resource_PDFs/Catalogs/PEAK PREMIUM CUT Brochure FL.pdf-39.pdf"
@@ -94,5 +94,21 @@
     "description": "ALUMINUM TRAYS OR CONTAINERS CLEANING, STERILIZATION & MAINTENANCE",
     "thumbnail": "Resource_Thumbnails/Cropped tubing holder for thumbnail.jpeg",
     "resource": "Resource_PDFs/IFUs/PEAK ALUMINUM TRAYS OR CONTAINERS STERILIZATION & MAINTENANCE PDF (1).pdf"
+  },
+  {
+    "id": "r072945",
+    "type": "pdf",
+    "title": "PEAK Robotics Kit Brochure",
+    "description": "Sold in Set and Separately.",
+    "thumbnail": "",
+    "resource": "Resource_PDFs/Catalogs/PEAK Robotics Kit Brochure.pdf"
+  },
+  {
+    "id": "r097260",
+    "type": "pdf",
+    "title": "PEAK Wire-Cutting Scissors Brochure",
+    "description": "",
+    "thumbnail": "",
+    "resource": "Resource_PDFs/Catalogs/PEAK Wire Cutting Scissors Brochure.pdf"
   }
 ]
