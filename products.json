@@ -6286,5 +6286,33 @@
     "image2": "",
     "image3": "",
     "featured": false
+  },
+  {
+    "id": "029094",
+    "title": "PEAK Stainless Steel Chip Blower (Tip Only), 4.75\", 5 French",
+    "sku": "33-12BT",
+    "category": "Tips",
+    "subcategory": "Chip Blower",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "33-12BT: PEAK Tip Only, 5 French, 4.75\" (12cm) Overall Length, Stainless Steel, Chip Blower",
+    "image": "33-12BT solo absolute pure bright white.png",
+    "image2": "33-12BT w red squishy, white background.png",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "151964",
+    "title": "PEAK Micro-Forceps, Round Handle, 7-1/8\", w/ Teeth",
+    "sku": "511-004-18",
+    "category": "Forceps",
+    "subcategory": "Micro-Forceps",
+    "type": "Round Handle",
+    "unitOfSale": "",
+    "categoryThree": "511-004-18: PEAK Micro-Forceps, Round Handle, 1x2 Teeth, 7-1/8\" (18cm) Overall Length.",
+    "image": "511-004-18 Micro Forceps.png",
+    "image2": "511-004-18 micro forceps zoom in on handle.png",
+    "image3": "",
+    "featured": false
   }
 ]
