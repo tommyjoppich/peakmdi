@@ -4653,14 +4653,16 @@
   },
   {
     "id": "918619",
-    "title": "PEAK Tungsten Carbide Wire Cutting Scissor",
+    "title": "PEAK Tungsten Carbide Wire-Cutting Scissor",
     "sku": "TCI-9011",
     "category": "Scissors",
     "subcategory": "Tungsten Carbide Scissors",
-    "type": "Wire Cutting",
+    "type": "Wire-Cutting",
     "unitOfSale": "",
-    "categoryThree": "TCI-9011: PEAK Wire Cutting Scissor, Tungsten Carbide Blade with 1 Micro Serrated Blade, Angled To Side, 10\" (25.4 Cm)",
+    "categoryThree": "TCI-9011: PEAK Wire-Cutting Scissors, Tungsten Carbide Inserted, Angled 25 Degree Blade with 1 Micro Serrated Blade, Stainless Steel, 10\" (25.4 Cm)",
     "image": "Wire cutting scissors.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -6312,6 +6314,20 @@
     "categoryThree": "511-004-18: PEAK Micro-Forceps, Round Handle, 1x2 Teeth, 7-1/8\" (18cm) Overall Length.",
     "image": "511-004-18 Micro Forceps.png",
     "image2": "511-004-18 micro forceps zoom in on handle.png",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "563117",
+    "title": "PEAK Tungsten Carbide Wire-Cutting Scissor, 4.75\"",
+    "sku": "TCI-9010",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "type": "Wire-Cutting",
+    "unitOfSale": "",
+    "categoryThree": "TCI-9010: PEAK Wire-Cutting Scissors, Tungsten Carbide Inserted, Angled 25 Degree Blade with 1 Micro Serrated Blade, Stainless Steel, 4-3/4\" (12cm)",
+    "image": "",
+    "image2": "",
     "image3": "",
     "featured": false
   }
