@@ -6370,5 +6370,61 @@
     "image2": "",
     "image3": "",
     "featured": false
+  },
+  {
+    "id": "078555",
+    "title": "PEAK Hibbs Retractor, Small",
+    "sku": "3318-0824-05",
+    "category": "Retractors",
+    "subcategory": "Orthopedic Retractors",
+    "type": "Hibbs Retractors",
+    "unitOfSale": "",
+    "categoryThree": "3318-0824-05: PEAK Hibbs Retractor, Small, 1.25 x 3\" Rounded 45 Degree Angled Down, 4 Soft Blunt Teeth, 1.25 Wide x 9\" Overall Length.",
+    "image": "Hibbs retractor size small, pure white.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "378858",
+    "title": "PEAK Hibbs Retractor, Medium",
+    "sku": "3318-0824-06",
+    "category": "Retractors",
+    "subcategory": "Orthopedic Retractors",
+    "type": "Hibbs Retractors",
+    "unitOfSale": "",
+    "categoryThree": "3318-0824-06: PEAK Hibbs Retractor, Medium, 1.5\" x 4.75\" Blade, Rounded 45 Degree Angled Down with 3 Sharp Teeth, 4\" Length Blunt Squared-Off Blade Attached to 5.75\" Ergo Handle.",
+    "image": "Hibbs retractor size medium, pure white copy.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "485059",
+    "title": "PEAK Hibbs Retractor, Small",
+    "sku": "3318-0824-04",
+    "category": "Retractors",
+    "subcategory": "Orthopedic Retractors",
+    "type": "Hibbs Retractors",
+    "unitOfSale": "",
+    "categoryThree": "3318-0824-04: PEAK Hibbs Retractor, Small, 1 ¼” x 1 ¾” Blade, Rounded 45 Degree Angled Down w/ 4 Soft Blunt Teeth, 1 ¼” Wide, 9” Length All The Way Through w/ Curved Bottom Handle",
+    "image": "Hibbs retractor size small, pure white copy 1.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "610275",
+    "title": "PEAK Hibbs Retractor, Small",
+    "sku": "3318-0824-02",
+    "category": "Retractors",
+    "subcategory": "Orthopedic Retractors",
+    "type": "Hibbs Retractors",
+    "unitOfSale": "",
+    "categoryThree": "3318-0824-02: PEAK Hibbs Retractor, Small, 1\" x 5\" Blade, Rounded 45 Degree Angled Down, 5 Sharp Teeth, 4\" Length Blunt Squared-Off Blade Attached to 5.75\" Ergonomic Handle.",
+    "image": "Hibbs retctor size small, pure white copy 2.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
   }
 ]
