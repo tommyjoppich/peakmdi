@@ -81,10 +81,12 @@
     "sku": "AD0-814",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Deaver",
+    "type": "Deaver Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-814: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Straight, Stainless Steel, Sh/Bl",
     "image": "AD0-814 peak logo, pure white.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -227,10 +229,12 @@
     "sku": "CC2-2061",
     "category": "Scissors",
     "subcategory": "Ceramic Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "CC2-2061: PEAK Iris Scissors, Ceramic Coated, Straight 4.5\" (11.5cm), Sharp/Sharp Tip",
     "image": "",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -287,10 +291,12 @@
     "sku": "CB2-2711",
     "category": "Scissors",
     "subcategory": "SuperCut Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "CB2-2711: PEAK Iris Scissors, Black Ring, SuperCut, Curved 4.5\" (11.5cm), Large Ring",
     "image": "CB2-2711.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -299,10 +305,12 @@
     "sku": "CB2-2110",
     "category": "Scissors",
     "subcategory": "SuperCut Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "CB2-2110: PEAK Iris Scissors, Black Ring, SuperCut, Curved 4.13\" (10.5cm)",
     "image": "CB2-2110.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -311,10 +319,12 @@
     "sku": "CB2-2010",
     "category": "Scissors",
     "subcategory": "SuperCut Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "CB2-2010: PEAK Iris Scissors, Black Ring, SuperCut, Straight 4.13\" (10.5cm)",
     "image": "CB2-2010 w peak brand, Bl- line SC iris scis str, 10.5cm.PNG",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -419,10 +429,12 @@
     "sku": "CA4-1368",
     "category": "Scissors",
     "subcategory": "SuperCut Plus Scissors",
-    "type": "Ragnell/Kilner",
+    "type": "Ragnell (Kilner) Scissors",
     "unitOfSale": "",
     "categoryThree": "CA4-1368: PEAK Ragnell (Kilner) SuperCut Plus Scissors, 7\" (18cm), Blunt/Blunt Tip",
     "image": "CA4-1368 more brighter.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2495,10 +2507,12 @@
     "sku": "AC0-602",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC0-602: PEAK Iris Scissor, Standard Pattern, Straight, 4\" (10.2 Cm)",
     "image": "AC0-602 copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2507,10 +2521,12 @@
     "sku": "AC0-603",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC0-603: PEAK Iris Scissor, Standard Pattern, Straight, 4.5\" (11.4 Cm)",
     "image": "AC0-603.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2519,10 +2535,12 @@
     "sku": "AC0-613",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC0-613: PEAK Iris Scissor, Standard Pattern, Straight, Sharp/Blunt, 4.5\" (11.4 Cm)",
     "image": "SHarp:blunt Iris.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2531,10 +2549,12 @@
     "sku": "AC0-632",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC0-632: PEAK Iris Scissor, Standard Pattern, Straight, 5\" (11.4 Cm)",
     "image": "AC0-632.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2567,10 +2587,12 @@
     "sku": "AC0-703",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC0-703: PEAK Iris Scissor, Sharp/Blunt, Straight, 4\" (11.5 Cm)",
     "image": "SHarp:blunt Iris copy 2.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2579,10 +2601,12 @@
     "sku": "AC0-712",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC0-712: PEAK Iris Scissor, Standard Pattern, Delicate, Curved, 3.5\"  (8.9 Cm)",
     "image": "AC0-712.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2591,10 +2615,12 @@
     "sku": "AC0-713",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC0-713: PEAK Iris Scissor, Standard Pattern, Curved, 4\" (10.2 Cm)",
     "image": "AC0-713.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2603,10 +2629,12 @@
     "sku": "AC0-732",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC0-732: PEAK Iris Scissor, Standard Pattern, Curved, 4.5\" (11.4 cm)",
     "image": "AC0-732.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2629,10 +2657,12 @@
     "sku": "AC2-009",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC2-009: PEAK Iris Scissor, Standard Pattern, Delicate, Straight, 3.5\" (8.9 Cm)",
     "image": "AC2-009 .png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2641,10 +2671,12 @@
     "sku": "AC2-010",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC2-010: PEAK Iris Scissor, Standard Pattern, Straight, 4\" (10.2 Cm)",
     "image": "AC2-010.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2653,10 +2685,12 @@
     "sku": "AC2-011",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC2-011: PEAK Iris Scissor, Standard Pattern, Straight, 4.5\" (11.4 Cm)",
     "image": "AC2-011.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2665,10 +2699,12 @@
     "sku": "AC2-012",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC2-012: PEAK Iris Scissor, Standard Pattern, Straight, 5\" (12.5 Cm)",
     "image": "AC2-012.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2677,10 +2713,12 @@
     "sku": "AC2-109",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC2-109: PEAK Iris Scissor, Standard Pattern, Delicate, Curved, 3.5\" (8.9 Cm)",
     "image": "AC2-109, no example.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2689,10 +2727,12 @@
     "sku": "AC2-110",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC2-110: PEAK Iris Scissor, Standard Pattern, Curved, 4\" (10.2 cm)",
     "image": "AC2-110.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2701,10 +2741,12 @@
     "sku": "AC2-112",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC2-112: PEAK Iris Scissor, Standard Pattern, Curved, 5\" (12.5 Cm)",
     "image": "AC2-112.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2713,10 +2755,12 @@
     "sku": "AC3-009",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC3-009: PEAK Iris Scissor, Ribbon Style Ring Handle, Straight, Miniature Pattern, 3.75\" (9.5 Cm)",
     "image": "AC3-009 iris ribbon straight(mini).png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2725,7 +2769,7 @@
     "sku": "AC3-010",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC3-010: PEAK Iris Scrissor, Ribbon Style Ring Handle, Straight, Standard Pattern, 4\" (10.2 Cm)",
     "image": "AC3-010, final.png",
@@ -2739,7 +2783,7 @@
     "sku": "AC3-109",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC3-109: PEAK Iris Scissor, Ribbon Style Ring Handle, Curved, Miniature Pattern, 3.75\" (9.5 Cm)",
     "image": "AC3-109, final.png",
@@ -2753,7 +2797,7 @@
     "sku": "AC3-110",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC3-110: PEAK Iris Scissor, Ribbon Style Ring Handle, Curved, Standard Pattern, 4\" (10.2 Cm)",
     "image": "AC3-110, final copy.png",
@@ -2767,10 +2811,12 @@
     "sku": "AC4-010",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-010: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Straight, Blunt/Blunt",
     "image": "Ac4-010.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2779,10 +2825,12 @@
     "sku": "AC4-010SB",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-010SB: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Straight, Sharp/Blunt",
     "image": "AC4-010SB iris scissors straight S:B.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2791,10 +2839,12 @@
     "sku": "AC4-010SS",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-010SS: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Straight, Sharp/Sharp",
     "image": "Ac4-010SS.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2817,10 +2867,12 @@
     "sku": "AC4-012",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-012: PEAK Knapp Iris Scissor, 4.5\" (11.5CM), Straight, Sharp/Blunt",
     "image": "AC4-012 knapp iris scissors straight S:B.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2829,10 +2881,12 @@
     "sku": "AC4-110",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-110: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Curved, Blunt/Blunt",
     "image": "AC4-110 copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2841,10 +2895,12 @@
     "sku": "AC4-110SB",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-110SB: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Curved Sharp/Blunt",
     "image": "AC4-110SB no example.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2853,10 +2909,12 @@
     "sku": "AC4-110SS",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-110SS: PEAK Knapp Iris Scissor, 4\" (10.2 Cm), Curved Sharp/Sharp",
     "image": "AC4-110SS.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -2877,10 +2935,12 @@
     "sku": "AC4-112",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Iris",
+    "type": "Iris Scissors",
     "unitOfSale": "",
     "categoryThree": "AC4-112: PEAK Knapp Iris Scissor, 4.5\" (11.5CM), Curved, Sharp/Blunt",
     "image": "AC4-112.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3565,10 +3625,12 @@
     "sku": "AD0-864",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Deaver",
+    "type": "Deaver Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-864: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Straight, Sharp/Sharp Point",
     "image": "AD0-864 deaver scissors straight S:S point.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3577,10 +3639,12 @@
     "sku": "AD0-884",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Deaver",
+    "type": "Deaver Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-884: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Straight, Blunt/Blunt Point",
     "image": "Deaver BLBL.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3589,7 +3653,7 @@
     "sku": "AD0-914",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Deaver",
+    "type": "Deaver Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-914: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Curved, Sharp/Blunt Point",
     "image": "Deaver Scissor AD0-914.png",
@@ -3603,10 +3667,12 @@
     "sku": "AD0-964",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Deaver",
+    "type": "Deaver Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-964: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Curved, Sharp/Sharp Point",
     "image": "dvr crv shsh.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3615,10 +3681,12 @@
     "sku": "AD0-984",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Deaver",
+    "type": "Deaver Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-984: PEAK Deaver Scissor, 5.5\" (14.0 Cm), Curved, Blunt/Blunt Point",
     "image": "dvr crv blbl.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -4180,10 +4248,12 @@
     "sku": "AE0-313",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Ragnell/Kilner",
+    "type": "Ragnell (Kilner) Scissors",
     "unitOfSale": "",
     "categoryThree": "AE0-313: PEAK Ragnell (Kilner) Scissor, Straight, 5 1/8\" (13.0 Cm)",
     "image": "rag kil str.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -4192,7 +4262,7 @@
     "sku": "AE1-313",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Ragnell/Kilner",
+    "type": "Ragnell (Kilner) Scissors",
     "unitOfSale": "",
     "categoryThree": "AE1-313: PEAK Ragnell (Kilner) Scissor, Curved, 5 1/8\" (13.0 Cm)",
     "image": "AE1-313, final.png",
@@ -4206,7 +4276,7 @@
     "sku": "AE1-315",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Ragnell/Kilner",
+    "type": "Ragnell (Kilner) Scissors",
     "unitOfSale": "",
     "categoryThree": "AE1-315: PEAK Ragnell (Kilner) Scissor, Curved, 6\" (15.2 Cm)",
     "image": "AE1-315, final.png",
@@ -4220,7 +4290,7 @@
     "sku": "AE1-318",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Ragnell/Kilner",
+    "type": "Ragnell (Kilner) Scissors",
     "unitOfSale": "",
     "categoryThree": "AE-318: PEAK Ragnell (Kilner) Scissor, Curved, 7\" (17.8 Cm)",
     "image": "AE1-318, final.png",
@@ -4234,7 +4304,7 @@
     "sku": "AE1-323",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Ragnell/Kilner",
+    "type": "Ragnell (Kilner) Scissors",
     "unitOfSale": "",
     "categoryThree": "AE1-323: PEAK Ragnell (Kilner) Scissor, Curved, 9\" (22.8 Cm)",
     "image": "AE1-323, final.png",
