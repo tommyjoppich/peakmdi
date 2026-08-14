@@ -53,10 +53,12 @@
     "sku": "AD0-214",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-214: PEAK Operating Scissor, Bl/Bl, Straight, Stainless Steel, 5.75\" (14.6 Cm)",
     "image": "AD0-214 w peak brand, operating sc 14.5cm bl:bl.PNG",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -65,10 +67,12 @@
     "sku": "AD0-614",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-614: PEAK Operating Scissor, Sh/Bl, Straight, Stainless Steel, 5.75\" (14.6 Cm)",
     "image": "AD0-614 Operating Scissor Sharp Blunt Tips.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -463,10 +467,12 @@
     "sku": "CA3-3170",
     "category": "Scissors",
     "subcategory": "SuperCut Plus Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "CA3-3170: PEAK Sims Supercut Plus Operating Scissors, Curved, 7.8\" (20cm), Blunt Round/Blunt Round Tip",
     "image": "",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -475,10 +481,12 @@
     "sku": "CA3-0316",
     "category": "Scissors",
     "subcategory": "SuperCut Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "CA3-0316: PEAK SuperCut Operating Scissor, Curved, 6.5\" (16.5cm), blunt/blunt tips",
     "image": "CA3-0316 w peak brand, SC operating scissors curved 15.5cm bl:bl.PNG",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3043,10 +3051,12 @@
     "sku": "AD0-311",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-311: PEAK Operating Scissor, Blunt/Bl,unt Curved, 4.5\"  (11.4 Cm)",
     "image": "AD0-311.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3055,10 +3065,12 @@
     "sku": "AD0-313",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-313: PEAK Operating Scissor, Blunt/Blunt, Curved, 5\"",
     "image": "AD0-313.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3067,10 +3079,12 @@
     "sku": "AD0-314",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-314: PEAK Operating Scissor, Blunt/Blunt, Curved, 5.75\" (14.6 Cm)",
     "image": "AD0-314.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3079,10 +3093,12 @@
     "sku": "AD0-315",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-315: PEAK Operating Scissor, Blunt/Blunt, Curved, 6\" (15.2cm)",
     "image": "AD0-315.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3091,10 +3107,12 @@
     "sku": "AD0-316",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-316: PEAK Operating Scissor, Blunt/Blunt, Curved, 6.5\" (16.5cm)",
     "image": "AD0-316.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3103,10 +3121,12 @@
     "sku": "AD0-318",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-318: PEAK Operating Scissor, Blunt/Blunt, Curved, 7.25\" (18.5cm)",
     "image": "AD0-318.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3115,10 +3135,12 @@
     "sku": "AD0-211",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-211: PEAK Operating Scissor, Blunt/Blunt, Straight, 4.5\" (11.4 Cm)",
     "image": "AD0-211 Operating Scissor Blunt Blunt Tips copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3127,10 +3149,12 @@
     "sku": "AD0-213",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-213: PEAK Operating Scissor, Blunt/Blunt, Straight, 5\" (12.7 Cm)",
     "image": "AD0-213 Operating Scissor Blunt Blunt Tips copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3139,10 +3163,12 @@
     "sku": "AD0-215",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-215: PEAK Operating Scissor, Blunt/Blunt, Straight, 6\" (15.2 Cm)",
     "image": "AD0-215 Operating Scissor Blunt Blunt Tips copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3151,10 +3177,12 @@
     "sku": "AD0-216",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-216: PEAK Operating Scissor, Blunt/Blunt, Straight, 6.5\" (16.5 Cm)",
     "image": "AD0-216 Operating Scissor Blunt Blunt Tips copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3163,10 +3191,12 @@
     "sku": "AD0-218",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-218: PEAK Operating Scissor, Blunt/Blunt, Straight, 7.25\" (18.5 Cm)",
     "image": "AD0-218 Operating Scissor Blunt Blunt Tips copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3175,10 +3205,12 @@
     "sku": "AD0-283",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-283: PEAK Operating Scissor, Blunt/Blunt, Straight, Slim Pattern, 5 1/8\" (13.0 Cm)",
     "image": "AD0-283.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3187,10 +3219,12 @@
     "sku": "AD0-383",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-383: PEAK Operating Scissor, Blunt/Blunt, Curved, Slim Pattern, 5 1/8\" (13.0 Cm)",
     "image": "AD0-383.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3199,7 +3233,7 @@
     "sku": "AD0-411",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-411: PEAK Operating Scissor, Sharp/Sharp, Str, 4.5\" (11.4 Cm)",
     "image": "AD0-411, final copy.png",
@@ -3213,7 +3247,7 @@
     "sku": "AD0-413",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-413: PEAK Operating Scissor, Sharp/Sharp, Straight, 5\" (12.7cm)",
     "image": "AD0-413, final copy.png",
@@ -3227,7 +3261,7 @@
     "sku": "AD0-414",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-414: PEAK Operating Scissor, Sharp/Sharp, Straight, 5.75\" (14.6 Cm)",
     "image": "AD0-414, final.png",
@@ -3241,7 +3275,7 @@
     "sku": "AD0-415",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0415: PEAK Operating Scissor, Sharp/Sharp, Straight, 6\" (15.2 Cm)",
     "image": "AD0-415, final.png",
@@ -3255,7 +3289,7 @@
     "sku": "AD0-416",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-416: PEAK Operating Scissor, Sharp/Sharp, Straight, 6.5\" (16.5 Cm)",
     "image": "AD0-416, final copy.png",
@@ -3269,7 +3303,7 @@
     "sku": "AD0-418",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-418: PEAK Operating Scissor, Sharp/Shrp, Straight, 7.25\" (18.5 Cm)",
     "image": "AD0-418, final.png",
@@ -3283,10 +3317,12 @@
     "sku": "AD0-511",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-511: PEAK Operating Scissor, Sharp/Sharp, Curved, 4.5\"(11.4 Cm)",
     "image": "SHarp:Sharp operating scissors curved.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3295,10 +3331,12 @@
     "sku": "AD0-514",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-514: PEAK Operating Scissor, Sharp/Sharp, Curved, 5.75\" (14.6 Cm)",
     "image": "SHarp:Sharp operating scissors curved copy 1.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3307,10 +3345,12 @@
     "sku": "AD0-515",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-515: PEAK Operating Scissor, Sharp/Sharp, Curved, 6\" (15.2 Cm)",
     "image": "SHarp:Sharp operating scissors curved copy 2 .png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3319,10 +3359,12 @@
     "sku": "AD0-516",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-516: PEAK Operating Scissor, Sharp/Sharp, Curved, 6.5\" (16.5 Cm)",
     "image": "SHarp:Sharp operating scissors curved copy 3 .png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3331,10 +3373,12 @@
     "sku": "AD0-518",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-518: PEAK Operating Scissor, Sharp/Sharp, Curved, 7.25\" (18.5 Cm)",
     "image": "SHarp:Sharp operating scissors curved copy 4 .png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3343,10 +3387,12 @@
     "sku": "AD0-611",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-611: PEAK Operating Scissor, Sharp/Blunt, Straight, 4.5\" (11.4 Cm)",
     "image": "AD0-611 Operating Scissor Sharp Blunt Tips copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3355,10 +3401,12 @@
     "sku": "AD0-613",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-613: PEAK Operating Scissor, Sharp/Blunt, Straight, 5\" (12.7 Cm)",
     "image": "AD0-613 Operating Scissor Sharp Blunt Tips copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3367,10 +3415,12 @@
     "sku": "AD0-615",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-615: PEAK Operating Scissor, Sharp/Blunt, Straight, 6\" (15.2 Cm)",
     "image": "AD0-615 Operating Scissor Sharp Blunt Tips copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3379,10 +3429,12 @@
     "sku": "AD0-616",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-616: PEAK Operating Scissor, Sharp/Blunt, Straight, 6.5\" (16.5 Cm)",
     "image": "AD0-616 Operating Scissor Sharp Blunt Tips copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3391,10 +3443,12 @@
     "sku": "AD0-618",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-618: PEAK Operating Scissor, Sharp/Blunt, Straight, 7.25\" (18.5 Cm)",
     "image": "AD0-618 Operating Scissor Sharp Blunt Tips copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3415,10 +3469,12 @@
     "sku": "AD0-711",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-711: PEAK Operating Scissor Sharp/Blunt, Curved, 4.5\" (11.4 Cm)",
     "image": "Operating Sh:Bl Scissors.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3427,10 +3483,12 @@
     "sku": "AD0-713",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-713: PEAK Operating Scissor, Sharp/Blunt, Curved, 5\" (12.7 Cm)",
     "image": "Operating Sh:Bl Scissors copy 1.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3439,10 +3497,12 @@
     "sku": "AD0-714",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-714: PEAK Operating Scissor, Sharp/Blunt, Curved, 5.75\"(14.6 Cm)",
     "image": "Operating Sh:Bl Scissors copy 3.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3451,10 +3511,12 @@
     "sku": "AD0-715",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-715: PEAK Operating Scissor, Sharp/Blunt, Curved, 6\" (15.2 Cm)",
     "image": "Operating Sh:Bl Scissors copy 4 .png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3463,10 +3525,12 @@
     "sku": "AD0-716",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-716: PEAK Operating Scissor, Sharp/Blunt, Curved, 6.5\" (16.5 Cm)",
     "image": "Operating Sh:Bl Scissors copy 5.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -3475,10 +3539,12 @@
     "sku": "AD0-718",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD0-718: PEAK Operating Scissor, Sharp/Blunt, Curved, 7.25\" (18.5 Cm)",
     "image": "Operating Sh:Bl Scissors copy 6 .png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -4086,7 +4152,7 @@
     "sku": "AD6-614",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD6-614: PEAK Sistrunk Operating Scissor 5.5\" (14.0 Cm), Straight",
     "image": "AD6-614 final.png",
@@ -4100,7 +4166,7 @@
     "sku": "AD6-714",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Operating",
+    "type": "Operating Scissors",
     "unitOfSale": "",
     "categoryThree": "AD6-714: PEAK Sistrunk Operating Scissor, 5.5\"  (14.0 Cm), Slightly-Curved",
     "image": "AD6-714, final.png",
@@ -4129,7 +4195,9 @@
     "type": "Ragnell/Kilner",
     "unitOfSale": "",
     "categoryThree": "AE1-313: PEAK Ragnell (Kilner) Scissor, Curved, 5 1/8\" (13.0 Cm)",
-    "image": "rag kil crv.png",
+    "image": "AE1-313, final.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -4141,7 +4209,9 @@
     "type": "Ragnell/Kilner",
     "unitOfSale": "",
     "categoryThree": "AE1-315: PEAK Ragnell (Kilner) Scissor, Curved, 6\" (15.2 Cm)",
-    "image": "rag kil crv lng.png",
+    "image": "AE1-315, final.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -4153,7 +4223,9 @@
     "type": "Ragnell/Kilner",
     "unitOfSale": "",
     "categoryThree": "AE-318: PEAK Ragnell (Kilner) Scissor, Curved, 7\" (17.8 Cm)",
-    "image": "rag kil crv 2.png",
+    "image": "AE1-318, final.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -4165,7 +4237,9 @@
     "type": "Ragnell/Kilner",
     "unitOfSale": "",
     "categoryThree": "AE1-323: PEAK Ragnell (Kilner) Scissor, Curved, 9\" (22.8 Cm)",
-    "image": "rag kil crv 3.png",
+    "image": "AE1-323, final.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -4202,7 +4276,9 @@
     "type": "",
     "unitOfSale": "",
     "categoryThree": "AE2-054: PEAK Gradle Scissor, Ribbon Style Ring Handle, Slightly Curved, Sharp Point, 3.75\" (9.5 Cm)",
-    "image": "gradle str rib.png",
+    "image": "AE2-054, final copy.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -4790,10 +4866,12 @@
     "sku": "AE5-015",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Joeseph",
+    "type": "Joseph Scissors",
     "unitOfSale": "",
     "categoryThree": "AE5-015: PEAK Joseph Nasal Scissor, 5-3/4\" (14.6 Cm), Sharp/Sharp, Straight",
     "image": "Joe Nasal Sh.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -4802,7 +4880,7 @@
     "sku": "AE5-016",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Joeseph",
+    "type": "Joseph Scissors",
     "unitOfSale": "",
     "categoryThree": "AE5-016: PEAK Joseph Nasal Scissor, 5-3/4\" (14.6 Cm), Sharp Outer Edges, Straight",
     "image": "AE5-016 final copy.png",
@@ -4872,7 +4950,7 @@
     "sku": "AE5-115",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "joseph",
+    "type": "Joseph Scissors",
     "unitOfSale": "",
     "categoryThree": "AE5-115: PEAK Joseph Nasal Scissor, 5-3/4\" (14.6 Cm), Sharp/Sharp, Curved",
     "image": "AE5-115, final scissor.png",
@@ -4886,7 +4964,7 @@
     "sku": "AE5-116",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
-    "type": "Joseph",
+    "type": "Joseph Scissors",
     "unitOfSale": "",
     "categoryThree": "AE5-116: Joseph Nasal Scissor, 5-3/4\" (14.6 Cm), Sharp Outer Edges, Curved",
     "image": "AE5-116, final copy.png",
