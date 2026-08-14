@@ -3572,9 +3572,12 @@
     "sku": "AD3-120",
     "category": "Scissors",
     "subcategory": "Standard Scissors",
+    "type": "",
     "unitOfSale": "",
     "categoryThree": "AD3-120: PEAK Sims Scissor, 8\" (20.3 Cm), Curved, Buntl/Blunt Point",
-    "image": "AD3-120 sims scissors curved B:B points.png",
+    "image": "AD3-120, final.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -4185,7 +4188,9 @@
     "type": "",
     "unitOfSale": "",
     "categoryThree": "AE2-053: PEAK Gradle Scissor, Standard Pattern Handle, Slightly Curved, Sharp Point, 3.75\"  (9.5 Cm)",
-    "image": "gradle str.png",
+    "image": "AE2-053, final.png",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
