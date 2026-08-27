@@ -7073,5 +7073,33 @@
     "image2": "",
     "image3": "",
     "featured": false
+  },
+  {
+    "id": "628672",
+    "title": "Peak Thoracic Scissors, 45°, 12\"",
+    "sku": "33-9996",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Thoracic Scissors",
+    "unitOfSale": "",
+    "categoryThree": "33-9996: PEAK Thoracic Scissors, 45° Up, Rounded Blunt Tip Blades, 12\" (30.5cm), Stainless Steel",
+    "image": "Thorascopic scissor.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "805433",
+    "title": "PEAK Sargis Uterine Manipulator Tenaculum",
+    "sku": "33-52001-18",
+    "category": "Special Made",
+    "subcategory": "Other",
+    "type": "Uterine Tenaculum",
+    "unitOfSale": "",
+    "categoryThree": "33-52001-18: PEAK Sargis Uterine Manipulator Tenaculum",
+    "image": "Uterine Tenaculum.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
   }
 ]
