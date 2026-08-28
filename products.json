@@ -7101,5 +7101,47 @@
     "image2": "",
     "image3": "",
     "featured": false
+  },
+  {
+    "id": "052880",
+    "title": "PEAK Atraumatic Clamp",
+    "sku": "DC0-304",
+    "category": "Special Made",
+    "subcategory": "Atraumatic Clamps",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "DC0-304: PEAK Clamp",
+    "image": "Adult Clamp.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "243849",
+    "title": "PEAK Dead Ender, 1cm",
+    "sku": "33-010723BC",
+    "category": "Special Made",
+    "subcategory": "Suction & Irrigation",
+    "type": "Dead Ender",
+    "unitOfSale": "",
+    "categoryThree": "33-010723BC: PEAK Stainless Steel Dead Ender, 5mm, 1cm Diameter, 3cm Length.",
+    "image": "Screw thing.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "902548",
+    "title": "PEAK Cooley Pediatric Vascular Clamp, 5.5\", Angled",
+    "sku": "336-126-604",
+    "category": "Special Made",
+    "subcategory": "Atraumatic Clamps",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "336-126-604: PEAK Cooley Pediatric Vascular Clamp, 5.5\" (14cm), Angled",
+    "image": "Baby Clamp.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
   }
 ]
