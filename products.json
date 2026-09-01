@@ -7233,5 +7233,47 @@
     "image2": "",
     "image3": "",
     "featured": false
+  },
+  {
+    "id": "975022",
+    "title": "PEAK Cardiac Sucker, Flat Handle",
+    "sku": "Variable",
+    "category": "Legacy & Special Made Products",
+    "subcategory": "Suction & Irrigation",
+    "type": "Cardiac Sucker",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Cardiac Sucker, 4.8mm x 5.5cm Long Removable Tip, 40° Angle, Barbed Fitting, Medium Flat Handle Sucker.",
+    "image": "Cardiac Sucker.png",
+    "image2": "Cardiac sucker angle 2.png",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "283941",
+    "title": "PEAK Cogswell Suction Tube, 3mm",
+    "sku": "variable",
+    "category": "Legacy & Special Made Products",
+    "subcategory": "Suction & Irrigation",
+    "type": "Cogswell Suction Tube",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Cogswell Suction/Aspiration, 3mm, 9 French.",
+    "image": "Cogswell Suction Tube.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "333656",
+    "title": "PEAK Dissector",
+    "sku": "33-1093",
+    "category": "Legacy & Special Made Products",
+    "subcategory": "Other",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "33-1093: PEAK Dissector",
+    "image": "Dissector SST.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
   }
 ]
