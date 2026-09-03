@@ -7275,5 +7275,61 @@
     "image2": "",
     "image3": "",
     "featured": false
+  },
+  {
+    "id": "209712",
+    "title": "PEAK Baylor Sump Tube, Large",
+    "sku": "33-1207",
+    "category": "Special Made",
+    "subcategory": "Suction & Irrigation",
+    "type": "Baylor Sump Tube",
+    "unitOfSale": "",
+    "categoryThree": "33-1207: PEAK Baylor Sump Tube, Large. Tip 6.4mm O.D. Angled 90°, 6.9cm X 6.2cm Deep. Removable Sump Tip.",
+    "image": "33-1207 Baylor Sump.png",
+    "image2": "33-1207 Baylor sump top removed.png",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "508841",
+    "title": "PEAK Cardiac Sucker Tip, Large",
+    "sku": "Variable",
+    "category": "Special Made",
+    "subcategory": "Suction & Irrigation",
+    "type": "Cardiac Sucker & Tips",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Removable Cardiac Sucker Tip, Large.",
+    "image": "Sucker tip, size Large.png",
+    "image2": "Cardiac Sucker, Tip pic size large.png",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "566771",
+    "title": "PEAK Cardiac Sucker Tip, Medium",
+    "sku": "Variable",
+    "category": "Special Made",
+    "subcategory": "Suction & Irrigation",
+    "type": "Cardiac Sucker & Tips",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Cardiac Sucker Tip, Medium",
+    "image": "Size medium cardiac sucker tip.png",
+    "image2": "Cardiac sucker size Medium.png",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "613769",
+    "title": "PEAK Cardiac Sucker Tip, Small",
+    "sku": "variable",
+    "category": "Special Made",
+    "subcategory": "Suction & Irrigation",
+    "type": "Cardiac Sucker & Tips",
+    "unitOfSale": "",
+    "categoryThree": "PEAK Cardiac Sucker Tips, Small",
+    "image": "Size small sucker tip.png",
+    "image2": "Cardiac sucker size small.png",
+    "image3": "",
+    "featured": false
   }
 ]
