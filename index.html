@@ -333,6 +333,32 @@
       background: transparent;
     }
 
+    /* ── Coming Soon badge (temporary) ── */
+    .coming-soon-badge {
+      position: absolute;
+      right: 24px;
+      bottom: 24px;
+      width: clamp(250px, 17vw, 360px);
+      z-index: 2;
+      pointer-events: none;
+    }
+    .coming-soon-badge img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    @media (max-width: 1023px) {
+      .coming-soon-badge { width: clamp(180px, 20vw, 240px); right: 16px; bottom: 16px; }
+    }
+    @media (max-width: 768px) {
+      .coming-soon-badge {
+        position: static;
+        transform: none;
+        width: 200px;
+        margin: 20px auto 0;
+      }
+    }
+
     /* ══════════════════════════════════════════════════════════
        SECTION WRAPPER
     ══════════════════════════════════════════════════════════ */
@@ -1057,6 +1083,9 @@
         </div>
         <div class="search-suggestions" id="search-suggestions"></div>
       </div>
+    </div>
+    <div class="coming-soon-badge">
+      <img src="Coming_Soon_Art.svg" alt="A new PEAK experience is on the way." />
     </div>
   </section>
 
