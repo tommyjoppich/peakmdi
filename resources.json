@@ -110,5 +110,13 @@
     "description": "",
     "thumbnail": "Resource_Thumbnails/Wire cutting scissors brochure thumbnail, turned and pure white.jpg",
     "resource": "Resource_PDFs/Catalogs/Wire Cutting Scissors Brochure PDF Clear Resolution.pdf"
+  },
+  {
+    "id": "r811007",
+    "type": "pdf",
+    "title": "The Manufacturing Process of a TC Surgical Scissor",
+    "description": "An overview of the process it takes to manufacture a surgical scissor.",
+    "thumbnail": "",
+    "resource": "Resource_PDFs/Catalogs/Manufacturing Processes of Surgical Scissors.pdf"
   }
 ]
