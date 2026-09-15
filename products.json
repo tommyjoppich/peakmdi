@@ -7026,7 +7026,7 @@
   },
   {
     "id": "659492",
-    "title": "PEAK Intracardiac Needle Holder, 12\"",
+    "title": "PEAK Intracardiac Needle Holder, 1.5mm Jaw, 12\"",
     "sku": "TCI-947-31",
     "category": "Legacy & Special Made Products",
     "subcategory": "Needle Holders",
@@ -7089,8 +7089,8 @@
     "type": "Thoracic Scissors",
     "unitOfSale": "",
     "categoryThree": "33-9996: PEAK Thoracic Scissors, 45° Up, Rounded Blunt Tip Blades, 12\" (30.5cm), Stainless Steel",
-    "image": "Thorascopic scissor.png",
-    "image2": "",
+    "image": "Thoracic scissor full for website.PNG",
+    "image2": "Thoracic scissor tips for website.PNG",
     "image3": "",
     "featured": false
   },
@@ -7145,7 +7145,7 @@
     "type": "",
     "unitOfSale": "",
     "categoryThree": "336-126-604: PEAK Cooley Pediatric Vascular Clamp, 5.5\" (14cm), Angled",
-    "image": "Baby Clamp.png",
+    "image": "cooley pediatric clamp final website pic.PNG",
     "image2": "",
     "image3": "",
     "featured": false
@@ -7524,6 +7524,20 @@
     "unitOfSale": "",
     "categoryThree": "PM1840W: PEAK Stainless Steel Weighted Semi-Malleable Ribbon Retractor, 12.5\" Long x 2\" Wide, 1/8\" (3.81mm) Thickness, Two Equally Spaced Laser Welded Weighted Stainless Steel Blocks 2-3/4 x 3\" x 0.59\" (1.5 cm). Total Weight Approximately 2lbs (0.91kg)",
     "image": "Weighted Ribbon Retractor pic.PNG",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "727163",
+    "title": "PEAK Intracardiac Needle Holder, 2mm Jaw, 12\"",
+    "sku": "TCI-947-30",
+    "category": "Legacy & Special Made Products",
+    "subcategory": "Needle Holders",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "TCI-947-30: PEAK Intracardiac Needle Holder, Tungsten Carbide Inserts, 2.0mm Tapered Jaw, Overall Length 12\"",
+    "image": "TCI-947-30, final website.png",
     "image2": "",
     "image3": "",
     "featured": false
