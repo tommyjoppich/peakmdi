@@ -76,7 +76,7 @@
     "type": "pdf",
     "title": "PEAK Martin's Arm Brochure",
     "description": "SINGLE ARM INSTRUMENT WITH FIXED UNIVERSAL INSTRUMENT CLAMP",
-    "thumbnail": "Resource_Thumbnails/Martin's arm IFU Thumbnail Tray.jpg",
+    "thumbnail": "Resource_Thumbnails/thumbnail.jpg",
     "resource": "Resource_PDFs/Catalogs/Martin's Arms PDF Booklet.pdf"
   },
   {
@@ -100,7 +100,7 @@
     "type": "pdf",
     "title": "PEAK Robotics Kit Brochure",
     "description": "Sold in Set and Separately.",
-    "thumbnail": "Resource_Thumbnails/Untitled design.jpeg",
+    "thumbnail": "Resource_Thumbnails/Screen Shot 2026-09-16 at 11.57.16 AM.jpg",
     "resource": "Resource_PDFs/Catalogs/Robotics Booklet PDF.pdf"
   },
   {
@@ -108,7 +108,7 @@
     "type": "pdf",
     "title": "PEAK Wire-Cutting Scissors Brochure",
     "description": "",
-    "thumbnail": "Resource_Thumbnails/Wire cutting scissors brochure thumbnail, turned and pure white.jpg",
+    "thumbnail": "Resource_Thumbnails/thumbanil wire cutters.jpg",
     "resource": "Resource_PDFs/Catalogs/Wire Cutting Scissors Brochure PDF Clear Resolution.pdf"
   },
   {
@@ -116,7 +116,7 @@
     "type": "pdf",
     "title": "The Manufacturing Process of a TC Surgical Scissor",
     "description": "An overview of the process it takes to manufacture a surgical scissor.",
-    "thumbnail": "",
+    "thumbnail": "Resource_Thumbnails/Thumbnail scissor process.jpg",
     "resource": "Resource_PDFs/Catalogs/Manufacturing Processes of Surgical Scissors.pdf"
   }
 ]
