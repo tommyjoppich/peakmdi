@@ -4601,7 +4601,9 @@
     "type": "Ceramic",
     "unitOfSale": "",
     "categoryThree": "Available in a variety of lengths & angles, with or without ejector pin. Contact us!",
-    "image": "Ceramic take apart.png",
+    "image": "Ceramic take apart final.PNG",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
@@ -4613,7 +4615,9 @@
     "type": "Stainless Steel",
     "unitOfSale": "",
     "categoryThree": "Available in a variety of lengths & angles, with or without ejector pin. Contact us!",
-    "image": "Stainless steel take-apart Kerrison.PNG",
+    "image": "Finished Take A Part Kerrison.PNG",
+    "image2": "",
+    "image3": "",
     "featured": false
   },
   {
