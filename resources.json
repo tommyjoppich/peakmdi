@@ -77,15 +77,15 @@
     "title": "PEAK Martin's Arm Brochure",
     "description": "SINGLE ARM INSTRUMENT WITH FIXED UNIVERSAL INSTRUMENT CLAMP",
     "thumbnail": "Resource_Thumbnails/thumbnail.jpg",
-    "resource": "Resource_PDFs/Catalogs/Martin's Arms PDF Booklet.pdf"
+    "resource": "Resource_PDFs/Catalogs/Martin's Arms Retractor Booklet.pdf"
   },
   {
     "id": "r862756",
     "type": "pdf",
     "title": "PEAK PremiumCut Scissors Catalog",
     "description": "Consistent cutting quality with sustained precision over repeated use.",
-    "thumbnail": "Resource_Thumbnails/premiumcut thumbnail for Catalog.jpeg",
-    "resource": "Resource_PDFs/Catalogs/PremiumCut Scissors Brochure PDF .pdf"
+    "thumbnail": "Resource_Thumbnails/PremiumCut Brochure.jpg",
+    "resource": "Resource_PDFs/Catalogs/PremiumCut Scissor Brochure.pdf"
   },
   {
     "id": "r130342",
