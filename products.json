@@ -8343,5 +8343,61 @@
     "image2": "FF1-526 Angle copy.png",
     "image3": "",
     "featured": false
+  },
+  {
+    "id": "348588",
+    "title": "PEAK Demartel Artery & Dissecting Scissor, Bl/Bl, 7 1/8\", Cvd",
+    "sku": "AE7-119",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Dissecting Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE7-119: PEAK Demartel Artery & Dissecting Scissor, 7 1/8\" (18.0 Cm), Blunt/Blunt Tips, Curved",
+    "image": "AE7-119.PNG",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "431883",
+    "title": "PEAK Demartel Artery & Dissecting Scissor, 7 1/8\", Bl/Bl, Str",
+    "sku": "AE7-019",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Dissecting Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE7-019: PEAK Demartel Artery & Dissecting Scissor, 7 1/8\" (18.0 Cm), Blunt/Blunt Tips, Straight.",
+    "image": "AE7-019 copy.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "502325",
+    "title": "PEAK Demartel Artery, Dissecting Scissor, Xtra Del, Sh/Sh, 7 1/8\", Cvd",
+    "sku": "AE7-118",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Dissecting Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE7-118: PEAK Demartel Artery, Dissecting Scissor, 7 1/8\"  (18.0 Cm), Xtra Delicate, Sharp/Sharp Tips, Curved.",
+    "image": "AE7-118 copy.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "575597",
+    "title": "PEAK Demartel Artery Dissecting Scissor, Xtra Del, Sh/Sh, 7 1/8\", Str",
+    "sku": "AE7-018",
+    "category": "Scissors",
+    "subcategory": "Standard Scissors",
+    "type": "Dissecting Scissors",
+    "unitOfSale": "",
+    "categoryThree": "AE7-018: PEAK Demartel Artery Dissecting Scissor, 7 1/8\" (18.0 Cm), Xtra Delicate, Sharp/Sharp Tips, Straight.",
+    "image": "AE7-018 copy.png",
+    "image2": "",
+    "image3": "",
+    "featured": false
   }
 ]
