@@ -5259,7 +5259,7 @@
     "type": "Kelly Scissors",
     "unitOfSale": "",
     "categoryThree": "AE5-417: PEAK Kelly Scissor, Sharp/Sharp, 6-1/4\" (15.9 Cm), Angled on Side",
-    "image": "AE5-417, final.png",
+    "image": "AE5-417, standard.PNG",
     "image2": "",
     "image3": "",
     "featured": false
@@ -8691,6 +8691,48 @@
     "categoryThree": "TCI-5623: PEAK Gorney Face Lift Scissor, Tungsten Carbide, Serrated, Straight, 9\" (22.9 Cm)",
     "image": "TCI-5623.PNG",
     "image2": "TCI-5623 Tip copy.png",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "120549",
+    "title": "PEAK Kelly Scissor, 6.25\", Sh/Sh",
+    "sku": "TCI-96528",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "type": "Kelly Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TCI-96528: PEAK Kelly Scissor, Tungsten Carbide, Ang On Side, 6-1/4\" (15.9 Cm), Sh/Sh",
+    "image": "TCI-96528.PNG",
+    "image2": "",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "172409",
+    "title": "PEAK Kelly Scissor, Crvd, 6.5\"",
+    "sku": "TCI-96627",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "type": "Kelly Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TCI-96627: PEAK Kelly Scissor, Tungsten Carbide, Curved, 6-1/2\" (16.5 Cm)",
+    "image": "TCI-96627.png",
+    "image2": "TCI-96627 tip pic.PNG",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "216023",
+    "title": "PEAK Kelly Scissor, Str, 6.25\"",
+    "sku": "TCI-96527",
+    "category": "Scissors",
+    "subcategory": "Tungsten Carbide Scissors",
+    "type": "Kelly Scissors",
+    "unitOfSale": "",
+    "categoryThree": "TCI-96527: PEAK Kelly Scissor, Tungsten Carbide, Straight, 6-1/4\" (15.9 Cm)",
+    "image": "TCI-96527.PNG",
+    "image2": "",
     "image3": "",
     "featured": false
   }
