@@ -427,6 +427,7 @@
             <li>Upload thumbnail images to the <strong>Resource_Thumbnails/</strong> folder in GitHub.</li>
             <li>Upload <strong>PDF Catalogs</strong> to <strong>Resource_PDFs/Catalogs/</strong> in GitHub.</li>
             <li>Upload <strong>Product IFUs</strong> to <strong>Resource_PDFs/IFUs/</strong> in GitHub.</li>
+            <li>Upload <strong>Education Material PDFs</strong> to <strong>Resource_PDFs/Education/</strong> in GitHub — only needed if you're attaching a PDF instead of a URL.</li>
             <li>The filename you enter in the CMS must exactly match the file uploaded to GitHub.</li>
           </ol>
         </div>
@@ -646,8 +647,12 @@
           <input type="text" id="rf-resource-text"
             placeholder="e.g. https://www.youtube.com/embed/abc123" />
 
-          <!-- File upload: shown for pdf and ifu -->
+          <!-- Divider: shown only for Education Material (article), since it allows both URL and PDF -->
+          <div id="rf-resource-divider" style="display:none; text-align:center; font-size:11px; font-weight:700; color:#aaa; letter-spacing:0.08em; text-transform:uppercase; margin:2px 0;">— or —</div>
+
+          <!-- File upload: shown for pdf, ifu, and (alongside the URL field) article -->
           <div id="rf-resource-file-wrap" style="display:none;">
+            <label id="rf-resource-file-label" style="display:block; margin-bottom:6px;">PDF File</label>
             <div class="img-upload-area" onclick="document.getElementById('rf-resource-file').click()">
               <svg width="32" height="32" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
               <p>Click to upload PDF file</p>
@@ -949,6 +954,16 @@
       ifu: 'Product IFU'
     };
 
+    // Folder that Education Material (article) PDF uploads are saved under.
+    const ARTICLE_PDF_FOLDER = 'Resource_PDFs/Education/';
+
+    // Heuristic used when re-opening a saved Education Material: was its
+    // "resource" value a PDF upload, or a plain URL the person typed in?
+    function isArticlePdfPath(val) {
+      if (!val) return false;
+      return val.startsWith(ARTICLE_PDF_FOLDER) || /\.pdf($|[?#])/i.test(val);
+    }
+
     async function initResources() {
       try {
         const r = await fetch('resources.json?v=' + Date.now(), { cache: 'no-store' });
@@ -1031,12 +1046,25 @@
 
       updateResourceFieldLabel(); // set correct input visibility first
 
-      const isPDF = r.type === 'pdf' || r.type === 'ifu';
-      if (isPDF) {
+      // Reset both the text/file fields before populating, so stale values
+      // from a previous edit don't leak into the next one.
+      document.getElementById('rf-resource-text').value = '';
+      document.getElementById('rf-resource-filename').value = '';
+      document.getElementById('rf-resource').value = '';
+
+      if (r.type === 'pdf' || r.type === 'ifu') {
         const subfolder = r.type === 'pdf' ? 'Resource_PDFs/Catalogs/' : 'Resource_PDFs/IFUs/';
         const bare = (r.resource || '').replace(subfolder, '');
         document.getElementById('rf-resource-filename').value = bare;
         document.getElementById('rf-resource').value = r.resource || '';
+      } else if (r.type === 'article') {
+        const val = r.resource || '';
+        if (isArticlePdfPath(val)) {
+          document.getElementById('rf-resource-filename').value = val.replace(ARTICLE_PDF_FOLDER, '');
+          document.getElementById('rf-resource').value = val;
+        } else {
+          document.getElementById('rf-resource-text').value = val;
+        }
       } else {
         document.getElementById('rf-resource-text').value = r.resource || '';
       }
@@ -1071,28 +1099,34 @@
     }
 
     function updateResourceFieldLabel() {
-      const type  = document.getElementById('rf-type').value;
+      const type      = document.getElementById('rf-type').value;
       const textInput = document.getElementById('rf-resource-text');
       const fileWrap  = document.getElementById('rf-resource-file-wrap');
+      const fileLabel = document.getElementById('rf-resource-file-label');
+      const divider   = document.getElementById('rf-resource-divider');
       const label     = document.getElementById('rf-resource-label');
 
-      const isPDF = type === 'pdf' || type === 'ifu';
+      const isFileOnly = type === 'pdf' || type === 'ifu';
+      const isArticle  = type === 'article';
 
-      // Toggle text vs file input
-      textInput.style.display = isPDF ? 'none' : 'block';
-      fileWrap.style.display  = isPDF ? 'block' : 'none';
+      // Text URL field: shown for video, and for article (as one of its two options).
+      textInput.style.display = (type === 'video' || isArticle) ? 'block' : 'none';
+      // File upload: shown for pdf/ifu (only option), and for article (as its other option).
+      fileWrap.style.display = (isFileOnly || isArticle) ? 'block' : 'none';
+      // "— or —" divider only makes sense when both inputs are visible at once (article).
+      divider.style.display = isArticle ? 'block' : 'none';
 
-      // Update label and placeholder
       if (type === 'video') {
         label.textContent = 'Video Embed URL (YouTube or Vimeo embed link)';
         textInput.placeholder = 'e.g. https://www.youtube.com/embed/abc123';
-      } else if (type === 'article') {
-        label.textContent = 'Article / Education Material URL';
+      } else if (isArticle) {
+        label.textContent = 'Article URL';
         textInput.placeholder = 'e.g. https://www.example.com/article-title';
+        fileLabel.textContent = 'Or Upload a PDF — saved to Resource_PDFs/Education/';
       } else if (type === 'pdf') {
-        label.textContent = 'PDF Catalog File — saved to Resource_PDFs/Catalogs/';
+        fileLabel.textContent = 'PDF Catalog File — saved to Resource_PDFs/Catalogs/';
       } else if (type === 'ifu') {
-        label.textContent = 'IFU PDF File — saved to Resource_PDFs/IFUs/';
+        fileLabel.textContent = 'IFU PDF File — saved to Resource_PDFs/IFUs/';
       }
     }
 
@@ -1124,17 +1158,30 @@
       const rawThumb = document.getElementById('rf-thumbnail').value.trim();
       const thumbVal = rawThumb ? (rawThumb.startsWith('Resource_Thumbnails/') ? rawThumb : 'Resource_Thumbnails/' + rawThumb) : '';
 
-      // Get resource value from text or file input depending on type
-      const isPDF = type === 'pdf' || type === 'ifu';
+      const urlVal      = document.getElementById('rf-resource-text').value.trim();
+      const fileNameVal = document.getElementById('rf-resource-filename').value.trim();
+
       let resourceVal = '';
-      if (isPDF) {
-        const filename = document.getElementById('rf-resource-filename').value.trim();
-        if (filename) {
+
+      if (type === 'pdf' || type === 'ifu') {
+        if (fileNameVal) {
           const subfolder = type === 'pdf' ? 'Resource_PDFs/Catalogs/' : 'Resource_PDFs/IFUs/';
-          resourceVal = filename.startsWith(subfolder) ? filename : subfolder + filename;
+          resourceVal = fileNameVal.startsWith(subfolder) ? fileNameVal : subfolder + fileNameVal;
+        }
+      } else if (type === 'article') {
+        // Education Materials: a URL or a PDF upload — one of the two is required.
+        if (!urlVal && !fileNameVal) {
+          showToast('Please provide either a URL or upload a PDF for this Education Material.', 'error');
+          return;
+        }
+        if (fileNameVal) {
+          resourceVal = fileNameVal.startsWith(ARTICLE_PDF_FOLDER) ? fileNameVal : ARTICLE_PDF_FOLDER + fileNameVal;
+        } else {
+          resourceVal = urlVal;
         }
       } else {
-        resourceVal = document.getElementById('rf-resource-text').value.trim();
+        // video
+        resourceVal = urlVal;
       }
 
       const data = {
