@@ -77,23 +77,23 @@
     .navbar__mobile { display: none; align-items: center; gap: 12px; }
     .navbar__mobile .cart-btn { width: 42px; height: 42px; border-radius: 50%; border: 2px solid var(--navy); display: flex; align-items: center; justify-content: center; background: transparent; color: var(--navy); }
     .navbar__mobile .hamburger { background: none; border: none; color: var(--navy); display: flex; align-items: center; padding: 4px; }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @media (min-width: 1024px) { .navbar__desktop { display: flex; } .navbar__tablet { display: none !important; } .navbar__mobile { display: none !important; } .btn-quote { display: flex !important; } }
     @media (min-width: 769px) and (max-width: 1023px) { .navbar__desktop { display: none !important; } .navbar__tablet { display: flex; } .navbar__mobile { display: none !important; } .btn-quote { display: flex !important; } }
     @media (max-width: 768px) { .navbar { padding: 0 16px; } .navbar__logo img { height: 44px; } .navbar__desktop { display: none !important; } .navbar__tablet { display: none !important; } .navbar__mobile { display: flex; } .btn-quote { display: none !important; } }
@@ -295,7 +295,7 @@
     .dd-cat-row.sub-active .dd-sub-link { background: #e4edf6; color: var(--blue); }
     .dd-cat-row.sub-active .dd-cat-chevron { background: #e4edf6; }
     .dd-cat-row.sub-active .dd-cat-chevron svg { stroke: var(--blue); }
-  
+
     /* ── Type panel (3rd level flyout) ── */
     .dd-type-list {
       display: none;
@@ -477,6 +477,13 @@
       } catch(e) { showError('Could not load resources.json.'); }
     }
 
+    // Education Materials can hold either an external URL or an uploaded PDF
+    // (saved under Resource_PDFs/Education/ by the admin CMS).
+    function isArticlePdf(resource) {
+      if (!resource) return false;
+      return resource.startsWith('Resource_PDFs/Education/') || /\.pdf($|[?#])/i.test(resource);
+    }
+
     function renderResource(res) {
       const cfg = TYPE_CONFIG[res.type] || { label: 'Resources', href: 'resources.html' };
 
@@ -532,7 +539,29 @@
           embedHTML = `<div class="resource-embed resource-embed--empty">No PDF has been provided yet.</div>`;
         }
       } else if (res.type === 'article') {
-        if (res.resource) {
+        // Education Materials: can now be either an uploaded PDF or an external URL.
+        if (isArticlePdf(res.resource)) {
+          const pdfSrc = res.resource;
+          embedHTML = `<div class="resource-embed resource-embed--pdf">
+            <object data="${pdfSrc}" type="application/pdf" width="100%" style="height:700px;border-radius:12px;">
+              <div class="pdf-fallback">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2e6da4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                <p>Your browser cannot display this PDF inline.</p>
+                <a href="${pdfSrc}" target="_blank" download class="pdf-download-btn">
+                  Download PDF ↓
+                </a>
+              </div>
+            </object>
+          </div>
+          <div style="margin-top:12px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+            <a href="${pdfSrc}" target="_blank" style="color:var(--blue);font-size:13px;font-weight:600;">
+              Open PDF in new tab ↗
+            </a>
+            <a href="${pdfSrc}" download style="color:var(--blue);font-size:13px;font-weight:600;">
+              Download PDF ↓
+            </a>
+          </div>`;
+        } else if (res.resource) {
           embedHTML = `<div class="resource-embed resource-embed--article">
             <p style="font-size:14px;color:var(--muted);">This article is hosted externally. Click below to read it.</p>
             <a href="${res.resource}" target="_blank" rel="noopener">
@@ -541,7 +570,7 @@
             </a>
           </div>`;
         } else {
-          embedHTML = `<div class="resource-embed resource-embed--empty">No article link has been provided yet.</div>`;
+          embedHTML = `<div class="resource-embed resource-embed--empty">No article link or PDF has been provided yet.</div>`;
         }
       }
 
@@ -561,7 +590,7 @@
     function openMenu()  { document.getElementById('mobileMenu').classList.add('open'); document.body.style.overflow='hidden'; }
     function closeMenu() { document.getElementById('mobileMenu').classList.remove('open'); document.body.style.overflow=''; }
     document.getElementById('mobileMenu').addEventListener('click', e => { if (e.target === document.getElementById('mobileMenu')) closeMenu(); });
-    
+
       // Also close type panels when dropdown area is left
       document.querySelectorAll('.nav-dropdown').forEach(dd => {
         dd.addEventListener('mouseleave', () => {
