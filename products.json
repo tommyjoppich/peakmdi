@@ -10402,5 +10402,33 @@
     "image2": "",
     "image3": "",
     "featured": false
+  },
+  {
+    "id": "104681",
+    "title": "PEAK Jacobson Heavy Needle Holder, 10\"",
+    "sku": "131-1075-315",
+    "category": "Legacy & Special Made Products",
+    "subcategory": "Needle Holders",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "131-1075-315: PEAK Jacobson Heavy Needle Holder, TC Inserts, Straight Jaws, Ratchet Lock, Springbox Joint, Round Handle, Stainless Steel, 10\" (25.4 cm)",
+    "image": "131-1075-315, Jacobson Full.png",
+    "image2": "131-1075-315, Jacobson Tips.PNG",
+    "image3": "",
+    "featured": false
+  },
+  {
+    "id": "191686",
+    "title": "PEAK Jacobson Heavy Needle Holder, 9\"",
+    "sku": "131-1073-315",
+    "category": "Legacy & Special Made Products",
+    "subcategory": "Needle Holders",
+    "type": "",
+    "unitOfSale": "",
+    "categoryThree": "131-1073-315: PEAK Jacobson Heavy Needle Holder, TC Inserts, Straight Jaws, Ratchet Lock, Springbox Joint, Round Handle, Stainless Steel , 9\" (23 cm)",
+    "image": "131-1073-315, Jacobson Full.PNG",
+    "image2": "131-1073-315, Jacobson Tips.PNG",
+    "image3": "",
+    "featured": false
   }
 ]
