@@ -118,5 +118,13 @@
     "description": "An overview of the process it takes to manufacture a surgical scissor.",
     "thumbnail": "Resource_Thumbnails/Thumbnail scissor process.jpg",
     "resource": "Resource_PDFs/Education/Manufacturing Processes of Surgical Scissors.pdf"
+  },
+  {
+    "id": "r477170",
+    "type": "pdf",
+    "title": "PEAK Jacobson Heavy Needle Holders Brochure",
+    "description": "",
+    "thumbnail": "",
+    "resource": "Resource_PDFs/Catalogs/Jacobson_Heavy_Needle_Holders.pdf"
   }
 ]
