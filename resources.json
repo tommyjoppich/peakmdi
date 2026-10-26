@@ -2,7 +2,7 @@
   {
     "id": "r004",
     "type": "ifu",
-    "title": "PEAK PremiumCut Scissors IFU",
+    "title": "PremiumCut Scissors IFU",
     "description": "Instructions for Use documentation for the PEAK Premium Scissors product line.",
     "thumbnail": "Resource_Thumbnails/premiumcut thumbnail for IFU.jpg",
     "resource": ""
@@ -10,7 +10,7 @@
   {
     "id": "r365924",
     "type": "ifu",
-    "title": "IFU Stainless Steel",
+    "title": "Stainless Steel IFU",
     "description": "STAINLESS STEEL INSTRUMENTS CLEANING, MAINTENANCE & STERILIZATION",
     "thumbnail": "Resource_Thumbnails/Stainless Steel IFU thumbnail.jpg",
     "resource": "Resource_PDFs/IFUs/STAINLESS STEEL PEAK INSTRUMENTS CLEANING, STERILIZATION & MAINTENANCE 1.1.2023.pdf"
@@ -18,7 +18,7 @@
   {
     "id": "r971685",
     "type": "ifu",
-    "title": "IFU Stainless Cannulas and Needles",
+    "title": "Stainless Cannulas and Needles IFU",
     "description": "STAINLESS STEEL CANNULAS AND NEEDLES\nCLEANING, MAINTENANCE & STERILIZATION",
     "thumbnail": "Resource_Thumbnails/Rotated cannulas for thumbnail.jpg",
     "resource": "Resource_PDFs/IFUs/PEAK STAINLESS STEEL CANNULAS AND NEEDLES IFU 11.1.2021.pdf"
@@ -26,7 +26,7 @@
   {
     "id": "r509994",
     "type": "ifu",
-    "title": "PEAK Cannulated Flushable Kerrison Rongeurs IFU",
+    "title": "Cannulated Flushable Kerrison Rongeurs IFU",
     "description": "Validated Instructions For Use (IFUs)",
     "thumbnail": "Resource_Thumbnails/Kerrison Thumbnail.jpg",
     "resource": "Resource_PDFs/IFUs/ClearFlush Kerrison IFU 5-25-2023.pdf"
@@ -34,7 +34,7 @@
   {
     "id": "r932468",
     "type": "ifu",
-    "title": "PEAK Retract Robot Maintenance IFU",
+    "title": "Retract Robot Maintenance IFU",
     "description": "",
     "thumbnail": "Resource_Thumbnails/logo 4 for IFU copy 2.jpg",
     "resource": "Resource_PDFs/IFUs/PEAK RETRACT ROBOT MAINTENANCE – 0817.pdf"
@@ -50,15 +50,15 @@
   {
     "id": "r066539",
     "type": "pdf",
-    "title": "PEAK Medical Grade Spoons Brochure",
-    "description": "SPECIALTY MEDICAL GRADE STAINLESS STEEL SPOONS FOR SURGICAL APPLICATIONS",
+    "title": "Medical Grade Spoons - PEAK Brochure",
+    "description": "Specialty medical grade stainless steel spoon for surgical applications",
     "thumbnail": "Resource_Thumbnails/Pure white spoons thumbnail IFU.jpg",
     "resource": "Resource_PDFs/Catalogs/Medical Grade Spoons FNL.pdf"
   },
   {
     "id": "r659674",
     "type": "pdf",
-    "title": "PEAK Nathanson Liver Retractors Brochure",
+    "title": "Nathanson Liver Retractors - PEAK Brochure",
     "description": "PEAK Nathanson Liver Retractors for Martin’s Arm",
     "thumbnail": "Resource_Thumbnails/Nathanson Liver Thumbnail.jpg",
     "resource": "Resource_PDFs/Catalogs/Nathanson Retractor Booklet PDF.pdf"
@@ -66,7 +66,7 @@
   {
     "id": "r067979",
     "type": "pdf",
-    "title": "PEAK Goose Neck MultiFlex Frame Retractor Brochure",
+    "title": "Goose Neck MultiFlex Frame Retractor - PEAK Brochure",
     "description": "PEAK Goose Neck Retractor In Laparoscopic Surgery",
     "thumbnail": "Resource_Thumbnails/Retractor systems thumbnail.jpg",
     "resource": "Resource_PDFs/Catalogs/Multi-Flex, Goose-Neck, Frame Retractor Booklet PDF.pdf"
@@ -74,7 +74,7 @@
   {
     "id": "r449616",
     "type": "pdf",
-    "title": "PEAK Martin's Arm Brochure",
+    "title": "Martin's Arm - PEAK Brochure",
     "description": "SINGLE ARM INSTRUMENT WITH FIXED UNIVERSAL INSTRUMENT CLAMP",
     "thumbnail": "Resource_Thumbnails/Martin's Arms Thumbnail.jpg",
     "resource": "Resource_PDFs/Catalogs/Martin's Arms PDF Booklet.pdf"
@@ -82,7 +82,7 @@
   {
     "id": "r862756",
     "type": "pdf",
-    "title": "PEAK PremiumCut Scissors Catalog",
+    "title": "PremiumCut Scissors - PEAK Brochure",
     "description": "Consistent cutting quality with sustained precision over repeated use.",
     "thumbnail": "Resource_Thumbnails/PremiumCut thumbnail.jpg",
     "resource": "Resource_PDFs/Catalogs/PremiumCut Scissor Brochure.pdf"
@@ -90,7 +90,7 @@
   {
     "id": "r130342",
     "type": "ifu",
-    "title": "IFU Aluminum Trays or Containers",
+    "title": "Aluminum Trays or Containers IFU",
     "description": "ALUMINUM TRAYS OR CONTAINERS CLEANING, STERILIZATION & MAINTENANCE",
     "thumbnail": "Resource_Thumbnails/Cropped tubing holder for thumbnail.jpeg",
     "resource": "Resource_PDFs/IFUs/PEAK ALUMINUM TRAYS OR CONTAINERS STERILIZATION & MAINTENANCE PDF (1).pdf"
