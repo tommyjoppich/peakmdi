@@ -10,7 +10,7 @@
   {
     "id": "r365924",
     "type": "ifu",
-    "title": "Stainless Steel IFU",
+    "title": "Stainless Steel Instruments IFU",
     "description": "STAINLESS STEEL INSTRUMENTS CLEANING, MAINTENANCE & STERILIZATION",
     "thumbnail": "Resource_Thumbnails/Stainless Steel IFU thumbnail.jpg",
     "resource": "Resource_PDFs/IFUs/STAINLESS STEEL PEAK INSTRUMENTS CLEANING, STERILIZATION & MAINTENANCE 1.1.2023.pdf"
@@ -18,7 +18,7 @@
   {
     "id": "r971685",
     "type": "ifu",
-    "title": "Stainless Cannulas and Needles IFU",
+    "title": "Stainless Steel Cannulas and Needles IFU",
     "description": "STAINLESS STEEL CANNULAS AND NEEDLES\nCLEANING, MAINTENANCE & STERILIZATION",
     "thumbnail": "Resource_Thumbnails/Rotated cannulas for thumbnail.jpg",
     "resource": "Resource_PDFs/IFUs/PEAK STAINLESS STEEL CANNULAS AND NEEDLES IFU 11.1.2021.pdf"
@@ -98,7 +98,7 @@
   {
     "id": "r072945",
     "type": "pdf",
-    "title": "PEAK Robotics Kit Brochure",
+    "title": "Robotics Kit - PEAK Brochure",
     "description": "Sold in Set and Separately.",
     "thumbnail": "Resource_Thumbnails/Robotics Kit Thumbnail.jpg",
     "resource": "Resource_PDFs/Catalogs/Robotics Kit Brochure PDF.pdf"
@@ -106,7 +106,7 @@
   {
     "id": "r097260",
     "type": "pdf",
-    "title": "PEAK Wire-Cutting Scissors Brochure",
+    "title": "Wire-Cutting Scissors - PEAK Brochure",
     "description": "",
     "thumbnail": "Resource_Thumbnails/Wire cutters.jpg",
     "resource": "Resource_PDFs/Catalogs/PEAK Wire_Cutting_Scissors_Brochure.pdf"
@@ -122,7 +122,7 @@
   {
     "id": "r477170",
     "type": "pdf",
-    "title": "PEAK Jacobson Heavy Needle Holders Brochure",
+    "title": "Jacobson Heavy Needle Holders - PEAK Brochure",
     "description": "",
     "thumbnail": "",
     "resource": "Resource_PDFs/Catalogs/PEAK Jacobson_Heavy_Needle_Holders Brochure.pdf"
